@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 940" role="img" aria-labelledby="title desc">
+  <title id="title">AI-WAF 系统结构框架</title>
+  <desc id="desc">AI-WAF 离线数据训练、在线分层检测和请求处置流程。</desc>
+  <defs>
+    <linearGradient id="head" x2="1"><stop stop-color="#172554"/><stop offset=".55" stop-color="#1d4ed8"/><stop offset="1" stop-color="#0f766e"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dy="4" stdDeviation="4" flood-color="#0f172a" flood-opacity=".13"/></filter>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker>
+    <marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2563eb"/></marker>
+    <marker id="red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#dc2626"/></marker>
+    <style>
+      text{font-family:'Microsoft YaHei','Noto Sans SC',Arial,sans-serif;fill:#0f172a}.t{font-size:34px;font-weight:700;fill:#fff}.sub{font-size:17px;fill:#dbeafe}.pt{font-size:23px;font-weight:700}.st{font-size:18px;font-weight:700}.b{font-size:15px}.s{font-size:13px;fill:#475569}.xs{font-size:12px;fill:#64748b}.w{fill:#fff}.a{fill:none;stroke:#475569;stroke-width:2.4;marker-end:url(#arr)}.ab{fill:none;stroke:#2563eb;stroke-width:2.6;marker-end:url(#blue)}.ar{fill:none;stroke:#dc2626;stroke-width:2.2;marker-end:url(#red)}.ad{fill:none;stroke:#2563eb;stroke-width:2.4;stroke-dasharray:8 7;marker-end:url(#blue)}
+    </style>
+  </defs>
+  <rect width="1600" height="940" rx="24" fill="#f8fafc"/>
+  <rect x="20" y="20" width="1560" height="92" rx="20" fill="url(#head)"/>
+  <text x="55" y="63" class="t">AI-WAF 系统结构框架</text>
+  <text x="56" y="91" class="sub">离线数据与模型训练 + 在线分层检测 + 请求级防护闭环</text>
+  <rect x="1270" y="43" width="260" height="44" rx="22" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".35"/>
+  <text x="1400" y="71" text-anchor="middle" class="b w">训练 · 评测 · 部署统一口径</text>
+
+  <!-- 离线链路 -->
+  <rect x="30" y="132" width="390" height="750" rx="22" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <path d="M30 194V154q0-22 22-22h346q22 0 22 22v40z" fill="#dbeafe"/>
+  <text x="58" y="171" class="pt" fill="#1e3a8a">A. 离线数据与模型链路</text>
+  <rect x="65" y="220" width="320" height="82" rx="15" fill="#fff" stroke="#60a5fa" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="92" cy="246" r="16" fill="#2563eb"/><text x="92" y="252" text-anchor="middle" class="b w" font-weight="700">1</text>
+  <text x="122" y="250" class="st">多来源安全数据</text><text x="86" y="279" class="s">公开语料 · CVE · 隔离采集 · 正常难负例</text>
+  <path d="M225 302V329" class="ab"/>
+  <rect x="65" y="332" width="320" height="88" rx="15" fill="#fff" stroke="#60a5fa" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="92" cy="359" r="16" fill="#2563eb"/><text x="92" y="365" text-anchor="middle" class="b w" font-weight="700">2</text>
+  <text x="122" y="363" class="st">data/organized 统一视图</text><text x="86" y="394" class="s">639,984 条 · 65 类标签 · 来源组隔离</text>
+  <path d="M225 420V447" class="ab"/>
+  <rect x="65" y="450" width="320" height="88" rx="15" fill="#fff" stroke="#60a5fa" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="92" cy="477" r="16" fill="#2563eb"/><text x="92" y="483" text-anchor="middle" class="b w" font-weight="700">3</text>
+  <text x="122" y="481" class="st">可追溯对抗样本生成</text><text x="86" y="512" class="s">19 种通用接口 · 58 种原子变换</text>
+  <path d="M225 538V565" class="ab"/>
+  <rect x="51" y="568" width="160" height="112" rx="15" fill="#fff" stroke="#818cf8" stroke-width="2" filter="url(#shadow)"/>
+  <text x="131" y="600" text-anchor="middle" class="st">结构分支</text><text x="131" y="628" text-anchor="middle" class="b">38 维安全特征</text><text x="131" y="652" text-anchor="middle" class="s">LightGBM · 权重 30%</text>
+  <rect x="239" y="568" width="160" height="112" rx="15" fill="#fff" stroke="#a78bfa" stroke-width="2" filter="url(#shadow)"/>
+  <text x="319" y="600" text-anchor="middle" class="st">文本分支</text><text x="319" y="628" text-anchor="middle" class="b">字符 2–5 n-gram</text><text x="319" y="652" text-anchor="middle" class="s">TF-IDF + LR · 权重 70%</text>
+  <path d="M131 680V704H225" class="ab"/><path d="M319 680V704H225" class="ab"/>
+  <rect x="65" y="708" width="320" height="64" rx="15" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="225" y="737" text-anchor="middle" class="st">验证集选择融合权重与阈值</text><text x="225" y="758" text-anchor="middle" class="xs">测试集不参与训练和调参</text>
+  <path d="M225 772V798" class="ab"/>
+  <rect x="65" y="801" width="320" height="58" rx="15" fill="#1d4ed8" filter="url(#shadow)"/>
+  <text x="225" y="828" text-anchor="middle" class="st w">models/current 正式模型</text><text x="225" y="848" text-anchor="middle" class="xs w">模型 · 元数据 · SHA-256 清单</text>
+
+  <!-- 在线链路 -->
+  <rect x="445" y="132" width="1125" height="750" rx="22" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+  <path d="M445 194V154q0-22 22-22h1081q22 0 22 22v40z" fill="#e2e8f0"/>
+  <text x="475" y="171" class="pt">B. 在线请求检测与防护链路</text>
+  <rect x="490" y="220" width="190" height="72" rx="36" fill="#0f766e" filter="url(#shadow)"/>
+  <text x="585" y="250" text-anchor="middle" class="st w">HTTP 请求输入</text><text x="585" y="274" text-anchor="middle" class="s w">API / 前置代理</text>
+  <path d="M680 256H727" class="a"/>
+  <rect x="730" y="207" width="340" height="98" rx="16" fill="#ecfeff" stroke="#14b8a6" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="762" cy="237" r="17" fill="#0f766e"/><text x="762" y="243" text-anchor="middle" class="b w" font-weight="700">1</text>
+  <text x="793" y="241" class="st">请求解析与协议检查</text><text x="757" y="271" class="s">Path · Query · Body · JSON · Header · Cookie</text><text x="757" y="292" class="xs">保留原文、字段名、来源与请求上下文</text>
+  <path d="M1070 256H1117" class="a"/>
+  <rect x="1120" y="220" width="395" height="72" rx="16" fill="#f0fdfa" stroke="#2dd4bf" stroke-width="2"/>
+  <text x="1318" y="249" text-anchor="middle" class="st">候选载荷与协议风险</text><text x="1318" y="274" text-anchor="middle" class="s">CL/TE 冲突 · 重复长度 · 请求体边界</text>
+  <path d="M1318 292V326H633V346" class="a"/>
+
+  <!-- 三层检测 -->
+  <rect x="485" y="348" width="300" height="224" rx="18" fill="#fff7ed" stroke="#fb923c" stroke-width="2" filter="url(#shadow)"/>
+  <path d="M485 396V366q0-18 18-18h264q18 0 18 18v30z" fill="#ffedd5"/>
+  <circle cx="517" cy="372" r="17" fill="#ea580c"/><text x="517" y="378" text-anchor="middle" class="b w" font-weight="700">2</text><text x="548" y="378" class="st">前置快速路径</text>
+  <rect x="510" y="418" width="250" height="56" rx="12" fill="#fff" stroke="#fdba74"/><text x="635" y="442" text-anchor="middle" class="b" font-weight="700">原文高置信规则 L1-Raw</text><text x="635" y="463" text-anchor="middle" class="xs">直接攻击与编码控制字符证据</text>
+  <rect x="510" y="492" width="250" height="56" rx="12" fill="#fff" stroke="#fdba74"/><text x="635" y="516" text-anchor="middle" class="b" font-weight="700">明确正常快速放行 L0</text><text x="635" y="537" text-anchor="middle" class="xs">无危险结构的短文本、数值与布尔值</text>
+  <path d="M785 460H825" class="a"/><text x="805" y="448" text-anchor="middle" class="xs">不确定</text>
+
+  <rect x="828" y="348" width="310" height="224" rx="18" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+  <path d="M828 396V366q0-18 18-18h274q18 0 18 18v30z" fill="#ede9fe"/>
+  <circle cx="860" cy="372" r="17" fill="#7c3aed"/><text x="860" y="378" text-anchor="middle" class="b w" font-weight="700">3</text><text x="891" y="378" class="st">递归归一化与上下文</text>
+  <rect x="853" y="418" width="260" height="62" rx="12" fill="#fff" stroke="#c4b5fd"/><text x="983" y="443" text-anchor="middle" class="b" font-weight="700">有边界的递归解混淆</text><text x="983" y="466" text-anchor="middle" class="xs">最多 5 轮；URL 解码最多 3 层</text>
+  <rect x="853" y="498" width="260" height="54" rx="12" fill="#fff" stroke="#c4b5fd"/><text x="983" y="521" text-anchor="middle" class="b" font-weight="700">归一化规则 + 字段上下文</text><text x="983" y="542" text-anchor="middle" class="xs">原始、还原、过程三种视图并用</text>
+  <path d="M1138 460H1178" class="a"/><text x="1158" y="448" text-anchor="middle" class="xs">边界样本</text>
+
+  <rect x="1181" y="328" width="340" height="264" rx="18" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <path d="M1181 376V346q0-18 18-18h304q18 0 18 18v30z" fill="#dbeafe"/>
+  <circle cx="1213" cy="352" r="17" fill="#2563eb"/><text x="1213" y="358" text-anchor="middle" class="b w" font-weight="700">4</text><text x="1244" y="358" class="st">双模型融合 L2+Text</text>
+  <rect x="1204" y="398" width="137" height="88" rx="12" fill="#fff" stroke="#93c5fd"/><text x="1273" y="424" text-anchor="middle" class="b" font-weight="700">LightGBM</text><text x="1273" y="447" text-anchor="middle" class="xs">38 维结构特征</text><text x="1273" y="470" text-anchor="middle" class="s">权重 30%</text>
+  <rect x="1361" y="398" width="137" height="88" rx="12" fill="#fff" stroke="#93c5fd"/><text x="1430" y="424" text-anchor="middle" class="b" font-weight="700">字符模型</text><text x="1430" y="447" text-anchor="middle" class="xs">原文 + 还原文本</text><text x="1430" y="470" text-anchor="middle" class="s">权重 70%</text>
+  <path d="M1273 486V510H1351" class="ab"/><path d="M1430 486V510H1351" class="ab"/>
+  <rect x="1240" y="514" width="222" height="54" rx="12" fill="#1d4ed8"/><text x="1351" y="538" text-anchor="middle" class="b w" font-weight="700">概率融合与阈值判断</text><text x="1351" y="558" text-anchor="middle" class="xs w">只处理前两层无法确定的样本</text>
+
+  <!-- 汇总与处置 -->
+  <path d="M635 572V636H920" class="ar"/><path d="M983 572V636" class="ar"/><path d="M1351 592V636H1040" class="ar"/>
+  <text x="720" y="621" class="xs" fill="#b91c1c">攻击 / 正常 / 不确定证据</text>
+  <rect x="735" y="640" width="500" height="88" rx="18" fill="#fef2f2" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+  <circle cx="773" cy="674" r="19" fill="#dc2626"/><text x="773" y="680" text-anchor="middle" class="b w" font-weight="700">5</text>
+  <text x="810" y="672" class="st">请求级风险汇总</text><text x="810" y="698" class="b">任一关键字段为攻击 → 整个请求判定为攻击</text><text x="810" y="718" class="xs">保留风险字段、来源、规则证据、模型分数、归一化摘要和耗时</text>
+  <path d="M985 728V770H647V788" class="a"/><path d="M985 728V788" class="a"/><path d="M985 728V770H1323V788" class="a"/>
+  <rect x="512" y="790" width="270" height="70" rx="16" fill="#ecfeff" stroke="#14b8a6" stroke-width="2"/><text x="647" y="818" text-anchor="middle" class="st">检测 API</text><text x="647" y="843" text-anchor="middle" class="s">单载荷 · 批量 · 完整请求</text>
+  <rect x="850" y="790" width="270" height="70" rx="16" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/><text x="985" y="818" text-anchor="middle" class="st" fill="#166534">monitor</text><text x="985" y="843" text-anchor="middle" class="s">记录证据 · 继续转发</text>
+  <rect x="1188" y="790" width="270" height="70" rx="16" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/><text x="1323" y="818" text-anchor="middle" class="st" fill="#991b1b">block</text><text x="1323" y="843" text-anchor="middle" class="s">停止转发 · HTTP 403</text>
+
+  <!-- 正式模型加载 -->
+  <path d="M385 830H449V608H1351V594" class="ad"/><rect x="458" y="590" width="145" height="30" rx="15" fill="#dbeafe"/><text x="531" y="610" text-anchor="middle" class="s" fill="#1d4ed8">加载正式模型</text>
+  <text x="800" y="914" text-anchor="middle" class="s">同一套解析、归一化、特征与判定代码贯穿训练、评测、API 和前置代理</text>
+</svg>

@@ -60,6 +60,7 @@ REQUIRED = {
     ],
     "documents": [
         "README.md", "docs/README.md", "docs/AI-WAF_report.pdf",
+        "docs/assets/system-architecture.svg",
         "docs/SYSTEM_DESIGN.md", "docs/data/DATASET_GUIDE.md",
         "docs/MODEL.md", "docs/TEST_REPORT.md",
         "docs/experiments/REAL_WAF_COMPARISON.md",
