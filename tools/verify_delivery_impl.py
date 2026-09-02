@@ -59,7 +59,7 @@ REQUIRED = {
         "tests/test_real_waf.py", "tests/test_full_workflow.py",
     ],
     "documents": [
-        "README.md", "docs/README.md",
+        "README.md", "docs/README.md", "docs/AI-WAF_report.pdf",
         "docs/SYSTEM_DESIGN.md", "docs/data/DATASET_GUIDE.md",
         "docs/MODEL.md", "docs/TEST_REPORT.md",
         "docs/experiments/REAL_WAF_COMPARISON.md",
