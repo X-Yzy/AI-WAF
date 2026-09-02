@@ -1,0 +1,15 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "ssi",
+  "title": "Server-side include injection",
+  "standard": "CWE-97",
+  "records": 2406,
+  "shards": {
+    "field/evaluation": 3,
+    "field/test": 12,
+    "field/train": 78,
+    "field/unspecified": 445,
+    "field/validation": 12,
+    "request/evaluation": 1856
+  }
+}

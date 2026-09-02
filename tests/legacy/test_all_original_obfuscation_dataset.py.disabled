@@ -1,0 +1,67 @@
+"""Every organized original attack must have a traceable generated derivative."""
+
+import hashlib
+import json
+from collections import Counter
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+GENERATED = ROOT / "data" / "all_original_obfuscated" / "generated"
+
+
+def test_all_original_obfuscation_manifest_has_complete_one_to_one_coverage():
+    manifest = json.loads((GENERATED / "manifest.json").read_text(encoding="utf-8"))
+    assert manifest["dataset"] == "All-Original-Attack-Obfuscation-v1"
+    assert manifest["original_records"] == 59_583
+    assert manifest["generated_records"] == 59_583
+    assert manifest["variants_per_original"] == 1
+    assert manifest["original_families"] == manifest["generated_families"] == 65
+    assert manifest["coverage_complete"] is True
+    assert manifest["normal_content_fingerprints_screened"] == 509_614
+    assert manifest["normal_content_collision_retries"] == 1
+    assert manifest["by_data_level"] == {
+        "context": 418,
+        "field": 12_858,
+        "llm_context": 530,
+        "protocol": 46,
+        "request": 45_731,
+    }
+    assert manifest["independence"]["derivatives_are_not_independent_samples"] is True
+    source_manifest = ROOT / "data" / "organized" / "attack" / "original" / "manifest.json"
+    assert hashlib.sha256(source_manifest.read_bytes()).hexdigest() == manifest["source_manifest_sha256"]
+    source = json.loads(source_manifest.read_text(encoding="utf-8"))
+    assert manifest["by_attack_type"] == source["by_attack_type"]
+
+
+def test_all_generated_records_are_changed_traceable_and_split_preserving():
+    manifest = json.loads((GENERATED / "manifest.json").read_text(encoding="utf-8"))
+    parsed = 0
+    originals = set()
+    levels = Counter()
+    splits = Counter()
+    families = Counter()
+    for relative, artifact in manifest["artifacts"].items():
+        path = GENERATED / relative
+        values = json.loads(path.read_text(encoding="utf-8"))
+        assert len(values) == artifact["records"]
+        assert hashlib.sha256(path.read_bytes()).hexdigest() == artifact["sha256"]
+        for item in values:
+            parsed += 1
+            originals.add(item["original_organized_id"])
+            levels[item["data_level"]] += 1
+            splits[item["split"]] += 1
+            families[item["attack_type"]] += 1
+            assert item["label"] == 1 and item["is_encoding_variant"] is True
+            assert item["original_payload"] != item["obfuscated_payload"]
+            assert item["payload"] == item["obfuscated_payload"]
+            assert item["obfuscation_depth"] == len(item["obfuscation_chain"]) == 1
+            assert item["original_source_file"] and item["original_source_record_index"] >= 1
+            if item["data_level"] != "field":
+                assert item["exclude_from_payload_model"] is True
+                assert item["equivalence_scope"] == "serialized-representation-only"
+    assert parsed == manifest["generated_records"]
+    assert len(originals) == manifest["original_records"]
+    assert dict(sorted(levels.items())) == manifest["by_data_level"]
+    assert dict(sorted(splits.items())) == manifest["by_split"]
+    assert dict(sorted(families.items())) == manifest["by_attack_type"]

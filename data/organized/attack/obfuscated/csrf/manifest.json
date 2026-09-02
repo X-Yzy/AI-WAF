@@ -1,0 +1,11 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "csrf",
+  "title": "Cross-site request forgery",
+  "standard": "CWE-352",
+  "records": 13,
+  "shards": {
+    "context/test": 3,
+    "context/train": 10
+  }
+}

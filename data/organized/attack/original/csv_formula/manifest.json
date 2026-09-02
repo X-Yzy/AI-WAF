@@ -1,0 +1,14 @@
+{
+  "representation": "original",
+  "attack_type": "csv_formula",
+  "title": "Spreadsheet formula injection",
+  "standard": "CWE-1236",
+  "records": 119,
+  "shards": {
+    "context/train": 9,
+    "context/validation": 4,
+    "field/test": 13,
+    "field/train": 76,
+    "field/validation": 17
+  }
+}

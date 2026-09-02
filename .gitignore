@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+runtime/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+# Offline dataset archives stay out of VCS; the direct delivery may include
+# the verified organized_complete.zip physical backup.
+data/archives/
+deployment/server_runtime/
+deployment/server_runtime.zip
+# Jupyter
+.ipynb_checkpoints/
+# Env
+.env
+.claude/
+models/current/*.db
+# Large data files and archives (>50MB) — use local storage, not git

@@ -1,0 +1,12 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "websocket_cswh",
+  "title": "Cross-site WebSocket hijacking",
+  "standard": "CWE-346",
+  "records": 13,
+  "shards": {
+    "context/test": 3,
+    "context/train": 7,
+    "context/validation": 3
+  }
+}

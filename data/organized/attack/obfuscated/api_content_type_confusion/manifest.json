@@ -1,0 +1,12 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "api_content_type_confusion",
+  "title": "API content-type parser confusion",
+  "standard": "CWE-444",
+  "records": 13,
+  "shards": {
+    "context/test": 3,
+    "context/train": 8,
+    "context/validation": 2
+  }
+}

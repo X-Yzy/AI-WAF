@@ -1,0 +1,18 @@
+{
+  "label": 0,
+  "records": 509811,
+  "by_data_level": {
+    "context": 367,
+    "field": 321323,
+    "llm_context": 20,
+    "protocol": 16,
+    "request": 188085
+  },
+  "by_split": {
+    "evaluation": 47014,
+    "test": 40339,
+    "train": 382093,
+    "unspecified": 15,
+    "validation": 40350
+  }
+}

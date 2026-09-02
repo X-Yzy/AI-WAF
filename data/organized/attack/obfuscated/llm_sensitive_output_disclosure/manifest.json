@@ -1,0 +1,10 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "llm_sensitive_output_disclosure",
+  "title": "LLM sensitive output disclosure",
+  "standard": "OWASP LLM02",
+  "records": 4,
+  "shards": {
+    "llm_context/test": 4
+  }
+}

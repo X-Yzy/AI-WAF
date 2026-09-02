@@ -1,0 +1,17 @@
+{
+  "representation": "original",
+  "attack_type": "xxe",
+  "title": "XML external entity injection",
+  "standard": "CWE-611",
+  "records": 262,
+  "shards": {
+    "field/evaluation": 8,
+    "field/test": 5,
+    "field/train": 29,
+    "field/unspecified": 171,
+    "field/validation": 5,
+    "request/test": 7,
+    "request/train": 36,
+    "request/validation": 1
+  }
+}

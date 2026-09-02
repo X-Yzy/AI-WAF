@@ -1,0 +1,12 @@
+{
+  "representation": "original",
+  "attack_type": "webhook_replay",
+  "title": "Webhook signature / replay abuse",
+  "standard": "CWE-294",
+  "records": 16,
+  "shards": {
+    "context/test": 2,
+    "context/train": 10,
+    "context/validation": 4
+  }
+}

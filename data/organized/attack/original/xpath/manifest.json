@@ -1,0 +1,15 @@
+{
+  "representation": "original",
+  "attack_type": "xpath",
+  "title": "XPath injection",
+  "standard": "CWE-643",
+  "records": 2330,
+  "shards": {
+    "field/evaluation": 3,
+    "field/test": 4,
+    "field/train": 25,
+    "field/unspecified": 15,
+    "field/validation": 4,
+    "request/evaluation": 2279
+  }
+}

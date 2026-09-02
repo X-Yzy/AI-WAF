@@ -1,0 +1,52 @@
+# 命令注入检测规则
+
+rules:
+  - id: cmdi_pipe_cmd
+    pattern: '\|\s*(cat|ls|id|whoami|uname|dir|type|ipconfig|ifconfig|netstat|ps|wget|curl|nc|bash|sh|python|perl|ruby|php)\b'
+    severity: high
+    description: 管道 + 命令
+
+  - id: cmdi_semicolon_cmd
+    pattern: ';\s*(cat|ls|id|whoami|wget|curl|nc|bash|sh|python)\b'
+    severity: high
+    description: 分号分隔 + 命令
+
+  - id: cmdi_backtick
+    pattern: '`[^`]{1,50}`'
+    severity: high
+    description: 反引号子命令
+
+  - id: cmdi_dollar_subshell
+    pattern: '\$\([^)]+\)'
+    severity: high
+    description: $() 子命令
+
+  - id: cmdi_dev_null
+    pattern: '>\s*/dev/null'
+    severity: medium
+    description: 输出重定向到 /dev/null
+
+  - id: cmdi_etc_passwd
+    pattern: '/etc/(passwd|shadow|hosts)'
+    severity: medium
+    description: 访问敏感系统文件
+
+  - id: cmdi_and_chain
+    pattern: '&&\s*(cat|ls|id|whoami|wget|curl|ping|bash|sh)'
+    severity: high
+    description: && 链式命令
+
+  - id: cmdi_newline_bypass
+    pattern: '%0[ad]\s*(cat|ls|id|whoami)'
+    severity: high
+    description: 换行绕过 + 命令
+
+  - id: cmdi_ifs_bypass
+    pattern: '\$\{?IFS\}?'
+    severity: medium
+    description: IFS 空格绕过
+
+  - id: cmdi_wildcard_cmd
+    pattern: '[/\w]*\?[/\w]*\*'
+    severity: medium
+    description: 通配符命令

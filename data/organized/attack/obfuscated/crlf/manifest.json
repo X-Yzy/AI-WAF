@@ -1,0 +1,17 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "crlf",
+  "title": "CRLF / response splitting",
+  "standard": "CWE-93",
+  "records": 431,
+  "shards": {
+    "field/evaluation": 4,
+    "field/test": 15,
+    "field/train": 128,
+    "field/unspecified": 230,
+    "field/validation": 18,
+    "request/test": 4,
+    "request/train": 24,
+    "request/validation": 8
+  }
+}

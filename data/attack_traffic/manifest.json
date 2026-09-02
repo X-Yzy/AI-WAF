@@ -1,0 +1,93 @@
+{
+  "total": 9040,
+  "attack_types": {
+    "cmdi": {
+      "count": 624,
+      "file": "generated_datasets/cmdi/dataset_obfuscated.json"
+    },
+    "codei": {
+      "count": 292,
+      "file": "generated_datasets/codei/dataset_obfuscated.json"
+    },
+    "crlf": {
+      "count": 184,
+      "file": "generated_datasets/crlf/dataset_obfuscated.json"
+    },
+    "deser": {
+      "count": 144,
+      "file": "generated_datasets/deser/dataset_obfuscated.json"
+    },
+    "fmtst": {
+      "count": 100,
+      "file": "generated_datasets/fmtst/dataset_obfuscated.json"
+    },
+    "fupl": {
+      "count": 292,
+      "file": "generated_datasets/fupl/dataset_obfuscated.json"
+    },
+    "hpp": {
+      "count": 40,
+      "file": "generated_datasets/hpp/dataset_obfuscated.json"
+    },
+    "hsmug": {
+      "count": 112,
+      "file": "generated_datasets/hsmug/dataset_obfuscated.json"
+    },
+    "jwt": {
+      "count": 76,
+      "file": "generated_datasets/jwt/dataset_obfuscated.json"
+    },
+    "ldap": {
+      "count": 156,
+      "file": "generated_datasets/ldap/dataset_obfuscated.json"
+    },
+    "lfi": {
+      "count": 800,
+      "file": "generated_datasets/lfi/dataset_obfuscated.json"
+    },
+    "logi": {
+      "count": 128,
+      "file": "generated_datasets/logi/dataset_obfuscated.json"
+    },
+    "nosql": {
+      "count": 192,
+      "file": "generated_datasets/nosql/dataset_obfuscated.json"
+    },
+    "oredir": {
+      "count": 800,
+      "file": "generated_datasets/oredir/dataset_obfuscated.json"
+    },
+    "ptrav": {
+      "count": 800,
+      "file": "generated_datasets/ptrav/dataset_obfuscated.json"
+    },
+    "sqli": {
+      "count": 800,
+      "file": "generated_datasets/sqli/dataset_obfuscated.json"
+    },
+    "ssi": {
+      "count": 356,
+      "file": "generated_datasets/ssi/dataset_obfuscated.json"
+    },
+    "ssrf": {
+      "count": 800,
+      "file": "generated_datasets/ssrf/dataset_obfuscated.json"
+    },
+    "ssti": {
+      "count": 800,
+      "file": "generated_datasets/ssti/dataset_obfuscated.json"
+    },
+    "xpath": {
+      "count": 60,
+      "file": "generated_datasets/xpath/dataset_obfuscated.json"
+    },
+    "xss": {
+      "count": 800,
+      "file": "generated_datasets/xss/dataset_obfuscated.json"
+    },
+    "xxe": {
+      "count": 684,
+      "file": "generated_datasets/xxe/dataset_obfuscated.json"
+    }
+  }
+}

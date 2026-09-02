@@ -1,0 +1,84 @@
+"""Regression tests for recent-CVE and modern benign dataset builders."""
+
+from __future__ import annotations
+
+from data.modern_attack_traffic.build_dataset import classify, parse_fields, render, split_for
+from data.normal_traffic.generate_normal_dataset import (
+    MODERN_HTTP_SCENARIOS,
+    as_raw_request,
+    modern_http_records,
+    modern_structured_request,
+)
+from src.parser import parse_auto
+
+
+def test_nuclei_runtime_variables_are_not_mislabeled_as_ssti():
+    rendered = render(
+        "Basic {{base64('{{username}}' + ':' + '{{password}}')}} /users/{{username}}",
+        {},
+    )
+    assert "{{username}}" not in rendered
+    assert classify(rendered, {"auth-bypass"}) is None
+    assert classify("{{7*7}}", {"ssti"}) == ("ssti", "cve_ssti")
+
+
+def test_command_primitive_prefers_template_taxonomy_over_internal_ip():
+    value = "ping 127.0.0.1 | id"
+    assert classify(value, {"rce"}) == ("cmdi", "cve_command_execution")
+    assert classify("http://169.254.169.254/latest/meta-data", {"ssrf"}) == (
+        "ssrf", "cve_ssrf"
+    )
+    assert classify("/assets/php/upload.php", {"file-upload"}, "path") is None
+    assert classify(
+        'new java.lang.ProcessBuilder("id").start()', {"rce"}, "body"
+    ) == ("codei", "cve_code_execution")
+
+
+def test_recent_cve_split_is_stable_and_group_based():
+    assert split_for("CVE-2026-12345") == split_for("CVE-2026-12345")
+    assert split_for("CVE-2026-12345") in {"train", "validation", "test"}
+
+
+def test_raw_template_field_parser_extracts_path_query_and_json():
+    fields = parse_fields(
+        "POST /api/run?mode=safe HTTP/1.1\r\n"
+        "Host: target.example.test\r\nContent-Type: application/json\r\n\r\n"
+        '{"command":"id","nested":{"value":"ok"}}'
+    )
+    assert ("path", "/api/run", "path") in fields
+    assert ("mode", "safe", "query") in fields
+    assert ("command", "id", "body") in fields
+    assert ("nested.value", "ok", "body") in fields
+
+
+def test_every_modern_benign_scenario_builds_without_network_io():
+    import random
+
+    rng = random.Random(20260712)
+    records = [
+        modern_structured_request(rng, index, scenario)
+        for index, scenario in enumerate(MODERN_HTTP_SCENARIOS)
+    ]
+    assert len(records) == 30
+    assert all(item["label"] == 0 and item["source"].endswith("v2") for item in records)
+    assert {item["attack_subtype"] for item in records} == {
+        f"modern_{scenario}" for scenario in MODERN_HTTP_SCENARIOS
+    }
+
+
+def test_webdav_request_survives_raw_conversion_and_parser():
+    import random
+
+    record = modern_structured_request(random.Random(9), 19, "webdav_propfind")
+    raw = as_raw_request(record)["raw_request"]
+    params = parse_auto(raw)
+    assert raw.startswith("PROPFIND ")
+    assert any(item.location == "path" and item.value.startswith("/dav/") for item in params)
+    assert any(item.location == "body" and "propfind" in item.value for item in params)
+
+
+def test_modern_http_generation_is_deterministic():
+    left = modern_http_records(45, 12345)
+    right = modern_http_records(45, 12345)
+    assert left == right
+    assert len({item["id"] for item in left}) == len(left)

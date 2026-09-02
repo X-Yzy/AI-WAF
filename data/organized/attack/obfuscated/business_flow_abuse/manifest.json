@@ -1,0 +1,12 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "business_flow_abuse",
+  "title": "Business-flow abuse",
+  "standard": "API6:2023",
+  "records": 24,
+  "shards": {
+    "context/test": 2,
+    "context/train": 9,
+    "context/validation": 13
+  }
+}

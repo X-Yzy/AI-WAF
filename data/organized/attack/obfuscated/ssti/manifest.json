@@ -1,0 +1,17 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "ssti",
+  "title": "Server-side template injection",
+  "standard": "CWE-1336",
+  "records": 1187,
+  "shards": {
+    "field/evaluation": 28,
+    "field/test": 13,
+    "field/train": 92,
+    "field/unspecified": 1000,
+    "field/validation": 13,
+    "request/test": 1,
+    "request/train": 30,
+    "request/validation": 10
+  }
+}

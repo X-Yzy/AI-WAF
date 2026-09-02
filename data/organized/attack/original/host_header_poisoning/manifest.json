@@ -1,0 +1,15 @@
+{
+  "representation": "original",
+  "attack_type": "host_header_poisoning",
+  "title": "Host-header poisoning",
+  "standard": "CWE-640",
+  "records": 17,
+  "shards": {
+    "context/test": 1,
+    "context/train": 9,
+    "context/validation": 3,
+    "field/test": 1,
+    "field/train": 2,
+    "field/validation": 1
+  }
+}

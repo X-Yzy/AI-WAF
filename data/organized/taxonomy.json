@@ -1,0 +1,262 @@
+{
+  "api_bfla": {
+    "title": "Broken function-level authorization",
+    "standard": "API5:2023"
+  },
+  "api_bola": {
+    "title": "Broken object-level authorization / IDOR",
+    "standard": "API1:2023"
+  },
+  "api_content_type_confusion": {
+    "title": "API content-type parser confusion",
+    "standard": "CWE-444"
+  },
+  "api_mass_assignment": {
+    "title": "API mass assignment",
+    "standard": "CWE-915"
+  },
+  "api_open_redirect": {
+    "title": "API open redirect",
+    "standard": "CWE-601"
+  },
+  "api_proto": {
+    "title": "Prototype pollution",
+    "standard": "CWE-1321"
+  },
+  "api_resource_consumption": {
+    "title": "API resource consumption",
+    "standard": "API4:2023"
+  },
+  "api_viewstate_integrity": {
+    "title": "ViewState integrity failure",
+    "standard": "CWE-345"
+  },
+  "business_flow_abuse": {
+    "title": "Business-flow abuse",
+    "standard": "API6:2023"
+  },
+  "cache_deception": {
+    "title": "Web cache deception",
+    "standard": "CWE-525"
+  },
+  "cache_poisoning": {
+    "title": "Web cache poisoning",
+    "standard": "CWE-444"
+  },
+  "cmdi": {
+    "title": "OS command injection",
+    "standard": "CWE-78"
+  },
+  "codei": {
+    "title": "Code and expression injection",
+    "standard": "CWE-94"
+  },
+  "cors_policy": {
+    "title": "CORS policy abuse",
+    "standard": "CWE-942"
+  },
+  "credential_stuffing": {
+    "title": "Credential stuffing",
+    "standard": "CWE-307"
+  },
+  "crlf": {
+    "title": "CRLF / response splitting",
+    "standard": "CWE-93"
+  },
+  "csrf": {
+    "title": "Cross-site request forgery",
+    "standard": "CWE-352"
+  },
+  "csv_formula": {
+    "title": "Spreadsheet formula injection",
+    "standard": "CWE-1236"
+  },
+  "deser": {
+    "title": "Unsafe deserialization",
+    "standard": "CWE-502"
+  },
+  "fmtst": {
+    "title": "Format string injection",
+    "standard": "CWE-134"
+  },
+  "fupl": {
+    "title": "Unrestricted file upload",
+    "standard": "CWE-434"
+  },
+  "graphql_complexity": {
+    "title": "GraphQL complexity abuse",
+    "standard": "CWE-400"
+  },
+  "graphql_introspection": {
+    "title": "GraphQL schema discovery",
+    "standard": "CWE-200"
+  },
+  "grpc_reflection": {
+    "title": "gRPC reflection enumeration",
+    "standard": "CWE-200"
+  },
+  "host_header_poisoning": {
+    "title": "Host-header poisoning",
+    "standard": "CWE-640"
+  },
+  "hpp": {
+    "title": "HTTP parameter pollution",
+    "standard": "CWE-235"
+  },
+  "hsmug": {
+    "title": "HTTP request smuggling",
+    "standard": "CWE-444"
+  },
+  "http2_pseudo_header_ambiguity": {
+    "title": "HTTP/2 pseudo-header ambiguity",
+    "standard": "CWE-444"
+  },
+  "http2_rapid_reset": {
+    "title": "HTTP/2 Rapid Reset",
+    "standard": "CVE-2023-44487"
+  },
+  "jndi": {
+    "title": "JNDI lookup injection",
+    "standard": "CWE-917"
+  },
+  "json_patch_authz": {
+    "title": "JSON Patch property authorization",
+    "standard": "CWE-915"
+  },
+  "jwt": {
+    "title": "JWT implementation attacks",
+    "standard": "CWE-347"
+  },
+  "ldap": {
+    "title": "LDAP injection",
+    "standard": "CWE-90"
+  },
+  "lfi": {
+    "title": "Local file inclusion",
+    "standard": "CWE-98"
+  },
+  "llm_direct_prompt_injection": {
+    "title": "Direct LLM prompt injection",
+    "standard": "OWASP LLM01"
+  },
+  "llm_indirect_rag_injection": {
+    "title": "Indirect RAG prompt injection",
+    "standard": "OWASP LLM01"
+  },
+  "llm_prompt_exfiltration": {
+    "title": "LLM prompt exfiltration",
+    "standard": "OWASP LLM02"
+  },
+  "llm_sensitive_output_disclosure": {
+    "title": "LLM sensitive output disclosure",
+    "standard": "OWASP LLM02"
+  },
+  "llm_tool_argument_injection": {
+    "title": "LLM tool argument injection",
+    "standard": "OWASP LLM06"
+  },
+  "logi": {
+    "title": "Log injection / forging",
+    "standard": "CWE-117"
+  },
+  "method_override": {
+    "title": "HTTP method override bypass",
+    "standard": "CWE-650"
+  },
+  "mfa_otp_abuse": {
+    "title": "MFA / OTP guessing",
+    "standard": "CWE-307"
+  },
+  "multipart_attack": {
+    "title": "Malformed multipart request attack",
+    "standard": "CWE-20"
+  },
+  "nosql": {
+    "title": "NoSQL injection",
+    "standard": "CWE-943"
+  },
+  "oauth_redirect": {
+    "title": "OAuth redirect abuse",
+    "standard": "CWE-601"
+  },
+  "oredir": {
+    "title": "Open redirect",
+    "standard": "CWE-601"
+  },
+  "protocol_violation": {
+    "title": "HTTP protocol violation",
+    "standard": "CWE-20"
+  },
+  "ptrav": {
+    "title": "Path traversal",
+    "standard": "CWE-22"
+  },
+  "race_condition": {
+    "title": "Race condition / replay",
+    "standard": "CWE-362"
+  },
+  "saml_signature_wrapping": {
+    "title": "SAML signature wrapping",
+    "standard": "CWE-347"
+  },
+  "scanner": {
+    "title": "Vulnerability scanner behaviour",
+    "standard": "CWE-799"
+  },
+  "scanner_probe": {
+    "title": "Vulnerability scanner probes",
+    "standard": "CWE-799"
+  },
+  "session_fixation": {
+    "title": "Session fixation",
+    "standard": "CWE-384"
+  },
+  "sqli": {
+    "title": "SQL injection",
+    "standard": "CWE-89"
+  },
+  "ssi": {
+    "title": "Server-side include injection",
+    "standard": "CWE-97"
+  },
+  "ssrf": {
+    "title": "Server-side request forgery",
+    "standard": "CWE-918"
+  },
+  "ssti": {
+    "title": "Server-side template injection",
+    "standard": "CWE-1336"
+  },
+  "upload": {
+    "title": "Malicious upload request",
+    "standard": "CWE-434"
+  },
+  "web_anomaly": {
+    "title": "Mixed anomalous web request",
+    "standard": "mixed/unspecified"
+  },
+  "webhook_replay": {
+    "title": "Webhook signature / replay abuse",
+    "standard": "CWE-294"
+  },
+  "websocket_cswh": {
+    "title": "Cross-site WebSocket hijacking",
+    "standard": "CWE-346"
+  },
+  "websocket_frame_validation": {
+    "title": "WebSocket frame attacks",
+    "standard": "CWE-20"
+  },
+  "xpath": {
+    "title": "XPath injection",
+    "standard": "CWE-643"
+  },
+  "xss": {
+    "title": "Cross-site scripting",
+    "standard": "CWE-79"
+  },
+  "xxe": {
+    "title": "XML external entity injection",
+    "standard": "CWE-611"
+  }
+}

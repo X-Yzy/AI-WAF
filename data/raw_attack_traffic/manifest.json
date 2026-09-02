@@ -1,0 +1,127 @@
+{
+  "purpose": "authorized defensive Web attack detection dataset",
+  "sources": {
+    "PayloadsAllTheThings": {
+      "url": "https://github.com/swisskyrepo/PayloadsAllTheThings",
+      "commit": "5443cbde384134094f25b1b440695757a2803d55",
+      "license": "MIT"
+    },
+    "fuzzdb": {
+      "url": "https://github.com/fuzzdb-project/fuzzdb",
+      "version": "master-snapshot-2026-07-11",
+      "license": "see LICENSE-fuzzdb.txt"
+    }
+  },
+  "attack_types": {
+    "sqli": {
+      "records": 200,
+      "source_records": "sqli/source_records.json",
+      "original_files": "sqli/original_files"
+    },
+    "xss": {
+      "records": 200,
+      "source_records": "xss/source_records.json",
+      "original_files": "xss/original_files"
+    },
+    "cmdi": {
+      "records": 156,
+      "source_records": "cmdi/source_records.json",
+      "original_files": "cmdi/original_files"
+    },
+    "ssti": {
+      "records": 200,
+      "source_records": "ssti/source_records.json",
+      "original_files": "ssti/original_files"
+    },
+    "ptrav": {
+      "records": 200,
+      "source_records": "ptrav/source_records.json",
+      "original_files": "ptrav/original_files"
+    },
+    "lfi": {
+      "records": 200,
+      "source_records": "lfi/source_records.json",
+      "original_files": "lfi/original_files"
+    },
+    "xxe": {
+      "records": 171,
+      "source_records": "xxe/source_records.json",
+      "original_files": "xxe/original_files"
+    },
+    "ssrf": {
+      "records": 200,
+      "source_records": "ssrf/source_records.json",
+      "original_files": "ssrf/original_files"
+    },
+    "nosql": {
+      "records": 48,
+      "source_records": "nosql/source_records.json",
+      "original_files": "nosql/original_files"
+    },
+    "ldap": {
+      "records": 39,
+      "source_records": "ldap/source_records.json",
+      "original_files": "ldap/original_files"
+    },
+    "xpath": {
+      "records": 15,
+      "source_records": "xpath/source_records.json",
+      "original_files": "xpath/original_files"
+    },
+    "crlf": {
+      "records": 46,
+      "source_records": "crlf/source_records.json",
+      "original_files": "crlf/original_files"
+    },
+    "codei": {
+      "records": 73,
+      "source_records": "codei/source_records.json",
+      "original_files": "codei/original_files"
+    },
+    "logi": {
+      "records": 32,
+      "source_records": "logi/source_records.json",
+      "original_files": "logi/original_files"
+    },
+    "fmtst": {
+      "records": 25,
+      "source_records": "fmtst/source_records.json",
+      "original_files": "fmtst/original_files"
+    },
+    "fupl": {
+      "records": 73,
+      "source_records": "fupl/source_records.json",
+      "original_files": "fupl/original_files"
+    },
+    "oredir": {
+      "records": 200,
+      "source_records": "oredir/source_records.json",
+      "original_files": "oredir/original_files"
+    },
+    "deser": {
+      "records": 36,
+      "source_records": "deser/source_records.json",
+      "original_files": "deser/original_files"
+    },
+    "jwt": {
+      "records": 19,
+      "source_records": "jwt/source_records.json",
+      "original_files": "jwt/original_files"
+    },
+    "ssi": {
+      "records": 89,
+      "source_records": "ssi/source_records.json",
+      "original_files": "ssi/original_files"
+    },
+    "hpp": {
+      "records": 10,
+      "source_records": "hpp/source_records.json",
+      "original_files": "hpp/original_files"
+    },
+    "hsmug": {
+      "records": 28,
+      "source_records": "hsmug/source_records.json",
+      "original_files": "hsmug/original_files"
+    }
+  }
+}

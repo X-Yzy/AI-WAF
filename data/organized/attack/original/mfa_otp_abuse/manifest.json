@@ -1,0 +1,12 @@
+{
+  "representation": "original",
+  "attack_type": "mfa_otp_abuse",
+  "title": "MFA / OTP guessing",
+  "standard": "CWE-307",
+  "records": 22,
+  "shards": {
+    "context/test": 1,
+    "context/train": 9,
+    "context/validation": 12
+  }
+}

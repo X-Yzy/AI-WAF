@@ -1,0 +1,13 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "scanner",
+  "title": "Vulnerability scanner behaviour",
+  "standard": "CWE-799",
+  "records": 125,
+  "shards": {
+    "request/evaluation": 5,
+    "request/test": 15,
+    "request/train": 90,
+    "request/validation": 15
+  }
+}

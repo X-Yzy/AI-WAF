@@ -1,0 +1,10 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+*.jsonl filter=lfs diff=lfs merge=lfs -text
+data/organized/**/*.jsonl filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.jar filter=lfs diff=lfs merge=lfs -text
+**/dataset_all_original_obfuscated_*.json filter=lfs diff=lfs merge=lfs -text
+**/dataset_external_*.json filter=lfs diff=lfs merge=lfs -text
+data/normal_traffic/**/*.json filter=lfs diff=lfs merge=lfs -text

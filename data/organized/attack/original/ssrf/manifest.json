@@ -1,0 +1,18 @@
+{
+  "representation": "original",
+  "attack_type": "ssrf",
+  "title": "Server-side request forgery",
+  "standard": "CWE-918",
+  "records": 370,
+  "shards": {
+    "field/evaluation": 10,
+    "field/test": 8,
+    "field/train": 45,
+    "field/unspecified": 200,
+    "field/validation": 6,
+    "request/evaluation": 34,
+    "request/test": 12,
+    "request/train": 49,
+    "request/validation": 6
+  }
+}

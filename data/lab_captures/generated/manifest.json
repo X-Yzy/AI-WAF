@@ -1,0 +1,84 @@
+{
+  "dataset": "Isolated-Vulnerable-Lab-Capture-v1",
+  "total_records": 1427,
+  "splits": {
+    "train": 1120,
+    "validation": 168,
+    "test": 139
+  },
+  "label_counts": {
+    "0": 548,
+    "1": 879
+  },
+  "campaigns": 388,
+  "attack_type_counts": {
+    "api_bfla": 12,
+    "api_bola": 12,
+    "api_mass_assignment": 12,
+    "api_proto": 36,
+    "api_resource_consumption": 72,
+    "cmdi": 36,
+    "credential_stuffing": 48,
+    "crlf": 36,
+    "deser": 36,
+    "hpp": 36,
+    "jndi": 36,
+    "jwt": 42,
+    "nosql": 36,
+    "ptrav": 39,
+    "scanner_probe": 156,
+    "sqli": 54,
+    "ssrf": 36,
+    "ssti": 36,
+    "upload": 36,
+    "xss": 36,
+    "xxe": 36
+  },
+  "capture_targets": [
+    "127.0.0.1:19082",
+    "juice-shop:3000",
+    "vampi:5000",
+    "webgoat:8080"
+  ],
+  "capture_target_counts": {
+    "127.0.0.1:19082": 336,
+    "juice-shop:3000": 339,
+    "vampi:5000": 416,
+    "webgoat:8080": 336
+  },
+  "capture_source_metadata": {
+    "127.0.0.1:19082": {
+      "name": "inert local fixture",
+      "kind": "local_standard_library_fixture"
+    },
+    "juice-shop:3000": {
+      "name": "OWASP Juice Shop",
+      "version": "v18.0.0"
+    },
+    "vampi:5000": {
+      "name": "VAmPI - Vulnerable API",
+      "image": "docker.1ms.run/erev0s/vampi",
+      "image_digest": "sha256:0a5a224b6e14ae7da6a6ea265178ff71286ff903aec74adee98f660bb0e4ca12",
+      "configuration": "vulnerable=1; disposable SQLite database"
+    },
+    "webgoat:8080": {
+      "name": "OWASP WebGoat",
+      "version": "v2025.3"
+    }
+  },
+  "scanner_tool_versions": {
+    "nuclei": "v3.11.0"
+  },
+  "skipped": {
+    "duplicate": 6,
+    "unlabelled": 1
+  },
+  "artifacts": {
+    "dataset_lab_capture_train.json": "a96ef2025e95d25bc5b5c43fba07b42ae34842994892317426e51f9c5fdabe21",
+    "dataset_lab_capture_validation.json": "ce22553dae499b7435837f492ac5550e9f6c9a12ddbfd35f7253ffa2f004e2e5",
+    "dataset_lab_capture_test.json": "52821f7fc972e5eb7beb23cd55948c68aead6f49d8a4f4941095754cc4bf6bd4"
+  },
+  "privacy": "collector redacts common credential headers, query names and JSON secret fields",
+  "provenance": "live HTTP requests captured through a loopback collector; target identity is retained in lab_target",
+  "payload_model_scope": "excluded; request labels must not be copied to every parsed field"
+}

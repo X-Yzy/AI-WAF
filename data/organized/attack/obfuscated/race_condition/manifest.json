@@ -1,0 +1,11 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "race_condition",
+  "title": "Race condition / replay",
+  "standard": "CWE-362",
+  "records": 20,
+  "shards": {
+    "context/test": 9,
+    "context/train": 11
+  }
+}

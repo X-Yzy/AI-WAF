@@ -1,0 +1,12 @@
+{
+  "representation": "original",
+  "attack_type": "grpc_reflection",
+  "title": "gRPC reflection enumeration",
+  "standard": "CWE-200",
+  "records": 20,
+  "shards": {
+    "context/test": 1,
+    "context/train": 18,
+    "context/validation": 1
+  }
+}

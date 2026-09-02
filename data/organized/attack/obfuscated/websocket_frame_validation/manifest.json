@@ -1,0 +1,10 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "websocket_frame_validation",
+  "title": "WebSocket frame attacks",
+  "standard": "CWE-20",
+  "records": 8,
+  "shards": {
+    "protocol/test": 8
+  }
+}

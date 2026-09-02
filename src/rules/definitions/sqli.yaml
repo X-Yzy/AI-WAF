@@ -1,0 +1,81 @@
+# SQL 注入检测规则
+# 格式：每行一条规则，字段以空格或冒号分隔
+#   id: 规则唯一标识
+#   pattern: Python 正则表达式
+#   severity: high | medium | low
+
+rules:
+  - id: sqli_union_select
+    pattern: '\bUNION\s+(ALL\s+)?SELECT\b'
+    severity: high
+    description: UNION SELECT 注入
+
+  - id: sqli_or_tautology
+    pattern: '''\s*OR\s+[''\d]+=[''\d]+'
+    severity: high
+    description: OR 永真式
+
+  - id: sqli_and_tautology
+    pattern: '''\s*AND\s+[''\d]+=[''\d]+'
+    severity: high
+    description: AND 永真式盲注
+
+  - id: sqli_sleep
+    pattern: '\bSLEEP\s*\(\s*\d+\s*\)'
+    severity: high
+    description: MySQL 时间盲注
+
+  - id: sqli_benchmark
+    pattern: '\bBENCHMARK\s*\(.*,.*\)'
+    severity: high
+    description: MySQL BENCHMARK 延时
+
+  - id: sqli_waitfor
+    pattern: '\bWAITFOR\s+DELAY\b'
+    severity: high
+    description: MSSQL 时间盲注
+
+  - id: sqli_pg_sleep
+    pattern: '\bpg_sleep\s*\('
+    severity: high
+    description: PostgreSQL 时间盲注
+
+  - id: sqli_extractvalue
+    pattern: '\bEXTRACTVALUE\s*\(.*,.*\)'
+    severity: high
+    description: MySQL 报错注入
+
+  - id: sqli_updatexml
+    pattern: '\bUPDATEXML\s*\(.*,.*\)'
+    severity: high
+    description: MySQL 报错注入
+
+  - id: sqli_drop_table
+    pattern: '\bDROP\s+TABLE\b'
+    severity: high
+    description: 删表攻击
+
+  - id: sqli_into_outfile
+    pattern: '\bINTO\s+(OUTFILE|DUMPFILE)\b'
+    severity: high
+    description: 写文件
+
+  - id: sqli_information_schema
+    pattern: '\bINFORMATION_SCHEMA\b'
+    severity: medium
+    description: 信息收集
+
+  - id: sqli_load_file
+    pattern: '\bLOAD_FILE\s*\('
+    severity: high
+    description: 读文件
+
+  - id: sqli_group_concat
+    pattern: '\bGROUP_CONCAT\s*\('
+    severity: medium
+    description: 数据聚合提取
+
+  - id: sqli_floor_rand
+    pattern: '\bFLOOR\s*\(\s*RAND\s*\('
+    severity: high
+    description: FLOOR+RAND 报错注入

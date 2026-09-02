@@ -1,0 +1,18 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "ssrf",
+  "title": "Server-side request forgery",
+  "standard": "CWE-918",
+  "records": 1271,
+  "shards": {
+    "field/evaluation": 27,
+    "field/test": 16,
+    "field/train": 113,
+    "field/unspecified": 1000,
+    "field/validation": 14,
+    "request/evaluation": 34,
+    "request/test": 12,
+    "request/train": 49,
+    "request/validation": 6
+  }
+}

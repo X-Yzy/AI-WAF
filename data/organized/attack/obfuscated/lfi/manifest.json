@@ -1,0 +1,15 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "lfi",
+  "title": "Local file inclusion",
+  "standard": "CWE-98",
+  "records": 1186,
+  "shards": {
+    "field/evaluation": 26,
+    "field/test": 12,
+    "field/train": 72,
+    "field/unspecified": 1000,
+    "field/validation": 12,
+    "request/evaluation": 64
+  }
+}

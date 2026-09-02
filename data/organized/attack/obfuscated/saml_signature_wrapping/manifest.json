@@ -1,0 +1,12 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "saml_signature_wrapping",
+  "title": "SAML signature wrapping",
+  "standard": "CWE-347",
+  "records": 13,
+  "shards": {
+    "context/test": 1,
+    "context/train": 11,
+    "context/validation": 1
+  }
+}

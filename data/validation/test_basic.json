@@ -1,0 +1,394 @@
+[
+  {
+    "id": "sqli_orig",
+    "payload": "' UNION SELECT 1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "sqli_obf_url_encode_full",
+    "payload": "%27 %55%4E%49%4F%4E %53%45%4C%45%43%54 %31%2C%32%2C%33%2D%2D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "sqli_obf_html_entity_encode",
+    "payload": "&#39; UNION SELECT 1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "sqli_obf_base64_encode",
+    "payload": "JyBVTklPTiBTRUxFQ1QgMSwyLDMtLQ",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "sqli_orig",
+    "payload": "' OR 1=1--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "sqli_obf_url_encode_full",
+    "payload": "%27 %4F%52 %31%3D%31%2D%2D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "sqli_obf_html_entity_encode",
+    "payload": "&#39; OR 1=1--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "sqli_obf_base64_encode",
+    "payload": "JyBPUiAxPTEtLQ",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "sqli_orig",
+    "payload": "sleep(1.1)",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "sqli_obf_url_encode_full",
+    "payload": "%73%6C%65%65%70%28%31%2E%31%29",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "sqli_obf_base64_encode",
+    "payload": "c2xlZXAoMS4xKQ==",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "sqli_orig",
+    "payload": "'; DROP TABLE users;--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "sqli_obf_url_encode_full",
+    "payload": "%27%3B %44%52%4F%50 %54%41%42%4C%45 %75%73%65%72%73%3B%2D%2D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "sqli_obf_html_entity_encode",
+    "payload": "&#39;; DROP TABLE users;--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "sqli_obf_base64_encode",
+    "payload": "JzsgRFJPUCBUQUJMRSB1c2VyczstLQ==",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "xss_orig",
+    "payload": "<script>alert(1)</script>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "xss_obf_url_encode_full",
+    "payload": "%3C%73%63%72%69%70%74%3E%61%6C%65%72%74%28%31%29%3C%2F%73%63%72%69%70%74%3E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "xss_obf_html_entity_encode",
+    "payload": "&lt;script&gt;alert(1)&lt;/script&gt;",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "xss_obf_base64_encode",
+    "payload": "PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "xss_orig",
+    "payload": "<img src=x onerror=alert(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "xss_obf_url_encode_full",
+    "payload": "%3C%69%6D%67 %73%72%63%3D%78 %6F%6E%65%72%72%6F%72%3D%61%6C%65%72%74%28%31%29%3E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "xss_obf_html_entity_encode",
+    "payload": "&lt;img src=x onerror=alert(1)&gt;",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "xss_obf_base64_encode",
+    "payload": "PGltZyBzcmM9eCBvbmVycm9yPWFsZXJ0KDEpPg",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "xss_orig",
+    "payload": "<svg onload=alert(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "xss_obf_url_encode_full",
+    "payload": "%3C%73%76%67 %6F%6E%6C%6F%61%64%3D%61%6C%65%72%74%28%31%29%3E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "xss_obf_html_entity_encode",
+    "payload": "&lt;svg onload=alert(1)&gt;",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "xss_obf_base64_encode",
+    "payload": "PHN2ZyBvbmxvYWQ9YWxlcnQoMSk+",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "cmdi_orig",
+    "payload": "| cat /etc/passwd",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "cmdi_obf_url_encode_full",
+    "payload": "%7C %63%61%74 %2F%65%74%63%2F%70%61%73%73%77%64",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "cmdi_obf_base64_encode",
+    "payload": "fCBjYXQgL2V0Yy9wYXNzd2Q",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "cmdi_orig",
+    "payload": "; ls -la",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "cmdi_obf_url_encode_full",
+    "payload": "%3B %6C%73 %2D%6C%61",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "cmdi_obf_base64_encode",
+    "payload": "OyBscyAtbGE=",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "ssti_orig",
+    "payload": "{{7*7}}",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "original"
+  },
+  {
+    "id": "ssti_obf_url_encode_full",
+    "payload": "%7B%7B%37%2A%37%7D%7D",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_basic"
+  },
+  {
+    "id": "ssti_obf_base64_encode",
+    "payload": "e3s3Kjd9fQ==",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_basic"
+  },
+  {
+    "id": "ssrf_orig",
+    "payload": "http://169.254.169.254/latest/meta-data/",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "ssrf_obf_url_encode_full",
+    "payload": "%68%74%74%70%3A%2F%2F%31%36%39%2E%32%35%34%2E%31%36%39%2E%32%35%34%2F%6C%61%74%65%73%74%2F%6D%65%74%61%2D%64%61%74%61%2F",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "ssrf_obf_base64_encode",
+    "payload": "aHR0cDovLzE2OS4yNTQuMTY5LjI1NC9sYXRlc3QvbWV0YS1kYXRhLw==",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "ptrav_orig",
+    "payload": "../../etc/passwd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "ptrav_obf_url_encode_full",
+    "payload": "%2E%2E%2F%2E%2E%2F%65%74%63%2F%70%61%73%73%77%64",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "ptrav_obf_base64_encode",
+    "payload": "Li4vLi4vZXRjL3Bhc3N3ZA",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "lfi_orig",
+    "payload": "php://filter/convert.base64-encode/resource=index.php",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "lfi_obf_url_encode_full",
+    "payload": "%70%68%70%3A%2F%2F%66%69%6C%74%65%72%2F%63%6F%6E%76%65%72%74%2E%62%61%73%65%36%34%2D%65%6E%63%6F%64%65%2F%72%65%73%6F%75%72%63%65%3D%69%6E%64%65%78%2E%70%68%70",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "lfi_obf_base64_encode",
+    "payload": "cGhwOi8vZmlsdGVyL2NvbnZlcnQuYmFzZTY0LWVuY29kZS9yZXNvdXJjZT1pbmRleC5waHA=",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_basic"
+  },
+  {
+    "id": "xxe_orig",
+    "payload": "<?xml version='1.0'?><!DOCTYPE foo [<!ENTITY xxe SYSTEM 'file:///etc/passwd'>]><foo>&xxe;</foo>",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "original"
+  },
+  {
+    "id": "xxe_obf_url_encode_full",
+    "payload": "%3C%3F%78%6D%6C %76%65%72%73%69%6F%6E%3D%27%31%2E%30%27%3F%3E%3C%21%44%4F%43%54%59%50%45 %66%6F%6F %5B%3C%21%45%4E%54%49%54%59 %78%78%65 %53%59%53%54%45%4D %27%66%69%6C%65%3A%2F%2F%2F%65%74%63%2F%70%61%73%73%77%64%27%3E%5D%3E%3C%66%6F%6F%3E%26%78%78%65%3B%3C%2F%66%6F%6F%3E",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_basic"
+  },
+  {
+    "id": "xxe_obf_html_entity_encode",
+    "payload": "&lt;?xml version=&#39;1.0&#39;?&gt;&lt;!DOCTYPE foo [&lt;!ENTITY xxe SYSTEM &#39;file:///etc/passwd&#39;&gt;]&gt;&lt;foo&gt;&amp;xxe;&lt;/foo&gt;",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_basic"
+  },
+  {
+    "id": "xxe_obf_base64_encode",
+    "payload": "PD94bWwgdmVyc2lvbj0nMS4wJz8-PCFET0NUWVBFIGZvbyBbPCFFTlRJVFkgeHhlIFNZU1RFTSAnZmlsZTovLy9ldGMvcGFzc3dkJz5dPjxmb28-Jnh4ZTs8L2Zvbz4",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_basic"
+  }
+]

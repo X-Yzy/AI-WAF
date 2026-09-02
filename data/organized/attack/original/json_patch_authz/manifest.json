@@ -1,0 +1,11 @@
+{
+  "representation": "original",
+  "attack_type": "json_patch_authz",
+  "title": "JSON Patch property authorization",
+  "standard": "CWE-915",
+  "records": 13,
+  "shards": {
+    "context/test": 4,
+    "context/train": 9
+  }
+}

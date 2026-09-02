@@ -1,0 +1,931 @@
+{
+  "schema": "final_model_vs_real_waf_products_v4",
+  "generated_at": "2026-08-25T05:36:12.152925+00:00",
+  "baseline_definition": "对照组为实际运行的官方 ModSecurity 3.0.16 + OWASP CRS 4.28.0 Docker 产品，不是关键词模拟器。每条记录构造成真实 HTTP 请求；请求未到达带随机令牌的临时后端即记为产品阻断。配置采用阻断模式、Paranoia Level 1、入站异常阈值 5。效果指标使用同一记录与标签；延迟列需按各自 latency_scope 解读。",
+  "baseline_identity": {
+    "key": "modsecurity_crs_4_28_0",
+    "name": "ModSecurity 3.0.16 + OWASP CRS 4.28.0",
+    "implementation": "official Docker image, real HTTP reverse-proxy execution",
+    "is_actual_product_execution": true,
+    "is_simulation": false,
+    "image": "owasp/modsecurity-crs:4.28.0-nginx-202607160307",
+    "image_metadata": {
+      "id": "sha256:2051ff18b836c1d9bbc5c7754451c1687ea27352e497b89d0c9fc7e657861e07",
+      "repo_digests": [
+        "owasp/modsecurity-crs@sha256:2051ff18b836c1d9bbc5c7754451c1687ea27352e497b89d0c9fc7e657861e07"
+      ],
+      "created": "2026-07-16T16:04:09.846272165Z",
+      "architecture": "amd64",
+      "os": "linux"
+    },
+    "engine": {
+      "name": "ModSecurity",
+      "version": "3.0.16"
+    },
+    "ruleset": {
+      "name": "OWASP Core Rule Set",
+      "version": "4.28.0"
+    },
+    "web_server": {
+      "name": "Nginx",
+      "version": "1.30.4"
+    },
+    "configuration": {
+      "rule_engine": "On",
+      "blocking_paranoia": 1,
+      "detection_paranoia": 1,
+      "inbound_anomaly_threshold": 5,
+      "outbound_anomaly_threshold": 4
+    },
+    "official_sources": [
+      "https://owasp.org/www-project-modsecurity/",
+      "https://hub.docker.com/r/owasp/modsecurity-crs/tags"
+    ],
+    "decision_policy": "HTTP request blocked by the running product before reaching the token-protected benchmark backend",
+    "transport": {
+      "endpoint": "loopback-only ephemeral port",
+      "backend": "temporary token-protected local HTTP backend"
+    }
+  },
+  "product_execution": {
+    "container_instances": 3,
+    "container_names": [
+      "wad-real-waf-58c2461261e1",
+      "wad-real-waf-e1b1b97daa0a",
+      "wad-real-waf-0e828cc042fd"
+    ],
+    "audited_restarts": 2,
+    "restart_events": [
+      {
+        "record_id": "normal_00188485",
+        "label": 0,
+        "attack_type": "normal",
+        "param_location": "body",
+        "record_restart": 1,
+        "global_restart": 1,
+        "error": "Real WAF request failed twice: carrier=body, location=body, timeout=30.0s, error=timed out"
+      },
+      {
+        "record_id": "mlwaf_19951e68c646119cbcd4b34a",
+        "label": 0,
+        "attack_type": "normal",
+        "param_location": "query",
+        "record_restart": 1,
+        "global_restart": 2,
+        "error": "Real WAF request failed twice: carrier=query, location=query, timeout=30.0s, error=timed out"
+      }
+    ],
+    "startup_failures": [],
+    "stable_backend_port": 58792,
+    "status_codes": {
+      "204": 31405,
+      "400": 3,
+      "403": 3313
+    },
+    "request_carriers": {
+      "body": 9044,
+      "body_fallback": 638,
+      "cookie": 1035,
+      "filename": 10,
+      "header": 4161,
+      "path": 330,
+      "query": 19503
+    },
+    "fallbacks": {
+      "header value is not representable as one valid HTTP/1.1 field": 638
+    }
+  },
+  "fairness": {
+    "same_records": true,
+    "same_labels": true,
+    "same_order": true,
+    "complete_independent_test_split": true,
+    "known_duplicate_excluded": true,
+    "product_uses_real_http": true,
+    "product_is_simulated": false,
+    "effectiveness_comparable": true,
+    "latency_directly_comparable": false,
+    "latency_note": "AI-WAF 为进程内字段推理；真实 WAF 包含本机 HTTP、Nginx、ModSecurity 和后端到达证明，因此延迟仅展示各自运行开销，不据此宣称纯引擎性能优劣。"
+  },
+  "dataset": {
+    "source": "data/organized",
+    "split": "test",
+    "eligible_only": true,
+    "known_duplicate_excluded": true,
+    "attack": 2525,
+    "normal": 32196,
+    "total": 34721,
+    "audit": {
+      "data_root": "data/organized",
+      "loaded": {
+        "train": {
+          "from_unspecified": 13254,
+          "normal": 256856,
+          "obfuscated": 20147,
+          "original": 10340
+        },
+        "validation": {
+          "normal": 32228,
+          "obfuscated": 1201,
+          "original": 1013
+        },
+        "test": {
+          "normal": 32196,
+          "obfuscated": 1357,
+          "original": 1168
+        }
+      },
+      "skipped_ineligible": {
+        "test": 35,
+        "train": 239,
+        "unspecified": 1,
+        "validation": 46
+      },
+      "skipped_duplicates": {
+        "test": 10,
+        "train": 501,
+        "validation": 8
+      },
+      "unspecified_policy": "train_only"
+    }
+  },
+  "system_order": [
+    "final_model",
+    "modsecurity_crs_4_28_0",
+    "safeline_ce",
+    "openappsec_ce"
+  ],
+  "systems": {
+    "final_model": {
+      "precision": 0.990476,
+      "recall": 0.988515,
+      "f1": 0.989495,
+      "fpr": 0.000745,
+      "confusion_matrix": [
+        [
+          32172,
+          24
+        ],
+        [
+          29,
+          2496
+        ]
+      ],
+      "latency": {
+        "mean_ms": 1.469518,
+        "p50_ms": 1.6295,
+        "p95_ms": 2.2842,
+        "p99_ms": 2.61896
+      },
+      "display_name": "最终 AI-WAF",
+      "kind": "live_model",
+      "execution": "in-process field detector",
+      "latency_scope": "in-process inference"
+    },
+    "modsecurity_crs_4_28_0": {
+      "precision": 0.40199,
+      "recall": 0.527921,
+      "f1": 0.456429,
+      "fpr": 0.061592,
+      "confusion_matrix": [
+        [
+          30213,
+          1983
+        ],
+        [
+          1192,
+          1333
+        ]
+      ],
+      "latency": {
+        "mean_ms": 6.765625,
+        "p50_ms": 3.8734,
+        "p95_ms": 5.2545,
+        "p99_ms": 7.00196
+      },
+      "display_name": "ModSecurity 3.0.16 + OWASP CRS 4.28.0",
+      "kind": "real_waf_product",
+      "execution": "official Docker image, real HTTP reverse-proxy execution",
+      "latency_scope": "loopback HTTP + Nginx + ModSecurity + backend proof"
+    },
+    "safeline_ce": {
+      "precision": 0.924107,
+      "recall": 0.573861,
+      "f1": 0.708038,
+      "fpr": 0.003696,
+      "confusion_matrix": [
+        [
+          32077,
+          119
+        ],
+        [
+          1076,
+          1449
+        ]
+      ],
+      "latency": {
+        "mean_ms": 6.514029,
+        "p50_ms": 3.6047,
+        "p95_ms": 7.2301,
+        "p99_ms": 26.22124
+      },
+      "display_name": "SafeLine 社区版 9.3.11",
+      "kind": "real_waf_product",
+      "execution": "operator-managed real HTTP reverse-proxy execution",
+      "latency_scope": "real external reverse proxy + HTTP + backend proof"
+    },
+    "openappsec_ce": {
+      "precision": 0.301184,
+      "recall": 0.765545,
+      "f1": 0.432293,
+      "fpr": 0.139303,
+      "confusion_matrix": [
+        [
+          27711,
+          4485
+        ],
+        [
+          592,
+          1933
+        ]
+      ],
+      "latency": {
+        "mean_ms": 13.748568,
+        "p50_ms": 4.4181,
+        "p95_ms": 25.5413,
+        "p99_ms": 31.12816
+      },
+      "display_name": "open-appsec 社区版 1.1.35-open-source",
+      "kind": "real_waf_product",
+      "execution": "operator-managed real HTTP reverse-proxy execution",
+      "latency_scope": "real external reverse proxy + HTTP + backend proof"
+    }
+  },
+  "attack_form_recall": {
+    "obfuscated": {
+      "final_model": {
+        "records": 1357,
+        "detected": 1342,
+        "recall": 0.988946
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 1357,
+        "detected": 300,
+        "recall": 0.221076
+      },
+      "safeline_ce": {
+        "records": 1357,
+        "detected": 725,
+        "recall": 0.534267
+      },
+      "openappsec_ce": {
+        "records": 1357,
+        "detected": 848,
+        "recall": 0.624908
+      }
+    },
+    "original": {
+      "final_model": {
+        "records": 1168,
+        "detected": 1154,
+        "recall": 0.988014
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 1168,
+        "detected": 1033,
+        "recall": 0.884418
+      },
+      "safeline_ce": {
+        "records": 1168,
+        "detected": 724,
+        "recall": 0.619863
+      },
+      "openappsec_ce": {
+        "records": 1168,
+        "detected": 1085,
+        "recall": 0.928938
+      }
+    }
+  },
+  "attack_type_recall": {
+    "api_proto": {
+      "final_model": {
+        "records": 21,
+        "detected": 21,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 21,
+        "detected": 16,
+        "recall": 0.761905
+      },
+      "safeline_ce": {
+        "records": 21,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "openappsec_ce": {
+        "records": 21,
+        "detected": 0,
+        "recall": 0.0
+      }
+    },
+    "cmdi": {
+      "final_model": {
+        "records": 82,
+        "detected": 77,
+        "recall": 0.939024
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 82,
+        "detected": 30,
+        "recall": 0.365854
+      },
+      "safeline_ce": {
+        "records": 82,
+        "detected": 11,
+        "recall": 0.134146
+      },
+      "openappsec_ce": {
+        "records": 82,
+        "detected": 72,
+        "recall": 0.878049
+      }
+    },
+    "codei": {
+      "final_model": {
+        "records": 26,
+        "detected": 26,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 26,
+        "detected": 11,
+        "recall": 0.423077
+      },
+      "safeline_ce": {
+        "records": 26,
+        "detected": 22,
+        "recall": 0.846154
+      },
+      "openappsec_ce": {
+        "records": 26,
+        "detected": 25,
+        "recall": 0.961538
+      }
+    },
+    "crlf": {
+      "final_model": {
+        "records": 22,
+        "detected": 22,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 22,
+        "detected": 6,
+        "recall": 0.272727
+      },
+      "safeline_ce": {
+        "records": 22,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "openappsec_ce": {
+        "records": 22,
+        "detected": 9,
+        "recall": 0.409091
+      }
+    },
+    "deser": {
+      "final_model": {
+        "records": 66,
+        "detected": 65,
+        "recall": 0.984848
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 66,
+        "detected": 24,
+        "recall": 0.363636
+      },
+      "safeline_ce": {
+        "records": 66,
+        "detected": 20,
+        "recall": 0.30303
+      },
+      "openappsec_ce": {
+        "records": 66,
+        "detected": 46,
+        "recall": 0.69697
+      }
+    },
+    "fmtst": {
+      "final_model": {
+        "records": 16,
+        "detected": 16,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 16,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "safeline_ce": {
+        "records": 16,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "openappsec_ce": {
+        "records": 16,
+        "detected": 0,
+        "recall": 0.0
+      }
+    },
+    "fupl": {
+      "final_model": {
+        "records": 12,
+        "detected": 12,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 12,
+        "detected": 1,
+        "recall": 0.083333
+      },
+      "safeline_ce": {
+        "records": 12,
+        "detected": 12,
+        "recall": 1.0
+      },
+      "openappsec_ce": {
+        "records": 12,
+        "detected": 2,
+        "recall": 0.166667
+      }
+    },
+    "hpp": {
+      "final_model": {
+        "records": 16,
+        "detected": 16,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 16,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "safeline_ce": {
+        "records": 16,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "openappsec_ce": {
+        "records": 16,
+        "detected": 0,
+        "recall": 0.0
+      }
+    },
+    "hsmug": {
+      "final_model": {
+        "records": 24,
+        "detected": 23,
+        "recall": 0.958333
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 24,
+        "detected": 5,
+        "recall": 0.208333
+      },
+      "safeline_ce": {
+        "records": 24,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "openappsec_ce": {
+        "records": 24,
+        "detected": 6,
+        "recall": 0.25
+      }
+    },
+    "jwt": {
+      "final_model": {
+        "records": 16,
+        "detected": 16,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 16,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "safeline_ce": {
+        "records": 16,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "openappsec_ce": {
+        "records": 16,
+        "detected": 10,
+        "recall": 0.625
+      }
+    },
+    "ldap": {
+      "final_model": {
+        "records": 22,
+        "detected": 22,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 22,
+        "detected": 1,
+        "recall": 0.045455
+      },
+      "safeline_ce": {
+        "records": 22,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "openappsec_ce": {
+        "records": 22,
+        "detected": 21,
+        "recall": 0.954545
+      }
+    },
+    "lfi": {
+      "final_model": {
+        "records": 16,
+        "detected": 16,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 16,
+        "detected": 6,
+        "recall": 0.375
+      },
+      "safeline_ce": {
+        "records": 16,
+        "detected": 15,
+        "recall": 0.9375
+      },
+      "openappsec_ce": {
+        "records": 16,
+        "detected": 2,
+        "recall": 0.125
+      }
+    },
+    "logi": {
+      "final_model": {
+        "records": 22,
+        "detected": 22,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 22,
+        "detected": 4,
+        "recall": 0.181818
+      },
+      "safeline_ce": {
+        "records": 22,
+        "detected": 6,
+        "recall": 0.272727
+      },
+      "openappsec_ce": {
+        "records": 22,
+        "detected": 17,
+        "recall": 0.772727
+      }
+    },
+    "nosql": {
+      "final_model": {
+        "records": 22,
+        "detected": 22,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 22,
+        "detected": 11,
+        "recall": 0.5
+      },
+      "safeline_ce": {
+        "records": 22,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "openappsec_ce": {
+        "records": 22,
+        "detected": 0,
+        "recall": 0.0
+      }
+    },
+    "ptrav": {
+      "final_model": {
+        "records": 74,
+        "detected": 74,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 74,
+        "detected": 45,
+        "recall": 0.608108
+      },
+      "safeline_ce": {
+        "records": 74,
+        "detected": 47,
+        "recall": 0.635135
+      },
+      "openappsec_ce": {
+        "records": 74,
+        "detected": 47,
+        "recall": 0.635135
+      }
+    },
+    "sqli": {
+      "final_model": {
+        "records": 338,
+        "detected": 328,
+        "recall": 0.970414
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 338,
+        "detected": 176,
+        "recall": 0.52071
+      },
+      "safeline_ce": {
+        "records": 338,
+        "detected": 237,
+        "recall": 0.701183
+      },
+      "openappsec_ce": {
+        "records": 338,
+        "detected": 281,
+        "recall": 0.831361
+      }
+    },
+    "ssi": {
+      "final_model": {
+        "records": 16,
+        "detected": 16,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 16,
+        "detected": 10,
+        "recall": 0.625
+      },
+      "safeline_ce": {
+        "records": 16,
+        "detected": 4,
+        "recall": 0.25
+      },
+      "openappsec_ce": {
+        "records": 16,
+        "detected": 16,
+        "recall": 1.0
+      }
+    },
+    "ssrf": {
+      "final_model": {
+        "records": 24,
+        "detected": 24,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 24,
+        "detected": 9,
+        "recall": 0.375
+      },
+      "safeline_ce": {
+        "records": 24,
+        "detected": 4,
+        "recall": 0.166667
+      },
+      "openappsec_ce": {
+        "records": 24,
+        "detected": 14,
+        "recall": 0.583333
+      }
+    },
+    "ssti": {
+      "final_model": {
+        "records": 18,
+        "detected": 18,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 18,
+        "detected": 11,
+        "recall": 0.611111
+      },
+      "safeline_ce": {
+        "records": 18,
+        "detected": 2,
+        "recall": 0.111111
+      },
+      "openappsec_ce": {
+        "records": 18,
+        "detected": 15,
+        "recall": 0.833333
+      }
+    },
+    "xpath": {
+      "final_model": {
+        "records": 16,
+        "detected": 16,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 16,
+        "detected": 2,
+        "recall": 0.125
+      },
+      "safeline_ce": {
+        "records": 16,
+        "detected": 0,
+        "recall": 0.0
+      },
+      "openappsec_ce": {
+        "records": 16,
+        "detected": 14,
+        "recall": 0.875
+      }
+    },
+    "xss": {
+      "final_model": {
+        "records": 1638,
+        "detected": 1626,
+        "recall": 0.992674
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 1638,
+        "detected": 956,
+        "recall": 0.583639
+      },
+      "safeline_ce": {
+        "records": 1638,
+        "detected": 1063,
+        "recall": 0.648962
+      },
+      "openappsec_ce": {
+        "records": 1638,
+        "detected": 1321,
+        "recall": 0.806471
+      }
+    },
+    "xxe": {
+      "final_model": {
+        "records": 18,
+        "detected": 18,
+        "recall": 1.0
+      },
+      "modsecurity_crs_4_28_0": {
+        "records": 18,
+        "detected": 9,
+        "recall": 0.5
+      },
+      "safeline_ce": {
+        "records": 18,
+        "detected": 6,
+        "recall": 0.333333
+      },
+      "openappsec_ce": {
+        "records": 18,
+        "detected": 15,
+        "recall": 0.833333
+      }
+    }
+  },
+  "candidate_products": {
+    "safeline_ce": {
+      "display_name": "SafeLine 社区版",
+      "vendor": "长亭科技",
+      "kind": "real_waf_product",
+      "project_url": "https://github.com/chaitin/SafeLine",
+      "endpoint_env": "WAD_SAFELINE_URL",
+      "version_env": "WAD_SAFELINE_VERSION",
+      "deployment_note": "真实 SafeLine 反向代理端点；上游必须指向基准回显后端",
+      "status": "evaluated",
+      "configured": true,
+      "included_in_ranking": true,
+      "version": "9.3.11",
+      "reason": "真实产品双冒烟门禁通过，并完成全部同集记录"
+    },
+    "openappsec_ce": {
+      "display_name": "open-appsec 社区版",
+      "vendor": "open-appsec",
+      "kind": "real_waf_product",
+      "project_url": "https://github.com/openappsec/openappsec",
+      "endpoint_env": "WAD_OPENAPPSEC_URL",
+      "version_env": "WAD_OPENAPPSEC_VERSION",
+      "deployment_note": "真实 open-appsec NGINX/Agent 端点；策略必须为 prevent 模式",
+      "status": "evaluated",
+      "configured": true,
+      "included_in_ranking": true,
+      "version": "1.1.35-open-source",
+      "reason": "真实产品双冒烟门禁通过，并完成全部同集记录"
+    }
+  },
+  "selection_policy": {
+    "performance_based_exclusion": false,
+    "policy": "任何通过真实产品门禁并完成相同记录评测的 WAF 都保留；效果优于最终模型不是排除理由。仅未配置、门禁失败、基础设施错误或未完成全量同集评测的产品不进入排名，并记录原因。"
+  },
+  "product_identities": {
+    "safeline_ce": {
+      "key": "safeline_ce",
+      "name": "SafeLine 社区版 9.3.11",
+      "version": "9.3.11",
+      "implementation": "operator-managed real HTTP reverse-proxy execution",
+      "is_actual_product_execution": true,
+      "is_simulation": false,
+      "endpoint_origin": "http://127.0.0.1:18082",
+      "official_sources": [
+        "https://github.com/chaitin/SafeLine"
+      ],
+      "deployment_note": "真实 SafeLine 反向代理端点；上游必须指向基准回显后端",
+      "decision_policy": "allowed only when the response carries the benchmark backend proof header; recognized 4xx without proof means product block",
+      "smoke_gate": {
+        "status": "passed",
+        "normal_checks": 2,
+        "normal_before_status": 204,
+        "normal_after_status": 204,
+        "attack_attempts": 1,
+        "max_attack_attempts": 30,
+        "bounded_warmup": false,
+        "evaluation_records_used_for_warmup": 0
+      }
+    },
+    "openappsec_ce": {
+      "key": "openappsec_ce",
+      "name": "open-appsec 社区版 1.1.35-open-source",
+      "version": "1.1.35-open-source",
+      "implementation": "operator-managed real HTTP reverse-proxy execution",
+      "is_actual_product_execution": true,
+      "is_simulation": false,
+      "endpoint_origin": "http://127.0.0.1:18083",
+      "official_sources": [
+        "https://github.com/openappsec/openappsec"
+      ],
+      "deployment_note": "真实 open-appsec NGINX/Agent 端点；策略必须为 prevent 模式",
+      "decision_policy": "allowed only when the response carries the benchmark backend proof header; recognized 4xx without proof means product block",
+      "smoke_gate": {
+        "status": "passed",
+        "normal_checks": 2,
+        "normal_before_status": 204,
+        "normal_after_status": 204,
+        "attack_attempts": 16,
+        "max_attack_attempts": 30,
+        "bounded_warmup": true,
+        "evaluation_records_used_for_warmup": 0
+      }
+    }
+  },
+  "product_executions": {
+    "safeline_ce": {
+      "status_codes": {
+        "204": 33153,
+        "400": 3,
+        "403": 1565
+      },
+      "request_carriers": {
+        "body": 9044,
+        "body_fallback": 638,
+        "cookie": 1035,
+        "filename": 10,
+        "header": 4161,
+        "path": 330,
+        "query": 19503
+      },
+      "fallbacks": {
+        "header value is not representable as one valid HTTP/1.1 field": 638
+      }
+    },
+    "openappsec_ce": {
+      "status_codes": {
+        "204": 28303,
+        "400": 3,
+        "403": 6415
+      },
+      "request_carriers": {
+        "body": 9044,
+        "body_fallback": 638,
+        "cookie": 1035,
+        "filename": 10,
+        "header": 4161,
+        "path": 330,
+        "query": 19503
+      },
+      "fallbacks": {
+        "header value is not representable as one valid HTTP/1.1 field": 638
+      }
+    }
+  },
+  "comparison_interpretation": {
+    "primary_metric": "f1",
+    "products_outperforming_final": [],
+    "summary": "当前已完成的真实 WAF 中，没有产品在同集 F1 上超过最终模型。"
+  },
+  "cache_metadata": {
+    "status": "last_verified",
+    "cached_at": "2026-08-25T05:36:13.207148+00:00",
+    "source_generated_at": "2026-08-25T05:36:12.152925+00:00",
+    "warning": "最近一次完整实测缓存，仅用于历史参考；模型重新训练后不代表当前模型结果。"
+  }
+}

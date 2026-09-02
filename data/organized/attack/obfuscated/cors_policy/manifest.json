@@ -1,0 +1,11 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "cors_policy",
+  "title": "CORS policy abuse",
+  "standard": "CWE-942",
+  "records": 13,
+  "shards": {
+    "context/test": 4,
+    "context/train": 9
+  }
+}

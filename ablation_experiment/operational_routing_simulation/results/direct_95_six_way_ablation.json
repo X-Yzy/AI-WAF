@@ -1,0 +1,287 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-01T16:18:33.269956+00:00",
+  "experiment": "six-way ablation on retained 95% direct-route test set",
+  "unchanged": "training data, validation data, model artifacts, threshold-selection method, fusion weights and fusion threshold",
+  "dataset_audit": {
+    "data_root": "C:\\Users\\Yzy12\\Desktop\\2026第二届大学生人工智能安全竞赛\\result\\data\\organized",
+    "loaded": {
+      "train": {
+        "from_unspecified": 13254,
+        "normal": 256856,
+        "obfuscated": 20147,
+        "original": 10340
+      },
+      "validation": {
+        "normal": 32228,
+        "obfuscated": 1201,
+        "original": 1013
+      },
+      "test": {
+        "normal": 32196,
+        "obfuscated": 1357,
+        "original": 1168
+      }
+    },
+    "skipped_ineligible": {
+      "test": 35,
+      "train": 239,
+      "unspecified": 1,
+      "validation": 46
+    },
+    "skipped_duplicates": {
+      "test": 10,
+      "train": 501,
+      "validation": 8
+    },
+    "unspecified_policy": "train_only"
+  },
+  "selection": {
+    "lightgbm": {
+      "threshold": 0.838829022761977,
+      "f1": 0.9898762654668166,
+      "precision": 0.9861048857014791,
+      "recall": 0.993676603432701,
+      "macro_type_recall": 0.9878877013316892,
+      "obfuscated_recall": 0.9941715237302248,
+      "fpr": 0.0009618964875263746
+    },
+    "character": {
+      "threshold": 0.12914974017343006,
+      "f1": 0.9916872612895977,
+      "precision": 0.9865891819400984,
+      "recall": 0.9968383017163505,
+      "macro_type_recall": 0.9934871386637245,
+      "obfuscated_recall": 0.9983347210657785,
+      "fpr": 0.0009308675685739109
+    },
+    "fusion": {
+      "composite": 0.9957740010010651,
+      "threshold": 0.34495920619726117,
+      "feature_weight": 0.30000000000000004,
+      "text_weight": 0.7,
+      "f1": 0.9957158962795941,
+      "precision": 0.9941467807294012,
+      "recall": 0.997289972899729,
+      "macro_type_recall": 0.9939096444819139,
+      "obfuscated_recall": 0.9991673605328892,
+      "fpr": 0.00040337594638202806
+    }
+  },
+  "timing": {
+    "unit": "milliseconds per field payload",
+    "percentiles": [
+      80,
+      85,
+      90,
+      95,
+      99
+    ],
+    "experiment_wall_seconds": 112.604
+  },
+  "scenarios": [
+    {
+      "label": "前置直接完成 95%",
+      "records": 9500,
+      "normal_records": 8500,
+      "attack_records": 1000,
+      "direct_records": 9025,
+      "model_records": 475,
+      "direct_share": 0.95,
+      "model_share": 0.05,
+      "selection": {
+        "kind": "deterministic stratified subset of the untouched independent test set; sampled without replacement",
+        "purpose": "operational routing and latency evaluation only",
+        "source_records": 34721,
+        "records": 9500,
+        "normal_records": 8500,
+        "attack_records": 1000,
+        "normal_share": 0.894737,
+        "attack_share": 0.105263,
+        "target_model_share": 0.050000000000000044,
+        "seed": 20260801,
+        "replacement": false,
+        "selected_index_sha256": "e59aba531f646d40e88863ee479c3f0d118c6455cf09e9a2754b6b52de1f2e13",
+        "allocation": {
+          "existing_rules_normalization_context": {
+            "normal": 4726,
+            "attack": 525
+          },
+          "normalized_routine_benign": {
+            "normal": 3774,
+            "attack": 0
+          },
+          "lightgbm_and_character_model": {
+            "normal": 0,
+            "attack": 475
+          }
+        },
+        "note": "This workload set does not replace the original independent-test effectiveness metrics and is never used for model or threshold tuning."
+      },
+      "variants": {
+        "rules_only": {
+          "precision": 0.944915,
+          "recall": 0.223,
+          "f1": 0.360841,
+          "fpr": 0.001529,
+          "obfuscated_attack_recall": 0.020755,
+          "confusion_matrix": [
+            [
+              8487,
+              13
+            ],
+            [
+              777,
+              223
+            ]
+          ],
+          "latency_ms": {
+            "p80": 0.0233,
+            "p85": 0.0257,
+            "p90": 0.0323,
+            "p95": 0.0386,
+            "p99": 0.081207,
+            "mean": 0.018455,
+            "wall_seconds": 0.175,
+            "throughput_records_per_second": 54185.301
+          }
+        },
+        "rules_normalized": {
+          "precision": 0.788494,
+          "recall": 0.466,
+          "f1": 0.585795,
+          "fpr": 0.014706,
+          "obfuscated_attack_recall": 0.450943,
+          "confusion_matrix": [
+            [
+              8375,
+              125
+            ],
+            [
+              534,
+              466
+            ]
+          ],
+          "latency_ms": {
+            "p80": 0.0742,
+            "p85": 0.082,
+            "p90": 0.09681,
+            "p95": 0.121605,
+            "p99": 0.201108,
+            "mean": 0.059018,
+            "wall_seconds": 0.561,
+            "throughput_records_per_second": 16943.95
+          }
+        },
+        "lightgbm_only": {
+          "precision": 0.996976,
+          "recall": 0.989,
+          "f1": 0.992972,
+          "fpr": 0.000353,
+          "obfuscated_attack_recall": 0.992453,
+          "confusion_matrix": [
+            [
+              8497,
+              3
+            ],
+            [
+              11,
+              989
+            ]
+          ],
+          "latency_ms": {
+            "p80": 0.30802,
+            "p85": 0.3229,
+            "p90": 0.34501,
+            "p95": 0.38041,
+            "p99": 0.473412,
+            "mean": 0.266242,
+            "wall_seconds": 2.529,
+            "throughput_records_per_second": 3755.975
+          }
+        },
+        "character_only": {
+          "precision": 0.98806,
+          "recall": 0.993,
+          "f1": 0.990524,
+          "fpr": 0.001412,
+          "obfuscated_attack_recall": 0.996226,
+          "confusion_matrix": [
+            [
+              8488,
+              12
+            ],
+            [
+              7,
+              993
+            ]
+          ],
+          "latency_ms": {
+            "p80": 0.61194,
+            "p85": 0.6488,
+            "p90": 0.6968,
+            "p95": 0.772805,
+            "p99": 1.060235,
+            "mean": 0.532075,
+            "wall_seconds": 5.055,
+            "throughput_records_per_second": 1879.433
+          }
+        },
+        "dual_model_fusion": {
+          "precision": 0.995988,
+          "recall": 0.993,
+          "f1": 0.994492,
+          "fpr": 0.000471,
+          "obfuscated_attack_recall": 0.99434,
+          "confusion_matrix": [
+            [
+              8496,
+              4
+            ],
+            [
+              7,
+              993
+            ]
+          ],
+          "latency_ms": {
+            "p80": 0.85144,
+            "p85": 0.8954,
+            "p90": 0.95072,
+            "p95": 1.029415,
+            "p99": 1.300413,
+            "mean": 0.764364,
+            "wall_seconds": 7.261,
+            "throughput_records_per_second": 1308.277
+          }
+        },
+        "complete_pipeline": {
+          "precision": 0.989022,
+          "recall": 0.991,
+          "f1": 0.99001,
+          "fpr": 0.001294,
+          "obfuscated_attack_recall": 0.990566,
+          "confusion_matrix": [
+            [
+              8489,
+              11
+            ],
+            [
+              9,
+              991
+            ]
+          ],
+          "latency_ms": {
+            "p80": 0.0493,
+            "p85": 0.055015,
+            "p90": 0.17102,
+            "p95": 0.64446,
+            "p99": 1.127528,
+            "mean": 0.095406,
+            "wall_seconds": 0.906,
+            "throughput_records_per_second": 10481.562
+          }
+        }
+      }
+    }
+  ]
+}

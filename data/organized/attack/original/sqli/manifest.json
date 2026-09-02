@@ -1,0 +1,18 @@
+{
+  "representation": "original",
+  "attack_type": "sqli",
+  "title": "SQL injection",
+  "standard": "CWE-89",
+  "records": 4865,
+  "shards": {
+    "field/evaluation": 36,
+    "field/test": 165,
+    "field/train": 1049,
+    "field/unspecified": 227,
+    "field/validation": 135,
+    "request/evaluation": 3118,
+    "request/test": 22,
+    "request/train": 94,
+    "request/validation": 19
+  }
+}

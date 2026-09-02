@@ -1,0 +1,16 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "hpp",
+  "title": "HTTP parameter pollution",
+  "standard": "CWE-235",
+  "records": 199,
+  "shards": {
+    "field/evaluation": 3,
+    "field/test": 12,
+    "field/train": 86,
+    "field/unspecified": 50,
+    "field/validation": 12,
+    "request/train": 20,
+    "request/validation": 16
+  }
+}

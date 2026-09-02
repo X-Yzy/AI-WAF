@@ -1,0 +1,10 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "multipart_attack",
+  "title": "Malformed multipart request attack",
+  "standard": "CWE-20",
+  "records": 20,
+  "shards": {
+    "request/evaluation": 20
+  }
+}

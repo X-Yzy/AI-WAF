@@ -1,0 +1,22 @@
+[Unit]
+Description=WAD Web Attack Detection Reverse Proxy
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=wad
+Group=wad
+WorkingDirectory=/opt/web-attack-detector-runtime
+ExecStart=/opt/web-attack-detector-runtime/.venv/bin/python -m src.proxy --backend http://127.0.0.1:3000 --host 127.0.0.1 --port 8081 --mode monitor --fail-policy closed
+Restart=on-failure
+RestartSec=3
+Environment=PYTHONUTF8=1
+Environment=PYTHONUNBUFFERED=1
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/opt/web-attack-detector-runtime/runtime
+
+[Install]
+WantedBy=multi-user.target

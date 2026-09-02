@@ -1,0 +1,13 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "protocol_violation",
+  "title": "HTTP protocol violation",
+  "standard": "CWE-20",
+  "records": 213,
+  "shards": {
+    "field/test": 1,
+    "field/train": 7,
+    "field/validation": 1,
+    "request/evaluation": 204
+  }
+}

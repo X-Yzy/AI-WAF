@@ -1,0 +1,11 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "http2_pseudo_header_ambiguity",
+  "title": "HTTP/2 pseudo-header ambiguity",
+  "standard": "CWE-444",
+  "records": 8,
+  "shards": {
+    "field/train": 2,
+    "protocol/train": 6
+  }
+}

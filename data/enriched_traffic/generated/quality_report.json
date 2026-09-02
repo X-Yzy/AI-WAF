@@ -1,0 +1,232 @@
+{
+  "status": "PASS",
+  "checks": {
+    "unique_ids": true,
+    "unique_content_fingerprints": true,
+    "groups_stay_in_one_split": true,
+    "contents_stay_in_one_split": true,
+    "every_group_has_attack_and_normal": true,
+    "every_family_has_expected_split_groups": true,
+    "all_records_are_inert": true
+  },
+  "records": 2762,
+  "unique_ids": 2762,
+  "unique_content_fingerprints": 2762,
+  "contrastive_groups": 704,
+  "cross_split_group_duplicates": 0,
+  "cross_split_content_duplicates": 0,
+  "groups_missing_paired_label": 0,
+  "expected_family_split_group_counts": {
+    "train": 24,
+    "validation": 4,
+    "test": 4
+  },
+  "family_split_group_counts": {
+    "api_proto": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "cmdi": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "codei": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "crlf": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "deser": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "fmtst": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "fupl": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "hpp": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "hsmug": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "jwt": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "ldap": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "lfi": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "logi": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "nosql": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "ptrav": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "sqli": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "ssi": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "ssrf": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "ssti": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "xpath": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "xss": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    },
+    "xxe": {
+      "train": 24,
+      "validation": 4,
+      "test": 4
+    }
+  },
+  "base_template_counts": {
+    "api_proto": {
+      "attack": 4,
+      "normal": 2
+    },
+    "cmdi": {
+      "attack": 6,
+      "normal": 2
+    },
+    "codei": {
+      "attack": 6,
+      "normal": 2
+    },
+    "crlf": {
+      "attack": 4,
+      "normal": 2
+    },
+    "deser": {
+      "attack": 6,
+      "normal": 2
+    },
+    "fmtst": {
+      "attack": 6,
+      "normal": 2
+    },
+    "fupl": {
+      "attack": 6,
+      "normal": 2
+    },
+    "hpp": {
+      "attack": 5,
+      "normal": 2
+    },
+    "hsmug": {
+      "attack": 3,
+      "normal": 2
+    },
+    "jwt": {
+      "attack": 5,
+      "normal": 2
+    },
+    "ldap": {
+      "attack": 6,
+      "normal": 2
+    },
+    "lfi": {
+      "attack": 6,
+      "normal": 2
+    },
+    "logi": {
+      "attack": 4,
+      "normal": 2
+    },
+    "nosql": {
+      "attack": 6,
+      "normal": 2
+    },
+    "ptrav": {
+      "attack": 6,
+      "normal": 2
+    },
+    "sqli": {
+      "attack": 6,
+      "normal": 2
+    },
+    "ssi": {
+      "attack": 4,
+      "normal": 2
+    },
+    "ssrf": {
+      "attack": 6,
+      "normal": 2
+    },
+    "ssti": {
+      "attack": 6,
+      "normal": 2
+    },
+    "xpath": {
+      "attack": 6,
+      "normal": 2
+    },
+    "xss": {
+      "attack": 6,
+      "normal": 2
+    },
+    "xxe": {
+      "attack": 4,
+      "normal": 2
+    }
+  },
+  "variant_counts": {
+    "double_url": 677,
+    "normal_control": 704,
+    "raw": 704,
+    "url": 677
+  }
+}

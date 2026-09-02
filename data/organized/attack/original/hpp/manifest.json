@@ -1,0 +1,16 @@
+{
+  "representation": "original",
+  "attack_type": "hpp",
+  "title": "HTTP parameter pollution",
+  "standard": "CWE-235",
+  "records": 85,
+  "shards": {
+    "field/evaluation": 3,
+    "field/test": 4,
+    "field/train": 28,
+    "field/unspecified": 10,
+    "field/validation": 4,
+    "request/train": 20,
+    "request/validation": 16
+  }
+}

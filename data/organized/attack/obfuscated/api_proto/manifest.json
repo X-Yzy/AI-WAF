@@ -1,0 +1,14 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "api_proto",
+  "title": "Prototype pollution",
+  "standard": "CWE-1321",
+  "records": 168,
+  "shards": {
+    "field/test": 18,
+    "field/train": 102,
+    "field/validation": 12,
+    "request/test": 4,
+    "request/train": 32
+  }
+}

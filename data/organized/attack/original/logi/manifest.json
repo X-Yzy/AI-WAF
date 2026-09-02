@@ -1,0 +1,14 @@
+{
+  "representation": "original",
+  "attack_type": "logi",
+  "title": "Log injection / forging",
+  "standard": "CWE-117",
+  "records": 69,
+  "shards": {
+    "field/evaluation": 3,
+    "field/test": 5,
+    "field/train": 25,
+    "field/unspecified": 32,
+    "field/validation": 4
+  }
+}

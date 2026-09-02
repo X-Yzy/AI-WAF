@@ -1,0 +1,147 @@
+"""可视化控制台服务层测试，不启动网络服务器或耗时训练任务。"""
+
+import json
+from pathlib import Path
+
+from src.dashboard import DashboardService, JobRequest, ObfuscationRequest
+from src.pipeline import DetectionPipeline
+from src.settings import MODEL_ROOT, PROJECT_ROOT
+
+
+def build_service() -> DashboardService:
+    pipeline = DetectionPipeline()
+    pipeline.load_lgbm(str(MODEL_ROOT / "lgbm_v4.pkl"))
+    pipeline.load_text_model(str(MODEL_ROOT / "text_lr_v4.pkl"))
+    holder = {"pipeline": pipeline}
+    return DashboardService(
+        lambda: holder["pipeline"],
+        lambda value: holder.__setitem__("pipeline", value),
+    )
+
+
+def test_dashboard_overview_matches_manifests():
+    overview = build_service().overview()
+    datasets = overview["datasets"]
+
+    def manifest(relative: str):
+        return json.loads((PROJECT_ROOT / relative).read_text(encoding="utf-8"))
+
+    normal = manifest("data/normal_traffic/generated/manifest.json")
+    modern = manifest("data/modern_attack_traffic/generated/manifest.json")
+    specialized = manifest("data/specialized_traffic/generated/manifest.json")
+    lab = manifest("data/lab_captures/generated/manifest.json")
+    obfuscated = manifest("data/attack_traffic/manifest.json")
+    raw = manifest("data/raw_attack_traffic/manifest.json")
+    organized = manifest("data/organized/manifest.json")
+
+    assert datasets["normal"]["total"] == organized["label_counts"]["normal"]
+    assert datasets["modern_attack"]["total"] == modern["total_records"]
+    assert datasets["modern_attack"]["cves"] > 0
+    assert datasets["specialized"]["total"] == specialized["total_records"]
+    assert datasets["lab_captures"]["total"] == lab["total_records"]
+    assert datasets["lab_captures"]["campaigns"] == lab["campaigns"]
+    assert datasets["organized"]["total"] == organized["total_records"] == 639_984
+    assert datasets["obfuscated_attack"]["total"] == (
+        organized["attack_representation_counts"]["obfuscated"]
+    ) == 70_590
+    assert datasets["raw_attack"]["total"] == (
+        organized["attack_representation_counts"]["original"]
+    ) == 59_583
+    assert datasets["obfuscated_attack"]["legacy_subset_total"] == obfuscated["total"]
+    assert datasets["raw_attack"]["legacy_subset_total"] == sum(
+        item["records"] for item in raw["attack_types"].values()
+    )
+    assert len(datasets["obfuscated_attack"]["types"]) == 65
+    assert len(datasets["raw_attack"]["types"]) == 65
+    assert overview["obfuscation"]["strategy_count"] == 19
+
+
+def test_dashboard_lists_only_final_model():
+    models = build_service().model_registry()
+    assert {item["id"] for item in models} == {"final-model"}
+    assert all(item["available"] for item in models)
+    assert models[0]["active"]
+
+
+def test_dashboard_obfuscation_runs_normalization_and_detection():
+    result = build_service().obfuscate(ObfuscationRequest(
+        payload="sleep(1.1)",
+        strategies=["url_encode_double"],
+        count=2,
+        max_layers=1,
+        seed=42,
+        param_location="query",
+        param_name="id",
+    ))
+    assert result["count"] == 2
+    assert all(item["verdict"] == "attack" for item in result["variants"])
+    assert all(item["decode_depth"] >= 1 for item in result["variants"])
+
+
+def test_dashboard_results_and_samples_are_readable():
+    service = build_service()
+    results = service.results()
+    assert results["evaluation"]["all_candidate_gates_passed"] is True
+    assert "waf_comparison" in results
+    baseline = results["waf_comparison"]["baseline_identity"]
+    assert baseline["implementation"] == "src.waf_profiles.WAF_PROFILES"
+    assert baseline["primary_profile"] == "security_dog_waf"
+    assert baseline["is_vendor_binary"] is False
+    assert [item["keyword_count"] for item in baseline["profiles"]] == [34, 40, 22]
+    samples = service.sample_records("obfuscated_attack", "sqli", 3)
+    assert len(samples["records"]) == 3
+    assert all(item["attack_type"] == "sqli" for item in samples["records"])
+    modern = service.sample_records("modern_attack", "xss", 3)
+    assert len(modern["records"]) == 3
+    assert all(item["attack_type"] == "xss" for item in modern["records"])
+    new_originals = service.sample_records("raw_attack", "api_bola", 3)
+    new_obfuscated = service.sample_records("obfuscated_attack", "api_bola", 3)
+    assert len(new_originals["records"]) == len(new_obfuscated["records"]) == 3
+    assert all(item["attack_type"] == "api_bola" for item in new_originals["records"])
+    assert all(item["attack_type"] == "api_bola" for item in new_obfuscated["records"])
+
+
+def test_dashboard_job_commands_are_strictly_whitelisted():
+    command = DashboardService._command(JobRequest(
+        action="all", max_text_features=60_000, min_recall=0.96
+    ))
+    assert Path(command[1]) == PROJECT_ROOT / "run.py"
+    assert command[2:] == [
+        "all", "--min-recall", "0.96", "--max-text-features", "60000"
+    ]
+    waf_command = DashboardService._command(JobRequest(action="compare-waf"))
+    assert waf_command[2:] == ["compare-waf"]
+
+
+def test_dashboard_decodes_utf8_and_windows_chinese_output():
+    message = "训练完成：测试与验证通过"
+    assert DashboardService._decode_output(message.encode("utf-8")) == message
+    assert DashboardService._decode_output(message.encode("gb18030")) == message
+
+
+def test_dashboard_maps_live_subtask_progress():
+    assert DashboardService._event_progress("train", "train", 0.5) == 50
+    assert DashboardService._event_progress("all", "train", 1.0) == 60
+    assert DashboardService._event_progress("all", "evaluate", 0.5) == 84
+    assert DashboardService._event_progress("all", "compare-waf", 1.0) == 99
+
+
+def test_dashboard_summarizes_proxy_activity(tmp_path, monkeypatch):
+    log_path = tmp_path / 'proxy_access.jsonl'
+    rows = [
+        {'timestamp': '2026-07-22T12:00:00+00:00', 'method': 'GET',
+         'outcome': 'forwarded', 'threat_count': 0, 'elapsed_ms': 4},
+        {'timestamp': '2026-07-22T12:00:01+00:00', 'method': 'POST',
+         'outcome': 'blocked', 'threat_count': 1, 'elapsed_ms': 8,
+         'threats': [{'location': 'body', 'name': 'id'}]},
+    ]
+    log_path.write_text(
+        '\n'.join(json.dumps(row) for row in rows) + '\n', encoding='utf-8'
+    )
+    monkeypatch.setenv('WAD_PROXY_LOG_FILE', str(log_path))
+    activity = build_service().proxy_activity(20)
+    assert activity['status'] == 'online'
+    assert activity['summary']['requests'] == 2
+    assert activity['summary']['attacks'] == 1
+    assert activity['summary']['blocked'] == 1
+    assert activity['records'][0]['outcome'] == 'blocked'

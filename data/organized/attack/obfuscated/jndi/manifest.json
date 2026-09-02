@@ -1,0 +1,12 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "jndi",
+  "title": "JNDI lookup injection",
+  "standard": "CWE-917",
+  "records": 36,
+  "shards": {
+    "request/test": 4,
+    "request/train": 28,
+    "request/validation": 4
+  }
+}

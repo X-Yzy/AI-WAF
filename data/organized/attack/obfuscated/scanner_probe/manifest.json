@@ -1,0 +1,12 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "scanner_probe",
+  "title": "Vulnerability scanner probes",
+  "standard": "CWE-799",
+  "records": 156,
+  "shards": {
+    "request/test": 4,
+    "request/train": 129,
+    "request/validation": 23
+  }
+}

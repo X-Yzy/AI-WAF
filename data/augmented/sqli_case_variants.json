@@ -1,0 +1,335 @@
+[
+  {
+    "id": "sqli_union_case_v0",
+    "payload": "' UNion SELeCT 1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_union_case_v1",
+    "payload": "' uNIOn seleCt 1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_union_case_v2",
+    "payload": "' UNiON SeleCt 1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_union_case_normal_doc",
+    "payload": "SQL 安全文档反例：`' UNION SELECT 1,2,3--` 是禁止拼接到查询中的输入。",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "sql_documentation",
+    "param_location": "body",
+    "source": "augmented_hard_negative"
+  },
+  {
+    "id": "sqli_union_all_case_v0",
+    "payload": "' UNion ALL SEleCt UseRNaME,passwoRd from USERS--",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_union_all_case_v1",
+    "payload": "' UNion aLL selecT USErnAmE,PASsWorD frOM usERS--",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_union_all_case_v2",
+    "payload": "' UnioN ALL sElEct usErnamE,PassWOrd FRom UsErS--",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_union_all_case_normal_doc",
+    "payload": "代码评审说明：字符串 `' UNION ALL SELECT username,password FROM users--` 仅作为参数化查询培训中的反例。",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "sql_documentation",
+    "param_location": "body",
+    "source": "augmented_hard_negative"
+  },
+  {
+    "id": "sqli_or_tautology_case_normal_doc",
+    "payload": "安全培训示例：`' OR 1=1--` 是 SQL 注入反例，应用必须使用绑定参数。",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "sql_documentation",
+    "param_location": "body",
+    "source": "augmented_hard_negative"
+  },
+  {
+    "id": "sqli_and_tautology_case_v0",
+    "payload": "' ANd 1=1--",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_and_tautology_case_v1",
+    "payload": "' And 1=1--",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_and_tautology_case_v2",
+    "payload": "' aND 1=1--",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_and_tautology_case_normal_doc",
+    "payload": "开发规范提醒：不要拼接 `' AND 1=1--`，应使用预编译语句。",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "sql_documentation",
+    "param_location": "body",
+    "source": "augmented_hard_negative"
+  },
+  {
+    "id": "sqli_sleep_case_v0",
+    "payload": "sLEEp(5)",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_sleep_case_v1",
+    "payload": "SLEeP(5)",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_sleep_case_v2",
+    "payload": "SleEp(5)",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_sleep_case_normal_doc",
+    "payload": "SQL 审计文档将 `SLEEP(5)` 列为时间盲注检测示例，而不是待执行查询。",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "sql_documentation",
+    "param_location": "body",
+    "source": "augmented_hard_negative"
+  },
+  {
+    "id": "sqli_benchmark_case_v0",
+    "payload": "bENChmaRK(1000000,mD5('A'))",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_benchmark_case_v1",
+    "payload": "BenchmaRk(1000000,MD5('A'))",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_benchmark_case_v2",
+    "payload": "beNcHMark(1000000,mD5('A'))",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_benchmark_case_normal_doc",
+    "payload": "安全手册说明 `BENCHMARK(1000000,MD5('a'))` 可被滥用于时间盲注。",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "sql_documentation",
+    "param_location": "body",
+    "source": "augmented_hard_negative"
+  },
+  {
+    "id": "sqli_select_case_v0",
+    "payload": "sELEct * FRoM usErs whERe ID=1",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_select_case_v1",
+    "payload": "seleCt * frOM USERs WHEre Id=1",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_select_case_v2",
+    "payload": "select * FRom uSeRS wHerE id=1",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_select_case_normal_doc",
+    "payload": "SQL 教程中的静态示例为 `SELECT * FROM users WHERE id=1`，生产代码应绑定 id 参数。",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "sql_documentation",
+    "param_location": "body",
+    "source": "augmented_hard_negative"
+  },
+  {
+    "id": "sqli_drop_case_v0",
+    "payload": "dROP taBLE uSErs",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_drop_case_v1",
+    "payload": "DroP tABlE Users",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_drop_case_v2",
+    "payload": "drOp tablE USERS",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_drop_case_normal_doc",
+    "payload": "数据库变更评审文档以 `DROP TABLE users` 演示必须经过审批的危险操作。",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "sql_documentation",
+    "param_location": "body",
+    "source": "augmented_hard_negative"
+  },
+  {
+    "id": "sqli_insert_case_v0",
+    "payload": "iNSErt INTO ADmiNs ValUEs('H','p')",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_insert_case_v1",
+    "payload": "Insert INTO ADmINS valUeS('h','p')",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_insert_case_v2",
+    "payload": "INSerT InTO aDmiNS vALUes('H','p')",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_insert_case_normal_doc",
+    "payload": "SQL 教程反例 `INSERT INTO admins VALUES('h','p')` 仅用于说明列名和参数绑定。",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "sql_documentation",
+    "param_location": "body",
+    "source": "augmented_hard_negative"
+  },
+  {
+    "id": "sqli_extract_case_v0",
+    "payload": "eXTRactVALUe(1,cOncAt(0X7E,(select databaSE())))",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_extract_case_v1",
+    "payload": "eXTRActvAlUE(1,conCAT(0x7E,(sELEcT dATabASE())))",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_extract_case_v2",
+    "payload": "extrActvAlUE(1,CoNcaT(0X7e,(SELect DatABAse())))",
+    "label": 1,
+    "attack_type": "sqli",
+    "attack_subtype": "case_mix",
+    "param_location": "query",
+    "source": "augmented"
+  },
+  {
+    "id": "sqli_extract_case_normal_doc",
+    "payload": "漏洞说明将 `EXTRACTVALUE(1,CONCAT(0x7e,(SELECT database())))` 标记为错误回显注入示例。",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "sql_documentation",
+    "param_location": "body",
+    "source": "augmented_hard_negative"
+  }
+]

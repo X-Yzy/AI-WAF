@@ -1,0 +1,733 @@
+{
+  "matrix_version": 1,
+  "entries": [
+    {
+      "family": "SQL injection",
+      "category": "injection",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-89",
+        "OWASP A03"
+      ],
+      "note": "traditional, obfuscated, API variable and recent-CVE samples"
+    },
+    {
+      "family": "Cross-site scripting",
+      "category": "injection",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-79",
+        "OWASP A03"
+      ],
+      "note": "reflected input patterns; DOM-only sinks still need response/client analysis"
+    },
+    {
+      "family": "OS command injection / Shellshock",
+      "category": "injection",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-78",
+        "CWE-77"
+      ],
+      "note": "includes shell operators, Shellshock and recent CVEs"
+    },
+    {
+      "family": "Code and expression injection",
+      "category": "injection",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-94",
+        "CWE-917"
+      ],
+      "note": "SpEL, OGNL, MVEL, Java Runtime and ProcessBuilder"
+    },
+    {
+      "family": "Server-side template injection",
+      "category": "injection",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-1336"
+      ],
+      "note": "Jinja-like, FreeMarker and Velocity forms"
+    },
+    {
+      "family": "NoSQL injection",
+      "category": "injection",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-943",
+        "API8:2023"
+      ],
+      "note": "Mongo-style operators and API JSON"
+    },
+    {
+      "family": "LDAP injection",
+      "category": "injection",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-90"
+      ],
+      "note": "filter escaping and recent CVEs"
+    },
+    {
+      "family": "XPath injection",
+      "category": "injection",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-643"
+      ],
+      "note": "boolean and count expressions"
+    },
+    {
+      "family": "XXE / XInclude",
+      "category": "injection",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-611"
+      ],
+      "note": "DOCTYPE, external entities and XInclude"
+    },
+    {
+      "family": "SSI injection",
+      "category": "injection",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-97"
+      ],
+      "note": "exec/include directives"
+    },
+    {
+      "family": "CRLF, response splitting and log forging",
+      "category": "injection",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-93",
+        "CWE-117"
+      ],
+      "note": "encoded newlines require injected visible content"
+    },
+    {
+      "family": "JNDI lookup injection",
+      "category": "injection",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-917"
+      ],
+      "note": "JNDI lookup syntax including Log4Shell-style fields"
+    },
+    {
+      "family": "Prototype pollution",
+      "category": "api_input",
+      "data_status": "covered",
+      "runtime_status": "covered_after_retrain",
+      "detection_layer": "field ML",
+      "standards": [
+        "CWE-1321"
+      ],
+      "note": "__proto__ and constructor.prototype with hard negatives"
+    },
+    {
+      "family": "Unsafe deserialization",
+      "category": "api_input",
+      "data_status": "covered",
+      "runtime_status": "covered_after_retrain",
+      "detection_layer": "field ML",
+      "standards": [
+        "CWE-502",
+        "OWASP A08"
+      ],
+      "note": "Java, PHP, .NET, Python, YAML, Node, Ruby, Hessian and Kryo"
+    },
+    {
+      "family": "Path traversal / LFI / archive Zip Slip",
+      "category": "file_path",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-22",
+        "CWE-23"
+      ],
+      "note": "encoded traversal, wrappers and archive member names"
+    },
+    {
+      "family": "Malicious file upload / polyglot metadata",
+      "category": "file_path",
+      "data_status": "covered",
+      "runtime_status": "partial",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-434"
+      ],
+      "note": "extensions, .htaccess and SVG; binary malware scanning is separate"
+    },
+    {
+      "family": "SSRF",
+      "category": "server_side_request",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-918",
+        "OWASP A10",
+        "API7:2023"
+      ],
+      "note": "metadata, loopback, IPv6 and non-HTTP schemes"
+    },
+    {
+      "family": "Open redirect",
+      "category": "server_side_request",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "application policy",
+      "standards": [
+        "CWE-601"
+      ],
+      "note": "requires per-application redirect allowlist"
+    },
+    {
+      "family": "HTTP parameter pollution",
+      "category": "http_protocol",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-235"
+      ],
+      "note": "duplicate and encoded parameters"
+    },
+    {
+      "family": "HTTP/1 request smuggling CL.TE / TE.CL",
+      "category": "http_protocol",
+      "data_status": "covered",
+      "runtime_status": "partial",
+      "detection_layer": "edge parser + field model",
+      "standards": [
+        "CWE-444"
+      ],
+      "note": "proxy rejects ambiguous lengths/chunked direct input; upstream differential testing still required"
+    },
+    {
+      "family": "HTTP/2 request smuggling / pseudo-header ambiguity",
+      "category": "http_protocol",
+      "data_status": "covered_sequence",
+      "runtime_status": "gateway_required",
+      "detection_layer": "HTTP/2 gateway",
+      "standards": [
+        "CWE-444"
+      ],
+      "note": "paired structured frame sequences exist; current Python proxy terminates HTTP/1.1 only"
+    },
+    {
+      "family": "HTTP/2 Rapid Reset / protocol DoS",
+      "category": "http_protocol",
+      "data_status": "covered_sequence",
+      "runtime_status": "gateway_required",
+      "detection_layer": "load balancer",
+      "standards": [
+        "CVE-2023-44487"
+      ],
+      "note": "rapid open/reset and benign cancellation sequences exist; mitigation still belongs at an HTTP/2-capable edge"
+    },
+    {
+      "family": "HTTP content-type / parser differential",
+      "category": "http_protocol",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "edge/application parser contract",
+      "standards": [
+        "CWE-444",
+        "CWE-436"
+      ],
+      "note": "label depends on whether edge and application parse the same bytes differently"
+    },
+    {
+      "family": "JWT implementation attacks",
+      "category": "authentication",
+      "data_status": "covered",
+      "runtime_status": "covered",
+      "detection_layer": "field rules + ML",
+      "standards": [
+        "CWE-347",
+        "API2:2023"
+      ],
+      "note": "alg none, kid traversal and key URL patterns; signature validation remains in the app"
+    },
+    {
+      "family": "Credential stuffing and MFA/OTP guessing",
+      "category": "authentication",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "identity rate/graph layer",
+      "standards": [
+        "CWE-307",
+        "API2:2023"
+      ],
+      "note": "requires account, challenge, source and time aggregation"
+    },
+    {
+      "family": "CSRF",
+      "category": "authentication",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "application/session policy",
+      "standards": [
+        "CWE-352"
+      ],
+      "note": "requires cookie auth, Origin/SameSite and token validation context"
+    },
+    {
+      "family": "OAuth/OIDC redirect and flow abuse",
+      "category": "authentication",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "identity policy",
+      "standards": [
+        "CWE-601",
+        "API2:2023"
+      ],
+      "note": "exact registered redirect, issuer, state, nonce and PKCE checks"
+    },
+    {
+      "family": "SAML assertion/signature wrapping",
+      "category": "authentication",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "identity XML signature policy",
+      "standards": [
+        "CWE-347"
+      ],
+      "note": "the application must consume the exact uniquely signed assertion after schema validation"
+    },
+    {
+      "family": "Webhook signature validation and replay",
+      "category": "authentication",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "signature + freshness + idempotency",
+      "standards": [
+        "CWE-345",
+        "CWE-294"
+      ],
+      "note": "requires provider-specific canonicalization, timestamp freshness and event-id state"
+    },
+    {
+      "family": "Session fixation",
+      "category": "authentication",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "application session lifecycle",
+      "standards": [
+        "CWE-384"
+      ],
+      "note": "requires comparing session identity before and after authentication"
+    },
+    {
+      "family": "BOLA / IDOR",
+      "category": "authorization",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "application authorization",
+      "standards": [
+        "API1:2023",
+        "CWE-639"
+      ],
+      "note": "same request can be legal for support and illegal for an ordinary user"
+    },
+    {
+      "family": "Broken function-level authorization",
+      "category": "authorization",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "application authorization",
+      "standards": [
+        "API5:2023",
+        "CWE-862"
+      ],
+      "note": "role and effective route required"
+    },
+    {
+      "family": "Mass assignment / property and JSON Patch authorization",
+      "category": "authorization",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "schema + authorization",
+      "standards": [
+        "API3:2023",
+        "CWE-915"
+      ],
+      "note": "server-managed fields and JSON Pointer paths require caller-aware allowlists"
+    },
+    {
+      "family": "HTTP method override authorization bypass",
+      "category": "authorization",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "effective-method policy",
+      "standards": [
+        "CWE-650"
+      ],
+      "note": "must authorize the effective method after override resolution"
+    },
+    {
+      "family": "GraphQL alias/depth complexity",
+      "category": "resource_abuse",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "GraphQL AST budget",
+      "standards": [
+        "CWE-400",
+        "API4:2023"
+      ],
+      "note": "requires parsed operation cost, not keyword matching"
+    },
+    {
+      "family": "API batch/resource consumption",
+      "category": "resource_abuse",
+      "data_status": "covered_context",
+      "runtime_status": "partial",
+      "detection_layer": "body size + application quota",
+      "standards": [
+        "API4:2023",
+        "CWE-770"
+      ],
+      "note": "proxy caps bytes; cardinality and computational cost remain application-specific"
+    },
+    {
+      "family": "Business-flow automation",
+      "category": "business_logic",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "business state machine",
+      "standards": [
+        "API6:2023"
+      ],
+      "note": "inventory reservation and checkout completion context"
+    },
+    {
+      "family": "Race conditions / replay",
+      "category": "business_logic",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "transaction/idempotency layer",
+      "standards": [
+        "CWE-362"
+      ],
+      "note": "requires concurrent outcome and idempotency state"
+    },
+    {
+      "family": "CSV/spreadsheet formula injection",
+      "category": "business_logic",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "export encoder",
+      "standards": [
+        "CWE-1236"
+      ],
+      "note": "danger arises only when a stored value reaches spreadsheet export"
+    },
+    {
+      "family": "Cache poisoning / Host-forwarding trust",
+      "category": "cache_proxy",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "cache-key + trusted-proxy policy",
+      "standards": [
+        "CWE-444",
+        "CWE-345"
+      ],
+      "note": "requires observed cache key and response variation"
+    },
+    {
+      "family": "Host-header password-reset poisoning",
+      "category": "cache_proxy",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "canonical-origin application policy",
+      "standards": [
+        "CWE-640",
+        "CWE-346"
+      ],
+      "note": "request Host alone is insufficient; generated absolute links must be compared with configured origin"
+    },
+    {
+      "family": "Web cache deception",
+      "category": "cache_proxy",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "routing + cache policy",
+      "standards": [
+        "CWE-525"
+      ],
+      "note": "requires proof that private content was cached"
+    },
+    {
+      "family": "CORS misconfiguration",
+      "category": "browser_policy",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "response-header policy",
+      "standards": [
+        "CWE-942"
+      ],
+      "note": "request Origin alone is not malicious; response ACAO/credentials required"
+    },
+    {
+      "family": "Cross-site WebSocket hijacking",
+      "category": "websocket",
+      "data_status": "covered_context",
+      "runtime_status": "handshake_partial",
+      "detection_layer": "Origin + session policy",
+      "standards": [
+        "CWE-346"
+      ],
+      "note": "handshake data covered; frame payload and per-message authorization remain gaps"
+    },
+    {
+      "family": "WebSocket frame attacks",
+      "category": "websocket",
+      "data_status": "covered_sequence",
+      "runtime_status": "not_enforced",
+      "detection_layer": "WebSocket message gateway",
+      "standards": [
+        "CWE-20"
+      ],
+      "note": "paired fragmentation, masking, control-frame and budget events exist; current reverse proxy does not parse post-upgrade frames"
+    },
+    {
+      "family": "gRPC reflection enumeration",
+      "category": "grpc",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "gRPC gateway policy",
+      "standards": [
+        "CWE-200"
+      ],
+      "note": "synthetic sequences present"
+    },
+    {
+      "family": "gRPC protobuf field attacks",
+      "category": "grpc",
+      "data_status": "partial",
+      "runtime_status": "not_enforced",
+      "detection_layer": "descriptor-aware protobuf parser",
+      "standards": [
+        "CWE-20"
+      ],
+      "note": "opaque binary messages need service descriptors"
+    },
+    {
+      "family": "Vulnerability scanner behaviour",
+      "category": "reconnaissance",
+      "data_status": "covered_sequence",
+      "runtime_status": "covered",
+      "detection_layer": "stateful scanner detector",
+      "standards": [
+        "CWE-799"
+      ],
+      "note": "eight scanner families plus benign automation controls"
+    },
+    {
+      "family": "API inventory / deprecated endpoint and GraphQL schema discovery",
+      "category": "reconnaissance",
+      "data_status": "covered_context",
+      "runtime_status": "partial",
+      "detection_layer": "inventory + scanner behaviour",
+      "standards": [
+        "API9:2023"
+      ],
+      "note": "route and GraphQL introspection examples exist; authoritative deployment inventory remains external"
+    },
+    {
+      "family": "Unsafe consumption of third-party APIs",
+      "category": "supply_chain",
+      "data_status": "partial",
+      "runtime_status": "not_enforced",
+      "detection_layer": "egress schema and trust policy",
+      "standards": [
+        "API10:2023"
+      ],
+      "note": "SSRF/deserialization fields covered; provider trust and response validation are application concerns"
+    },
+    {
+      "family": "Vulnerable/outdated components",
+      "category": "supply_chain",
+      "data_status": "recent_cve_metadata",
+      "runtime_status": "not_remediated_by_waf",
+      "detection_layer": "asset/SBOM scanner",
+      "standards": [
+        "OWASP A06"
+      ],
+      "note": "CVE templates improve virtual patching but do not replace upgrades"
+    },
+    {
+      "family": "Software supply-chain integrity",
+      "category": "supply_chain",
+      "data_status": "outside_request_waf",
+      "runtime_status": "not_enforced",
+      "detection_layer": "CI/CD signing and provenance",
+      "standards": [
+        "OWASP A08"
+      ],
+      "note": "verify artifacts, dependencies and deployment provenance"
+    },
+    {
+      "family": "TLS/cryptographic failures",
+      "category": "configuration",
+      "data_status": "outside_request_waf",
+      "runtime_status": "not_enforced",
+      "detection_layer": "TLS terminator + application",
+      "standards": [
+        "OWASP A02"
+      ],
+      "note": "cipher, certificate, key storage and password hashing are not request payload properties"
+    },
+    {
+      "family": "Missing security headers / clickjacking",
+      "category": "configuration",
+      "data_status": "outside_request_waf",
+      "runtime_status": "not_enforced",
+      "detection_layer": "response policy",
+      "standards": [
+        "CWE-1021",
+        "OWASP A05"
+      ],
+      "note": "CSP, HSTS and frame-ancestors require response inspection"
+    },
+    {
+      "family": "Sensitive data exposure in responses",
+      "category": "response",
+      "data_status": "outside_request_waf",
+      "runtime_status": "not_enforced",
+      "detection_layer": "response DLP/schema",
+      "standards": [
+        "CWE-200",
+        "API3:2023"
+      ],
+      "note": "current WAF request model does not inspect response semantics"
+    },
+    {
+      "family": "Malware in uploaded binaries",
+      "category": "file_content",
+      "data_status": "outside_request_waf",
+      "runtime_status": "not_enforced",
+      "detection_layer": "AV/CDR/sandbox",
+      "standards": [
+        "CWE-434"
+      ],
+      "note": "filename/MIME metadata are insufficient for binary malware verdicts"
+    },
+    {
+      "family": "Compression/ZIP bombs",
+      "category": "denial_of_service",
+      "data_status": "partial",
+      "runtime_status": "body_size_only",
+      "detection_layer": "streaming decompression budget",
+      "standards": [
+        "CWE-409"
+      ],
+      "note": "byte limits exist; decompressed ratio and archive entry budgets are not implemented"
+    },
+    {
+      "family": "ReDoS and algorithmic complexity",
+      "category": "denial_of_service",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "sink-aware time budget",
+      "standards": [
+        "CWE-1333"
+      ],
+      "note": "a regex-looking string is not malicious without a vulnerable sink"
+    },
+    {
+      "family": "Memory corruption in native services",
+      "category": "native_exploit",
+      "data_status": "recent_cve_metadata",
+      "runtime_status": "not_generalizable",
+      "detection_layer": "patching/EDR/IPS",
+      "standards": [
+        "CWE-787",
+        "CWE-125"
+      ],
+      "note": "generic payload ML cannot reliably virtual-patch arbitrary binary parsers"
+    },
+    {
+      "family": "LLM prompt/tool injection",
+      "category": "ai_application",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "LLM-specific policy and tool sandbox",
+      "standards": [
+        "OWASP LLM01",
+        "OWASP LLM06"
+      ],
+      "note": "paired direct, indirect retrieval, prompt-exfiltration and tool-argument traces exist; runtime still requires conversation policy and tool capability controls"
+    },
+    {
+      "family": "LLM sensitive-information disclosure",
+      "category": "ai_application",
+      "data_status": "covered_context",
+      "runtime_status": "not_enforced",
+      "detection_layer": "LLM output DLP",
+      "standards": [
+        "OWASP LLM02"
+      ],
+      "note": "paired synthetic-canary output traces exist; request-only proxy still cannot enforce output policy"
+    }
+  ],
+  "summary": {
+    "families": 61,
+    "by_data_status": {
+      "covered": 20,
+      "covered_context": 27,
+      "covered_sequence": 4,
+      "outside_request_waf": 5,
+      "partial": 3,
+      "recent_cve_metadata": 2
+    },
+    "by_runtime_status": {
+      "body_size_only": 1,
+      "covered": 17,
+      "covered_after_retrain": 2,
+      "gateway_required": 2,
+      "handshake_partial": 1,
+      "not_enforced": 32,
+      "not_generalizable": 1,
+      "not_remediated_by_waf": 1,
+      "partial": 4
+    },
+    "specialized_records": 875,
+    "lab_capture_records": 1011,
+    "recent_cve_records": 403
+  },
+  "interpretation": {
+    "covered": "representative data exists; production effectiveness still requires external validation",
+    "covered_context": "paired context/session data exists but must not enter the context-free payload model",
+    "gap": "no adequate dataset/runtime detector in this repository yet",
+    "outside_request_waf": "control belongs to response, application, identity, asset, CI/CD or infrastructure layers"
+  }
+}

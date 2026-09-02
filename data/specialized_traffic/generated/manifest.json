@@ -1,0 +1,130 @@
+{
+  "dataset": "Synthetic-Specialized-Web-Security-v1",
+  "seed": 20260724,
+  "format": "JSON array / UTF-8",
+  "total_records": 1523,
+  "counts": {
+    "payloads": 456,
+    "scanner_sequences": 180,
+    "api_context_sequences": 137,
+    "protocol_sequences": 62,
+    "high_value_context_sequences": 648,
+    "llm_context_sequences": 40
+  },
+  "splits": {
+    "payloads": {
+      "train": 363,
+      "validation": 45,
+      "test": 48
+    },
+    "scanner_sequences": {
+      "train": 120,
+      "validation": 30,
+      "test": 30
+    },
+    "api_context_sequences": {
+      "train": 68,
+      "validation": 44,
+      "test": 25
+    },
+    "high_value_context_sequences": {
+      "train": 492,
+      "validation": 76,
+      "test": 80
+    },
+    "protocol_sequences": {
+      "train": 10,
+      "validation": 36,
+      "test": 16
+    },
+    "llm_context_sequences": {
+      "train": 8,
+      "validation": 16,
+      "test": 16
+    }
+  },
+  "label_counts": {
+    "0": 547,
+    "1": 976
+  },
+  "attack_type_counts": {
+    "api_bfla": 13,
+    "api_bola": 24,
+    "api_content_type_confusion": 13,
+    "api_mass_assignment": 13,
+    "api_open_redirect": 13,
+    "api_proto": 36,
+    "api_resource_consumption": 13,
+    "api_viewstate_integrity": 13,
+    "business_flow_abuse": 24,
+    "cache_deception": 13,
+    "cache_poisoning": 13,
+    "cmdi": 6,
+    "codei": 18,
+    "cors_policy": 13,
+    "credential_stuffing": 32,
+    "crlf": 6,
+    "csrf": 13,
+    "csv_formula": 13,
+    "deser": 138,
+    "fupl": 12,
+    "graphql_complexity": 13,
+    "graphql_introspection": 13,
+    "grpc_reflection": 20,
+    "host_header_poisoning": 13,
+    "hpp": 12,
+    "hsmug": 12,
+    "http2_pseudo_header_ambiguity": 6,
+    "http2_rapid_reset": 32,
+    "json_patch_authz": 13,
+    "jwt": 6,
+    "ldap": 6,
+    "llm_direct_prompt_injection": 4,
+    "llm_indirect_rag_injection": 4,
+    "llm_prompt_exfiltration": 4,
+    "llm_sensitive_output_disclosure": 4,
+    "llm_tool_argument_injection": 4,
+    "logi": 12,
+    "method_override": 13,
+    "mfa_otp_abuse": 22,
+    "nosql": 12,
+    "oauth_redirect": 13,
+    "ptrav": 12,
+    "race_condition": 20,
+    "saml_signature_wrapping": 13,
+    "scanner": 120,
+    "session_fixation": 13,
+    "sqli": 12,
+    "ssi": 6,
+    "ssrf": 24,
+    "ssti": 18,
+    "webhook_replay": 16,
+    "websocket_cswh": 13,
+    "websocket_frame_validation": 8,
+    "xpath": 6,
+    "xss": 6,
+    "xxe": 12
+  },
+  "payload_model_scope": "only payloads/; scanner and API-context sequences require request/session context",
+  "safety": "all samples are inert synthetic strings; this generator performs no network or deserialization operations",
+  "artifacts": {
+    "api_context_sequences/dataset_api_context_sequences_test.json": "b118229db6af0b0b26e11206db5c3d57587bf730e421357f2bfa1ab9d670515a",
+    "api_context_sequences/dataset_api_context_sequences_train.json": "045331e4b43e8a20b66dcf1a12224910b390932386ef06460c19c32215fd2f31",
+    "api_context_sequences/dataset_api_context_sequences_validation.json": "c7e9ebe4ff8f6ea0009b756972de40c844fe854e63e6d01e53943af23f929bfc",
+    "high_value_context_sequences/dataset_high_value_context_sequences_test.json": "7dfa936d59c212d15f712821c3e100a9aa1fa015c453eb58d8c308be14df8efc",
+    "high_value_context_sequences/dataset_high_value_context_sequences_train.json": "9e38ee0fad1365adbdda9820a3b7736ced3ca30314510ac7fa53d1d59dfae39f",
+    "high_value_context_sequences/dataset_high_value_context_sequences_validation.json": "11ec7f1524fb0a363826d9894bedadcacb195d6d169e4d0b671d7addc47ed322",
+    "llm_context_sequences/dataset_llm_context_sequences_test.json": "b54d73ad0ba270898752c21ea08492c449750c0e5e071fbe18684ce5572febee",
+    "llm_context_sequences/dataset_llm_context_sequences_train.json": "6b95c9d925b1bede4cd10f0f98bbcfbf3dc99c80db024e77c3ebdb5ba171d48c",
+    "llm_context_sequences/dataset_llm_context_sequences_validation.json": "53710e2f7681d38555388a6762ebd972b664133a63ca7650ff265a3be24aca95",
+    "payloads/dataset_payloads_test.json": "6c4525aacf32b6ee453f6e479c003ec989b73d984860b446ed883d8283b2358b",
+    "payloads/dataset_payloads_train.json": "d36997074cd5cd1aa9a557b86cb74de6ba2f421c040bccc507ea92a83ba88b6e",
+    "payloads/dataset_payloads_validation.json": "2d29adb126bf36f217b73e947d8da895bc721acd3234058b1d7df6d300bf1ab8",
+    "protocol_sequences/dataset_protocol_sequences_test.json": "b323f1625be9d8701af497e902b3ef722642eb1a6a6d390a66a798cef7d7cae4",
+    "protocol_sequences/dataset_protocol_sequences_train.json": "761976fcd265fd27c33a58a9fe71543c84789f5a5416b4f5c397e34123f3f594",
+    "protocol_sequences/dataset_protocol_sequences_validation.json": "efe60f42f99e4516bcb234225b7ff4aba3c71efe78320ce40a3b5aaab42f0b34",
+    "scanner_sequences/dataset_scanner_sequences_test.json": "44f995c7ca4f2fd2f8a48034158793ace1fef22194a18641f24264ccb65c3362",
+    "scanner_sequences/dataset_scanner_sequences_train.json": "87770cde9f243764b76d3a05d34a4ac2e6feb5f2915661c55f6f2fcdb3f66dcb",
+    "scanner_sequences/dataset_scanner_sequences_validation.json": "d4f51fb86d7013306fd23eb7c696fe773e0c4b365cae12df3b360dfa6a673e91"
+  }
+}

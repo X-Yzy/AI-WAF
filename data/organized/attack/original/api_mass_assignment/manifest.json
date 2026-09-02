@@ -1,0 +1,14 @@
+{
+  "representation": "original",
+  "attack_type": "api_mass_assignment",
+  "title": "API mass assignment",
+  "standard": "CWE-915",
+  "records": 25,
+  "shards": {
+    "context/test": 1,
+    "context/train": 12,
+    "request/test": 2,
+    "request/train": 7,
+    "request/validation": 3
+  }
+}

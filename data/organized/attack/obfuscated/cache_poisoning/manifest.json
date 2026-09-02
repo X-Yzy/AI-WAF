@@ -1,0 +1,13 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "cache_poisoning",
+  "title": "Web cache poisoning",
+  "standard": "CWE-444",
+  "records": 17,
+  "shards": {
+    "context/test": 1,
+    "context/train": 8,
+    "context/validation": 4,
+    "field/train": 4
+  }
+}

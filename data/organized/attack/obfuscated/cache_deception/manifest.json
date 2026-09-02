@@ -1,0 +1,11 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "cache_deception",
+  "title": "Web cache deception",
+  "standard": "CWE-525",
+  "records": 13,
+  "shards": {
+    "context/test": 2,
+    "context/train": 11
+  }
+}

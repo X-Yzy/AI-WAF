@@ -1,0 +1,15 @@
+{
+  "representation": "original",
+  "attack_type": "api_bfla",
+  "title": "Broken function-level authorization",
+  "standard": "API5:2023",
+  "records": 25,
+  "shards": {
+    "context/test": 3,
+    "context/train": 9,
+    "context/validation": 1,
+    "request/test": 3,
+    "request/train": 8,
+    "request/validation": 1
+  }
+}

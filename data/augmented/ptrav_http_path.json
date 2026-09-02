@@ -1,0 +1,137 @@
+[
+  {
+    "id": "ptrav_basic",
+    "payload": "../../etc/passwd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "attack_subtype": "http_path",
+    "param_location": "path",
+    "source": "augmented"
+  },
+  {
+    "id": "ptrav_windows",
+    "payload": "..\\..\\Windows\\System32\\config\\SAM",
+    "label": 1,
+    "attack_type": "ptrav",
+    "attack_subtype": "http_path",
+    "param_location": "path",
+    "source": "augmented"
+  },
+  {
+    "id": "ptrav_double_dot",
+    "payload": "....//....//etc/passwd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "attack_subtype": "http_path",
+    "param_location": "path",
+    "source": "augmented"
+  },
+  {
+    "id": "ptrav_semicolon",
+    "payload": "..;/..;/etc/passwd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "attack_subtype": "http_path",
+    "param_location": "path",
+    "source": "augmented"
+  },
+  {
+    "id": "ptrav_double_url",
+    "payload": "..%252f..%252fetc%252fpasswd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "attack_subtype": "http_path",
+    "param_location": "path",
+    "source": "augmented"
+  },
+  {
+    "id": "ptrav_url_encoded",
+    "payload": "%2e%2e%2f%2e%2e%2fetc%2fpasswd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "attack_subtype": "http_path",
+    "param_location": "path",
+    "source": "augmented"
+  },
+  {
+    "id": "ptrav_unicode",
+    "payload": "..%c0%af..%c0%afetc%c0%afpasswd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "attack_subtype": "http_path",
+    "param_location": "path",
+    "source": "augmented"
+  },
+  {
+    "id": "ptrav_absolute_start",
+    "payload": "/var/www/html/../../../etc/passwd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "attack_subtype": "http_path",
+    "param_location": "path",
+    "source": "augmented"
+  },
+  {
+    "id": "ptrav_triple_slash",
+    "payload": "....///....///etc/passwd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "attack_subtype": "http_path",
+    "param_location": "path",
+    "source": "augmented"
+  },
+  {
+    "id": "ptrav_triple_double_url",
+    "payload": "..%252f..%252f..%252fetc%252fpasswd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "attack_subtype": "http_path",
+    "param_location": "path",
+    "source": "augmented"
+  },
+  {
+    "id": "normal_api_path",
+    "payload": "/api/v1/users/12345/profile",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "legitimate_path",
+    "param_location": "path",
+    "source": "augmented_hard_negative"
+  },
+  {
+    "id": "normal_static_path",
+    "payload": "/assets/images/logo.png",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "legitimate_path",
+    "param_location": "path",
+    "source": "augmented_hard_negative"
+  },
+  {
+    "id": "normal_docs_path",
+    "payload": "/docs/api-reference.html",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "legitimate_path",
+    "param_location": "path",
+    "source": "augmented_hard_negative"
+  },
+  {
+    "id": "normal_search_path",
+    "payload": "/search?q=hello+world&page=1",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "legitimate_path",
+    "param_location": "path",
+    "source": "augmented_hard_negative"
+  },
+  {
+    "id": "normal_windows_path",
+    "payload": "C:\\Users\\Public\\Documents\\report.xlsx",
+    "label": 0,
+    "attack_type": "normal",
+    "attack_subtype": "legitimate_path",
+    "param_location": "path",
+    "source": "augmented_hard_negative"
+  }
+]

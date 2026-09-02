@@ -1,0 +1,17 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "jwt",
+  "title": "JWT implementation attacks",
+  "standard": "CWE-347",
+  "records": 257,
+  "shards": {
+    "field/evaluation": 3,
+    "field/test": 12,
+    "field/train": 78,
+    "field/unspecified": 110,
+    "field/validation": 12,
+    "request/test": 5,
+    "request/train": 35,
+    "request/validation": 2
+  }
+}

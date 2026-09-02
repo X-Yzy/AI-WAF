@@ -1,0 +1,18 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "deser",
+  "title": "Unsafe deserialization",
+  "standard": "CWE-502",
+  "records": 738,
+  "shards": {
+    "field/evaluation": 4,
+    "field/test": 43,
+    "field/train": 365,
+    "field/unspecified": 180,
+    "field/validation": 60,
+    "request/evaluation": 43,
+    "request/test": 2,
+    "request/train": 35,
+    "request/validation": 6
+  }
+}

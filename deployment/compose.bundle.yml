@@ -1,0 +1,112 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.12-slim-bookworm}
+        PIP_INDEX_URL: ${PIP_INDEX_URL:-https://mirrors.aliyun.com/pypi/simple/}
+        APT_MIRROR: ${APT_MIRROR:-https://mirrors.aliyun.com/debian}
+        APT_SECURITY_MIRROR: ${APT_SECURITY_MIRROR:-https://mirrors.aliyun.com/debian-security}
+        HTTP_PROXY: ${HTTP_PROXY:-}
+        HTTPS_PROXY: ${HTTPS_PROXY:-}
+        NO_PROXY: ${NO_PROXY:-localhost,127.0.0.1}
+        http_proxy: ${http_proxy:-}
+        https_proxy: ${https_proxy:-}
+        no_proxy: ${no_proxy:-localhost,127.0.0.1}
+    image: ${WAD_IMAGE:-ai-waf-runtime:latest}
+    container_name: ai-waf-api
+    command: ["uvicorn", "src.runtime_api:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "${WAD_API_BIND:-127.0.0.1}:${WAD_API_PORT:-8000}:8000"
+    environment:
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8000,http://127.0.0.1:8000}
+      WAD_MODEL_ROOT: /app/models/current
+      WAD_RUNTIME_ROOT: /app/runtime
+      WAD_PROXY_LOG_FILE: /app/runtime/proxy_access.jsonl
+      WAD_PROXY_BACKEND: ${WAD_PROXY_BACKEND:-http://127.0.0.1:3000}
+      WAD_PROXY_MODE: ${WAD_PROXY_MODE:-monitor}
+      WAD_PROXY_FAIL_POLICY: ${WAD_PROXY_FAIL_POLICY:-closed}
+      WAD_DASHBOARD_USERNAME: ${WAD_DASHBOARD_USERNAME:-admin}
+      WAD_DASHBOARD_PASSWORD: ${WAD_DASHBOARD_PASSWORD:-}
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,noexec,nosuid,nodev
+    volumes:
+      - wad-runtime:/app/runtime
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import json,urllib.request; assert json.load(urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3))['status'] == 'ok'"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.12-slim-bookworm}
+        PIP_INDEX_URL: ${PIP_INDEX_URL:-https://mirrors.aliyun.com/pypi/simple/}
+        APT_MIRROR: ${APT_MIRROR:-https://mirrors.aliyun.com/debian}
+        APT_SECURITY_MIRROR: ${APT_SECURITY_MIRROR:-https://mirrors.aliyun.com/debian-security}
+        HTTP_PROXY: ${HTTP_PROXY:-}
+        HTTPS_PROXY: ${HTTPS_PROXY:-}
+        NO_PROXY: ${NO_PROXY:-localhost,127.0.0.1}
+        http_proxy: ${http_proxy:-}
+        https_proxy: ${https_proxy:-}
+        no_proxy: ${no_proxy:-localhost,127.0.0.1}
+    image: ${WAD_IMAGE:-ai-waf-runtime:latest}
+    container_name: ai-waf-proxy
+    command: ["python", "-m", "src.proxy"]
+    # Linux 服务器使用 host network，才能访问只监听 127.0.0.1 的原业务。
+    network_mode: host
+    environment:
+      WAD_MODEL_ROOT: /app/models/current
+      WAD_RUNTIME_ROOT: /app/runtime
+      WAD_PROXY_HOST: ${WAD_PROXY_BIND:-0.0.0.0}
+      WAD_PROXY_PORT: ${WAD_PROXY_PORT:-8081}
+      WAD_PROXY_BACKEND: ${WAD_PROXY_BACKEND:-http://127.0.0.1:3000}
+      WAD_PROXY_PUBLIC_ORIGIN: ${WAD_PROXY_PUBLIC_ORIGIN:-}
+      WAD_PROXY_DIRECTORY_LINKS: ${WAD_PROXY_DIRECTORY_LINKS:-}
+      WAD_PROXY_TRUSTED_PROXIES: ${WAD_PROXY_TRUSTED_PROXIES:-127.0.0.0/8,::1/128}
+      WAD_PROXY_FIELD_ALLOWLIST: ${WAD_PROXY_FIELD_ALLOWLIST:-}
+      WAD_PROXY_MODE: ${WAD_PROXY_MODE:-monitor}
+      WAD_PROXY_FAIL_POLICY: ${WAD_PROXY_FAIL_POLICY:-closed}
+      WAD_PROXY_TIMEOUT: ${WAD_PROXY_TIMEOUT:-30}
+      WAD_PROXY_MAX_BODY_MB: ${WAD_PROXY_MAX_BODY_MB:-1}
+      WAD_PROXY_LOG_FILE: /app/runtime/proxy_access.jsonl
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,noexec,nosuid,nodev
+    volumes:
+      - wad-runtime:/app/runtime
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import json,os,urllib.request; port=os.environ.get('WAD_PROXY_PORT','8081'); assert json.load(urllib.request.urlopen(f'http://127.0.0.1:{port}/_wad/health', timeout=3))['status'] == 'ok'"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  wad-runtime:

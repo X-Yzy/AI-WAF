@@ -1,0 +1,602 @@
+{
+  "version": "final-c6-organized-v1",
+  "objective": "binary field-payload attack detection",
+  "seed": 20260728,
+  "selection_rule": "validation only: recall>=0.95 and fpr<=0.001; maximize 0.45*F1 + 0.35*macro_type_recall + 0.20*obfuscated_recall",
+  "selection_constraints": {
+    "minimum_validation_recall": 0.95,
+    "maximum_validation_fpr": 0.001
+  },
+  "data_policy": {
+    "payload_model_eligible_only": true,
+    "request_context_protocol_llm_excluded_from_field_model": true,
+    "unspecified_records": "train_only",
+    "exact_duplicates": "deduplicate within split and reject cross-split",
+    "rare_limit": 2000,
+    "abundant_cap": 8000,
+    "group_aware_sampling": true
+  },
+  "data_audit": {
+    "data_root": "data/organized",
+    "loaded": {
+      "train": {
+        "from_unspecified": 13254,
+        "normal": 256856,
+        "obfuscated": 20147,
+        "original": 10340
+      },
+      "validation": {
+        "normal": 32228,
+        "obfuscated": 1201,
+        "original": 1013
+      },
+      "test": {
+        "normal": 32196,
+        "obfuscated": 1357,
+        "original": 1168
+      }
+    },
+    "skipped_ineligible": {
+      "test": 35,
+      "train": 239,
+      "unspecified": 1,
+      "validation": 46
+    },
+    "skipped_duplicates": {
+      "test": 10,
+      "train": 501,
+      "validation": 8
+    },
+    "unspecified_policy": "train_only"
+  },
+  "sampling": {
+    "data_root": "data/organized",
+    "train_records": 282425,
+    "train_normal": 256856,
+    "train_attack": 25569,
+    "validation_records": 34442,
+    "test_records": 34721,
+    "attack_types": 23,
+    "types_fully_retained": 22,
+    "sampling_by_type": {
+      "api_proto": {
+        "available": 123,
+        "selected": 123,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 94,
+          "original": 29
+        }
+      },
+      "cmdi": {
+        "available": 1385,
+        "selected": 1385,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 1018,
+          "original": 367
+        }
+      },
+      "codei": {
+        "available": 533,
+        "selected": 533,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 436,
+          "original": 97
+        }
+      },
+      "crlf": {
+        "available": 468,
+        "selected": 468,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 347,
+          "original": 121
+        }
+      },
+      "deser": {
+        "available": 723,
+        "selected": 723,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 479,
+          "original": 244
+        }
+      },
+      "fmtst": {
+        "available": 242,
+        "selected": 242,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 193,
+          "original": 49
+        }
+      },
+      "fupl": {
+        "available": 513,
+        "selected": 513,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 404,
+          "original": 109
+        }
+      },
+      "hpp": {
+        "available": 164,
+        "selected": 164,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 128,
+          "original": 36
+        }
+      },
+      "hsmug": {
+        "available": 292,
+        "selected": 292,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 226,
+          "original": 66
+        }
+      },
+      "jwt": {
+        "available": 242,
+        "selected": 242,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 183,
+          "original": 59
+        }
+      },
+      "ldap": {
+        "available": 326,
+        "selected": 326,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 262,
+          "original": 64
+        }
+      },
+      "lfi": {
+        "available": 1254,
+        "selected": 1254,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 1030,
+          "original": 224
+        }
+      },
+      "logi": {
+        "available": 286,
+        "selected": 286,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 229,
+          "original": 57
+        }
+      },
+      "nosql": {
+        "available": 386,
+        "selected": 386,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 312,
+          "original": 74
+        }
+      },
+      "oredir": {
+        "available": 1152,
+        "selected": 1152,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 952,
+          "original": 200
+        }
+      },
+      "ptrav": {
+        "available": 1587,
+        "selected": 1587,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 1186,
+          "original": 401
+        }
+      },
+      "sqli": {
+        "available": 3350,
+        "selected": 3350,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 2075,
+          "original": 1275
+        }
+      },
+      "ssi": {
+        "available": 621,
+        "selected": 621,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 507,
+          "original": 114
+        }
+      },
+      "ssrf": {
+        "available": 1321,
+        "selected": 1321,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 1076,
+          "original": 245
+        }
+      },
+      "ssti": {
+        "available": 1294,
+        "selected": 1294,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 1065,
+          "original": 229
+        }
+      },
+      "xpath": {
+        "available": 189,
+        "selected": 189,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 151,
+          "original": 38
+        }
+      },
+      "xss": {
+        "available": 12918,
+        "selected": 8000,
+        "all_retained": false,
+        "representations": {
+          "obfuscated": 4309,
+          "original": 3691
+        }
+      },
+      "xxe": {
+        "available": 1118,
+        "selected": 1118,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 918,
+          "original": 200
+        }
+      }
+    }
+  },
+  "feature_order": [
+    "payload_byte_len",
+    "digit_ratio",
+    "alpha_ratio",
+    "special_char_ratio",
+    "upper_lower_ratio",
+    "shannon_entropy",
+    "url_encoded_char_ratio",
+    "html_entity_count",
+    "comment_pattern_count",
+    "max_token_len",
+    "whitespace_ratio",
+    "non_printable_ratio",
+    "sql_keyword_hits",
+    "xss_keyword_hits",
+    "cmdi_keyword_hits",
+    "ssti_pattern_hits",
+    "path_traversal_hits",
+    "database_function_hits",
+    "sql_structure_score",
+    "xss_structure_score",
+    "balanced_quote_ratio",
+    "balanced_paren_ratio",
+    "token_entropy",
+    "max_keyword_density",
+    "sensitive_path_hits",
+    "ip_addr_hits",
+    "decode_depth",
+    "len_before_after_ratio",
+    "entropy_delta",
+    "converged",
+    "decode_steps_attempted",
+    "successful_decode_steps",
+    "url_decode_layers",
+    "base64_decode_success",
+    "comment_blocks_removed",
+    "concat_patterns_removed",
+    "whitespace_normalized",
+    "payload_grew"
+  ],
+  "threshold": 0.34495921,
+  "thresholds": {
+    "high": 0.34495921,
+    "low": 0.05
+  },
+  "fusion": {
+    "feature_weight": 0.3,
+    "text_weight": 0.7
+  },
+  "validation": {
+    "auc": 0.999949,
+    "f1": 0.995716,
+    "precision": 0.994147,
+    "recall": 0.99729,
+    "macro_type_recall": 0.99391,
+    "minimum_type_recall": 0.95,
+    "fpr": 0.000403,
+    "confusion_matrix": [
+      [
+        32215,
+        13
+      ],
+      [
+        6,
+        2208
+      ]
+    ],
+    "representation_recall": {
+      "obfuscated": {
+        "records": 1201,
+        "recall": 0.999167
+      },
+      "original": {
+        "records": 1013,
+        "recall": 0.995064
+      }
+    },
+    "type_recall": {
+      "api_proto": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "cmdi": {
+        "records": 54,
+        "recall": 0.981481
+      },
+      "codei": {
+        "records": 20,
+        "recall": 1.0
+      },
+      "crlf": {
+        "records": 28,
+        "recall": 1.0
+      },
+      "deser": {
+        "records": 78,
+        "recall": 0.987179
+      },
+      "fmtst": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "fupl": {
+        "records": 22,
+        "recall": 0.954545
+      },
+      "hpp": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "hsmug": {
+        "records": 26,
+        "recall": 1.0
+      },
+      "jwt": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "ldap": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "lfi": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "logi": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "nosql": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "ptrav": {
+        "records": 58,
+        "recall": 1.0
+      },
+      "sqli": {
+        "records": 278,
+        "recall": 0.992806
+      },
+      "ssi": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "ssrf": {
+        "records": 20,
+        "recall": 0.95
+      },
+      "ssti": {
+        "records": 18,
+        "recall": 1.0
+      },
+      "xpath": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "xss": {
+        "records": 1434,
+        "recall": 1.0
+      },
+      "xxe": {
+        "records": 18,
+        "recall": 1.0
+      }
+    }
+  },
+  "test": {
+    "auc": 0.999927,
+    "f1": 0.992669,
+    "precision": 0.993259,
+    "recall": 0.992079,
+    "macro_type_recall": 0.995585,
+    "minimum_type_recall": 0.939024,
+    "fpr": 0.000528,
+    "confusion_matrix": [
+      [
+        32179,
+        17
+      ],
+      [
+        20,
+        2505
+      ]
+    ],
+    "representation_recall": {
+      "obfuscated": {
+        "records": 1357,
+        "recall": 0.993368
+      },
+      "original": {
+        "records": 1168,
+        "recall": 0.990582
+      }
+    },
+    "type_recall": {
+      "api_proto": {
+        "records": 21,
+        "recall": 1.0
+      },
+      "cmdi": {
+        "records": 82,
+        "recall": 0.939024
+      },
+      "codei": {
+        "records": 26,
+        "recall": 1.0
+      },
+      "crlf": {
+        "records": 22,
+        "recall": 1.0
+      },
+      "deser": {
+        "records": 66,
+        "recall": 1.0
+      },
+      "fmtst": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "fupl": {
+        "records": 12,
+        "recall": 1.0
+      },
+      "hpp": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "hsmug": {
+        "records": 24,
+        "recall": 1.0
+      },
+      "jwt": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "ldap": {
+        "records": 22,
+        "recall": 1.0
+      },
+      "lfi": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "logi": {
+        "records": 22,
+        "recall": 1.0
+      },
+      "nosql": {
+        "records": 22,
+        "recall": 1.0
+      },
+      "ptrav": {
+        "records": 74,
+        "recall": 0.986486
+      },
+      "sqli": {
+        "records": 338,
+        "recall": 0.982249
+      },
+      "ssi": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "ssrf": {
+        "records": 24,
+        "recall": 1.0
+      },
+      "ssti": {
+        "records": 18,
+        "recall": 1.0
+      },
+      "xpath": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "xss": {
+        "records": 1638,
+        "recall": 0.995116
+      },
+      "xxe": {
+        "records": 18,
+        "recall": 1.0
+      }
+    }
+  },
+  "models": {
+    "lightgbm_best_iteration": 1241,
+    "lightgbm_params": {
+      "boosting_type": "gbdt",
+      "class_weight": null,
+      "colsample_bytree": 0.9,
+      "importance_type": "split",
+      "learning_rate": 0.02,
+      "max_depth": -1,
+      "min_child_samples": 30,
+      "min_child_weight": 0.001,
+      "min_split_gain": 0.0,
+      "n_estimators": 1400,
+      "n_jobs": -1,
+      "num_leaves": 47,
+      "objective": "binary",
+      "random_state": 20260728,
+      "reg_alpha": 0.1,
+      "reg_lambda": 2.0,
+      "subsample": 0.9,
+      "subsample_for_bin": 200000,
+      "subsample_freq": 1,
+      "metric": "auc",
+      "scale_pos_weight": 10.045602096288475,
+      "verbosity": -1,
+      "deterministic": true,
+      "force_col_wise": true
+    },
+    "text_analyzer": "char",
+    "text_ngram_range": [
+      2,
+      5
+    ],
+    "text_max_features": 140000,
+    "text_vocabulary_size": 140000,
+    "text_C": 6.0
+  },
+  "elapsed_seconds": 154.12,
+  "environment": {
+    "python": "3.14.4",
+    "numpy": "2.5.1",
+    "scikit_learn": "1.9.0",
+    "lightgbm": "4.6.0"
+  }
+}

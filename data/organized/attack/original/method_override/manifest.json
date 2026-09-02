@@ -1,0 +1,13 @@
+{
+  "representation": "original",
+  "attack_type": "method_override",
+  "title": "HTTP method override bypass",
+  "standard": "CWE-650",
+  "records": 17,
+  "shards": {
+    "context/test": 2,
+    "context/train": 9,
+    "context/validation": 2,
+    "request/evaluation": 4
+  }
+}

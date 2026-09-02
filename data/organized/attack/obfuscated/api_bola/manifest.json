@@ -1,0 +1,14 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "api_bola",
+  "title": "Broken object-level authorization / IDOR",
+  "standard": "API1:2023",
+  "records": 36,
+  "shards": {
+    "context/train": 21,
+    "context/validation": 3,
+    "request/test": 3,
+    "request/train": 7,
+    "request/validation": 2
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "representation": "original",
+  "attack_type": "oauth_redirect",
+  "title": "OAuth redirect abuse",
+  "standard": "CWE-601",
+  "records": 13,
+  "shards": {
+    "context/train": 9,
+    "context/validation": 4
+  }
+}

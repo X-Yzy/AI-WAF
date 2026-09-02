@@ -1,0 +1,10 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "llm_tool_argument_injection",
+  "title": "LLM tool argument injection",
+  "standard": "OWASP LLM06",
+  "records": 4,
+  "shards": {
+    "llm_context/test": 4
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "representation": "original",
+  "attack_type": "cmdi",
+  "title": "OS command injection",
+  "standard": "CWE-78",
+  "records": 3478,
+  "shards": {
+    "field/evaluation": 15,
+    "field/test": 37,
+    "field/train": 211,
+    "field/unspecified": 156,
+    "field/validation": 23,
+    "request/evaluation": 2950,
+    "request/test": 17,
+    "request/train": 60,
+    "request/validation": 9
+  }
+}

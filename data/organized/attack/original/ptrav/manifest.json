@@ -1,0 +1,18 @@
+{
+  "representation": "original",
+  "attack_type": "ptrav",
+  "title": "Path traversal",
+  "standard": "CWE-22",
+  "records": 2955,
+  "shards": {
+    "field/evaluation": 11,
+    "field/test": 33,
+    "field/train": 191,
+    "field/unspecified": 210,
+    "field/validation": 25,
+    "request/evaluation": 2295,
+    "request/test": 27,
+    "request/train": 139,
+    "request/validation": 24
+  }
+}

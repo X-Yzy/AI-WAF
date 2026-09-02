@@ -1,0 +1,11 @@
+{
+  "representation": "original",
+  "attack_type": "upload",
+  "title": "Malicious upload request",
+  "standard": "CWE-434",
+  "records": 36,
+  "shards": {
+    "request/train": 32,
+    "request/validation": 4
+  }
+}

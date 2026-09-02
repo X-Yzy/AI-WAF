@@ -1,0 +1,10 @@
+{
+  "representation": "original",
+  "attack_type": "llm_prompt_exfiltration",
+  "title": "LLM prompt exfiltration",
+  "standard": "OWASP LLM02",
+  "records": 4,
+  "shards": {
+    "llm_context/validation": 4
+  }
+}

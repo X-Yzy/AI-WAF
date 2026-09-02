@@ -1,0 +1,25 @@
+services:
+  modsecurity-crs:
+    image: owasp/modsecurity-crs:4.28.0-nginx-202607160307
+    container_name: wad-real-waf-benchmark
+    ports:
+      - "127.0.0.1:${WAD_REAL_WAF_PORT:-18080}:8080"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      BACKEND: ${WAD_BENCHMARK_BACKEND:?set WAD_BENCHMARK_BACKEND}
+      PORT: "8080"
+      MODSEC_RULE_ENGINE: "On"
+      BLOCKING_PARANOIA: "1"
+      DETECTION_PARANOIA: "1"
+      ANOMALY_INBOUND: "5"
+      ANOMALY_OUTBOUND: "4"
+      MODSEC_AUDIT_ENGINE: "Off"
+      ACCESSLOG: /dev/null
+      LOGLEVEL: warn
+    restart: "no"
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8080/healthz"]
+      interval: 5s
+      timeout: 3s
+      retries: 12

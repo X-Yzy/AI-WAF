@@ -1,0 +1,64 @@
+services:
+  api:
+    build: .
+    image: ${WAD_IMAGE:-web-attack-detector:final}
+    command: ["uvicorn", "src.runtime_api:app", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "${WAD_UI_BIND:-127.0.0.1}:${WAD_UI_PUBLISH_PORT:-18089}:8000"
+    # Docker runs the online API. Full training/WAF orchestration runs through
+    # host `python run.py ui`, which can control the host Docker engine.
+    user: "${WAD_LAB_USER:-0:0}"
+    volumes:
+      - ./models/current:/app/models/current
+      - wad-runtime:/app/runtime
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    environment:
+      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:18089,http://127.0.0.1:18089}
+
+  # 可选的现有服务器接入入口：
+  # docker compose --profile proxy up -d --build
+  proxy:
+    build: .
+    image: ${WAD_IMAGE:-web-attack-detector:final}
+    profiles: ["proxy"]
+    command: ["python", "-m", "src.proxy"]
+    ports:
+      - "${WAD_PROXY_BIND:-127.0.0.1}:${WAD_PROXY_PUBLISH_PORT:-8081}:8080"
+    volumes:
+      - ./models/current:/app/models/current:ro
+      - wad-runtime:/app/runtime
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/_wad/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    environment:
+      - WAD_PROXY_HOST=0.0.0.0
+      - WAD_PROXY_PORT=8080
+      - WAD_PROXY_BACKEND=${WAD_PROXY_BACKEND:-http://host.docker.internal:3000}
+      - WAD_PROXY_PUBLIC_ORIGIN=${WAD_PROXY_PUBLIC_ORIGIN:-}
+      - WAD_PROXY_DIRECTORY_LINKS=${WAD_PROXY_DIRECTORY_LINKS:-}
+      - WAD_PROXY_HOST_HEADER=${WAD_PROXY_HOST_HEADER:-public}
+      - WAD_PROXY_MODE=${WAD_PROXY_MODE:-monitor}
+      - WAD_PROXY_FAIL_POLICY=${WAD_PROXY_FAIL_POLICY:-closed}
+      - WAD_PROXY_TIMEOUT=${WAD_PROXY_TIMEOUT:-30}
+      - WAD_PROXY_MAX_BODY_MB=${WAD_PROXY_MAX_BODY_MB:-1}
+
+volumes:
+  wad-runtime:

@@ -1,0 +1,17 @@
+{
+  "representation": "original",
+  "attack_type": "fupl",
+  "title": "Unrestricted file upload",
+  "standard": "CWE-434",
+  "records": 144,
+  "shards": {
+    "field/evaluation": 5,
+    "field/test": 5,
+    "field/train": 36,
+    "field/unspecified": 73,
+    "field/validation": 9,
+    "request/test": 1,
+    "request/train": 11,
+    "request/validation": 4
+  }
+}

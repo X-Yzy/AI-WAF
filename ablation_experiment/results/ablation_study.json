@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-01T14:42:04.143836+00:00",
+  "experiment": "six-way component ablation",
+  "leakage_control": "thresholds and fusion weights selected on validation only; test used only for final metrics",
+  "dataset": {
+    "source": "data/organized",
+    "validation_records": 34442,
+    "test_records": 34721,
+    "normal_test_records": 32196,
+    "attack_test_records": 2525,
+    "obfuscated_attack_records": 1357,
+    "known_cross_split_duplicate_excluded": "mlwaf_c31520dda92f1db0ff6a73cc",
+    "audit": {
+      "data_root": "C:\\Users\\Yzy12\\Desktop\\2026第二届大学生人工智能安全竞赛\\result\\data\\organized",
+      "loaded": {
+        "train": {
+          "from_unspecified": 13254,
+          "normal": 256856,
+          "obfuscated": 20147,
+          "original": 10340
+        },
+        "validation": {
+          "normal": 32228,
+          "obfuscated": 1201,
+          "original": 1013
+        },
+        "test": {
+          "normal": 32196,
+          "obfuscated": 1357,
+          "original": 1168
+        }
+      },
+      "skipped_ineligible": {
+        "test": 35,
+        "train": 239,
+        "unspecified": 1,
+        "validation": 46
+      },
+      "skipped_duplicates": {
+        "test": 10,
+        "train": 501,
+        "validation": 8
+      },
+      "unspecified_policy": "train_only"
+    }
+  },
+  "selection": {
+    "source_split": "validation",
+    "minimum_validation_recall": 0.95,
+    "maximum_validation_fpr": 0.001,
+    "objective": "maximize 0.45*F1 + 0.35*macro_type_recall + 0.20*obfuscated_recall under hard constraints",
+    "lightgbm": {
+      "threshold": 0.838829022761977,
+      "f1": 0.9898762654668166,
+      "precision": 0.9861048857014791,
+      "recall": 0.993676603432701,
+      "macro_type_recall": 0.9878877013316892,
+      "obfuscated_recall": 0.9941715237302248,
+      "fpr": 0.0009618964875263746
+    },
+    "character": {
+      "threshold": 0.12914974017343006,
+      "f1": 0.9916872612895977,
+      "precision": 0.9865891819400984,
+      "recall": 0.9968383017163505,
+      "macro_type_recall": 0.9934871386637245,
+      "obfuscated_recall": 0.9983347210657785,
+      "fpr": 0.0009308675685739109
+    },
+    "fusion": {
+      "composite": 0.9957740010010651,
+      "threshold": 0.34495920619726117,
+      "feature_weight": 0.30000000000000004,
+      "text_weight": 0.7,
+      "f1": 0.9957158962795941,
+      "precision": 0.9941467807294012,
+      "recall": 0.997289972899729,
+      "macro_type_recall": 0.9939096444819139,
+      "obfuscated_recall": 0.9991673605328892,
+      "fpr": 0.00040337594638202806
+    }
+  },
+  "timing": {
+    "unit": "milliseconds per field payload",
+    "scope": "end-to-end preprocessing and inference for each variant",
+    "percentile": 99,
+    "records_timed_per_variant": 34721,
+    "experiment_wall_seconds": 92.348
+  },
+  "variants": {
+    "rules_only": {
+      "precision": 0.938679,
+      "recall": 0.157624,
+      "f1": 0.269922,
+      "fpr": 0.000808,
+      "obfuscated_attack_recall": 0.014001,
+      "confusion_matrix": [
+        [
+          32170,
+          26
+        ],
+        [
+          2127,
+          398
+        ]
+      ],
+      "latency_ms": {
+        "p90": 0.0402,
+        "p99": 0.07448,
+        "mean": 0.024559,
+        "wall_seconds": 0.853,
+        "throughput_records_per_second": 40717.508
+      }
+    },
+    "rules_normalized": {
+      "precision": 0.860419,
+      "recall": 0.341782,
+      "f1": 0.489229,
+      "fpr": 0.004348,
+      "obfuscated_attack_recall": 0.332351,
+      "confusion_matrix": [
+        [
+          32056,
+          140
+        ],
+        [
+          1662,
+          863
+        ]
+      ],
+      "latency_ms": {
+        "p90": 0.1299,
+        "p99": 0.19078,
+        "mean": 0.080522,
+        "wall_seconds": 2.796,
+        "throughput_records_per_second": 12418.942
+      }
+    },
+    "lightgbm_only": {
+      "precision": 0.989683,
+      "recall": 0.987723,
+      "f1": 0.988702,
+      "fpr": 0.000808,
+      "obfuscated_attack_recall": 0.989683,
+      "confusion_matrix": [
+        [
+          32170,
+          26
+        ],
+        [
+          31,
+          2494
+        ]
+      ],
+      "latency_ms": {
+        "p90": 0.3731,
+        "p99": 0.49138,
+        "mean": 0.287112,
+        "wall_seconds": 9.969,
+        "throughput_records_per_second": 3482.961
+      }
+    },
+    "character_only": {
+      "precision": 0.983909,
+      "recall": 0.992871,
+      "f1": 0.98837,
+      "fpr": 0.001273,
+      "obfuscated_attack_recall": 0.994842,
+      "confusion_matrix": [
+        [
+          32155,
+          41
+        ],
+        [
+          18,
+          2507
+        ]
+      ],
+      "latency_ms": {
+        "p90": 0.7577,
+        "p99": 1.05176,
+        "mean": 0.593827,
+        "wall_seconds": 20.618,
+        "throughput_records_per_second": 1683.991
+      }
+    },
+    "dual_model_fusion": {
+      "precision": 0.993259,
+      "recall": 0.992079,
+      "f1": 0.992669,
+      "fpr": 0.000528,
+      "obfuscated_attack_recall": 0.993368,
+      "confusion_matrix": [
+        [
+          32179,
+          17
+        ],
+        [
+          20,
+          2505
+        ]
+      ],
+      "latency_ms": {
+        "p90": 1.0209,
+        "p99": 1.34952,
+        "mean": 0.81081,
+        "wall_seconds": 28.152,
+        "throughput_records_per_second": 1233.335
+      }
+    },
+    "complete_pipeline": {
+      "precision": 0.990476,
+      "recall": 0.988515,
+      "f1": 0.989495,
+      "fpr": 0.000745,
+      "obfuscated_attack_recall": 0.988946,
+      "confusion_matrix": [
+        [
+          32172,
+          24
+        ],
+        [
+          29,
+          2496
+        ]
+      ],
+      "latency_ms": {
+        "p90": 1.0621,
+        "p99": 1.36218,
+        "mean": 0.736308,
+        "wall_seconds": 25.565,
+        "throughput_records_per_second": 1358.128
+      }
+    }
+  },
+  "complete_pipeline_layers": {
+    "L0": 4606,
+    "L0-Context": 227,
+    "L1": 461,
+    "L1-Context": 43,
+    "L1-Raw": 463,
+    "L2+Text": 28921
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "representation": "original",
+  "attack_type": "ldap",
+  "title": "LDAP injection",
+  "standard": "CWE-90",
+  "records": 2356,
+  "shards": {
+    "field/evaluation": 3,
+    "field/test": 5,
+    "field/train": 25,
+    "field/unspecified": 39,
+    "field/validation": 4,
+    "request/evaluation": 2279,
+    "request/train": 1
+  }
+}

@@ -1,0 +1,19 @@
+[
+  {"id":"edge_sqli_001","payload":"sleep(0.1)","label":1,"attack_type":"sqli","attack_subtype":"time_blind_numeric","param_location":"query","source":"Local-Regression"},
+  {"id":"edge_sqli_002","payload":"SLEEP(1.1)","label":1,"attack_type":"sqli","attack_subtype":"time_blind_numeric","param_location":"query","source":"Local-Regression"},
+  {"id":"edge_sqli_003","payload":"sleep(.5)","label":1,"attack_type":"sqli","attack_subtype":"time_blind_numeric","param_location":"query","source":"Local-Regression"},
+  {"id":"edge_sqli_004","payload":"sleep(1e0)","label":1,"attack_type":"sqli","attack_subtype":"time_blind_numeric","param_location":"body","source":"Local-Regression"},
+  {"id":"edge_sqli_005","payload":"1 OR sleep(10.5)#","label":1,"attack_type":"sqli","attack_subtype":"time_blind_numeric","param_location":"query","source":"Local-Regression"},
+  {"id":"edge_sqli_006","payload":"pg_sleep(0.25)","label":1,"attack_type":"sqli","attack_subtype":"time_blind_numeric","param_location":"query","source":"Local-Regression"},
+  {"id":"edge_sqli_007","payload":"WAITFOR DELAY '00:00:01.500'","label":1,"attack_type":"sqli","attack_subtype":"time_blind_numeric","param_location":"body","source":"Local-Regression"},
+  {"id":"edge_sqli_008","payload":"%73%6c%65%65%70%28%31%2e%31%29","label":1,"attack_type":"sqli","attack_subtype":"time_blind_encoded","param_location":"query","source":"Local-Regression"},
+  {"id":"edge_sqli_009","payload":"sl/**/eep(1.1)","label":1,"attack_type":"sqli","attack_subtype":"time_blind_comment","param_location":"query","source":"Local-Regression"},
+  {"id":"edge_normal_001","payload":"数据库性能测试文档使用 sleep 函数模拟等待，请勿在生产环境执行。","label":0,"attack_type":"normal","attack_subtype":"hard_security_documentation","param_location":"body","source":"Local-Regression"},
+  {"id":"edge_normal_002","payload":"The retry worker will sleep for 1.1 seconds before continuing.","label":0,"attack_type":"normal","attack_subtype":"hard_programming_documentation","param_location":"body","source":"Local-Regression"},
+  {"id":"edge_normal_003","payload":"https://docs.example.test/api/v1/search?q=sleep","label":0,"attack_type":"normal","attack_subtype":"normal_url","param_location":"header","source":"Local-Regression"},
+  {"id":"edge_normal_004","payload":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126.0","label":0,"attack_type":"normal","attack_subtype":"normal_user_agent","param_location":"header","source":"Local-Regression"},
+  {"id":"edge_normal_005","payload":"eyJzdWIiOiJ1c2VyLTEiLCJzY29wZSI6InByb2ZpbGU6cmVhZCJ9","label":0,"attack_type":"normal","attack_subtype":"normal_base64_token","param_location":"cookie","source":"Local-Regression"},
+  {"id":"edge_normal_006","payload":"SELECT name, price FROM products WHERE id = ?","label":0,"attack_type":"normal","attack_subtype":"hard_sql_documentation","param_location":"body","source":"Local-Regression"},
+  {"id":"edge_normal_007","payload":"<script src=\"/assets/app.js\"></script>","label":0,"attack_type":"normal","attack_subtype":"hard_html_documentation","param_location":"body","source":"Local-Regression"},
+  {"id":"edge_normal_008","payload":"C:\\Users\\Public\\Documents\\report.xlsx","label":0,"attack_type":"normal","attack_subtype":"hard_windows_path","param_location":"body","source":"Local-Regression"}
+]

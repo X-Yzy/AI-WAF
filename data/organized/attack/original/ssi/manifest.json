@@ -1,0 +1,15 @@
+{
+  "representation": "original",
+  "attack_type": "ssi",
+  "title": "Server-side include injection",
+  "standard": "CWE-97",
+  "records": 1981,
+  "shards": {
+    "field/evaluation": 3,
+    "field/test": 4,
+    "field/train": 25,
+    "field/unspecified": 89,
+    "field/validation": 4,
+    "request/evaluation": 1856
+  }
+}

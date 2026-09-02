@@ -1,0 +1,15 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "nosql",
+  "title": "NoSQL injection",
+  "standard": "CWE-943",
+  "records": 391,
+  "shards": {
+    "field/evaluation": 5,
+    "field/test": 18,
+    "field/train": 79,
+    "field/unspecified": 240,
+    "field/validation": 12,
+    "request/train": 37
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "api_resource_consumption",
+  "title": "API resource consumption",
+  "standard": "API4:2023",
+  "records": 85,
+  "shards": {
+    "context/test": 5,
+    "context/train": 4,
+    "context/validation": 4,
+    "request/train": 60,
+    "request/validation": 12
+  }
+}

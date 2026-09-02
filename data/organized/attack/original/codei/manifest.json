@@ -1,0 +1,18 @@
+{
+  "representation": "original",
+  "attack_type": "codei",
+  "title": "Code and expression injection",
+  "standard": "CWE-94",
+  "records": 1730,
+  "shards": {
+    "field/evaluation": 8,
+    "field/test": 8,
+    "field/train": 29,
+    "field/unspecified": 73,
+    "field/validation": 6,
+    "request/evaluation": 1596,
+    "request/test": 5,
+    "request/train": 3,
+    "request/validation": 2
+  }
+}

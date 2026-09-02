@@ -1,0 +1,117 @@
+{
+  "dataset": "Synthetic-Contrastive-WAF-Fields-v1",
+  "seed": 20260724,
+  "format": "JSON array / UTF-8",
+  "total_records": 2762,
+  "contrastive_groups": 704,
+  "groups_per_family": 32,
+  "attack_families": 22,
+  "label_counts": {
+    "0": 704,
+    "1": 2058
+  },
+  "splits": {
+    "train": 2072,
+    "validation": 344,
+    "test": 346
+  },
+  "family_counts": {
+    "api_proto": {
+      "attack": 96,
+      "normal": 32
+    },
+    "cmdi": {
+      "attack": 96,
+      "normal": 32
+    },
+    "codei": {
+      "attack": 96,
+      "normal": 32
+    },
+    "crlf": {
+      "attack": 96,
+      "normal": 32
+    },
+    "deser": {
+      "attack": 96,
+      "normal": 32
+    },
+    "fmtst": {
+      "attack": 96,
+      "normal": 32
+    },
+    "fupl": {
+      "attack": 42,
+      "normal": 32
+    },
+    "hpp": {
+      "attack": 96,
+      "normal": 32
+    },
+    "hsmug": {
+      "attack": 96,
+      "normal": 32
+    },
+    "jwt": {
+      "attack": 96,
+      "normal": 32
+    },
+    "ldap": {
+      "attack": 96,
+      "normal": 32
+    },
+    "lfi": {
+      "attack": 96,
+      "normal": 32
+    },
+    "logi": {
+      "attack": 96,
+      "normal": 32
+    },
+    "nosql": {
+      "attack": 96,
+      "normal": 32
+    },
+    "ptrav": {
+      "attack": 96,
+      "normal": 32
+    },
+    "sqli": {
+      "attack": 96,
+      "normal": 32
+    },
+    "ssi": {
+      "attack": 96,
+      "normal": 32
+    },
+    "ssrf": {
+      "attack": 96,
+      "normal": 32
+    },
+    "ssti": {
+      "attack": 96,
+      "normal": 32
+    },
+    "xpath": {
+      "attack": 96,
+      "normal": 32
+    },
+    "xss": {
+      "attack": 96,
+      "normal": 32
+    },
+    "xxe": {
+      "attack": 96,
+      "normal": 32
+    }
+  },
+  "unique_content_fingerprints": 2762,
+  "group_policy": "attack encodings and their benign control always share one split",
+  "safety": "offline inert string generation only; no payload is executed or sent",
+  "artifacts": {
+    "dataset_enriched_test.json": "2d947eceb1486f25e0f924b2ffabab5c30c1f39b9af6ac67dffdf98debdd07f9",
+    "dataset_enriched_train.json": "3dede5e71200f171fe33fc5295140a4b852946c6c388edf4e2c50699e4a90277",
+    "dataset_enriched_validation.json": "f1efeb08c1cd3e8a10a2b92418c5a3c47a2f5debedaad8421cae1ac7920c13a5",
+    "quality_report.json": "3886dd11b32210a47c6ad704e7aa1b6efe24e1e6b2a4410cb864f717b244da54"
+  }
+}

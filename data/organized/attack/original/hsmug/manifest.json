@@ -1,0 +1,15 @@
+{
+  "representation": "original",
+  "attack_type": "hsmug",
+  "title": "HTTP request smuggling",
+  "standard": "CWE-444",
+  "records": 428,
+  "shards": {
+    "field/evaluation": 3,
+    "field/test": 8,
+    "field/train": 38,
+    "field/unspecified": 28,
+    "field/validation": 7,
+    "request/evaluation": 344
+  }
+}

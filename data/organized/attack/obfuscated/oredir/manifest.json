@@ -1,0 +1,11 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "oredir",
+  "title": "Open redirect",
+  "standard": "CWE-601",
+  "records": 1003,
+  "shards": {
+    "field/evaluation": 3,
+    "field/unspecified": 1000
+  }
+}

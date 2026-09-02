@@ -1,0 +1,10 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "llm_direct_prompt_injection",
+  "title": "Direct LLM prompt injection",
+  "standard": "OWASP LLM01",
+  "records": 4,
+  "shards": {
+    "llm_context/train": 4
+  }
+}

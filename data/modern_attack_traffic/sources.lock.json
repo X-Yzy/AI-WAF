@@ -1,0 +1,16 @@
+{
+  "nuclei_templates": {
+    "version": "v10.4.6",
+    "published_at": "2026-07-16T18:54:05Z",
+    "archive_url": "https://api.github.com/repos/projectdiscovery/nuclei-templates/tarball/v10.4.6",
+    "archive_sha256": "20cce1b559a11bd7c24d012989dca9f1a1385274cd1e5663372863a560257d71",
+    "license": "MIT"
+  },
+  "cisa_kev": {
+    "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+    "catalog_version": "2026.07.23",
+    "date_released": "2026-07-23T16:21:10.8082Z",
+    "count": 1653,
+    "sha256": "9aa7fdaccad1d79d304ee0a2bce8b90e104790c5bb6a2f078c207cfc5b927530"
+  }
+}

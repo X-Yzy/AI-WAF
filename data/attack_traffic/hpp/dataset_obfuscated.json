@@ -1,0 +1,1038 @@
+[
+  {
+    "id": "raw_hpp_00001__obf01",
+    "payload": "%2Fapp%3Fdebug%3Dfalse%26debug%3Dtrue%0A%2Ftransfer%3Famount%3D1%26amount%3D5000",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fdaf03ab11716bc1996d06a34ce4da3ef848793fbddbcbe6708ead19f6490a21",
+    "original_id": "raw_hpp_00001",
+    "original_payload": "/app?debug=false&debug=true\n/transfer?amount=1&amount=5000",
+    "obfuscated_payload": "%2Fapp%3Fdebug%3Dfalse%26debug%3Dtrue%0A%2Ftransfer%3Famount%3D1%26amount%3D5000",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 61162947,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00001__obf02",
+    "payload": "L2FwcD9kZWJ1Zz1mYWxzZSZkZWJ1Zz10cnVlCi90cmFuc2Zlcj9hbW91bnQ9MSZhbW91bnQ9NTAwMA==",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fdaf03ab11716bc1996d06a34ce4da3ef848793fbddbcbe6708ead19f6490a21",
+    "original_id": "raw_hpp_00001",
+    "original_payload": "/app?debug=false&debug=true\n/transfer?amount=1&amount=5000",
+    "obfuscated_payload": "L2FwcD9kZWJ1Zz1mYWxzZSZkZWJ1Zz10cnVlCi90cmFuc2Zlcj9hbW91bnQ9MSZhbW91bnQ9NTAwMA==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 61163956,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00001__obf03",
+    "payload": "amount=5000&debug=true\n/transfer?amount=1&/app?debug=false",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fdaf03ab11716bc1996d06a34ce4da3ef848793fbddbcbe6708ead19f6490a21",
+    "original_id": "raw_hpp_00001",
+    "original_payload": "/app?debug=false&debug=true\n/transfer?amount=1&amount=5000",
+    "obfuscated_payload": "amount=5000&debug=true\n/transfer?amount=1&/app?debug=false",
+    "obfuscation_chain": [
+      "hpp_reorder"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 61164965,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hpp_00001__obf04",
+    "payload": "L2FwcD9kZWJ1Zz1mYWxzZTtkZWJ1Zz10cnVlCi90cmFuc2Zlcj9hbW91bnQ9MSZhbW91bnQ9NTAwMA==",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "fdaf03ab11716bc1996d06a34ce4da3ef848793fbddbcbe6708ead19f6490a21",
+    "original_id": "raw_hpp_00001",
+    "original_payload": "/app?debug=false&debug=true\n/transfer?amount=1&amount=5000",
+    "obfuscated_payload": "L2FwcD9kZWJ1Zz1mYWxzZTtkZWJ1Zz10cnVlCi90cmFuc2Zlcj9hbW91bnQ9MSZhbW91bnQ9NTAwMA==",
+    "obfuscation_chain": [
+      "hpp_semicolon_separator",
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 61165974,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00002__obf01",
+    "payload": "%252Fapp%253Fdebug%253Dfalse%2526debug%253Dtrue",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "6e2431e7c00f3e5c9d49babaf53761d7904f8b8102716634ae30b0411db7d1fa",
+    "original_id": "raw_hpp_00002",
+    "original_payload": "/app?debug=false&debug=true",
+    "obfuscated_payload": "%252Fapp%253Fdebug%253Dfalse%2526debug%253Dtrue",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 61262950,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00002__obf02",
+    "payload": "L2FwcD9kZWJ1Zz1mYWxzZSZkZWJ1Zz10cnVl",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "6e2431e7c00f3e5c9d49babaf53761d7904f8b8102716634ae30b0411db7d1fa",
+    "original_id": "raw_hpp_00002",
+    "original_payload": "/app?debug=false&debug=true",
+    "obfuscated_payload": "L2FwcD9kZWJ1Zz1mYWxzZSZkZWJ1Zz10cnVl",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 61263959,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00002__obf03",
+    "payload": "/app?debug=false;debug=true",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "6e2431e7c00f3e5c9d49babaf53761d7904f8b8102716634ae30b0411db7d1fa",
+    "original_id": "raw_hpp_00002",
+    "original_payload": "/app?debug=false&debug=true",
+    "obfuscated_payload": "/app?debug=false;debug=true",
+    "obfuscation_chain": [
+      "hpp_semicolon_separator"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 61264968,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hpp_00002__obf04",
+    "payload": "%2Fapp%3Fdebug%3Dfalse%26debug%3Dtrue",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "6e2431e7c00f3e5c9d49babaf53761d7904f8b8102716634ae30b0411db7d1fa",
+    "original_id": "raw_hpp_00002",
+    "original_payload": "/app?debug=false&debug=true",
+    "obfuscated_payload": "%2Fapp%3Fdebug%3Dfalse%26debug%3Dtrue",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 61265977,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00003__obf01",
+    "payload": "%2Ftransfer%3Famount%3D1%26amount%3D5000",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b519653e559d0fba64a3132c80c823c99dc13b78866ccc81b9b66973282c0be4",
+    "original_id": "raw_hpp_00003",
+    "original_payload": "/transfer?amount=1&amount=5000",
+    "obfuscated_payload": "%2Ftransfer%3Famount%3D1%26amount%3D5000",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 61362953,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00003__obf02",
+    "payload": "L3RyYW5zZmVyP2Ftb3VudD0xJmFtb3VudD01MDAw",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b519653e559d0fba64a3132c80c823c99dc13b78866ccc81b9b66973282c0be4",
+    "original_id": "raw_hpp_00003",
+    "original_payload": "/transfer?amount=1&amount=5000",
+    "obfuscated_payload": "L3RyYW5zZmVyP2Ftb3VudD0xJmFtb3VudD01MDAw",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 61363962,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00003__obf03",
+    "payload": "/transfer?amount=1;amount=5000",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b519653e559d0fba64a3132c80c823c99dc13b78866ccc81b9b66973282c0be4",
+    "original_id": "raw_hpp_00003",
+    "original_payload": "/transfer?amount=1&amount=5000",
+    "obfuscated_payload": "/transfer?amount=1;amount=5000",
+    "obfuscation_chain": [
+      "hpp_semicolon_separator"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 61364971,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hpp_00003__obf04",
+    "payload": "%2Ftransfer?amount%3D1;amount%3D5000",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b519653e559d0fba64a3132c80c823c99dc13b78866ccc81b9b66973282c0be4",
+    "original_id": "raw_hpp_00003",
+    "original_payload": "/transfer?amount=1&amount=5000",
+    "obfuscated_payload": "%2Ftransfer?amount%3D1;amount%3D5000",
+    "obfuscation_chain": [
+      "hpp_semicolon_separator",
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 61365980,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00004__obf01",
+    "payload": "pa%72a%6D=value1&pa%72am=value2",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ad09888b69cde504f39caeb084358dadc5f819ba3f5f794211d34aeb9faba0dc",
+    "original_id": "raw_hpp_00004",
+    "original_payload": "param=value1&param=value2",
+    "obfuscated_payload": "pa%72a%6D=value1&pa%72am=value2",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 61462956,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00004__obf02",
+    "payload": "cGFyYW09dmFsdWUxJnBhcmFtPXZhbHVlMg==",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ad09888b69cde504f39caeb084358dadc5f819ba3f5f794211d34aeb9faba0dc",
+    "original_id": "raw_hpp_00004",
+    "original_payload": "param=value1&param=value2",
+    "obfuscated_payload": "cGFyYW09dmFsdWUxJnBhcmFtPXZhbHVlMg==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 61463965,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00004__obf03",
+    "payload": "param=value1;param=value2",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ad09888b69cde504f39caeb084358dadc5f819ba3f5f794211d34aeb9faba0dc",
+    "original_id": "raw_hpp_00004",
+    "original_payload": "param=value1&param=value2",
+    "obfuscated_payload": "param=value1;param=value2",
+    "obfuscation_chain": [
+      "hpp_semicolon_separator"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 61464974,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hpp_00004__obf04",
+    "payload": "param%253Dvalue1%2526param%253Dvalue2",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ad09888b69cde504f39caeb084358dadc5f819ba3f5f794211d34aeb9faba0dc",
+    "original_id": "raw_hpp_00004",
+    "original_payload": "param=value1&param=value2",
+    "obfuscated_payload": "param%253Dvalue1%2526param%253Dvalue2",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 61465983,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00005__obf01",
+    "payload": "param%5B%5D%3Dvalue1%0A%20%20%20%20param%5B%5D%3Dvalue1%26param%5B%5D%3Dvalue2%0A%20%20%20%20param%5B%5D%3Dvalue1%26param%3Dvalue2%0A%20%20%20%20param%3Dvalue1%26param%5B%5D%3Dvalue2",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "96f2dbf92e5743c6f4d1c1cf85e0b93155f6d01a8d2fabe1460cc96015892d59",
+    "original_id": "raw_hpp_00005",
+    "original_payload": "param[]=value1\n    param[]=value1&param[]=value2\n    param[]=value1&param=value2\n    param=value1&param[]=value2",
+    "obfuscated_payload": "param%5B%5D%3Dvalue1%0A%20%20%20%20param%5B%5D%3Dvalue1%26param%5B%5D%3Dvalue2%0A%20%20%20%20param%5B%5D%3Dvalue1%26param%3Dvalue2%0A%20%20%20%20param%3Dvalue1%26param%5B%5D%3Dvalue2",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 61562959,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00005__obf02",
+    "payload": "cGFyYW1bXT12YWx1ZTEKICAgIHBhcmFtW109dmFsdWUxJnBhcmFtW109dmFsdWUyCiAgICBwYXJhbVtdPXZhbHVlMSZwYXJhbT12YWx1ZTIKICAgIHBhcmFtPXZhbHVlMSZwYXJhbVtdPXZhbHVlMg==",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "96f2dbf92e5743c6f4d1c1cf85e0b93155f6d01a8d2fabe1460cc96015892d59",
+    "original_id": "raw_hpp_00005",
+    "original_payload": "param[]=value1\n    param[]=value1&param[]=value2\n    param[]=value1&param=value2\n    param=value1&param[]=value2",
+    "obfuscated_payload": "cGFyYW1bXT12YWx1ZTEKICAgIHBhcmFtW109dmFsdWUxJnBhcmFtW109dmFsdWUyCiAgICBwYXJhbVtdPXZhbHVlMSZwYXJhbT12YWx1ZTIKICAgIHBhcmFtPXZhbHVlMSZwYXJhbVtdPXZhbHVlMg==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 61563968,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00005__obf03",
+    "payload": "param[]=value2;param=value2\n    param=value1&param[]=value2\n    param[]=value1&param[]=value1\n    param[]=value1",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "96f2dbf92e5743c6f4d1c1cf85e0b93155f6d01a8d2fabe1460cc96015892d59",
+    "original_id": "raw_hpp_00005",
+    "original_payload": "param[]=value1\n    param[]=value1&param[]=value2\n    param[]=value1&param=value2\n    param=value1&param[]=value2",
+    "obfuscated_payload": "param[]=value2;param=value2\n    param=value1&param[]=value2\n    param[]=value1&param[]=value1\n    param[]=value1",
+    "obfuscation_chain": [
+      "hpp_reorder",
+      "hpp_semicolon_separator"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 61564977,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hpp_00005__obf04",
+    "payload": "param%5b%5d%3Dvalue1%0A%20%20%20 param%255b%255d=value1&param%255b%255d=value2%0A%20 %20%20param%5b%255d%3Dvalue1%26param%3Dvalue2\n %20%20%20param%3Dvalue1%26param%255b%255d=value2",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "96f2dbf92e5743c6f4d1c1cf85e0b93155f6d01a8d2fabe1460cc96015892d59",
+    "original_id": "raw_hpp_00005",
+    "original_payload": "param[]=value1\n    param[]=value1&param[]=value2\n    param[]=value1&param=value2\n    param=value1&param[]=value2",
+    "obfuscated_payload": "param%5b%5d%3Dvalue1%0A%20%20%20 param%255b%255d=value1&param%255b%255d=value2%0A%20 %20%20param%5b%255d%3Dvalue1%26param%3Dvalue2\n %20%20%20param%3Dvalue1%26param%255b%255d=value2",
+    "obfuscation_chain": [
+      "nosql_bracket_encode",
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 61565986,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00006__obf01",
+    "payload": "par%61m[]=value1",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "28d0d54c469b41b7f5f4add3cba46471d6ff3102ca684c1b22afe5c1d864f693",
+    "original_id": "raw_hpp_00006",
+    "original_payload": "param[]=value1",
+    "obfuscated_payload": "par%61m[]=value1",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 61662962,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00006__obf02",
+    "payload": "cGFyYW1bXT12YWx1ZTE",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "28d0d54c469b41b7f5f4add3cba46471d6ff3102ca684c1b22afe5c1d864f693",
+    "original_id": "raw_hpp_00006",
+    "original_payload": "param[]=value1",
+    "obfuscated_payload": "cGFyYW1bXT12YWx1ZTE",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 61663971,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00006__obf03",
+    "payload": "param%5b%5d=value1",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "28d0d54c469b41b7f5f4add3cba46471d6ff3102ca684c1b22afe5c1d864f693",
+    "original_id": "raw_hpp_00006",
+    "original_payload": "param[]=value1",
+    "obfuscated_payload": "param%5b%5d=value1",
+    "obfuscation_chain": [
+      "nosql_bracket_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 61664980,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00006__obf04",
+    "payload": "param%5b%5d=val%75e%31",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "28d0d54c469b41b7f5f4add3cba46471d6ff3102ca684c1b22afe5c1d864f693",
+    "original_id": "raw_hpp_00006",
+    "original_payload": "param[]=value1",
+    "obfuscated_payload": "param%5b%5d=val%75e%31",
+    "obfuscation_chain": [
+      "nosql_bracket_encode",
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 61665989,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00007__obf01",
+    "payload": "param%255B%255D%253Dvalue1%2526param%255B%255D%253Dvalue2",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "77ac73ace5e9be3259e7b57e3599cec72830ba47277cee4748037cf1cf925914",
+    "original_id": "raw_hpp_00007",
+    "original_payload": "param[]=value1&param[]=value2",
+    "obfuscated_payload": "param%255B%255D%253Dvalue1%2526param%255B%255D%253Dvalue2",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 61762965,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00007__obf02",
+    "payload": "cGFyYW1bXT12YWx1ZTEmcGFyYW1bXT12YWx1ZTI=",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "77ac73ace5e9be3259e7b57e3599cec72830ba47277cee4748037cf1cf925914",
+    "original_id": "raw_hpp_00007",
+    "original_payload": "param[]=value1&param[]=value2",
+    "obfuscated_payload": "cGFyYW1bXT12YWx1ZTEmcGFyYW1bXT12YWx1ZTI=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 61763974,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00007__obf03",
+    "payload": "param[]=value1;param[]=value2",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "77ac73ace5e9be3259e7b57e3599cec72830ba47277cee4748037cf1cf925914",
+    "original_id": "raw_hpp_00007",
+    "original_payload": "param[]=value1&param[]=value2",
+    "obfuscated_payload": "param[]=value1;param[]=value2",
+    "obfuscation_chain": [
+      "hpp_semicolon_separator"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 61764983,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hpp_00007__obf04",
+    "payload": "cGFyYW1bXT12YWx1ZTImcGFyYW1bXT12YWx1ZTE=",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "77ac73ace5e9be3259e7b57e3599cec72830ba47277cee4748037cf1cf925914",
+    "original_id": "raw_hpp_00007",
+    "original_payload": "param[]=value1&param[]=value2",
+    "obfuscated_payload": "cGFyYW1bXT12YWx1ZTImcGFyYW1bXT12YWx1ZTE=",
+    "obfuscation_chain": [
+      "hpp_reorder",
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 61765992,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00008__obf01",
+    "payload": "param%255B%255D%253Dvalue1%2526param%253Dvalue2",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d6ee1e8205d2509f459e6dfd40c3b880fe9602919c0531caf1a8a146e3d87384",
+    "original_id": "raw_hpp_00008",
+    "original_payload": "param[]=value1&param=value2",
+    "obfuscated_payload": "param%255B%255D%253Dvalue1%2526param%253Dvalue2",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 61862968,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00008__obf02",
+    "payload": "cGFyYW1bXT12YWx1ZTEmcGFyYW09dmFsdWUy",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d6ee1e8205d2509f459e6dfd40c3b880fe9602919c0531caf1a8a146e3d87384",
+    "original_id": "raw_hpp_00008",
+    "original_payload": "param[]=value1&param=value2",
+    "obfuscated_payload": "cGFyYW1bXT12YWx1ZTEmcGFyYW09dmFsdWUy",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 61863977,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00008__obf03",
+    "payload": "param=value2;param[]=value1",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d6ee1e8205d2509f459e6dfd40c3b880fe9602919c0531caf1a8a146e3d87384",
+    "original_id": "raw_hpp_00008",
+    "original_payload": "param[]=value1&param=value2",
+    "obfuscated_payload": "param=value2;param[]=value1",
+    "obfuscation_chain": [
+      "hpp_reorder",
+      "hpp_semicolon_separator"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 61864986,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_hpp_00008__obf04",
+    "payload": "param%3Dvalue2%26param%5B%5D%3Dvalue1",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d6ee1e8205d2509f459e6dfd40c3b880fe9602919c0531caf1a8a146e3d87384",
+    "original_id": "raw_hpp_00008",
+    "original_payload": "param[]=value1&param=value2",
+    "obfuscated_payload": "param%3Dvalue2%26param%5B%5D%3Dvalue1",
+    "obfuscation_chain": [
+      "hpp_reorder",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 61865995,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00009__obf01",
+    "payload": "pa%72am=value1&param[]=value2",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d45f8b65e59e316a2aeb79db42cdb060d8590022f794326ca7a0d6ac7dfa4b5a",
+    "original_id": "raw_hpp_00009",
+    "original_payload": "param=value1&param[]=value2",
+    "obfuscated_payload": "pa%72am=value1&param[]=value2",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 61962971,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00009__obf02",
+    "payload": "cGFyYW09dmFsdWUxJnBhcmFtW109dmFsdWUy",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d45f8b65e59e316a2aeb79db42cdb060d8590022f794326ca7a0d6ac7dfa4b5a",
+    "original_id": "raw_hpp_00009",
+    "original_payload": "param=value1&param[]=value2",
+    "obfuscated_payload": "cGFyYW09dmFsdWUxJnBhcmFtW109dmFsdWUy",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 61963980,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00009__obf03",
+    "payload": "param%5b%5d=value2&param=value1",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d45f8b65e59e316a2aeb79db42cdb060d8590022f794326ca7a0d6ac7dfa4b5a",
+    "original_id": "raw_hpp_00009",
+    "original_payload": "param=value1&param[]=value2",
+    "obfuscated_payload": "param%5b%5d=value2&param=value1",
+    "obfuscation_chain": [
+      "nosql_bracket_encode",
+      "hpp_reorder"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 61964989,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00009__obf04",
+    "payload": "cGFyYW09dmFsdWUxO3BhcmFtW109dmFsdWUy",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "d45f8b65e59e316a2aeb79db42cdb060d8590022f794326ca7a0d6ac7dfa4b5a",
+    "original_id": "raw_hpp_00009",
+    "original_payload": "param=value1&param[]=value2",
+    "obfuscated_payload": "cGFyYW09dmFsdWUxO3BhcmFtW109dmFsdWUy",
+    "obfuscation_chain": [
+      "hpp_semicolon_separator",
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 61965998,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00010__obf01",
+    "payload": "param%3Dvalue1%2526other%3Dvalue2",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "19e31740458b6956d605fb5d59df76024d78978700d045cee596c1fdc41d2d27",
+    "original_id": "raw_hpp_00010",
+    "original_payload": "param=value1%26other=value2",
+    "obfuscated_payload": "param%3Dvalue1%2526other%3Dvalue2",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62062974,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_hpp_00010__obf02",
+    "payload": "cGFyYW09dmFsdWUxJTI2b3RoZXI9dmFsdWUy",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "19e31740458b6956d605fb5d59df76024d78978700d045cee596c1fdc41d2d27",
+    "original_id": "raw_hpp_00010",
+    "original_payload": "param=value1%26other=value2",
+    "obfuscated_payload": "cGFyYW09dmFsdWUxJTI2b3RoZXI9dmFsdWUy",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 62063983,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00010__obf03",
+    "payload": "706172616d3d76616c7565312532366f746865723d76616c756532",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "19e31740458b6956d605fb5d59df76024d78978700d045cee596c1fdc41d2d27",
+    "original_id": "raw_hpp_00010",
+    "original_payload": "param=value1%26other=value2",
+    "obfuscated_payload": "706172616d3d76616c7565312532366f746865723d76616c756532",
+    "obfuscation_chain": [
+      "hex_bytes"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific_fallback",
+    "decoder_requirements": [
+      "hex_decode"
+    ],
+    "generation_seed": 62064992,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_hpp_00010__obf04",
+    "payload": "param%3Dvalue1%26other%3Dvalue2",
+    "label": 1,
+    "attack_type": "hpp",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_hpp_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/HTTP%20Parameter%20Pollution/README.md",
+    "source_path": "HTTP Parameter Pollution/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "19e31740458b6956d605fb5d59df76024d78978700d045cee596c1fdc41d2d27",
+    "original_id": "raw_hpp_00010",
+    "original_payload": "param=value1%26other=value2",
+    "obfuscated_payload": "param%3Dvalue1%26other%3Dvalue2",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 62066001,
+    "equivalence_scope": "normalization-layer-dependent"
+  }
+]

@@ -1,0 +1,2603 @@
+[
+  {
+    "id": "raw_fmtst_00001__obf01",
+    "payload": "%2525s%2525p%2525x%2525d",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00001",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "a3af4d3f2c119aaebd75233548b4d7362dbb400d05482153350e5623b03c48bd",
+    "original_id": "raw_fmtst_00001",
+    "original_payload": "%s%p%x%d",
+    "obfuscated_payload": "%2525s%2525p%2525x%2525d",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 51362653,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00001__obf02",
+    "payload": "JXMlcCV4JWQ=",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00001",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "a3af4d3f2c119aaebd75233548b4d7362dbb400d05482153350e5623b03c48bd",
+    "original_id": "raw_fmtst_00001",
+    "original_payload": "%s%p%x%d",
+    "obfuscated_payload": "JXMlcCV4JWQ=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 51363662,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00001__obf03",
+    "payload": "%251$s%25p%25x%25d",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00001",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "a3af4d3f2c119aaebd75233548b4d7362dbb400d05482153350e5623b03c48bd",
+    "original_id": "raw_fmtst_00001",
+    "original_payload": "%s%p%x%d",
+    "obfuscated_payload": "%251$s%25p%25x%25d",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51364671,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00001__obf04",
+    "payload": "%25s%25p%25x%25d",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00001",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "a3af4d3f2c119aaebd75233548b4d7362dbb400d05482153350e5623b03c48bd",
+    "original_id": "raw_fmtst_00001",
+    "original_payload": "%s%p%x%d",
+    "obfuscated_payload": "%25s%25p%25x%25d",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51365680,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00002__obf01",
+    "payload": "%25p%25p%p%25p",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00002",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "609d3672ae5c70f839ae0d482f5e763565e750a5770555cc64caf296aca282ce",
+    "original_id": "raw_fmtst_00002",
+    "original_payload": "%p%p%p%p",
+    "obfuscated_payload": "%25p%25p%p%25p",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51462656,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00002__obf02",
+    "payload": "JXAlcCVwJXA=",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00002",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "609d3672ae5c70f839ae0d482f5e763565e750a5770555cc64caf296aca282ce",
+    "original_id": "raw_fmtst_00002",
+    "original_payload": "%p%p%p%p",
+    "obfuscated_payload": "JXAlcCVwJXA=",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 51463665,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00002__obf03",
+    "payload": "%25p%25p%25p%25p",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00002",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "609d3672ae5c70f839ae0d482f5e763565e750a5770555cc64caf296aca282ce",
+    "original_id": "raw_fmtst_00002",
+    "original_payload": "%p%p%p%p",
+    "obfuscated_payload": "%25p%25p%25p%25p",
+    "obfuscation_chain": [
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51464674,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00002__obf04",
+    "payload": "%%70%p%p%p",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00002",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "609d3672ae5c70f839ae0d482f5e763565e750a5770555cc64caf296aca282ce",
+    "original_id": "raw_fmtst_00002",
+    "original_payload": "%p%p%p%p",
+    "obfuscated_payload": "%%70%p%p%p",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51465683,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00003__obf01",
+    "payload": "%25x%25x%25x%25x",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00003",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "4cc576384884484b79d59561f3eafa8b6e0c101275348936861d31c248e23f50",
+    "original_id": "raw_fmtst_00003",
+    "original_payload": "%x%x%x%x",
+    "obfuscated_payload": "%25x%25x%25x%25x",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51562659,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00003__obf02",
+    "payload": "JXgleCV4JXg",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00003",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "4cc576384884484b79d59561f3eafa8b6e0c101275348936861d31c248e23f50",
+    "original_id": "raw_fmtst_00003",
+    "original_payload": "%x%x%x%x",
+    "obfuscated_payload": "JXgleCV4JXg",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 51563668,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00003__obf03",
+    "payload": "%1$x%x%x%x",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00003",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "4cc576384884484b79d59561f3eafa8b6e0c101275348936861d31c248e23f50",
+    "original_id": "raw_fmtst_00003",
+    "original_payload": "%x%x%x%x",
+    "obfuscated_payload": "%1$x%x%x%x",
+    "obfuscation_chain": [
+      "fmt_positional"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 51564677,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_fmtst_00003__obf04",
+    "payload": "%2%35x%25x%25%78%25x",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00003",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "4cc576384884484b79d59561f3eafa8b6e0c101275348936861d31c248e23f50",
+    "original_id": "raw_fmtst_00003",
+    "original_payload": "%x%x%x%x",
+    "obfuscated_payload": "%2%35x%25x%25%78%25x",
+    "obfuscation_chain": [
+      "fmt_percent_encode",
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51565686,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00004__obf01",
+    "payload": "%25d%25d%25d%25d",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00004",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "f9df7b4fde23e79722782019fdc29a6ab0eea31dfe7682d8822f6548f7e76dd3",
+    "original_id": "raw_fmtst_00004",
+    "original_payload": "%d%d%d%d",
+    "obfuscated_payload": "%25d%25d%25d%25d",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51662662,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00004__obf02",
+    "payload": "JWQlZCVkJWQ",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00004",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "f9df7b4fde23e79722782019fdc29a6ab0eea31dfe7682d8822f6548f7e76dd3",
+    "original_id": "raw_fmtst_00004",
+    "original_payload": "%d%d%d%d",
+    "obfuscated_payload": "JWQlZCVkJWQ",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 51663671,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00004__obf03",
+    "payload": "%251$d%25d%25d%25d",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00004",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "f9df7b4fde23e79722782019fdc29a6ab0eea31dfe7682d8822f6548f7e76dd3",
+    "original_id": "raw_fmtst_00004",
+    "original_payload": "%d%d%d%d",
+    "obfuscated_payload": "%251$d%25d%25d%25d",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51664680,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00004__obf04",
+    "payload": "%%31$d%d%d%d",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00004",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "f9df7b4fde23e79722782019fdc29a6ab0eea31dfe7682d8822f6548f7e76dd3",
+    "original_id": "raw_fmtst_00004",
+    "original_payload": "%d%d%d%d",
+    "obfuscated_payload": "%%31$d%d%d%d",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51665689,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00005__obf01",
+    "payload": "%%73%s%s%s",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00005",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "04ef5d0e8b51e76914ef1c7c1e22ff9ea63ab8e810361bea0d1ed39c1f841088",
+    "original_id": "raw_fmtst_00005",
+    "original_payload": "%s%s%s%s",
+    "obfuscated_payload": "%%73%s%s%s",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51762665,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00005__obf02",
+    "payload": "JXMlcyVzJXM=",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00005",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "04ef5d0e8b51e76914ef1c7c1e22ff9ea63ab8e810361bea0d1ed39c1f841088",
+    "original_id": "raw_fmtst_00005",
+    "original_payload": "%s%s%s%s",
+    "obfuscated_payload": "JXMlcyVzJXM=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 51763674,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00005__obf03",
+    "payload": "%25s%25s%25s%25s",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00005",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "04ef5d0e8b51e76914ef1c7c1e22ff9ea63ab8e810361bea0d1ed39c1f841088",
+    "original_id": "raw_fmtst_00005",
+    "original_payload": "%s%s%s%s",
+    "obfuscated_payload": "%25s%25s%25s%25s",
+    "obfuscation_chain": [
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51764683,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00005__obf04",
+    "payload": "%251%24s%25s%25s%25s",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00005",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "04ef5d0e8b51e76914ef1c7c1e22ff9ea63ab8e810361bea0d1ed39c1f841088",
+    "original_id": "raw_fmtst_00005",
+    "original_payload": "%s%s%s%s",
+    "obfuscated_payload": "%251%24s%25s%25s%25s",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51765692,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00006__obf01",
+    "payload": "%d%d%d%d%d%d%d%d%%64%d%d%d%d%d%d%d%d%d%d%d%d%d%%64%d%%64%%64%d%d%d%d%d%d%d%%64%d%d%d%d%%64%%64%%64%d%d%d%d%%64%%64%d%d%d%%64%d%%64%d",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00006",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "29e22be752604b1bd7331f25cb4064fbea3f4cf20aa1a73aaf08b69c3bd06388",
+    "original_id": "raw_fmtst_00006",
+    "original_payload": "%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d",
+    "obfuscated_payload": "%d%d%d%d%d%d%d%d%%64%d%d%d%d%d%d%d%d%d%d%d%d%d%%64%d%%64%%64%d%d%d%d%d%d%d%%64%d%d%d%d%%64%%64%%64%d%d%d%d%%64%%64%d%d%d%%64%d%%64%d",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51862668,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00006__obf02",
+    "payload": "JWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVk",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00006",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "29e22be752604b1bd7331f25cb4064fbea3f4cf20aa1a73aaf08b69c3bd06388",
+    "original_id": "raw_fmtst_00006",
+    "original_payload": "%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d",
+    "obfuscated_payload": "JWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVkJWQlZCVk",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 51863677,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00006__obf03",
+    "payload": "%1$d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00006",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "29e22be752604b1bd7331f25cb4064fbea3f4cf20aa1a73aaf08b69c3bd06388",
+    "original_id": "raw_fmtst_00006",
+    "original_payload": "%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d",
+    "obfuscated_payload": "%1$d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d",
+    "obfuscation_chain": [
+      "fmt_positional"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 51864686,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_fmtst_00006__obf04",
+    "payload": "JTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVk",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00006",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "29e22be752604b1bd7331f25cb4064fbea3f4cf20aa1a73aaf08b69c3bd06388",
+    "original_id": "raw_fmtst_00006",
+    "original_payload": "%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d%d",
+    "obfuscated_payload": "JTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVkJTI1ZCUyNWQlMjVk",
+    "obfuscation_chain": [
+      "fmt_percent_encode",
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode",
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 51865695,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00007__obf01",
+    "payload": "%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00007",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "b82acafb41f342f89ff38cf596de78438bd8ad9445a8cd5a42f382694ba5bb8f",
+    "original_id": "raw_fmtst_00007",
+    "original_payload": "%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i",
+    "obfuscated_payload": "%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51962671,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00007__obf02",
+    "payload": "JWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVp",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00007",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "b82acafb41f342f89ff38cf596de78438bd8ad9445a8cd5a42f382694ba5bb8f",
+    "original_id": "raw_fmtst_00007",
+    "original_payload": "%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i",
+    "obfuscated_payload": "JWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVpJWklaSVp",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 51963680,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00007__obf03",
+    "payload": "%1$i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00007",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "b82acafb41f342f89ff38cf596de78438bd8ad9445a8cd5a42f382694ba5bb8f",
+    "original_id": "raw_fmtst_00007",
+    "original_payload": "%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i",
+    "obfuscated_payload": "%1$i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i",
+    "obfuscation_chain": [
+      "fmt_positional"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 51964689,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_fmtst_00007__obf04",
+    "payload": "%25i%2%35i%25%69%25i%%325i%25i%2%35%69%2%35i%2%35%69%25i%25%69%25i%25i%25%69%%325i%25%69%25i%25%69%2%35i%2%35i%25i%25i%25i%%325i%25i%25i%25i%%325i%25i%2%35%69%25i%%325i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%%32%35i%2%35%69%25i%%325i%25%69%25i%2%35%69%25i%25i%2%35%69%25i%25i",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00007",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "b82acafb41f342f89ff38cf596de78438bd8ad9445a8cd5a42f382694ba5bb8f",
+    "original_id": "raw_fmtst_00007",
+    "original_payload": "%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i%i",
+    "obfuscated_payload": "%25i%2%35i%25%69%25i%%325i%25i%2%35%69%2%35i%2%35%69%25i%25%69%25i%25i%25%69%%325i%25%69%25i%25%69%2%35i%2%35i%25i%25i%25i%%325i%25i%25i%25i%%325i%25i%2%35%69%25i%%325i%25i%25i%25i%25i%25i%25i%25i%25i%25i%25i%%32%35i%2%35%69%25i%%325i%25%69%25i%2%35%69%25i%25i%2%35%69%25i%25i",
+    "obfuscation_chain": [
+      "fmt_percent_encode",
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 51965698,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00008__obf01",
+    "payload": "%x%25x%25x%25x%x%25x%25x%x%25x%25x%x%25x%25x%x%25x%25x%x%25x%25x%25x%25x%x%25x%25x%25x%x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%x%25x%x%25x%x%25x%x%25x%x%25x%25x%25x%25x",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00008",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "1f907d262b89831e30bceff6b00fac0e2e11cf038e78c54e801dd0e7ca28c02c",
+    "original_id": "raw_fmtst_00008",
+    "original_payload": "%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x",
+    "obfuscated_payload": "%x%25x%25x%25x%x%25x%25x%x%25x%25x%x%25x%25x%x%25x%25x%x%25x%25x%25x%25x%x%25x%25x%25x%x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%x%25x%x%25x%x%25x%x%25x%x%25x%25x%25x%25x",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52062674,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00008__obf02",
+    "payload": "JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00008",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "1f907d262b89831e30bceff6b00fac0e2e11cf038e78c54e801dd0e7ca28c02c",
+    "original_id": "raw_fmtst_00008",
+    "original_payload": "%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x",
+    "obfuscated_payload": "JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4JXgleCV4",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 52063683,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00008__obf03",
+    "payload": "%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00008",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "1f907d262b89831e30bceff6b00fac0e2e11cf038e78c54e801dd0e7ca28c02c",
+    "original_id": "raw_fmtst_00008",
+    "original_payload": "%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x",
+    "obfuscated_payload": "%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x%25x",
+    "obfuscation_chain": [
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52064692,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00008__obf04",
+    "payload": "JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00008",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "1f907d262b89831e30bceff6b00fac0e2e11cf038e78c54e801dd0e7ca28c02c",
+    "original_id": "raw_fmtst_00008",
+    "original_payload": "%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x",
+    "obfuscated_payload": "JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4JTI1eCUyNXglMjV4",
+    "obfuscation_chain": [
+      "fmt_percent_encode",
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode",
+      "base64url_decode"
+    ],
+    "generation_seed": 52065701,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00009__obf01",
+    "payload": "%25s%25s%25s%25s%25s%25s%s%25s%25s%25s%25s%s%s%25s%25s%25s%25s%25s%25s%25s%s%25s%s%25s%25s%25s%25s%25s%25s%25s%25s%25s%s%s%25s%25s%25s%25s%25s%s%s%s%25s%25s%25s%s%25s%s%25s%25s%25s%s%25s%25s",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00009",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "232f2aad9e9a09ee626a795f055d0801fb3a5c4ad43fa32299901eb4cbbbbbc7",
+    "original_id": "raw_fmtst_00009",
+    "original_payload": "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s",
+    "obfuscated_payload": "%25s%25s%25s%25s%25s%25s%s%25s%25s%25s%25s%s%s%25s%25s%25s%25s%25s%25s%25s%s%25s%s%25s%25s%25s%25s%25s%25s%25s%25s%25s%s%s%25s%25s%25s%25s%25s%s%s%s%25s%25s%25s%s%25s%s%25s%25s%25s%s%25s%25s",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52162677,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00009__obf02",
+    "payload": "JXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVz",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00009",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "232f2aad9e9a09ee626a795f055d0801fb3a5c4ad43fa32299901eb4cbbbbbc7",
+    "original_id": "raw_fmtst_00009",
+    "original_payload": "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s",
+    "obfuscated_payload": "JXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVz",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 52163686,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00009__obf03",
+    "payload": "%1$s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00009",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "232f2aad9e9a09ee626a795f055d0801fb3a5c4ad43fa32299901eb4cbbbbbc7",
+    "original_id": "raw_fmtst_00009",
+    "original_payload": "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s",
+    "obfuscated_payload": "%1$s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s",
+    "obfuscation_chain": [
+      "fmt_positional"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 52164695,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_fmtst_00009__obf04",
+    "payload": "JTEkcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXM=",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00009",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "232f2aad9e9a09ee626a795f055d0801fb3a5c4ad43fa32299901eb4cbbbbbc7",
+    "original_id": "raw_fmtst_00009",
+    "original_payload": "%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s",
+    "obfuscated_payload": "JTEkcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXMlcyVzJXM=",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "base64_standard"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 52165704,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00010__obf01",
+    "payload": "%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00010",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "edef5be35250ef8ec74bd3b9a5beb8f61afb41187e4827a2f56fafb636135cec",
+    "original_id": "raw_fmtst_00010",
+    "original_payload": "%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p",
+    "obfuscated_payload": "%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 52262680,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00010__obf02",
+    "payload": "JXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVw",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00010",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "edef5be35250ef8ec74bd3b9a5beb8f61afb41187e4827a2f56fafb636135cec",
+    "original_id": "raw_fmtst_00010",
+    "original_payload": "%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p",
+    "obfuscated_payload": "JXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVwJXAlcCVw",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 52263689,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00010__obf03",
+    "payload": "%251$p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00010",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "edef5be35250ef8ec74bd3b9a5beb8f61afb41187e4827a2f56fafb636135cec",
+    "original_id": "raw_fmtst_00010",
+    "original_payload": "%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p",
+    "obfuscated_payload": "%251$p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p%25p",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52264698,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00010__obf04",
+    "payload": "%25251%2524p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00010",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "edef5be35250ef8ec74bd3b9a5beb8f61afb41187e4827a2f56fafb636135cec",
+    "original_id": "raw_fmtst_00010",
+    "original_payload": "%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p%p",
+    "obfuscated_payload": "%25251%2524p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p%2525p",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 52265707,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00011__obf01",
+    "payload": "%25%230123456x%2508x%25x%25s%p%d%25n%25o%u%25c%25h%l%25q%j%25z%Z%25t%25i%e%25g%25f%25a%25C%25S%2508x%%25",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00011",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "ce6cc064df3290f8428582a978d89c6bbc3a6ca4ec771e268441410496241de7",
+    "original_id": "raw_fmtst_00011",
+    "original_payload": "%#0123456x%08x%x%s%p%d%n%o%u%c%h%l%q%j%z%Z%t%i%e%g%f%a%C%S%08x%%",
+    "obfuscated_payload": "%25%230123456x%2508x%25x%25s%p%d%25n%25o%u%25c%25h%l%25q%j%25z%Z%25t%25i%e%25g%25f%25a%25C%25S%2508x%%25",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52362683,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00011__obf02",
+    "payload": "JSMwMTIzNDU2eCUwOHgleCVzJXAlZCVuJW8ldSVjJWglbCVxJWoleiVaJXQlaSVlJWclZiVhJUMlUyUwOHglJQ==",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00011",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "ce6cc064df3290f8428582a978d89c6bbc3a6ca4ec771e268441410496241de7",
+    "original_id": "raw_fmtst_00011",
+    "original_payload": "%#0123456x%08x%x%s%p%d%n%o%u%c%h%l%q%j%z%Z%t%i%e%g%f%a%C%S%08x%%",
+    "obfuscated_payload": "JSMwMTIzNDU2eCUwOHgleCVzJXAlZCVuJW8ldSVjJWglbCVxJWoleiVaJXQlaSVlJWclZiVhJUMlUyUwOHglJQ==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 52363692,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00011__obf03",
+    "payload": "%#0123456x%08x%1$x%s%p%d%n%o%u%c%h%l%q%j%z%Z%t%i%e%g%f%a%C%S%08x%%",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00011",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "ce6cc064df3290f8428582a978d89c6bbc3a6ca4ec771e268441410496241de7",
+    "original_id": "raw_fmtst_00011",
+    "original_payload": "%#0123456x%08x%x%s%p%d%n%o%u%c%h%l%q%j%z%Z%t%i%e%g%f%a%C%S%08x%%",
+    "obfuscated_payload": "%#0123456x%08x%1$x%s%p%d%n%o%u%c%h%l%q%j%z%Z%t%i%e%g%f%a%C%S%08x%%",
+    "obfuscation_chain": [
+      "fmt_positional"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 52364701,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_fmtst_00011__obf04",
+    "payload": "JSMwMTIzNDU2eCUwOHglMSR4JXMlcCVkJW4lbyV1JWMlaCVsJXElaiV6JVoldCVpJWUlZyVmJWElQyVTJTA4eCUl",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00011",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "ce6cc064df3290f8428582a978d89c6bbc3a6ca4ec771e268441410496241de7",
+    "original_id": "raw_fmtst_00011",
+    "original_payload": "%#0123456x%08x%x%s%p%d%n%o%u%c%h%l%q%j%z%Z%t%i%e%g%f%a%C%S%08x%%",
+    "obfuscated_payload": "JSMwMTIzNDU2eCUwOHglMSR4JXMlcCVkJW4lbyV1JWMlaCVsJXElaiV6JVoldCVpJWUlZyVmJWElQyVTJTA4eCUl",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 52365710,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00012__obf01",
+    "payload": "XXXXX.%25p",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00012",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "97d7814608186c2d6b77124b547063e66967fc60757f2da283cb149e5341cf2f",
+    "original_id": "raw_fmtst_00012",
+    "original_payload": "XXXXX.%p",
+    "obfuscated_payload": "XXXXX.%25p",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52462686,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00012__obf02",
+    "payload": "WFhYWFguJXA=",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00012",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "97d7814608186c2d6b77124b547063e66967fc60757f2da283cb149e5341cf2f",
+    "original_id": "raw_fmtst_00012",
+    "original_payload": "XXXXX.%p",
+    "obfuscated_payload": "WFhYWFguJXA=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 52463695,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00012__obf03",
+    "payload": "XXXXX.%251$p",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00012",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "97d7814608186c2d6b77124b547063e66967fc60757f2da283cb149e5341cf2f",
+    "original_id": "raw_fmtst_00012",
+    "original_payload": "XXXXX.%p",
+    "obfuscated_payload": "XXXXX.%251$p",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52464704,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00012__obf04",
+    "payload": "WFhYWFguJXA",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00012",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "97d7814608186c2d6b77124b547063e66967fc60757f2da283cb149e5341cf2f",
+    "original_id": "raw_fmtst_00012",
+    "original_payload": "XXXXX.%p",
+    "obfuscated_payload": "WFhYWFguJXA",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 52465713,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00013__obf01",
+    "payload": "XXXXX%2560perl%2520-e%2520%2527print%2520%2522.%2525p%2522%2520x%252080%2527%2560",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00013",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "535c1aaaac5695df46146ba130add3865af3d2672e761bded03223d2d0c5d7e0",
+    "original_id": "raw_fmtst_00013",
+    "original_payload": "XXXXX`perl -e 'print \".%p\" x 80'`",
+    "obfuscated_payload": "XXXXX%2560perl%2520-e%2520%2527print%2520%2522.%2525p%2522%2520x%252080%2527%2560",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 52562689,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00013__obf02",
+    "payload": "WFhYWFhgcGVybCAtZSAncHJpbnQgIi4lcCIgeCA4MCdg",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00013",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "535c1aaaac5695df46146ba130add3865af3d2672e761bded03223d2d0c5d7e0",
+    "original_id": "raw_fmtst_00013",
+    "original_payload": "XXXXX`perl -e 'print \".%p\" x 80'`",
+    "obfuscated_payload": "WFhYWFhgcGVybCAtZSAncHJpbnQgIi4lcCIgeCA4MCdg",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 52563698,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00013__obf03",
+    "payload": "XXXXX`perl -e 'print \".%25p\" x 80'`",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00013",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "535c1aaaac5695df46146ba130add3865af3d2672e761bded03223d2d0c5d7e0",
+    "original_id": "raw_fmtst_00013",
+    "original_payload": "XXXXX`perl -e 'print \".%p\" x 80'`",
+    "obfuscated_payload": "XXXXX`perl -e 'print \".%25p\" x 80'`",
+    "obfuscation_chain": [
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52564707,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00013__obf04",
+    "payload": "XXXXX%2560perl%2520-e%2520%2527print%2520%2522.%25251%2524p%2522%2520x%252080%2527%2560",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00013",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "535c1aaaac5695df46146ba130add3865af3d2672e761bded03223d2d0c5d7e0",
+    "original_id": "raw_fmtst_00013",
+    "original_payload": "XXXXX`perl -e 'print \".%p\" x 80'`",
+    "obfuscated_payload": "XXXXX%2560perl%2520-e%2520%2527print%2520%2522.%25251%2524p%2522%2520x%252080%2527%2560",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 52565716,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00014__obf01",
+    "payload": "`perl -e%20%27print%20%22.%p%22 x%2080%27`%25n",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00014",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "78d9a346716c2d2c25428fe3180f47cf7b082ab688426f4178537ebf31c52372",
+    "original_id": "raw_fmtst_00014",
+    "original_payload": "`perl -e 'print \".%p\" x 80'`%n",
+    "obfuscated_payload": "`perl -e%20%27print%20%22.%p%22 x%2080%27`%25n",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52662692,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00014__obf02",
+    "payload": "YHBlcmwgLWUgJ3ByaW50ICIuJXAiIHggODAnYCVu",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00014",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "78d9a346716c2d2c25428fe3180f47cf7b082ab688426f4178537ebf31c52372",
+    "original_id": "raw_fmtst_00014",
+    "original_payload": "`perl -e 'print \".%p\" x 80'`%n",
+    "obfuscated_payload": "YHBlcmwgLWUgJ3ByaW50ICIuJXAiIHggODAnYCVu",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 52663701,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00014__obf03",
+    "payload": "`perl -e 'print \".%25p\" x 80'`%25n",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00014",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "78d9a346716c2d2c25428fe3180f47cf7b082ab688426f4178537ebf31c52372",
+    "original_id": "raw_fmtst_00014",
+    "original_payload": "`perl -e 'print \".%p\" x 80'`%n",
+    "obfuscated_payload": "`perl -e 'print \".%25p\" x 80'`%25n",
+    "obfuscation_chain": [
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52664710,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00014__obf04",
+    "payload": "%2560perl%2520-e%2520%2527print%2520%2522.%2525p%2522%2520x%252080%2527%2560%2525n",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00014",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "78d9a346716c2d2c25428fe3180f47cf7b082ab688426f4178537ebf31c52372",
+    "original_id": "raw_fmtst_00014",
+    "original_payload": "`perl -e 'print \".%p\" x 80'`%n",
+    "obfuscated_payload": "%2560perl%2520-e%2520%2527print%2520%2522.%2525p%2522%2520x%252080%2527%2560%2525n",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 52665719,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00015__obf01",
+    "payload": "\\x1%30\\x01\\x48\\%7808_%08%78%2E%0%38x.%08x.%%308x.%%308%78|%s|",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00015",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "fa51fe86ee68b08986885a0c7c9ebb1017a40eab508ea63c32707bd46a93450d",
+    "original_id": "raw_fmtst_00015",
+    "original_payload": "\\x10\\x01\\x48\\x08_%08x.%08x.%08x.%08x.%08x|%s|",
+    "obfuscated_payload": "\\x1%30\\x01\\x48\\%7808_%08%78%2E%0%38x.%08x.%%308x.%%308%78|%s|",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52762695,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00015__obf02",
+    "payload": "XHgxMFx4MDFceDQ4XHgwOF8lMDh4LiUwOHguJTA4eC4lMDh4LiUwOHh8JXN8",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00015",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "fa51fe86ee68b08986885a0c7c9ebb1017a40eab508ea63c32707bd46a93450d",
+    "original_id": "raw_fmtst_00015",
+    "original_payload": "\\x10\\x01\\x48\\x08_%08x.%08x.%08x.%08x.%08x|%s|",
+    "obfuscated_payload": "XHgxMFx4MDFceDQ4XHgwOF8lMDh4LiUwOHguJTA4eC4lMDh4LiUwOHh8JXN8",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 52763704,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00015__obf03",
+    "payload": "\\x10\\x01\\x48\\x08_%2508x.%2508x.%2508x.%2508x.%2508x|%251$s|",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00015",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "fa51fe86ee68b08986885a0c7c9ebb1017a40eab508ea63c32707bd46a93450d",
+    "original_id": "raw_fmtst_00015",
+    "original_payload": "\\x10\\x01\\x48\\x08_%08x.%08x.%08x.%08x.%08x|%s|",
+    "obfuscated_payload": "\\x10\\x01\\x48\\x08_%2508x.%2508x.%2508x.%2508x.%2508x|%251$s|",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52764713,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00015__obf04",
+    "payload": "%5Cx10%5Cx01%5Cx48%5Cx08_%2508x.%2508x.%2508x.%2508x.%2508x%7C%25s%7C",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00015",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "fa51fe86ee68b08986885a0c7c9ebb1017a40eab508ea63c32707bd46a93450d",
+    "original_id": "raw_fmtst_00015",
+    "original_payload": "\\x10\\x01\\x48\\x08_%08x.%08x.%08x.%08x.%08x|%s|",
+    "obfuscated_payload": "%5Cx10%5Cx01%5Cx48%5Cx08_%2508x.%2508x.%2508x.%2508x.%2508x%7C%25s%7C",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52765722,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00016__obf01",
+    "payload": "AAAAA%2525d",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00016",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "a879a55a9951505f6e25606fca32dd765d678448b80206e6a64da4486529351b",
+    "original_id": "raw_fmtst_00016",
+    "original_payload": "AAAAA%d",
+    "obfuscated_payload": "AAAAA%2525d",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 52862698,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00016__obf02",
+    "payload": "QUFBQUElZA",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00016",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "a879a55a9951505f6e25606fca32dd765d678448b80206e6a64da4486529351b",
+    "original_id": "raw_fmtst_00016",
+    "original_payload": "AAAAA%d",
+    "obfuscated_payload": "QUFBQUElZA",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 52863707,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00016__obf03",
+    "payload": "AAAAA%1$d",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00016",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "a879a55a9951505f6e25606fca32dd765d678448b80206e6a64da4486529351b",
+    "original_id": "raw_fmtst_00016",
+    "original_payload": "AAAAA%d",
+    "obfuscated_payload": "AAAAA%1$d",
+    "obfuscation_chain": [
+      "fmt_positional"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 52864716,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_fmtst_00016__obf04",
+    "payload": "%41AAAA%d",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00016",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "a879a55a9951505f6e25606fca32dd765d678448b80206e6a64da4486529351b",
+    "original_id": "raw_fmtst_00016",
+    "original_payload": "AAAAA%d",
+    "obfuscated_payload": "%41AAAA%d",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52865725,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00017__obf01",
+    "payload": "A%41AAA%%70",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00017",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "015f101da58a5af54f7a5eec63bf41c0977690ff948dfa780cf8d1cccf5a1ee6",
+    "original_id": "raw_fmtst_00017",
+    "original_payload": "AAAAA%p",
+    "obfuscated_payload": "A%41AAA%%70",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 52962701,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00017__obf02",
+    "payload": "QUFBQUElcA==",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00017",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "015f101da58a5af54f7a5eec63bf41c0977690ff948dfa780cf8d1cccf5a1ee6",
+    "original_id": "raw_fmtst_00017",
+    "original_payload": "AAAAA%p",
+    "obfuscated_payload": "QUFBQUElcA==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 52963710,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00017__obf03",
+    "payload": "AAAAA%1$p",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00017",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "015f101da58a5af54f7a5eec63bf41c0977690ff948dfa780cf8d1cccf5a1ee6",
+    "original_id": "raw_fmtst_00017",
+    "original_payload": "AAAAA%p",
+    "obfuscated_payload": "AAAAA%1$p",
+    "obfuscation_chain": [
+      "fmt_positional"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 52964719,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_fmtst_00017__obf04",
+    "payload": "AAAAA%2525p",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00017",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "015f101da58a5af54f7a5eec63bf41c0977690ff948dfa780cf8d1cccf5a1ee6",
+    "original_id": "raw_fmtst_00017",
+    "original_payload": "AAAAA%p",
+    "obfuscated_payload": "AAAAA%2525p",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 52965728,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00018__obf01",
+    "payload": "AAAAA%2525s",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00018",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "f9687a63d73fd7cd631a080a57de256ab97650f2f7873741afe62dab0e1faf31",
+    "original_id": "raw_fmtst_00018",
+    "original_payload": "AAAAA%s",
+    "obfuscated_payload": "AAAAA%2525s",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 53062704,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00018__obf02",
+    "payload": "QUFBQUElcw",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00018",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "f9687a63d73fd7cd631a080a57de256ab97650f2f7873741afe62dab0e1faf31",
+    "original_id": "raw_fmtst_00018",
+    "original_payload": "AAAAA%s",
+    "obfuscated_payload": "QUFBQUElcw",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 53063713,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00018__obf03",
+    "payload": "AAAAA%25s",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00018",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "f9687a63d73fd7cd631a080a57de256ab97650f2f7873741afe62dab0e1faf31",
+    "original_id": "raw_fmtst_00018",
+    "original_payload": "AAAAA%s",
+    "obfuscated_payload": "AAAAA%25s",
+    "obfuscation_chain": [
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 53064722,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00018__obf04",
+    "payload": "AAAAA%25251%2524s",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00018",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "f9687a63d73fd7cd631a080a57de256ab97650f2f7873741afe62dab0e1faf31",
+    "original_id": "raw_fmtst_00018",
+    "original_payload": "AAAAA%s",
+    "obfuscated_payload": "AAAAA%25251%2524s",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 53065731,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00019__obf01",
+    "payload": "AAAAA%2525x",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00019",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "7e2b5d067e6e741a445b5ea6ef8d8fe411c475eed5aca54e692f8cd3ade95090",
+    "original_id": "raw_fmtst_00019",
+    "original_payload": "AAAAA%x",
+    "obfuscated_payload": "AAAAA%2525x",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 53162707,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00019__obf02",
+    "payload": "QUFBQUEleA",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00019",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "7e2b5d067e6e741a445b5ea6ef8d8fe411c475eed5aca54e692f8cd3ade95090",
+    "original_id": "raw_fmtst_00019",
+    "original_payload": "AAAAA%x",
+    "obfuscated_payload": "QUFBQUEleA",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 53163716,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00019__obf03",
+    "payload": "AAAAA%25x",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00019",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "7e2b5d067e6e741a445b5ea6ef8d8fe411c475eed5aca54e692f8cd3ade95090",
+    "original_id": "raw_fmtst_00019",
+    "original_payload": "AAAAA%x",
+    "obfuscated_payload": "AAAAA%25x",
+    "obfuscation_chain": [
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 53164725,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00019__obf04",
+    "payload": "QUFBQUElMSR4",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00019",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "7e2b5d067e6e741a445b5ea6ef8d8fe411c475eed5aca54e692f8cd3ade95090",
+    "original_id": "raw_fmtst_00019",
+    "original_payload": "AAAAA%x",
+    "obfuscated_payload": "QUFBQUElMSR4",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "base64_standard"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 53165734,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00020__obf01",
+    "payload": "AAAAA%2525n",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00020",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "527cb2471a97655feb95ce0cfa652b7eefed7ceca24114612fa2bb41506eede7",
+    "original_id": "raw_fmtst_00020",
+    "original_payload": "AAAAA%n",
+    "obfuscated_payload": "AAAAA%2525n",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 53262710,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00020__obf02",
+    "payload": "QUFBQUElbg==",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00020",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "527cb2471a97655feb95ce0cfa652b7eefed7ceca24114612fa2bb41506eede7",
+    "original_id": "raw_fmtst_00020",
+    "original_payload": "AAAAA%n",
+    "obfuscated_payload": "QUFBQUElbg==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 53263719,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00020__obf03",
+    "payload": "AAAAA%25n",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00020",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "527cb2471a97655feb95ce0cfa652b7eefed7ceca24114612fa2bb41506eede7",
+    "original_id": "raw_fmtst_00020",
+    "original_payload": "AAAAA%n",
+    "obfuscated_payload": "AAAAA%25n",
+    "obfuscation_chain": [
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 53264728,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00020__obf04",
+    "payload": "%41AAAA%n",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00020",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "527cb2471a97655feb95ce0cfa652b7eefed7ceca24114612fa2bb41506eede7",
+    "original_id": "raw_fmtst_00020",
+    "original_payload": "AAAAA%n",
+    "obfuscated_payload": "%41AAAA%n",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 53265737,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00021__obf01",
+    "payload": "ppppp%25d",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00021",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "61f72ae0974b4843587b0fe268ab32e70c84bbbbb5e4efd79f591b4f803ff822",
+    "original_id": "raw_fmtst_00021",
+    "original_payload": "ppppp%d",
+    "obfuscated_payload": "ppppp%25d",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 53362713,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00021__obf02",
+    "payload": "cHBwcHAlZA==",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00021",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "61f72ae0974b4843587b0fe268ab32e70c84bbbbb5e4efd79f591b4f803ff822",
+    "original_id": "raw_fmtst_00021",
+    "original_payload": "ppppp%d",
+    "obfuscated_payload": "cHBwcHAlZA==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 53363722,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00021__obf03",
+    "payload": "ppppp%1$d",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00021",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "61f72ae0974b4843587b0fe268ab32e70c84bbbbb5e4efd79f591b4f803ff822",
+    "original_id": "raw_fmtst_00021",
+    "original_payload": "ppppp%d",
+    "obfuscated_payload": "ppppp%1$d",
+    "obfuscation_chain": [
+      "fmt_positional"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 53364731,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_fmtst_00021__obf04",
+    "payload": "cHBwcHAlMjVk",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00021",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "61f72ae0974b4843587b0fe268ab32e70c84bbbbb5e4efd79f591b4f803ff822",
+    "original_id": "raw_fmtst_00021",
+    "original_payload": "ppppp%d",
+    "obfuscated_payload": "cHBwcHAlMjVk",
+    "obfuscation_chain": [
+      "fmt_percent_encode",
+      "base64_standard"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode",
+      "base64_decode"
+    ],
+    "generation_seed": 53365740,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00022__obf01",
+    "payload": "ppppp%25p",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00022",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "77550df17da427cedeacfbe265a30575398245bcb9e72a52e651fb543b1aae5a",
+    "original_id": "raw_fmtst_00022",
+    "original_payload": "ppppp%p",
+    "obfuscated_payload": "ppppp%25p",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 53462716,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00022__obf02",
+    "payload": "cHBwcHAlcA",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00022",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "77550df17da427cedeacfbe265a30575398245bcb9e72a52e651fb543b1aae5a",
+    "original_id": "raw_fmtst_00022",
+    "original_payload": "ppppp%p",
+    "obfuscated_payload": "cHBwcHAlcA",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 53463725,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00022__obf03",
+    "payload": "ppppp%1$p",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00022",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "77550df17da427cedeacfbe265a30575398245bcb9e72a52e651fb543b1aae5a",
+    "original_id": "raw_fmtst_00022",
+    "original_payload": "ppppp%p",
+    "obfuscated_payload": "ppppp%1$p",
+    "obfuscation_chain": [
+      "fmt_positional"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 53464734,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_fmtst_00022__obf04",
+    "payload": "cHBwcHAlcA==",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00022",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "77550df17da427cedeacfbe265a30575398245bcb9e72a52e651fb543b1aae5a",
+    "original_id": "raw_fmtst_00022",
+    "original_payload": "ppppp%p",
+    "obfuscated_payload": "cHBwcHAlcA==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 53465743,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00023__obf01",
+    "payload": "ppppp%2525s",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00023",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "b9a31a726807f64060fc97617354067d909fdfa0d946877918fa6720d55dac1e",
+    "original_id": "raw_fmtst_00023",
+    "original_payload": "ppppp%s",
+    "obfuscated_payload": "ppppp%2525s",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 53562719,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00023__obf02",
+    "payload": "cHBwcHAlcw",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00023",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "b9a31a726807f64060fc97617354067d909fdfa0d946877918fa6720d55dac1e",
+    "original_id": "raw_fmtst_00023",
+    "original_payload": "ppppp%s",
+    "obfuscated_payload": "cHBwcHAlcw",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 53563728,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00023__obf03",
+    "payload": "ppppp%251$s",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00023",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "b9a31a726807f64060fc97617354067d909fdfa0d946877918fa6720d55dac1e",
+    "original_id": "raw_fmtst_00023",
+    "original_payload": "ppppp%s",
+    "obfuscated_payload": "ppppp%251$s",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "fmt_percent_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 53564737,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00023__obf04",
+    "payload": "%70pppp%s",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00023",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "b9a31a726807f64060fc97617354067d909fdfa0d946877918fa6720d55dac1e",
+    "original_id": "raw_fmtst_00023",
+    "original_payload": "ppppp%s",
+    "obfuscated_payload": "%70pppp%s",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 53565746,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00024__obf01",
+    "payload": "ppppp%25x",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00024",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "822a9a6b2eddb6e754ef8384e338453dba74ba3ebe3229c8be2f98718ee88923",
+    "original_id": "raw_fmtst_00024",
+    "original_payload": "ppppp%x",
+    "obfuscated_payload": "ppppp%25x",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 53662722,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00024__obf02",
+    "payload": "cHBwcHAleA",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00024",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "822a9a6b2eddb6e754ef8384e338453dba74ba3ebe3229c8be2f98718ee88923",
+    "original_id": "raw_fmtst_00024",
+    "original_payload": "ppppp%x",
+    "obfuscated_payload": "cHBwcHAleA",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 53663731,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00024__obf03",
+    "payload": "ppppp%1$x",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00024",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "822a9a6b2eddb6e754ef8384e338453dba74ba3ebe3229c8be2f98718ee88923",
+    "original_id": "raw_fmtst_00024",
+    "original_payload": "ppppp%x",
+    "obfuscated_payload": "ppppp%1$x",
+    "obfuscation_chain": [
+      "fmt_positional"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 53664740,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_fmtst_00024__obf04",
+    "payload": "ppppp%251%24x",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00024",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "822a9a6b2eddb6e754ef8384e338453dba74ba3ebe3229c8be2f98718ee88923",
+    "original_id": "raw_fmtst_00024",
+    "original_payload": "ppppp%x",
+    "obfuscated_payload": "ppppp%251%24x",
+    "obfuscation_chain": [
+      "fmt_positional",
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 53665749,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00025__obf01",
+    "payload": "ppppp%25n",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00025",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "f2fc82529d205d02c247f87549f0a56a744d757ec4f318b9263263299f599854",
+    "original_id": "raw_fmtst_00025",
+    "original_payload": "ppppp%n",
+    "obfuscated_payload": "ppppp%25n",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 53762725,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_fmtst_00025__obf02",
+    "payload": "cHBwcHAlbg==",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00025",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "f2fc82529d205d02c247f87549f0a56a744d757ec4f318b9263263299f599854",
+    "original_id": "raw_fmtst_00025",
+    "original_payload": "ppppp%n",
+    "obfuscated_payload": "cHBwcHAlbg==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 53763734,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_fmtst_00025__obf03",
+    "payload": "ppppp%1$n",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00025",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "f2fc82529d205d02c247f87549f0a56a744d757ec4f318b9263263299f599854",
+    "original_id": "raw_fmtst_00025",
+    "original_payload": "ppppp%n",
+    "obfuscated_payload": "ppppp%1$n",
+    "obfuscation_chain": [
+      "fmt_positional"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 53764743,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_fmtst_00025__obf04",
+    "payload": "ppppp%2525n",
+    "label": 1,
+    "attack_type": "fmtst",
+    "attack_subtype": "external_curated",
+    "param_location": "query",
+    "source": "Generated:raw_fmtst_00025",
+    "source_url": "https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/format-strings/format-strings.txt",
+    "source_path": "attack/format-strings/format-strings.txt",
+    "source_version": "master-snapshot-2026-07-11",
+    "payload_sha256": "f2fc82529d205d02c247f87549f0a56a744d757ec4f318b9263263299f599854",
+    "original_id": "raw_fmtst_00025",
+    "original_payload": "ppppp%n",
+    "obfuscated_payload": "ppppp%2525n",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 53765752,
+    "equivalence_scope": "normalization-layer-dependent"
+  }
+]

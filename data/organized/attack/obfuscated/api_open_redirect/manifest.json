@@ -1,0 +1,12 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "api_open_redirect",
+  "title": "API open redirect",
+  "standard": "CWE-601",
+  "records": 13,
+  "shards": {
+    "context/test": 1,
+    "context/train": 10,
+    "context/validation": 2
+  }
+}

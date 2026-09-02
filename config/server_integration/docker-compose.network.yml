@@ -1,0 +1,13 @@
+# 让 WAD 代理加入现有业务容器所在的用户自定义 Docker 网络。
+# 使用前设置 WAD_BACKEND_NETWORK，并将 WAD_PROXY_BACKEND 写成
+# http://业务容器名:容器内部端口。
+services:
+  proxy:
+    networks:
+      - default
+      - backend
+
+networks:
+  backend:
+    external: true
+    name: ${WAD_BACKEND_NETWORK:?请设置现有业务容器的 Docker 网络名}

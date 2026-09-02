@@ -1,0 +1,132 @@
+"""Independence and provenance boundaries for public deserialization data."""
+
+import base64
+import json
+import re
+from collections import Counter
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+GENERATED = ROOT / "data" / "external_deserialization" / "generated"
+
+
+def records(kind: str) -> list[dict]:
+    values = []
+    for path in sorted((GENERATED / kind).glob("*.json")):
+        values.extend(json.loads(path.read_text(encoding="utf-8")))
+    return values
+
+
+def test_independent_deserialization_manifest_counts_real_units_not_encodings():
+    manifest = json.loads((GENERATED / "manifest.json").read_text(encoding="utf-8"))
+    assert manifest["total_records"] == 269
+    assert manifest["independence"] == {
+        "independent_units": 260,
+        "unique_content_groups": 269,
+        "encoding_variants": 0,
+        "derivations_per_independent_unit": 1,
+        "unit_definition": (
+            "one pinned upstream gadget chain, marshaller/format entrypoint, or CVE; "
+            "request-stage and encoding variants are not independent"
+        ),
+        "cross_source_exact_content_duplicates": 0,
+    }
+    assert manifest["source_reports"]["gadget_fields"]["phpggc_gadget_chains"] == 169
+    assert manifest["source_reports"]["gadget_fields"]["phpggc_frameworks"] == 45
+    assert manifest["source_reports"]["gadget_fields"]["jexboss_gadget_chains"] == 5
+    assert manifest["source_reports"]["gadget_fields"]["ysoserial_gadget_chains"] == 30
+    assert manifest["source_reports"]["gadget_fields"]["ysoserial_leakage_families"] == 19
+    assert manifest["source_reports"]["gadget_fields"]["marshalsec_marshaller_entrypoints"] == 18
+    assert manifest["source_reports"]["gadget_fields"]["marshalsec_leakage_families"] == 11
+    assert manifest["source_reports"]["gadget_fields"]["ysoserial_net_gadget_chains"] == 1
+    assert manifest["source_reports"]["gadget_fields"]["python_serialization_formats"] == 3
+    assert manifest["source_reports"]["gadget_fields"]["ecosystem_counts"] == {
+        "dotnet": 1, "java": 53, "php": 169, "python": 3,
+    }
+    assert manifest["source_reports"]["cve_requests"]["independent_cves"] == 34
+    assert manifest["source_reports"]["cve_requests"]["existing_project_cves_removed"] == [
+        "CVE-2025-25034", "CVE-2025-49113", "CVE-2025-54068", "CVE-2026-27971",
+    ]
+
+
+def test_offline_rebuild_and_generator_rerun_have_distinct_reproducibility_contracts():
+    manifest = json.loads((GENERATED / "manifest.json").read_text(encoding="utf-8"))
+    policy = manifest["reproducibility"]
+    assert "byte-stable" in policy["offline_build"]
+    assert "semantic reproduction only" in policy["gadget_regeneration"]
+    assert "SHA-256" in policy["canonical_snapshot_policy"]
+
+
+def test_each_gadget_chain_has_one_canonical_record_and_framework_safe_split():
+    values = records("gadget_fields")
+    assert len(values) == 226
+    units = Counter(item["independent_sample_id"] for item in values)
+    assert set(units.values()) == {1}
+    assert all(item["canonical_representation"] is True for item in values)
+    assert all(item["is_encoding_variant"] is False for item in values)
+    php_values = [item for item in values if item["source"] == "ambionics/PHPGGC"]
+    assert all(re.match(r"^(?:[OaCsidbRr]:|N;)", item["payload"]) for item in php_values)
+    assert not any("Deprecated:" in item["payload"] for item in php_values)
+    java_values = [item for item in values if item["deserialization_ecosystem"] == "java"]
+    assert len(java_values) == 53
+    native_java = [
+        item for item in java_values
+        if item["source"] in {"joaomatosf/JexBoss", "frohoff/ysoserial"}
+    ]
+    assert len(native_java) == 35
+    assert all(base64.b64decode(item["payload"]).startswith(b"\xac\xed\x00\x05") for item in native_java)
+    ysoserial = [item for item in values if item["source"] == "frohoff/ysoserial"]
+    assert len(ysoserial) == 30
+    assert not {item["gadget_chain"] for item in ysoserial} & {
+        "CommonsCollections1", "CommonsCollections2", "Groovy1", "Jdk7u21",
+    }
+    marshalsec = [item for item in values if item["source"] == "mbechler/marshalsec"]
+    assert len(marshalsec) == len({item["marshaller"] for item in marshalsec}) == 18
+    assert {item["marshaller"] for item in marshalsec} == {
+        "BlazeDSAMF0", "BlazeDSAMF3", "BlazeDSAMF3AM", "BlazeDSAMFX",
+        "Burlap", "Castor", "Hessian", "Hessian2", "JYAML", "Jackson",
+        "JsonIO", "Kryo", "KryoAltStrategy", "Red5AMF0", "Red5AMF3",
+        "SnakeYAML", "XStream", "YAMLBeans",
+    }
+    for item in marshalsec:
+        wire = (
+            base64.b64decode(item["payload"])
+            if item["wire_media"] == "binary" else item["payload"].encode("utf-8")
+        )
+        assert wire.startswith(bytes.fromhex(item["wire_prefix_hex"]))
+    marshalsec_family_splits = {}
+    for item in marshalsec:
+        marshalsec_family_splits.setdefault(item["gadget_family"], set()).add(item["split"])
+    assert len(marshalsec_family_splits) == 11
+    assert all(len(splits) == 1 for splits in marshalsec_family_splits.values())
+    dotnet_values = [item for item in values if item["deserialization_ecosystem"] == "dotnet"]
+    assert len(dotnet_values) == 1
+    assert dotnet_values[0]["gadget_chain"] == "TypeConfuseDelegateMono"
+    assert dotnet_values[0]["serialization_format"] == "BinaryFormatter"
+    assert base64.b64decode(dotnet_values[0]["payload"]).startswith(b"\x00\x01\x00\x00")
+    python_values = [item for item in values if item["deserialization_ecosystem"] == "python"]
+    assert {item["serialization_format"] for item in python_values} == {
+        "pickle", "pyyaml", "jsonpickle",
+    }
+    pickle_value = next(item for item in python_values if item["serialization_format"] == "pickle")
+    assert base64.b64decode(pickle_value["payload"]).startswith(b"\x80")
+    assert any("!!python/object/apply:subprocess.Popen" in item["payload"] for item in python_values)
+    assert any('"py/reduce"' in item["payload"] for item in python_values)
+    assert len({item["group_id"] for item in python_values}) == 1
+    framework_splits = {}
+    for item in values:
+        if item["source"] != "ambionics/PHPGGC":
+            continue
+        framework = item["gadget_chain"].split("/", 1)[0]
+        framework_splits.setdefault(framework, set()).add(item["split"])
+    assert framework_splits and all(len(splits) == 1 for splits in framework_splits.values())
+
+
+def test_cve_records_have_explicit_carriers_and_never_enter_field_model():
+    values = records("cve_requests")
+    assert len(values) == 43
+    assert len({item["cve_id"] for item in values}) == 34
+    assert all(item["split"] == "evaluation" for item in values)
+    assert all(item["raw_request"] and item["exclude_from_payload_model"] is True for item in values)
+    assert not any("login_password={{password}}" in item["raw_request"] for item in values)

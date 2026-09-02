@@ -1,0 +1,11 @@
+{
+  "representation": "original",
+  "attack_type": "api_viewstate_integrity",
+  "title": "ViewState integrity failure",
+  "standard": "CWE-345",
+  "records": 13,
+  "shards": {
+    "context/test": 1,
+    "context/train": 12
+  }
+}

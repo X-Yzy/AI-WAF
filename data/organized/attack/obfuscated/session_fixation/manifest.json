@@ -1,0 +1,12 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "session_fixation",
+  "title": "Session fixation",
+  "standard": "CWE-384",
+  "records": 55,
+  "shards": {
+    "context/train": 11,
+    "context/validation": 2,
+    "request/evaluation": 42
+  }
+}

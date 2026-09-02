@@ -1,0 +1,19 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = [
+    ".git",
+    ".pytest_cache",
+    "__pycache__",
+    "data",
+    "runtime",
+    "deployment/server_runtime",
+]
+
+[tool.coverage.run]
+branch = true
+source = ["src", "training", "payload_generator", "deployment", "tools"]
+omit = ["deployment/server_runtime/*"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

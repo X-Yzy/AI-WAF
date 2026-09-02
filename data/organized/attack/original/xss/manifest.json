@@ -1,0 +1,18 @@
+{
+  "representation": "original",
+  "attack_type": "xss",
+  "title": "Cross-site scripting",
+  "standard": "CWE-79",
+  "records": 9806,
+  "shards": {
+    "field/evaluation": 27,
+    "field/test": 815,
+    "field/train": 5842,
+    "field/unspecified": 200,
+    "field/validation": 713,
+    "request/evaluation": 2024,
+    "request/test": 26,
+    "request/train": 137,
+    "request/validation": 22
+  }
+}

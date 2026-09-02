@@ -1,0 +1,15 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "credential_stuffing",
+  "title": "Credential stuffing",
+  "standard": "CWE-307",
+  "records": 80,
+  "shards": {
+    "context/test": 3,
+    "context/train": 27,
+    "context/validation": 2,
+    "request/test": 8,
+    "request/train": 24,
+    "request/validation": 16
+  }
+}

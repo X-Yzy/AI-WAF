@@ -1,0 +1,6308 @@
+{
+  "version": "sampling-search-v1",
+  "selection_rule": "validation only: recall>=min_recall and fpr<=max_fpr; maximize 0.45*F1 + 0.35*macro_type_recall + 0.20*obfuscated_recall",
+  "test_usage": "evaluated once after final validation selection",
+  "rare_limit": 2000,
+  "policies": [
+    "all",
+    "cap_8000",
+    "cap_6000",
+    "cap_5000",
+    "cap_4000",
+    "cap_3000",
+    "sqrt",
+    "log"
+  ],
+  "data_root": "data/organized",
+  "data_audit": {
+    "data_root": "data/organized",
+    "loaded": {
+      "train": {
+        "from_unspecified": 13254,
+        "normal": 256856,
+        "obfuscated": 20147,
+        "original": 10340
+      },
+      "validation": {
+        "normal": 32228,
+        "obfuscated": 1201,
+        "original": 1013
+      },
+      "test": {
+        "normal": 32196,
+        "obfuscated": 1357,
+        "original": 1168
+      }
+    },
+    "skipped_ineligible": {
+      "test": 35,
+      "train": 239,
+      "unspecified": 1,
+      "validation": 46
+    },
+    "skipped_duplicates": {
+      "test": 10,
+      "train": 501,
+      "validation": 8
+    },
+    "unspecified_policy": "train_only"
+  },
+  "experiments": [
+    {
+      "policy": "all",
+      "weight_mode": "ratio",
+      "positive_weight": 8.425099222619478,
+      "train": {
+        "attack": 30487,
+        "normal": 256856,
+        "total": 287343
+      },
+      "operating_point": {
+        "composite": 0.9946055718520775,
+        "threshold": 0.3059716455644189,
+        "feature_weight": 0.19999999999999996,
+        "text_weight": 0.8,
+        "f1": 0.9941441441441441,
+        "precision": 0.9914645103324349,
+        "recall": 0.9968383017163505,
+        "macro_type_recall": 0.993067893640163,
+        "obfuscated_recall": 0.9983347210657785,
+        "fpr": 0.0005895494600968102
+      },
+      "validation": {
+        "auc": 0.99992,
+        "f1": 0.994144,
+        "precision": 0.991465,
+        "recall": 0.996838,
+        "macro_type_recall": 0.993068,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.00059,
+        "confusion_matrix": [
+          [
+            32209,
+            19
+          ],
+          [
+            7,
+            2207
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.998335
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.995064
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.962963
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.987179
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.992806
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 815,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3350,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 2075,
+            "original": 1275
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 12918,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 6876,
+            "original": 6042
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "all",
+      "weight_mode": "sqrt_ratio",
+      "positive_weight": 2.9026021468019825,
+      "train": {
+        "attack": 30487,
+        "normal": 256856,
+        "total": 287343
+      },
+      "operating_point": {
+        "composite": 0.9949437382517435,
+        "threshold": 0.33318388624844664,
+        "feature_weight": 0.32499999999999996,
+        "text_weight": 0.675,
+        "f1": 0.9943681009236314,
+        "precision": 0.9919101123595505,
+        "recall": 0.9968383017163505,
+        "macro_type_recall": 0.9937461389227249,
+        "obfuscated_recall": 0.9983347210657785,
+        "fpr": 0.0005585205411443465
+      },
+      "validation": {
+        "auc": 0.999926,
+        "f1": 0.994368,
+        "precision": 0.99191,
+        "recall": 0.996838,
+        "macro_type_recall": 0.993746,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000559,
+        "confusion_matrix": [
+          [
+            32210,
+            18
+          ],
+          [
+            7,
+            2207
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.998335
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.995064
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.981481
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.987179
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.989209
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 1400,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3350,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 2075,
+            "original": 1275
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 12918,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 6876,
+            "original": 6042
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "cap_8000",
+      "weight_mode": "ratio",
+      "positive_weight": 10.045602096288475,
+      "train": {
+        "attack": 25569,
+        "normal": 256856,
+        "total": 282425
+      },
+      "operating_point": {
+        "composite": 0.9949672089176514,
+        "threshold": 0.3084084769105293,
+        "feature_weight": 0.25,
+        "text_weight": 0.75,
+        "f1": 0.9939230249831195,
+        "precision": 0.990578734858681,
+        "recall": 0.997289972899729,
+        "macro_type_recall": 0.9939096444819139,
+        "obfuscated_recall": 0.9991673605328892,
+        "fpr": 0.0006516072980017377
+      },
+      "validation": {
+        "auc": 0.999929,
+        "f1": 0.993923,
+        "precision": 0.990579,
+        "recall": 0.99729,
+        "macro_type_recall": 0.99391,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000652,
+        "confusion_matrix": [
+          [
+            32207,
+            21
+          ],
+          [
+            6,
+            2208
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.999167
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.995064
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.981481
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.987179
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.992806
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 1241,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3350,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 2075,
+            "original": 1275
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 8000,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 4309,
+            "original": 3691
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "cap_8000",
+      "weight_mode": "sqrt_ratio",
+      "positive_weight": 3.1694797832276,
+      "train": {
+        "attack": 25569,
+        "normal": 256856,
+        "total": 282425
+      },
+      "operating_point": {
+        "composite": 0.9947240026785178,
+        "threshold": 0.26245950656290107,
+        "feature_weight": 0.275,
+        "text_weight": 0.725,
+        "f1": 0.9932553956834532,
+        "precision": 0.9888093106535363,
+        "recall": 0.9977416440831075,
+        "macro_type_recall": 0.9940731500411029,
+        "obfuscated_recall": 0.9991673605328892,
+        "fpr": 0.0007757229738115924
+      },
+      "validation": {
+        "auc": 0.999931,
+        "f1": 0.993255,
+        "precision": 0.988809,
+        "recall": 0.997742,
+        "macro_type_recall": 0.994073,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000776,
+        "confusion_matrix": [
+          [
+            32203,
+            25
+          ],
+          [
+            5,
+            2209
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.999167
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.996051
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.981481
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.987179
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.996403
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 1394,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3350,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 2075,
+            "original": 1275
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 8000,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 4309,
+            "original": 3691
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "cap_6000",
+      "weight_mode": "ratio",
+      "positive_weight": 10.898044040901183,
+      "train": {
+        "attack": 23569,
+        "normal": 256856,
+        "total": 280425
+      },
+      "operating_point": {
+        "composite": 0.9949672089176514,
+        "threshold": 0.3011647418534902,
+        "feature_weight": 0.25,
+        "text_weight": 0.75,
+        "f1": 0.9939230249831195,
+        "precision": 0.990578734858681,
+        "recall": 0.997289972899729,
+        "macro_type_recall": 0.9939096444819139,
+        "obfuscated_recall": 0.9991673605328892,
+        "fpr": 0.0006516072980017377
+      },
+      "validation": {
+        "auc": 0.999932,
+        "f1": 0.993923,
+        "precision": 0.990579,
+        "recall": 0.99729,
+        "macro_type_recall": 0.99391,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000652,
+        "confusion_matrix": [
+          [
+            32207,
+            21
+          ],
+          [
+            6,
+            2208
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.999167
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.995064
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.981481
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.987179
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.992806
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 1324,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3350,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 2075,
+            "original": 1275
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 6000,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 3245,
+            "original": 2755
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "cap_6000",
+      "weight_mode": "sqrt_ratio",
+      "positive_weight": 3.3012185690894786,
+      "train": {
+        "attack": 23569,
+        "normal": 256856,
+        "total": 280425
+      },
+      "operating_point": {
+        "composite": 0.9947620146718029,
+        "threshold": 0.2759309026807294,
+        "feature_weight": 0.25,
+        "text_weight": 0.75,
+        "f1": 0.9939202882233731,
+        "precision": 0.9910193084867535,
+        "recall": 0.9968383017163505,
+        "macro_type_recall": 0.9933268938991634,
+        "obfuscated_recall": 0.9991673605328892,
+        "fpr": 0.000620578379049274
+      },
+      "validation": {
+        "auc": 0.999933,
+        "f1": 0.99392,
+        "precision": 0.991019,
+        "recall": 0.996838,
+        "macro_type_recall": 0.993327,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000621,
+        "confusion_matrix": [
+          [
+            32208,
+            20
+          ],
+          [
+            7,
+            2207
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.999167
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.994077
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.981481
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.974359
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.992806
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 1322,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3350,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 2075,
+            "original": 1275
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 6000,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 3245,
+            "original": 2755
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "cap_5000",
+      "weight_mode": "ratio",
+      "positive_weight": 11.380920731977492,
+      "train": {
+        "attack": 22569,
+        "normal": 256856,
+        "total": 279425
+      },
+      "operating_point": {
+        "composite": 0.9949672089176514,
+        "threshold": 0.3045912428606092,
+        "feature_weight": 0.25,
+        "text_weight": 0.75,
+        "f1": 0.9939230249831195,
+        "precision": 0.990578734858681,
+        "recall": 0.997289972899729,
+        "macro_type_recall": 0.9939096444819139,
+        "obfuscated_recall": 0.9991673605328892,
+        "fpr": 0.0006516072980017377
+      },
+      "validation": {
+        "auc": 0.999932,
+        "f1": 0.993923,
+        "precision": 0.990579,
+        "recall": 0.99729,
+        "macro_type_recall": 0.99391,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000652,
+        "confusion_matrix": [
+          [
+            32207,
+            21
+          ],
+          [
+            6,
+            2208
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.999167
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.995064
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.981481
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.987179
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.992806
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 1145,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3350,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 2075,
+            "original": 1275
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 5000,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 2706,
+            "original": 2294
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "cap_5000",
+      "weight_mode": "sqrt_ratio",
+      "positive_weight": 3.3735620243264375,
+      "train": {
+        "attack": 22569,
+        "normal": 256856,
+        "total": 279425
+      },
+      "operating_point": {
+        "composite": 0.9947240026785178,
+        "threshold": 0.25022486590023735,
+        "feature_weight": 0.25,
+        "text_weight": 0.75,
+        "f1": 0.9932553956834532,
+        "precision": 0.9888093106535363,
+        "recall": 0.9977416440831075,
+        "macro_type_recall": 0.9940731500411029,
+        "obfuscated_recall": 0.9991673605328892,
+        "fpr": 0.0007757229738115924
+      },
+      "validation": {
+        "auc": 0.999936,
+        "f1": 0.993255,
+        "precision": 0.988809,
+        "recall": 0.997742,
+        "macro_type_recall": 0.994073,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000776,
+        "confusion_matrix": [
+          [
+            32203,
+            25
+          ],
+          [
+            5,
+            2209
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.999167
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.996051
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.981481
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.987179
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.996403
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 1378,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3350,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 2075,
+            "original": 1275
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 5000,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 2706,
+            "original": 2294
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "cap_4000",
+      "weight_mode": "ratio",
+      "positive_weight": 11.908572488293384,
+      "train": {
+        "attack": 21569,
+        "normal": 256856,
+        "total": 278425
+      },
+      "operating_point": {
+        "composite": 0.9945048366877306,
+        "threshold": 0.3125316037895484,
+        "feature_weight": 0.22499999999999998,
+        "text_weight": 0.775,
+        "f1": 0.9939202882233731,
+        "precision": 0.9910193084867535,
+        "recall": 0.9968383017163505,
+        "macro_type_recall": 0.993067893640163,
+        "obfuscated_recall": 0.9983347210657785,
+        "fpr": 0.000620578379049274
+      },
+      "validation": {
+        "auc": 0.999929,
+        "f1": 0.99392,
+        "precision": 0.991019,
+        "recall": 0.996838,
+        "macro_type_recall": 0.993068,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000621,
+        "confusion_matrix": [
+          [
+            32208,
+            20
+          ],
+          [
+            7,
+            2207
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.998335
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.995064
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.962963
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.987179
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.992806
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 807,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3350,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 2075,
+            "original": 1275
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 4000,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 2177,
+            "original": 1823
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "cap_4000",
+      "weight_mode": "sqrt_ratio",
+      "positive_weight": 3.4508799585458467,
+      "train": {
+        "attack": 21569,
+        "normal": 256856,
+        "total": 278425
+      },
+      "operating_point": {
+        "composite": 0.9946613248632256,
+        "threshold": 0.2579698403419045,
+        "feature_weight": 0.22499999999999998,
+        "text_weight": 0.775,
+        "f1": 0.9936965330932012,
+        "precision": 0.9905745062836625,
+        "recall": 0.9968383017163505,
+        "macro_type_recall": 0.9933268938991634,
+        "obfuscated_recall": 0.9991673605328892,
+        "fpr": 0.0006516072980017377
+      },
+      "validation": {
+        "auc": 0.999938,
+        "f1": 0.993697,
+        "precision": 0.990575,
+        "recall": 0.996838,
+        "macro_type_recall": 0.993327,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000652,
+        "confusion_matrix": [
+          [
+            32207,
+            21
+          ],
+          [
+            7,
+            2207
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.999167
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.994077
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.981481
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.974359
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.992806
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 1363,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3350,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 2075,
+            "original": 1275
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 4000,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 2177,
+            "original": 1823
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "cap_3000",
+      "weight_mode": "ratio",
+      "positive_weight": 12.70369454473515,
+      "train": {
+        "attack": 20219,
+        "normal": 256856,
+        "total": 277075
+      },
+      "operating_point": {
+        "composite": 0.9940018405904515,
+        "threshold": 0.3035580004963322,
+        "feature_weight": 0.22499999999999998,
+        "text_weight": 0.775,
+        "f1": 0.9928025191183085,
+        "precision": 0.9887992831541219,
+        "recall": 0.9968383017163505,
+        "macro_type_recall": 0.993067893640163,
+        "obfuscated_recall": 0.9983347210657785,
+        "fpr": 0.0007757229738115924
+      },
+      "validation": {
+        "auc": 0.999925,
+        "f1": 0.992803,
+        "precision": 0.988799,
+        "recall": 0.996838,
+        "macro_type_recall": 0.993068,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000776,
+        "confusion_matrix": [
+          [
+            32203,
+            25
+          ],
+          [
+            7,
+            2207
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.998335
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.995064
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.962963
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.987179
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.992806
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 600,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3000,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 1863,
+            "original": 1137
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 3000,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 1638,
+            "original": 1362
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "cap_3000",
+      "weight_mode": "sqrt_ratio",
+      "positive_weight": 3.5642242556740378,
+      "train": {
+        "attack": 20219,
+        "normal": 256856,
+        "total": 277075
+      },
+      "operating_point": {
+        "composite": 0.9947035550744537,
+        "threshold": 0.27881390505895265,
+        "feature_weight": 0.25,
+        "text_weight": 0.75,
+        "f1": 0.9939175489975219,
+        "precision": 0.9914606741573033,
+        "recall": 0.996386630532972,
+        "macro_type_recall": 0.9931633883399744,
+        "obfuscated_recall": 0.9991673605328892,
+        "fpr": 0.0005895494600968102
+      },
+      "validation": {
+        "auc": 0.999942,
+        "f1": 0.993918,
+        "precision": 0.991461,
+        "recall": 0.996387,
+        "macro_type_recall": 0.993163,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.00059,
+        "confusion_matrix": [
+          [
+            32209,
+            19
+          ],
+          [
+            8,
+            2206
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.999167
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.99309
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.981481
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.974359
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.989209
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 1398,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3000,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 1863,
+            "original": 1137
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 3000,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 1638,
+            "original": 1362
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "sqrt",
+      "weight_mode": "ratio",
+      "positive_weight": 11.733942439470077,
+      "train": {
+        "attack": 21890,
+        "normal": 256856,
+        "total": 278746
+      },
+      "operating_point": {
+        "composite": 0.9945062630242447,
+        "threshold": 0.3006061907556312,
+        "feature_weight": 0.25,
+        "text_weight": 0.75,
+        "f1": 0.9930258717660292,
+        "precision": 0.9892424921559838,
+        "recall": 0.9968383017163505,
+        "macro_type_recall": 0.9937461389227249,
+        "obfuscated_recall": 0.9991673605328892,
+        "fpr": 0.0007446940548591287
+      },
+      "validation": {
+        "auc": 0.99993,
+        "f1": 0.993026,
+        "precision": 0.989242,
+        "recall": 0.996838,
+        "macro_type_recall": 0.993746,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000745,
+        "confusion_matrix": [
+          [
+            32204,
+            24
+          ],
+          [
+            7,
+            2207
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.999167
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.994077
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.981481
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.987179
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.989209
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 973,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 2588,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 1613,
+            "original": 975
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 5083,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 2750,
+            "original": 2333
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "sqrt",
+      "weight_mode": "sqrt_ratio",
+      "positive_weight": 3.4254842634976557,
+      "train": {
+        "attack": 21890,
+        "normal": 256856,
+        "total": 278746
+      },
+      "operating_point": {
+        "composite": 0.9948080606214721,
+        "threshold": 0.2712421091996041,
+        "feature_weight": 0.25,
+        "text_weight": 0.75,
+        "f1": 0.9936965330932012,
+        "precision": 0.9905745062836625,
+        "recall": 0.9968383017163505,
+        "macro_type_recall": 0.9937461389227249,
+        "obfuscated_recall": 0.9991673605328892,
+        "fpr": 0.0006516072980017377
+      },
+      "validation": {
+        "auc": 0.999936,
+        "f1": 0.993697,
+        "precision": 0.990575,
+        "recall": 0.996838,
+        "macro_type_recall": 0.993746,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000652,
+        "confusion_matrix": [
+          [
+            32207,
+            21
+          ],
+          [
+            7,
+            2207
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.999167
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.994077
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.981481
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.987179
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.989209
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 1400,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 2588,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 1613,
+            "original": 975
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 5083,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 2750,
+            "original": 2333
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "log",
+      "weight_mode": "ratio",
+      "positive_weight": 10.294004488618146,
+      "train": {
+        "attack": 24952,
+        "normal": 256856,
+        "total": 281808
+      },
+      "operating_point": {
+        "composite": 0.9948665641468949,
+        "threshold": 0.30032215478201196,
+        "feature_weight": 0.25,
+        "text_weight": 0.75,
+        "f1": 0.9936993699369937,
+        "precision": 0.9901345291479821,
+        "recall": 0.997289972899729,
+        "macro_type_recall": 0.9939096444819139,
+        "obfuscated_recall": 0.9991673605328892,
+        "fpr": 0.0006826362169542013
+      },
+      "validation": {
+        "auc": 0.999927,
+        "f1": 0.993699,
+        "precision": 0.990135,
+        "recall": 0.99729,
+        "macro_type_recall": 0.99391,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000683,
+        "confusion_matrix": [
+          [
+            32206,
+            22
+          ],
+          [
+            6,
+            2208
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.999167
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.995064
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.981481
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.987179
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.992806
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 1080,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3350,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 2075,
+            "original": 1275
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 7383,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 3972,
+            "original": 3411
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    },
+    {
+      "policy": "log",
+      "weight_mode": "sqrt_ratio",
+      "positive_weight": 3.208427105080953,
+      "train": {
+        "attack": 24952,
+        "normal": 256856,
+        "total": 281808
+      },
+      "operating_point": {
+        "composite": 0.994460081190907,
+        "threshold": 0.26250442889443126,
+        "feature_weight": 0.22499999999999998,
+        "text_weight": 0.775,
+        "f1": 0.9932493249324932,
+        "precision": 0.9896860986547085,
+        "recall": 0.9968383017163505,
+        "macro_type_recall": 0.9933268938991634,
+        "obfuscated_recall": 0.9991673605328892,
+        "fpr": 0.000713665135906665
+      },
+      "validation": {
+        "auc": 0.999931,
+        "f1": 0.993249,
+        "precision": 0.989686,
+        "recall": 0.996838,
+        "macro_type_recall": 0.993327,
+        "minimum_type_recall": 0.95,
+        "fpr": 0.000714,
+        "confusion_matrix": [
+          [
+            32205,
+            23
+          ],
+          [
+            7,
+            2207
+          ]
+        ],
+        "representation_recall": {
+          "obfuscated": {
+            "records": 1201,
+            "recall": 0.999167
+          },
+          "original": {
+            "records": 1013,
+            "recall": 0.994077
+          }
+        },
+        "type_recall": {
+          "api_proto": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "cmdi": {
+            "records": 54,
+            "recall": 0.981481
+          },
+          "codei": {
+            "records": 20,
+            "recall": 1.0
+          },
+          "crlf": {
+            "records": 28,
+            "recall": 1.0
+          },
+          "deser": {
+            "records": 78,
+            "recall": 0.974359
+          },
+          "fmtst": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "fupl": {
+            "records": 22,
+            "recall": 0.954545
+          },
+          "hpp": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "hsmug": {
+            "records": 26,
+            "recall": 1.0
+          },
+          "jwt": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ldap": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "lfi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "logi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "nosql": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ptrav": {
+            "records": 58,
+            "recall": 1.0
+          },
+          "sqli": {
+            "records": 278,
+            "recall": 0.992806
+          },
+          "ssi": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "ssrf": {
+            "records": 20,
+            "recall": 0.95
+          },
+          "ssti": {
+            "records": 18,
+            "recall": 1.0
+          },
+          "xpath": {
+            "records": 16,
+            "recall": 1.0
+          },
+          "xss": {
+            "records": 1434,
+            "recall": 1.0
+          },
+          "xxe": {
+            "records": 18,
+            "recall": 1.0
+          }
+        }
+      },
+      "lightgbm_best_iteration": 1394,
+      "sampling": {
+        "api_proto": {
+          "available": 123,
+          "selected": 123,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 94,
+            "original": 29
+          }
+        },
+        "cmdi": {
+          "available": 1385,
+          "selected": 1385,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1018,
+            "original": 367
+          }
+        },
+        "codei": {
+          "available": 533,
+          "selected": 533,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 436,
+            "original": 97
+          }
+        },
+        "crlf": {
+          "available": 468,
+          "selected": 468,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 347,
+            "original": 121
+          }
+        },
+        "deser": {
+          "available": 723,
+          "selected": 723,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 479,
+            "original": 244
+          }
+        },
+        "fmtst": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 193,
+            "original": 49
+          }
+        },
+        "fupl": {
+          "available": 513,
+          "selected": 513,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 404,
+            "original": 109
+          }
+        },
+        "hpp": {
+          "available": 164,
+          "selected": 164,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 128,
+            "original": 36
+          }
+        },
+        "hsmug": {
+          "available": 292,
+          "selected": 292,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 226,
+            "original": 66
+          }
+        },
+        "jwt": {
+          "available": 242,
+          "selected": 242,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 183,
+            "original": 59
+          }
+        },
+        "ldap": {
+          "available": 326,
+          "selected": 326,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 262,
+            "original": 64
+          }
+        },
+        "lfi": {
+          "available": 1254,
+          "selected": 1254,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1030,
+            "original": 224
+          }
+        },
+        "logi": {
+          "available": 286,
+          "selected": 286,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 229,
+            "original": 57
+          }
+        },
+        "nosql": {
+          "available": 386,
+          "selected": 386,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 312,
+            "original": 74
+          }
+        },
+        "oredir": {
+          "available": 1152,
+          "selected": 1152,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 952,
+            "original": 200
+          }
+        },
+        "ptrav": {
+          "available": 1587,
+          "selected": 1587,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1186,
+            "original": 401
+          }
+        },
+        "sqli": {
+          "available": 3350,
+          "selected": 3350,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 2075,
+            "original": 1275
+          }
+        },
+        "ssi": {
+          "available": 621,
+          "selected": 621,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 507,
+            "original": 114
+          }
+        },
+        "ssrf": {
+          "available": 1321,
+          "selected": 1321,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1076,
+            "original": 245
+          }
+        },
+        "ssti": {
+          "available": 1294,
+          "selected": 1294,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 1065,
+            "original": 229
+          }
+        },
+        "xpath": {
+          "available": 189,
+          "selected": 189,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 151,
+            "original": 38
+          }
+        },
+        "xss": {
+          "available": 12918,
+          "selected": 7383,
+          "all_retained": false,
+          "representations": {
+            "obfuscated": 3972,
+            "original": 3411
+          }
+        },
+        "xxe": {
+          "available": 1118,
+          "selected": 1118,
+          "all_retained": true,
+          "representations": {
+            "obfuscated": 918,
+            "original": 200
+          }
+        }
+      }
+    }
+  ],
+  "selected": {
+    "policy": "cap_8000",
+    "weight_mode": "ratio",
+    "positive_weight": 10.045602096288475,
+    "train": {
+      "attack": 25569,
+      "normal": 256856,
+      "total": 282425
+    },
+    "operating_point": {
+      "composite": 0.9949672089176514,
+      "threshold": 0.3084084769105293,
+      "feature_weight": 0.25,
+      "text_weight": 0.75,
+      "f1": 0.9939230249831195,
+      "precision": 0.990578734858681,
+      "recall": 0.997289972899729,
+      "macro_type_recall": 0.9939096444819139,
+      "obfuscated_recall": 0.9991673605328892,
+      "fpr": 0.0006516072980017377
+    },
+    "validation": {
+      "auc": 0.999929,
+      "f1": 0.993923,
+      "precision": 0.990579,
+      "recall": 0.99729,
+      "macro_type_recall": 0.99391,
+      "minimum_type_recall": 0.95,
+      "fpr": 0.000652,
+      "confusion_matrix": [
+        [
+          32207,
+          21
+        ],
+        [
+          6,
+          2208
+        ]
+      ],
+      "representation_recall": {
+        "obfuscated": {
+          "records": 1201,
+          "recall": 0.999167
+        },
+        "original": {
+          "records": 1013,
+          "recall": 0.995064
+        }
+      },
+      "type_recall": {
+        "api_proto": {
+          "records": 16,
+          "recall": 1.0
+        },
+        "cmdi": {
+          "records": 54,
+          "recall": 0.981481
+        },
+        "codei": {
+          "records": 20,
+          "recall": 1.0
+        },
+        "crlf": {
+          "records": 28,
+          "recall": 1.0
+        },
+        "deser": {
+          "records": 78,
+          "recall": 0.987179
+        },
+        "fmtst": {
+          "records": 16,
+          "recall": 1.0
+        },
+        "fupl": {
+          "records": 22,
+          "recall": 0.954545
+        },
+        "hpp": {
+          "records": 16,
+          "recall": 1.0
+        },
+        "hsmug": {
+          "records": 26,
+          "recall": 1.0
+        },
+        "jwt": {
+          "records": 16,
+          "recall": 1.0
+        },
+        "ldap": {
+          "records": 16,
+          "recall": 1.0
+        },
+        "lfi": {
+          "records": 16,
+          "recall": 1.0
+        },
+        "logi": {
+          "records": 16,
+          "recall": 1.0
+        },
+        "nosql": {
+          "records": 16,
+          "recall": 1.0
+        },
+        "ptrav": {
+          "records": 58,
+          "recall": 1.0
+        },
+        "sqli": {
+          "records": 278,
+          "recall": 0.992806
+        },
+        "ssi": {
+          "records": 16,
+          "recall": 1.0
+        },
+        "ssrf": {
+          "records": 20,
+          "recall": 0.95
+        },
+        "ssti": {
+          "records": 18,
+          "recall": 1.0
+        },
+        "xpath": {
+          "records": 16,
+          "recall": 1.0
+        },
+        "xss": {
+          "records": 1434,
+          "recall": 1.0
+        },
+        "xxe": {
+          "records": 18,
+          "recall": 1.0
+        }
+      }
+    },
+    "lightgbm_best_iteration": 1241,
+    "sampling": {
+      "api_proto": {
+        "available": 123,
+        "selected": 123,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 94,
+          "original": 29
+        }
+      },
+      "cmdi": {
+        "available": 1385,
+        "selected": 1385,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 1018,
+          "original": 367
+        }
+      },
+      "codei": {
+        "available": 533,
+        "selected": 533,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 436,
+          "original": 97
+        }
+      },
+      "crlf": {
+        "available": 468,
+        "selected": 468,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 347,
+          "original": 121
+        }
+      },
+      "deser": {
+        "available": 723,
+        "selected": 723,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 479,
+          "original": 244
+        }
+      },
+      "fmtst": {
+        "available": 242,
+        "selected": 242,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 193,
+          "original": 49
+        }
+      },
+      "fupl": {
+        "available": 513,
+        "selected": 513,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 404,
+          "original": 109
+        }
+      },
+      "hpp": {
+        "available": 164,
+        "selected": 164,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 128,
+          "original": 36
+        }
+      },
+      "hsmug": {
+        "available": 292,
+        "selected": 292,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 226,
+          "original": 66
+        }
+      },
+      "jwt": {
+        "available": 242,
+        "selected": 242,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 183,
+          "original": 59
+        }
+      },
+      "ldap": {
+        "available": 326,
+        "selected": 326,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 262,
+          "original": 64
+        }
+      },
+      "lfi": {
+        "available": 1254,
+        "selected": 1254,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 1030,
+          "original": 224
+        }
+      },
+      "logi": {
+        "available": 286,
+        "selected": 286,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 229,
+          "original": 57
+        }
+      },
+      "nosql": {
+        "available": 386,
+        "selected": 386,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 312,
+          "original": 74
+        }
+      },
+      "oredir": {
+        "available": 1152,
+        "selected": 1152,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 952,
+          "original": 200
+        }
+      },
+      "ptrav": {
+        "available": 1587,
+        "selected": 1587,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 1186,
+          "original": 401
+        }
+      },
+      "sqli": {
+        "available": 3350,
+        "selected": 3350,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 2075,
+          "original": 1275
+        }
+      },
+      "ssi": {
+        "available": 621,
+        "selected": 621,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 507,
+          "original": 114
+        }
+      },
+      "ssrf": {
+        "available": 1321,
+        "selected": 1321,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 1076,
+          "original": 245
+        }
+      },
+      "ssti": {
+        "available": 1294,
+        "selected": 1294,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 1065,
+          "original": 229
+        }
+      },
+      "xpath": {
+        "available": 189,
+        "selected": 189,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 151,
+          "original": 38
+        }
+      },
+      "xss": {
+        "available": 12918,
+        "selected": 8000,
+        "all_retained": false,
+        "representations": {
+          "obfuscated": 4309,
+          "original": 3691
+        }
+      },
+      "xxe": {
+        "available": 1118,
+        "selected": 1118,
+        "all_retained": true,
+        "representations": {
+          "obfuscated": 918,
+          "original": 200
+        }
+      }
+    }
+  },
+  "threshold": 0.30840848,
+  "thresholds": {
+    "high": 0.30840848,
+    "low": 0.05
+  },
+  "fusion": {
+    "feature_weight": 0.25,
+    "text_weight": 0.75
+  },
+  "validation": {
+    "auc": 0.999929,
+    "f1": 0.993923,
+    "precision": 0.990579,
+    "recall": 0.99729,
+    "macro_type_recall": 0.99391,
+    "minimum_type_recall": 0.95,
+    "fpr": 0.000652,
+    "confusion_matrix": [
+      [
+        32207,
+        21
+      ],
+      [
+        6,
+        2208
+      ]
+    ],
+    "representation_recall": {
+      "obfuscated": {
+        "records": 1201,
+        "recall": 0.999167
+      },
+      "original": {
+        "records": 1013,
+        "recall": 0.995064
+      }
+    },
+    "type_recall": {
+      "api_proto": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "cmdi": {
+        "records": 54,
+        "recall": 0.981481
+      },
+      "codei": {
+        "records": 20,
+        "recall": 1.0
+      },
+      "crlf": {
+        "records": 28,
+        "recall": 1.0
+      },
+      "deser": {
+        "records": 78,
+        "recall": 0.987179
+      },
+      "fmtst": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "fupl": {
+        "records": 22,
+        "recall": 0.954545
+      },
+      "hpp": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "hsmug": {
+        "records": 26,
+        "recall": 1.0
+      },
+      "jwt": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "ldap": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "lfi": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "logi": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "nosql": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "ptrav": {
+        "records": 58,
+        "recall": 1.0
+      },
+      "sqli": {
+        "records": 278,
+        "recall": 0.992806
+      },
+      "ssi": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "ssrf": {
+        "records": 20,
+        "recall": 0.95
+      },
+      "ssti": {
+        "records": 18,
+        "recall": 1.0
+      },
+      "xpath": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "xss": {
+        "records": 1434,
+        "recall": 1.0
+      },
+      "xxe": {
+        "records": 18,
+        "recall": 1.0
+      }
+    }
+  },
+  "test": {
+    "auc": 0.999892,
+    "f1": 0.990506,
+    "precision": 0.989332,
+    "recall": 0.991683,
+    "macro_type_recall": 0.99593,
+    "minimum_type_recall": 0.939024,
+    "fpr": 0.000839,
+    "confusion_matrix": [
+      [
+        32169,
+        27
+      ],
+      [
+        21,
+        2504
+      ]
+    ],
+    "representation_recall": {
+      "obfuscated": {
+        "records": 1357,
+        "recall": 0.993368
+      },
+      "original": {
+        "records": 1168,
+        "recall": 0.989726
+      }
+    },
+    "type_recall": {
+      "api_proto": {
+        "records": 21,
+        "recall": 1.0
+      },
+      "cmdi": {
+        "records": 82,
+        "recall": 0.939024
+      },
+      "codei": {
+        "records": 26,
+        "recall": 1.0
+      },
+      "crlf": {
+        "records": 22,
+        "recall": 1.0
+      },
+      "deser": {
+        "records": 66,
+        "recall": 1.0
+      },
+      "fmtst": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "fupl": {
+        "records": 12,
+        "recall": 1.0
+      },
+      "hpp": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "hsmug": {
+        "records": 24,
+        "recall": 1.0
+      },
+      "jwt": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "ldap": {
+        "records": 22,
+        "recall": 1.0
+      },
+      "lfi": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "logi": {
+        "records": 22,
+        "recall": 1.0
+      },
+      "nosql": {
+        "records": 22,
+        "recall": 1.0
+      },
+      "ptrav": {
+        "records": 74,
+        "recall": 1.0
+      },
+      "sqli": {
+        "records": 338,
+        "recall": 0.976331
+      },
+      "ssi": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "ssrf": {
+        "records": 24,
+        "recall": 1.0
+      },
+      "ssti": {
+        "records": 18,
+        "recall": 1.0
+      },
+      "xpath": {
+        "records": 16,
+        "recall": 1.0
+      },
+      "xss": {
+        "records": 1638,
+        "recall": 0.995116
+      },
+      "xxe": {
+        "records": 18,
+        "recall": 1.0
+      }
+    }
+  },
+  "models": {
+    "lightgbm_best_iteration": 1241,
+    "lightgbm_params": {
+      "boosting_type": "gbdt",
+      "class_weight": null,
+      "colsample_bytree": 0.9,
+      "importance_type": "split",
+      "learning_rate": 0.02,
+      "max_depth": -1,
+      "min_child_samples": 30,
+      "min_child_weight": 0.001,
+      "min_split_gain": 0.0,
+      "n_estimators": 1400,
+      "n_jobs": -1,
+      "num_leaves": 47,
+      "objective": "binary",
+      "random_state": 20260728,
+      "reg_alpha": 0.1,
+      "reg_lambda": 2.0,
+      "subsample": 0.9,
+      "subsample_for_bin": 200000,
+      "subsample_freq": 1,
+      "metric": "auc",
+      "scale_pos_weight": 10.045602096288475,
+      "verbosity": -1,
+      "deterministic": true,
+      "force_col_wise": true
+    },
+    "text_max_features": 160000,
+    "text_ngram_range": [
+      2,
+      5
+    ],
+    "text_C": 2.0
+  },
+  "elapsed_seconds": 350.95,
+  "environment": {
+    "python": "3.14.4",
+    "numpy": "2.5.1",
+    "scikit_learn": "1.9.0",
+    "lightgbm": "4.6.0"
+  }
+}

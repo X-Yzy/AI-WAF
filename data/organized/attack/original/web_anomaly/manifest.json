@@ -1,0 +1,10 @@
+{
+  "representation": "original",
+  "attack_type": "web_anomaly",
+  "title": "Mixed anomalous web request",
+  "standard": "mixed/unspecified",
+  "records": 25065,
+  "shards": {
+    "request/evaluation": 25065
+  }
+}

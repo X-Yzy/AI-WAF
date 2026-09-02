@@ -1,0 +1,67 @@
+# XSS 检测规则
+
+rules:
+  - id: xss_script_tag
+    pattern: '<\s*script[^>]*>'
+    severity: high
+    description: script 标签注入
+
+  - id: xss_onerror
+    pattern: '\bonerror\s*='
+    severity: high
+    description: onerror 事件处理器
+
+  - id: xss_onload
+    pattern: '\bonload\s*='
+    severity: high
+    description: onload 事件处理器
+
+  - id: xss_javascript_uri
+    pattern: 'javascript\s*:'
+    severity: high
+    description: javascript 伪协议
+
+  - id: xss_img_tag
+    pattern: '<\s*img[^>]+onerror'
+    severity: high
+    description: img+onerror
+
+  - id: xss_svg_onload
+    pattern: '<\s*svg[^>]*onload'
+    severity: high
+    description: svg+onload
+
+  - id: xss_alert_call
+    pattern: '\balert\s*\(.*\)'
+    severity: medium
+    description: alert() 调用
+
+  - id: xss_document_cookie
+    pattern: 'document\.cookie'
+    severity: high
+    description: 窃取 Cookie
+
+  - id: xss_eval_call
+    pattern: '\beval\s*\(.*\)'
+    severity: medium
+    description: eval() 调用
+
+  - id: xss_innerHTML
+    pattern: '\.innerHTML\s*='
+    severity: medium
+    description: innerHTML 赋值
+
+  - id: xss_data_uri
+    pattern: 'data:text/html'
+    severity: high
+    description: data URI XSS
+
+  - id: xss_iframe_srcdoc
+    pattern: '<\s*iframe[^>]+srcdoc'
+    severity: high
+    description: iframe srcdoc 注入
+
+  - id: xss_video_onerror
+    pattern: '<\s*video[^>]*onerror'
+    severity: high
+    description: video+onerror

@@ -1,0 +1,18 @@
+{
+  "representation": "obfuscated",
+  "attack_type": "sqli",
+  "title": "SQL injection",
+  "standard": "CWE-89",
+  "records": 5832,
+  "shards": {
+    "field/evaluation": 129,
+    "field/test": 173,
+    "field/train": 1107,
+    "field/unspecified": 1027,
+    "field/validation": 143,
+    "request/evaluation": 3118,
+    "request/test": 22,
+    "request/train": 94,
+    "request/validation": 19
+  }
+}
