@@ -85,11 +85,11 @@ Windows Docker Desktop 长跑发生 2 次可恢复传输停顿。适配器没有
 AI-WAF 延迟是进程内推理，真实产品延迟包含 loopback HTTP、Nginx、ModSecurity 和
 后端证明，因此效果指标可同集比较，纯引擎延迟不能直接比较。完整产品身份、镜像摘要、
 配置、状态码、分类型召回和公平性声明见
-`models/current/waf_comparison.json` 与 `doc/experiments/REAL_WAF_COMPARISON.md`。
+`models/current/waf_comparison.json` 与 `docs/experiments/REAL_WAF_COMPARISON.md`。
 
 ## 测试范围
 
 测试覆盖归一化、规则、特征、混淆器、模型加载、API、代理、扫描器、
 本地界面、完整organized数据、模型哈希、服务器包隔离和部署完整性。
-旧的分散数据布局测试已归档到 `tests/legacy`；该布局原本只有Git LFS
-占位文件，最终项目以真实完整的 `data/organized` 为唯一数据真值。
+旧的分散数据布局测试已从公开项目移出；该布局原本只有 Git LFS
+占位文件，当前项目以真实完整的 `data/organized` 为唯一数据真值。

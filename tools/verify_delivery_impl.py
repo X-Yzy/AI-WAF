@@ -39,7 +39,7 @@ REQUIRED = {
         "Dockerfile", "docker-compose.yml",
         "deployment/server_runtime/manifest.json",
         "deployment/waf_benchmark/compose.yml",
-        "doc/deployment/WAF_BENCHMARK.md",
+        "docs/deployment/WAF_BENCHMARK.md",
         "deployment/waf_benchmark/proof_backend.py",
         "deployment/waf_benchmark/openappsec/compose.yml",
         "deployment/waf_benchmark/openappsec/local_policy.yaml",
@@ -48,9 +48,9 @@ REQUIRED = {
         "deployment/waf_benchmark/safeline/compose.yml",
         "deployment/waf_benchmark/safeline/.env.example",
         "deployment/waf_benchmark/safeline/start.py",
-        "config/server_integration/nginx.conf",
-        "config/server_integration/apache.conf",
-        "config/server_integration/wad-proxy.service.example",
+        "deployment/config/server_integration/nginx.conf",
+        "deployment/config/server_integration/apache.conf",
+        "deployment/config/server_integration/wad-proxy.service.example",
     ],
     "tests": [
         "tests/test_final_delivery.py", "tests/test_integration.py",
@@ -59,10 +59,10 @@ REQUIRED = {
         "tests/test_real_waf.py", "tests/test_full_workflow.py",
     ],
     "documents": [
-        "README.md", "doc/README.md", "doc/GITHUB_UPLOAD.md",
-        "doc/SYSTEM_DESIGN.md", "doc/data/DATASET_GUIDE.md",
-        "doc/MODEL.md", "doc/TEST_REPORT.md",
-        "doc/experiments/REAL_WAF_COMPARISON.md",
+        "README.md", "docs/README.md",
+        "docs/SYSTEM_DESIGN.md", "docs/data/DATASET_GUIDE.md",
+        "docs/MODEL.md", "docs/TEST_REPORT.md",
+        "docs/experiments/REAL_WAF_COMPARISON.md",
     ],
 }
 

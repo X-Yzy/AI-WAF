@@ -113,7 +113,7 @@ python verify_manifest.py
 ```
 
 详细部署、监控、Docker、systemd 和回滚说明见完整项目中的
-`doc/deployment/SERVER_RUNTIME.md`。
+`docs/deployment/SERVER_RUNTIME.md`。
 """
 
 VERIFY_SCRIPT = '''#!/usr/bin/env python3

@@ -61,4 +61,4 @@ python run.py compare-waf
 
 正式评测必须覆盖 34,721 条记录，且候选状态为 `evaluated`、
 `included_in_ranking=true`。5xx/超时绝不按阻断计分。详细方法与最终结果见
-`doc/experiments/REAL_WAF_COMPARISON.md`。
+`docs/experiments/REAL_WAF_COMPARISON.md`。

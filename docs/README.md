@@ -9,7 +9,6 @@
 - [完整工作流](FULL_WORKFLOW.md)
 - [模型说明](MODEL.md)
 - [测试报告](TEST_REPORT.md)
-- [GitHub 上传说明](GITHUB_UPLOAD.md)
 
 ## 模块说明
 

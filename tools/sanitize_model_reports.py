@@ -17,11 +17,7 @@ def sanitize(value, report_path: Path):
                 "data/organized"
                 if key in {"data_root", "data_source"} and isinstance(item, str)
                 else (
-                    (
-                        "models/current"
-                        if "current" in report_path.parts
-                        else "models/history/c5"
-                    )
+                    "models/current"
                     if key in {"model_dir", "output_dir"} and isinstance(item, str)
                     else sanitize(item, report_path)
                 )

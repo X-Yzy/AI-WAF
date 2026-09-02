@@ -15,7 +15,7 @@ python run.py all
 不会发布部分对比结果。
 
 不需要真实产品对比时，可以分别运行 `train`、`test` 和 `evaluate`，这三个命令不依赖
-Docker。独立消融实验位于 `ablation_experiment/`，同样只需要 Python 环境。
+Docker。独立消融实验位于 `experiments/ablation/`，同样只需要 Python 环境。
 
 ## 文件职责
 
@@ -75,7 +75,7 @@ WebSocket 帧或 LLM 输出/工具调用控制。
 同集真实产品实验中，官方 ModSecurity 3.0.16 + OWASP CRS 4.28.0 的召回率为
 52.7921%、F1 为 45.6429%、误报率为 6.1592%；最终 AI-WAF 分别为
 98.8515%、98.9495% 和 0.0745%。真实产品对原始攻击召回 88.4418%，对混淆攻击
-召回 22.1076%。完整方法见 `doc/experiments/REAL_WAF_COMPARISON.md`。
+召回 22.1076%。完整方法见 `docs/experiments/REAL_WAF_COMPARISON.md`。
 
 三款产品指标来自 34,721 条全量真实 HTTP 回放；最终 AI-WAF 按当前模型在相同记录上
 计算。复现实验必须启动 Docker，并通过 `python run.py compare-waf` 执行全部产品。中断后

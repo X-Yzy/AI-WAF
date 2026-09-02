@@ -12,12 +12,12 @@ import time
 import numpy as np
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(HERE))
 
-from ablation_experiment import run_ablation_study as ablation  # noqa: E402
+from experiments.ablation import run_ablation_study as ablation  # noqa: E402
 from routing_support import build_operational_test_set, safe_normal_rule  # noqa: E402
 from training import train_organized_full as core  # noqa: E402
 from training.search_sampling_strategy import metadata_arrays, operating_point  # noqa: E402
@@ -26,7 +26,7 @@ from training.search_sampling_strategy import metadata_arrays, operating_point  
 MODEL_DIR = ROOT / "models" / "current"
 DATA_ROOT = ROOT / "data" / "organized"
 OUTPUT = HERE / "results" / "direct_95_six_way_ablation.json"
-MARKDOWN = ROOT / "doc" / "experiments" / "DIRECT_95_SIX_WAY_ABLATION.md"
+MARKDOWN = ROOT / "docs" / "experiments" / "DIRECT_95_SIX_WAY_ABLATION.md"
 TARGET_RECORDS = 9_500
 NORMAL_SHARE = 8_500 / TARGET_RECORDS
 SEED = 20_260_801

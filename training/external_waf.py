@@ -2,7 +2,7 @@
 
 These products are deliberately not simulated.  Operators deploy the real WAF
 and configure its upstream to the benchmark echo backend documented in
-``doc/deployment/WAF_BENCHMARK.md``.  This adapter then replays exactly the
+``docs/deployment/WAF_BENCHMARK.md``.  This adapter then replays exactly the
 same HTTP requests used for ModSecurity and requires an explicit backend proof
 header before an unblocked request is accepted.
 """

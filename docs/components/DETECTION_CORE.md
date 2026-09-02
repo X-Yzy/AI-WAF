@@ -40,7 +40,7 @@
 对照实验不再使用本目录内的关键词画像。`../training/compare_real_waf.py`
 会启动官方固定版本 ModSecurity + OWASP CRS Docker 产品，通过真实 HTTP 请求和
 后端到达证明判定阻断结果。方法、版本、配置与复现命令见
-`doc/experiments/REAL_WAF_COMPARISON.md`。
+`docs/experiments/REAL_WAF_COMPARISON.md`。
 
 ## 关键安全设计
 
@@ -81,4 +81,4 @@ python -m src.proxy --backend http://127.0.0.1:3000 --port 8081 --mode monitor
 
 代理会加载 `models/current/` 唯一最终模型，完整保留 HTTP 方法和请求体。支持 monitor
 观察、block 阻断、fail-open/fail-closed、JSONL 安全日志和 `/_wad/health`。生产接入
-拓扑及 Nginx/Apache/IIS/Docker 模板见 `doc/deployment/SERVER_INTEGRATION.md`。
+拓扑及 Nginx/Apache/IIS/Docker 模板见 `docs/deployment/SERVER_INTEGRATION.md`。

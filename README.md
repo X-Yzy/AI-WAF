@@ -4,23 +4,28 @@
 `data/organized` 是完整数据集的物理副本，`models/current` 是通过
 验证的正式模型，服务器最小包不依赖训练代码或外部数据目录。
 
-完整说明见 [文档索引](doc/README.md)。准备推送公开仓库前，请先阅读
-[GitHub 上传说明](doc/GITHUB_UPLOAD.md)，大型 JSONL 数据需要 Git LFS。
+完整说明见 [文档索引](docs/README.md)。大型 JSONL 数据通过 Git LFS 管理，
+克隆完整数据前请先安装并启用 Git LFS。
 
-## 十个主体板块
+## 项目结构
 
-| 板块 | 目录 | 内容 |
-|---|---|---|
-| 1. 完整数据集 | `data/organized` | 725个真实文件、1,308,030,515字节；另有离线ZIP备份 |
-| 2. 载荷生成器 | `payload_generator`、`src/obfuscator.py` | 19种编码、结构、等价、组合和专项混淆 |
-| 3. 动态检测核心 | `src` | HTTP解析、归一化、38维特征、规则、上下文、模型融合和请求汇总 |
-| 4. 训练与评测 | `training` | 审计、组级采样、训练、权重/阈值选择、独立评测和WAF对比 |
-| 5. 模型管理 | `models`、`tools` | 正式/历史模型、元数据、特征顺序、阈值、SHA-256和报告 |
-| 6. 本地可视化 | `src/local_app.py`、`demo` | 数据、混淆、归一化、检测、训练和评测展示 |
-| 7. 服务器模块 | `src/runtime_api.py`、`src/proxy.py` | 在线API、实时代理、monitor/block、健康检查、日志和运维台 |
-| 8. 部署配置 | `deployment`、`config` | 最小运行包、Docker、Nginx、Apache、systemd和环境变量 |
-| 9. 测试验证 | `tests` | 单元、集成、鲁棒性、误报、性能、代理和部署测试 |
-| 10. 项目文档 | `doc` | 系统、数据、模型、测试、实验和部署说明 |
+```text
+AI-WAF/
+├─ src/                  检测核心、API、代理和可视化服务
+├─ payload_generator/    混淆载荷命令行工具
+├─ training/             训练、评测和真实 WAF 对比
+├─ experiments/ablation/ 消融实验及结果
+├─ data/                 原始、增强、验证和完整 organized 数据集
+├─ models/current/       当前正式模型、清单和评测报告
+├─ demo/                 本地可视化前端
+├─ deployment/           运行包、服务器配置和 WAF 基准环境
+├─ tests/                自动化测试与交付验收
+├─ tools/                模型和项目维护脚本
+└─ docs/                 系统、数据、实验和部署文档
+```
+
+日常使用只需关注 `run.py`、`src/`、`models/current/` 和 `docs/`；
+训练或复现实验时再进入 `training/`、`experiments/` 与 `data/`。
 
 ## 环境与本地界面
 

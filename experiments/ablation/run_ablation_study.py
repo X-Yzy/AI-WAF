@@ -17,7 +17,7 @@ import time
 import numpy as np
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
@@ -435,7 +435,7 @@ def render_markdown(report: dict) -> str:
             "",
             "需要注意：双模型融合在该字段级测试集上的纯统计 F1 高于完整链路。完整链路的价值不应表述为每个附加分支都会继续抬高 F1，而应表述为在维持高精度、低误报和低延迟的同时，增加确定性规则证据、上下文保护与工程级联能力。这一结论与消融数据一致，也使项目贡献边界更清晰。",
             "",
-            "完整数值、混淆矩阵、吞吐率及链路分层计数见 `ablation_experiment/results/ablation_study.json`。",
+            "完整数值、混淆矩阵、吞吐率及链路分层计数见 `experiments/ablation/results/ablation_study.json`。",
             "",
         ]
     )
@@ -482,7 +482,7 @@ def main() -> None:
     parser.add_argument(
         "--markdown",
         type=Path,
-        default=ROOT / "doc" / "experiments" / "ABLATION_STUDY.md",
+        default=ROOT / "docs" / "experiments" / "ABLATION_STUDY.md",
     )
     parser.add_argument("--min-recall", type=float, default=0.95)
     parser.add_argument("--max-fpr", type=float, default=0.001)
